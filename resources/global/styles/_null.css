@@ -1,0 +1,8 @@
+.null {
+    padding: 1px 10px 31px; /* desktop case */
+    border-bottom: 1px solid rgba(153,169,207,.05); /* desktop case */
+    font-size: 12px;
+    line-height: 18px;
+    color: #3B4355;
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+/* override */
+
+@media (min-width: 1340px) {
+
+
+    .feedback {
+        padding: 28px 30px 30px 85px;
+    }
+
+    .feedback + .feedback:after {
+        left: 22px;
+        right: 30px;
+    }
+
+    .feedback__avatar {
+        left: 22px;
+        top: 30px;
+    }
+
+
+    .feedback__content {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}

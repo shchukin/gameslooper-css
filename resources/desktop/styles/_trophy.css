@@ -1,0 +1,41 @@
+/* override */
+
+@media (min-width: 860px) {
+
+    .trophy {
+        text-align: center;
+    }
+        .trophy__body {
+            display: block;
+            padding: 43px 20px 18px;
+        }
+            .trophy__preview {
+
+            }
+                .trophy__badge {
+                    width: 94px;
+                    height: 94px;
+                }
+
+            .trophy__data {
+                margin: 24px 0 0;
+            }
+
+                .trophy__title {
+
+                }
+
+                .trophy__description {
+                    margin: 1px 0 0;
+                    min-height: 66px;
+                    font-size: 12px;
+                    line-height: 22px;
+                    color: #5A6476;
+                }
+
+        .trophy__foot {
+
+        }
+
+}
+

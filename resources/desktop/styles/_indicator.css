@@ -1,0 +1,24 @@
+@keyframes logo-spin {
+    100% { transform: rotate(360deg); }
+}
+
+
+.indicator {
+    position: relative;
+    width: 70px;
+    height: 46px;
+    background-image: url(../vectors/indicator.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+    .indicator__spin {
+        position: absolute;
+        left: 43px;
+        top: 14px;
+        width: 17px;
+        height: 17px;
+        background-image: url(../vectors/indicator__spin.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        animation: logo-spin 0.4s steps(4, end) infinite;
+    }

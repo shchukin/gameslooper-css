@@ -1,0 +1,28 @@
+.contents {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 13px;
+    line-height: 18px;
+    color: #5A6476;
+}
+    .contents__item {
+        margin: 10px 0 0;
+    }
+
+    .contents__item:first-child {
+        margin-top: 0;
+    }
+
+        .contents__link {
+            transition: color .1s ease-out;
+        }
+
+        .contents__link:hover {
+            color: #FFFFFF;
+        }
+
+        .contents__link_current {
+            color: #FFFFFF;
+            cursor: default;
+        }

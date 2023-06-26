@@ -1,0 +1,19 @@
+/* override */
+
+.subscription {
+    padding: 40px 30px;
+}
+    .subscription__option {
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+@media (min-width: 1024px) {
+    .subscription {
+        display: flex;
+    }
+        .subscription__option {
+            flex-basis: 50%;
+            min-width: 50%;
+        }
+}

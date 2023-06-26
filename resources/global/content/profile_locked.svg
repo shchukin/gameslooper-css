@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="270px" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>profile_locked@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M51,190.006841 C51,181.166507 58.1615011,174 67,174 L67,174 C75.836556,174 83,181.172756 83,190.006841 L83,219.993159 C83,228.833493 75.8384989,236 67,236 L67,236 C58.163444,236 51,228.827244 51,219.993159 L51,190.006841 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="32" height="62" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="locked" transform="translate(-1228.000000, -1101.000000)">
+            <g id="SLICE" transform="translate(175.000000, 249.000000)"></g>
+            <g id="name" transform="translate(202.000000, 553.000000)"></g>
+            <g id="profile" transform="translate(1252.000000, 1133.000000)">
+                <path d="M213.782082,150.273109 C218.445383,138.076023 221,124.836343 221,111 C221,106.676065 220.750517,102.4104 220.26516,98.2166143" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M216.3991,79.4184068 C210.233323,58.8114233 198.18915,40.7430402 182.213168,27.1598422" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M162.268537,13.6531262 C146.959502,5.57381172 129.513886,1 111,1 C59.4333251,1 16.1541684,36.4830838 4.24655243,84.3652291" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.02049245,107.897858 C-0.42495314,157.452919 31.9772556,203.149166 81.3725208,216.935838" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M157.380345,210.773007 C175.278379,202.438815 190.560605,189.43039 201.657988,173.316768" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="Group-6" transform="translate(53.000000, 0.000000)">
+                    <use id="Rectangle-10" stroke="#2D3644" mask="url(#mask-2)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-1"></use>
+                    <ellipse id="Oval-5" fill="#2D3644" cx="67" cy="221" rx="4" ry="4"></ellipse>
+                    <path d="M124.5,106 L134.646565,106 C140.168869,106 144.645581,110.480982 144.645581,115.993424 L144.645581,134.095759 C144.645581,145.138132 135.697934,154.089745 124.64261,154.089745 L86.4820066,154.089745 C75.4346711,154.089745 66.4790361,163.03724 66.4790361,174.087095 L66.4790361,174.090738" id="Path-7" stroke="#2D3644" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <g id="Group-7" transform="translate(0.000000, 78.000000)">
+                        <polygon id="Path-3" fill="#BCD5FF" opacity="0.0399999991" points="122 11 0 11 0 21 122 21"></polygon>
+                        <rect id="Rectangle-9" stroke="#2D3644" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" x="2" y="0" width="120" height="54" rx="10"></rect>
+                        <path d="M4.5,36 L67.0800018,36" id="Path-12" stroke="#2D3644" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M83.5,36 L98.0799999,36" id="Path-12" stroke="#2D3644" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <g id="Group-8" transform="translate(48.000000, 0.000000)" stroke="#2D3644" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21.5,3 L21.5,23" id="Path-11" stroke-width="5"></path>
+                        <path d="M21.5,42 L21.5,78" id="Path-11" stroke-width="5"></path>
+                        <path d="M1,0 L1,40" id="Path-11" stroke-width="6"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

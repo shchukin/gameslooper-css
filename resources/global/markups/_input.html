@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.input</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body" style="background: #131722;">
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.input</h1>
+            <p><span style="color: red;">Есть овверрайд</span> <a href="../../desktop/markups/_input.html">на десктопы</a> и <a href="../../mobile/markups/_input.html">мобилки</a></p>
+
+            <br>
+            <br>
+            <br>
+            <b>Просто инпут</b>
+            <br>
+            <br>
+
+            <div class="input">
+                <input class="input__text" type="text">
+                <div class="input__cleartype"></div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <b>Инпут с плейсхолдером:</b>
+            <br>
+            <br>
+
+            <div class="input">
+                <input class="input__text" type="text" placeholder="Placeholder">
+                <div class="input__cleartype"></div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <b>Инпут с введеным текстом:</b>
+            <br>
+            <br>
+
+            <div class="input input_fill">
+                <input class="input__text" type="text" value="Текс текст текст">
+                <div class="input__cleartype"></div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <b>Про крестик-стирашку</b>
+            <br>
+            <p>
+                <b>.input__cleartype</b> - это крестик очистки. Он должен показываться только тогда
+                когда в инпут что-то введено. Это состояние задается модификатором <b>.input_fill</b>.
+                Проставляем этот класс - крестик появляется. Убирает - исчезает.
+            </p>
+            <p>
+                Тут же замес с кликом по крестику. Если ничего не предпринять, то по клику на этот клеартайп
+                будет пропадать фокус с инпута. Решаю это сбросом event.preventDefault() по mousedown.
+                Смотри набросок в temp.js
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>input_widget_area</h2>
+            <p>
+                Тут сам тег <b>input</b> заменяем на textarea. Не выводим клеартайп.
+            </p>
+            <p>
+                Дефолтная высота расчитана на 3 строки.<br>
+                Больше/меньше строк - это +20px и -20px.
+            </p>
+            <p>
+                Скроллбар не кастомизируется. Это будет происходить в десктопном оверрайде только.
+            </p>
+
+            <div class="input input_widget_area">
+                <textarea class="input__text" placeholder="Placeholder"></textarea>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.input_resize_auto</h2>
+            <p>
+                Ресайзим автоматически в зависимости от количества введенного текста.
+                Предлагаю плагинчик
+                <a href="http://bgrins.github.io/ExpandingTextareas/">Expanding Textareas</a>.
+                Подключаем его, матчимся на <b>.input_resize_auto</b>.
+                В принципе у нас могут появиться поля <b>.input_resize_manual</b>
+                где мы пользователям разрешим ресайзить в ручную. По этому такие вот модификаторы.
+            </p>
+
+            <p>
+                Дефолтная высота у textarea проставлена в CSS в расчете на три строки.
+                Здесь она тоже работает. Более того работает <b>max-height</b> так же
+                проставленный в CSS на шесть строк. Плагин будет слушаться этого свойства.
+            </p>
+            <p>
+                В принципе, тут можно было не задавать высоты в CSS, а обойтись атрибутом
+                rows="", с ним было бы более гибко, но вот другой плагин, который мы будем
+                использовать для кастомизации скроллбара не уважает этот атрибут.
+                Но если мы от него откажемя, то можно вернуться к rows="".
+            </p>
+
+            <div class="input input_widget_area input_resize_auto">
+                <textarea class="input__text" placeholder="Placeholder"></textarea>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <h2>Другие размеры textarea</h2>
+            Дефолт выше - это три строки, или три строки которые разрастаются в шесть строк,
+            если авторесайз. Но есть и иные кейсы, например чат на мобилках. Там разростание
+            из одной строки в три. Поскольку rows="" мы не можем использовать, то фигачим модификаторы:
+            <br><b>_rows_</b>
+            <br><b>_max-rows_</b>
+            <br>
+            <br>
+
+
+            <div class="input input_widget_area input_resize_auto input_rows_01 input_max-rows_03">
+                <textarea class="input__text" placeholder="Placeholder"></textarea>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.input_error</h2>
+            <br>
+
+            <div class="input input_fill input_error">
+                <input class="input__text" type="text" value="##@^%96">
+                <div class="input__cleartype"></div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input input_widget_area input_fill input_error">
+                <textarea class="input__text scroll scroll_skin_default scroll_always_visible" placeholder="Placeholder">Плохо!</textarea>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.input_loading</h2>
+            <br>
+
+            <div class="input input_loading">
+                <input class="input__text" type="text">
+                <div class="input__cleartype"></div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+.bubble {
+    position: relative;
+    min-height: 20px;
+    padding: 10px 20px;
+    background: #1A202B;
+    font-size: 12px;
+    line-height: 20px;
+    color: #5A6476;
+}
+    .bubble:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 100%;
+        margin: 0 0 0 -6px;
+        border-bottom: 5px solid #1A202B;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+    }
+
+.bubble_palette_danger {
+    background-color: #F04349;
+    color: #FFFFFF;
+}
+    .bubble_palette_danger:before {
+        border-bottom-color: #F04349;
+    }
+
+
+.bubble_no-pointer {
+
+}
+    .bubble_no-pointer:before {
+        display: none;
+    }

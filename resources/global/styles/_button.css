@@ -1,0 +1,90 @@
+.button {
+    border: none;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 2px 20px 0;
+    height: 40px;
+    line-height: 38px;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color .1s ease-out,
+                color .1s ease-out;
+}
+
+.button_width_auto {
+    width: auto;
+}
+
+/* _palette_ */
+
+.button_palette_default { background-color: #1A202B; color: #5A6476; } .button_palette_default:hover { background-color: #252E3C; color: #5A6476; }
+.button_palette_primary { background-color: #202734; color: #5A6476; } .button_palette_primary:hover { background-color: #242D3C; color: #5A6476; }
+.button_palette_info    { background-color: #4C85FF; color: #FFFFFF; } .button_palette_info:hover    { background-color: #5E91FF; color: #FFFFFF; }
+.button_palette_success { background-color: #6FBB45; color: #FFFFFF; } .button_palette_success:hover { background-color: #7DC157; color: #FFFFFF; }
+.button_palette_danger  { background-color: #F04349; color: #FFFFFF; } .button_palette_danger:hover  { background-color: #F1565B; color: #FFFFFF; }
+
+.button_palette_vkontakte { background-color: #597CA5; color: #FFFFFF; } .button_palette_vkontakte:hover { background-color: #6989AE; color: #FFFFFF; }
+.button_palette_facebook  { background-color: #3D5EA1; color: #FFFFFF; } .button_palette_facebook:hover  { background-color: #506EAA; color: #FFFFFF; }
+
+
+
+@keyframes button-loading-spin {
+    100% { transform: rotate(360deg); }
+}
+
+.button_loading {
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    pointer-events: none;
+}
+
+    .button_loading:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 11px;
+        height: 11px;
+        margin: -5px 0 0 -5px;
+        margin-top: calc(-11px / 2);
+        background-image: url(../vectors/button_loading.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+        animation: button-loading-spin 1s linear infinite;
+    }
+
+.button_confirm {
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+}
+
+.button_confirm:hover {
+    color: transparent;
+}
+    .button_confirm:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 13px;
+        height: 9px;
+        margin: -5px 0 0 -6px;
+        background-image: url(../vectors/button_confirm.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+    }

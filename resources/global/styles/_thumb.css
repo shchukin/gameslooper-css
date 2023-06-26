@@ -1,0 +1,27 @@
+.thumb {
+    display: block;
+    background: #1E2531;
+    text-decoration: none;
+}
+    .thumb__boxart {
+        vertical-align: top;
+        width: 100%;
+        height: auto;
+    }
+
+    .thumb__buying {
+        position: relative;
+        padding: 0 0 124.51%; /* size of PS4 box */
+        font-size: 13px;
+        line-height: 20px;
+        color: #5A6476;
+        text-align: center;
+    }
+        .thumb__value {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 8px;
+            top: 50%;
+            transform: translateY(-50%);
+        }

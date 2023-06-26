@@ -1,0 +1,99 @@
+.chat {
+    position: relative;
+    height: 100%;
+    margin: 0 -40px;
+    overflow: hidden; /* just to crop .chat__head and .chat__foot RIGHT shadow that visible on appearing animation*/
+}
+    .chat__body {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-height: 100%;
+    }
+        .chat__ribbon {
+            padding: 107px 25px 171px; /* 137 is a head height and 170 is a base height of foot */
+            border-bottom: 25px solid transparent; /* syncronize with header paddings */
+        }
+            .chat__ribbon:before,  /* http://prntscr.com/bo7oe5 */
+            .chat__ribbon:after {  /* http://prntscr.com/bo7oax */
+                content: '';
+                display: block;
+                width: 100%;
+                height: 30px;
+            }
+
+        @media (min-height: 640px) {
+            .chat__ribbon {
+                border-bottom-width: 75px; /* syncronize with header paddings */
+            }
+        }
+            .chat__item {
+                margin-top: 20px;
+            }
+
+            .chat__item:first-child {
+                margin-top: 0;
+            }
+
+
+    .chat__head {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        padding: 36px 40px 31px 40px;
+        background: #131722;
+        box-shadow: 0 5px 15px rgba(12,15,20,.25);
+    }
+        /* separator */
+        .chat__head:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 40px;
+            right: 40px;
+            bottom: 0;
+            height: 1px;
+            background: #1A1E2B;
+        }
+            .chat__interlocutor {
+
+            }
+
+    .chat__foot {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 31px 40px 0 40px;
+        border-bottom: 25px solid #131722;  /* sync with .header and .pillar paddings but -5 */
+        background: #131722;
+        box-shadow: 0 -5px 15px rgba(12,15,20,.25);
+    }
+        .chat__foot:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 40px;
+            right: 40px;
+            top: 0;
+            height: 1px;
+            background: #1A1E2B;
+        }
+
+    @media (min-height: 640px) {
+        .chat__foot {
+            border-bottom-width: 75px; /* sync with .header and .pillar paddings but -5 */
+        }
+    }
+
+        .chat__input {
+
+        }
+
+        .chat__send {
+            margin: 20px 0 0;
+        }
+
+

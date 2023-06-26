@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body" style="background: #131722;">
+
+        <div style="width: 200px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.form</h1>
+            <p><span style="color: red;">Есть овверрайд</span> <a href="../../mobile/markups/_form.html">на мобилки</a></p>
+            <br>
+            <br>
+            <p>
+                В основном состоит из оберток на поля <b>.form__field</b> и на группы <b>.form__fieldset</b>.
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <h2>Вход</h2>
+
+            <form class="form">
+                <div class="form__fieldset">
+                    <div class="bubble bubble_palette_danger">Пожалуйста, заполните все поля!</div>
+                </div>
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="email" placeholder="Почта">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="password" placeholder="Пароль">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <button class="button button_palette_success" type="submit">Войти</button>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <button class="button button_palette_vkontakte" type="button">VK</button>
+                    </div>
+                    <div class="form__field">
+                        <button class="button button_palette_facebook" type="button">Facebook</button>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <button class="button button_palette_default" type="button">Зарегестрироваться</button>
+                    </div>
+                </fieldset>
+            </form>
+
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Регистрация</h2>
+
+            <form class="form">
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Логин">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="email" placeholder="Почта">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="password" placeholder="Пароль">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <button class="button button_palette_success" type="submit">Зарегестрироваться</button>
+                    </div>
+                    <div class="form__field form__field_kind_note">
+                        Регистрируясь, вы соглашаетесь с&nbsp;<a class="link link_palette_info link_decoration_inverted" href="#">правилами пользования</a> сайта Gameslooper.ru
+                    </div>
+                </fieldset>
+            </form>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Восстановить пароль</h2>
+
+            <form class="form">
+                <fieldset class="form__fieldset">
+                    <div class="form__field form__field_kind_heading">
+                        Укажите Email, который вы указывали при регистрации, и мы вышлем на него пароль.
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="email" placeholder="Почта">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <button class="button button_palette_success" type="submit">Выслать пароль</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Настройки</h2>
+
+
+            <form class="form">
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <button class="button button_palette_primary" type="button">Загрузить фон</button>
+                    </div>
+                    <div class="form__field">
+                        <button class="button button_palette_primary" type="button">Загрузить аватар</button>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Логин" value="Cypher">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="email" placeholder="Почта" value="a.a.shchukin@gmail.com">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="password" placeholder="Пароль" value="Сорок тысяч обезьян в жопу сунули банан">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <button class="button button_palette_vkontakte" type="button">Подключить VK</button>
+                    </div>
+                    <div class="form__field">
+                        <button class="button button_palette_primary" type="button">Отключить Facebook</button>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                   <div class="form__field">
+                       <div class="checklist">
+                           <div class="checklist__title">
+                               <div class="title">Уведомления</div>
+                           </div>
+                           <ul class="checklist__list">
+                               <li class="checklist__item">
+                                   <label class="choice choice_widget_check">
+                                       <input class="choice__input" type="checkbox">
+                                       <i class="choice__icon">
+                                           <i class="choice__mark"></i>
+                                       </i>
+                                       <span class="choice__label">Истекает срок лота</span>
+                                   </label>
+                               </li>
+                               <li class="checklist__item">
+                                   <label class="choice choice_widget_check">
+                                       <input class="choice__input" type="checkbox">
+                                       <i class="choice__icon">
+                                           <i class="choice__mark"></i>
+                                       </i>
+                                       <span class="choice__label">Закрытие лота</span>
+                                   </label>
+                               </li>
+                               <li class="checklist__item">
+                                   <label class="choice choice_widget_check">
+                                       <input class="choice__input" type="checkbox">
+                                       <i class="choice__icon">
+                                           <i class="choice__mark"></i>
+                                       </i>
+                                       <span class="choice__label">Рассылка новостей</span>
+                                   </label>
+                               </li>
+                               <li class="checklist__item">
+                                   <label class="choice choice_widget_check">
+                                       <input class="choice__input" type="checkbox" checked>
+                                       <i class="choice__icon">
+                                           <i class="choice__mark"></i>
+                                       </i>
+                                       <span class="choice__label">Новое сообщение</span>
+                                   </label>
+                               </li>
+                               <li class="checklist__item">
+                                   <label class="choice choice_widget_check">
+                                       <input class="choice__input" type="checkbox" checked>
+                                       <i class="choice__icon">
+                                           <i class="choice__mark"></i>
+                                       </i>
+                                       <span class="choice__label">Получено достижение</span>
+                                   </label>
+                               </li>
+                               <li class="checklist__item">
+                                   <label class="choice choice_widget_check">
+                                       <input class="choice__input" type="checkbox" checked>
+                                       <i class="choice__icon">
+                                           <i class="choice__mark"></i>
+                                       </i>
+                                       <span class="choice__label">Новый отзыв</span>
+                                   </label>
+                               </li>
+                               <li class="checklist__item">
+                                   <label class="choice choice_widget_check">
+                                       <input class="choice__input" type="checkbox" checked>
+                                       <i class="choice__icon">
+                                           <i class="choice__mark"></i>
+                                       </i>
+                                       <span class="choice__label">Предложен обмен</span>
+                                   </label>
+                               </li>
+                               <li class="checklist__item">
+                                   <label class="choice choice_widget_check">
+                                       <input class="choice__input" type="checkbox" checked>
+                                       <i class="choice__icon">
+                                           <i class="choice__mark"></i>
+                                       </i>
+                                       <span class="choice__label">Предложены деньги</span>
+                                   </label>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <button class="button button_palette_success" type="submit">Сохранить</button>
+                    </div>
+                    <div class="form__field">
+                        <button class="button button_palette_primary" type="submit">Удалить аккаунт</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Редактировать контакты</h2>
+
+            <form class="form">
+                <fieldset class="form__fieldset">
+                    <div class="form__field input input_widget_area">
+                        <textarea class="input__text" placeholder="Ваш адрес"></textarea>
+                    </div>
+                    <div class="form__field input">
+                        <input class="input__text" type="tel" placeholder="Номер телефона">
+                        <div class="input__cleartype"></div>
+                    </div>
+                    <div class="form__field input">
+                        <input class="input__text" type="email" placeholder="Электронная почта">
+                        <div class="input__cleartype"></div>
+                    </div>
+                    <div class="form__field input">
+                        <input class="input__text" type="url" placeholder="Сайт">
+                        <div class="input__cleartype"></div>
+                    </div>
+                    <div class="form__field input">
+                        <input class="input__text" type="text" placeholder="Skype">
+                        <div class="input__cleartype"></div>
+                    </div>
+                    <div class="form__field input">
+                        <input class="input__text" type="tel" placeholder="Whatsapp">
+                        <div class="input__cleartype"></div>
+                    </div>
+                    <div class="form__field input">
+                        <input class="input__text" type="tel" placeholder="Viber">
+                        <div class="input__cleartype"></div>
+                    </div>
+                    <div class="form__field form__field_kind_choice">
+                        <label class="choice choice_widget_check">
+                            <input class="choice__input" type="checkbox">
+                            <i class="choice__icon">
+                                <i class="choice__mark"></i>
+                            </i>
+                            <span class="choice__label">Отправлю почтой</span>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <button class="button button_palette_success" type="button">Сохранить</button>
+                    </div>
+                </fieldset>
+            </form>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Фильтры</h2>
+            <p>Тут, правда селекты вместо инпутов, но глобально их нету</p>
+
+            <form class="form">
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Платформа">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Жанр">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Год выхода">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Стоимость, руб.">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field form__field_kind_choice">
+                        <label class="choice choice_widget_check">
+                            <input class="choice__input" type="checkbox">
+                            <i class="choice__icon">
+                                <i class="choice__mark"></i>
+                            </i>
+                            <span class="choice__label">Хочу обменять</span>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <button class="button button_palette_success" type="submit">Применить</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Создать лот</h2>
+
+            <form class="form">
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Платформа">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Название игры">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field form__field_kind_preview">
+                        <a class="preview" href="game.html" style="background-image: url(../temp/preview_04.jpg);">
+                            <div class="preview__category">Xbox One</div>
+                            <div class="preview__title">Call of Duty: Black Ops III</div>
+                        </a>
+                    </div>
+                    <div class="form__field input input_widget_area">
+                        <textarea class="input__text" placeholder="Комментарий"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field form__field_kind_choice">
+                        <label class="choice choice_widget_check">
+                            <input class="choice__input" type="checkbox">
+                            <i class="choice__icon">
+                                <i class="choice__mark"></i>
+                            </i>
+                            <span class="choice__label">Хочу продать</span>
+                        </label>
+                    </div>
+                    <div class="form__field form__field_kind_choice-output">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Стоимость, руб.">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field form__field_kind_choice">
+                        <label class="choice choice_widget_check">
+                            <input class="choice__input" type="checkbox">
+                            <i class="choice__icon">
+                                <i class="choice__mark"></i>
+                            </i>
+                            <span class="choice__label">Хочу обменять</span>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <button class="button button_palette_success" type="submit">Создать</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Предложить обмен</h2>
+
+            <form class="form">
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Платформа">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Название игры">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field form__field_kind_preview">
+                        <a class="preview" href="game.html" style="background-image: url(../temp/preview_01.jpg);">
+                            <div class="preview__delete cancel" tabindex="0">
+                                <span class="cancel__icon">Удалить</span>
+                            </div>
+                            <div class="preview__category">PlayStation 4</div>
+                            <div class="preview__title">Street Fighter V</div>
+                        </a>
+                        <a class="preview" href="game.html" style="background-image: url(../temp/preview_02.jpg);">
+                            <div class="preview__delete cancel" tabindex="0">
+                                <span class="cancel__icon">Удалить</span>
+                            </div>
+                            <div class="preview__category">PlayStation 3</div>
+                            <div class="preview__title">No More Heroes: Heroes' Paradise Limited Edition</div>
+                        </a>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Доплата, руб.">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <button class="button button_palette_success" type="submit">Предложить</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Страж</h2>
+
+            <form class="form">
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Платформа">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Название игры">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field form__field_kind_preview">
+                        <a class="preview" href="game.html" style="background-image: url(../temp/preview_01.jpg);">
+                            <div class="preview__delete cancel" tabindex="0">
+                                <span class="cancel__icon">Удалить</span>
+                            </div>
+                            <div class="preview__category">PlayStation 4</div>
+                            <div class="preview__title">Street Fighter V</div>
+                        </a>
+                        <a class="preview" href="game.html" style="background-image: url(../temp/preview_02.jpg);">
+                            <div class="preview__delete cancel" tabindex="0">
+                                <span class="cancel__icon">Удалить</span>
+                            </div>
+                            <div class="preview__category">PlayStation 3</div>
+                            <div class="preview__title">No More Heroes: Heroes' Paradise Limited Edition</div>
+                        </a>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Радиус, км.">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="tel" value="Номер телефона">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <button class="button button_palette_success" type="submit">Предложить</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Предложить деньги</h2>
+
+            <form class="form">
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Сумма, руб.">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <button class="button button_palette_success" type="submit">Предложить</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Редактировать бейдж</h2>
+
+            <form class="form">
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <div class="label">
+
+                            <div class="label__summary">
+
+                                <div class="label__position">
+                                    <div class="position">
+                                        <img class="position__art"
+                                             srcset="../temp/game__art_ps4@2x.jpg 2x"
+                                             src="../temp/game__art_ps4.jpg"
+                                             width="132" height="164"
+                                             title="Metal Gear Solid V"
+                                             alt="Metal Gear Solid V"
+                                        >
+                                        <label class="position__item position__item_horizontal_left position__item_vertical_top choice choice_widget_check choice_radio-inside">
+                                            <input class="choice__input" type="radio" name="temp-select-position">
+                                            <i class="choice__icon">
+                                                <i class="choice__mark"></i>
+                                            </i>
+                                        </label>
+                                        <label class="position__item position__item_horizontal_right position__item_vertical_top choice choice_widget_check choice_radio-inside">
+                                            <input class="choice__input" type="radio" name="temp-select-position">
+                                            <i class="choice__icon">
+                                                <i class="choice__mark"></i>
+                                            </i>
+                                        </label>
+                                        <label class="position__item position__item_horizontal_left position__item_vertical_bottom choice choice_widget_check choice_radio-inside">
+                                            <input class="choice__input" type="radio" name="temp-select-position">
+                                            <i class="choice__icon">
+                                                <i class="choice__mark"></i>
+                                            </i>
+                                        </label>
+                                        <label class="position__item position__item_horizontal_right position__item_vertical_bottom choice choice_widget_check choice_radio-inside">
+                                            <input class="choice__input" type="radio" name="temp-select-position">
+                                            <i class="choice__icon">
+                                                <i class="choice__mark"></i>
+                                            </i>
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="label__figure">
+                                    <div class="label__mode">Выберите форму:</div>
+                                    <label class="label__shape figure figure_shape_star">
+                                        <input class="figure__widget" type="radio" name="temp-choose-shape">
+                                        <i class="figure__icon">
+                                            <i class="figure__mark"></i>
+                                        </i>
+                                        <span class="figure__label">Звезда</span>
+                                    </label>
+                                    <label class="label__shape figure figure_shape_disc">
+                                        <input class="figure__widget" type="radio" name="temp-choose-shape">
+                                        <i class="figure__icon">
+                                            <i class="figure__mark"></i>
+                                        </i>
+                                        <span class="figure__label">Круг</span>
+                                    </label>
+                                    <label class="label__shape figure figure_shape_square">
+                                        <input class="figure__widget" type="radio" name="temp-choose-shape">
+                                        <i class="figure__icon">
+                                            <i class="figure__mark"></i>
+                                        </i>
+                                        <span class="figure__label">Квадрат</span>
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="label__color">
+                                <div class="checklist checklist_line">
+                                    <div class="checklist__title">
+                                        <div class="title">Выберите цвет бейджа</div>
+                                    </div>
+                                    <ul class="checklist__list">
+                                        <li class="checklist__item">
+                                            <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_danger">
+                                                <input class="choice__input" type="radio" name="temp-select-color">
+                                                <i class="choice__icon">
+                                                    <i class="choice__mark"></i>
+                                                </i>
+                                                <span class="choice__label">Красный</span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_warning">
+                                                <input class="choice__input" type="radio" name="temp-select-color">
+                                                <i class="choice__icon">
+                                                    <i class="choice__mark"></i>
+                                                </i>
+                                                <span class="choice__label">Желтый</span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_success">
+                                                <input class="choice__input" type="radio" name="temp-select-color">
+                                                <i class="choice__icon">
+                                                    <i class="choice__mark"></i>
+                                                </i>
+                                                <span class="choice__label">Зеленый</span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_info">
+                                                <input class="choice__input" type="radio" name="temp-select-color">
+                                                <i class="choice__icon">
+                                                    <i class="choice__mark"></i>
+                                                </i>
+                                                <span class="choice__label">Синий</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Скидка, %">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <button class="button button_palette_success" type="submit">Сохранить</button>
+                    </div>
+                </fieldset>
+            </form>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Объявление</h2>
+            <p>Тут впервые появляется <b>.form__head</b> - шапка с заголовком и припиской. </p>
+
+            <form class="form">
+
+                <div class="form__head">
+                    <div class="form__title title">Регион</div>
+                    <div class="form__note">Объявления будут показываться в выбранных регионах страны.</div>
+                </div>
+
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <div class="input input_widget_suggest input_split input_fill">
+                            <input class="input__text" type="text" placeholder="Выберите страну" value="Вьетнам">
+                            <div class="input__cleartype"></div>
+                        </div>
+                        <div class="input input_widget_suggest input_split input_fill">
+                            <input class="input__text" type="text" placeholder="Выберите регион" value="Камау">
+                            <div class="input__cleartype"></div>
+                        </div>
+                        <div class="input input_widget_suggest input_split">
+                            <input class="input__text" type="text" placeholder="Выберите город">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <button class="button button_palette_success" type="submit">Создать</button>
+                    </div>
+                </fieldset>
+            </form>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Правообладателям</h2>
+            <p></p>
+
+            <form class="form">
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="text" placeholder="Ваше имя">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="email" placeholder="Email">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input">
+                            <input class="input__text" type="url" placeholder="URL страницы с проблемой">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input input_widget_area">
+                            <textarea class="input__text" type="url" placeholder="Объясните как нарушаются ваши права"></textarea>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input input_widget_area">
+                            <textarea class="input__text" type="url" placeholder="Опишите проблемный контент"></textarea>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <div class="input input_widget_area">
+                            <textarea class="input__text" type="url" placeholder="Опишите причину по которой ваши права нарушены"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <div class="form__field">
+                        <button class="button button_palette_success" type="submit">Создать</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+    </body>
+</html>

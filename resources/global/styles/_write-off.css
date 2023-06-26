@@ -1,0 +1,16 @@
+.write-off {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 24px;
+    color: #5A6476;
+    text-align: left;
+}
+    .write-off__info {
+
+    }
+
+    .write-off__conditions {
+        margin-left: 8px;
+        font-size: 12px;
+    }

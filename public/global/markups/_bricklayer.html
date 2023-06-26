@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.bricklayer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+        <svg style="display: none;" xmlns="http://www.w3.org/2000/svg"><symbol id="create" viewBox="0 0 20 20"><path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-2a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm3-7s1 0 1 1-1 1-1 1h-2.004L11 13s-.004 1-1 1-.984-1-.984-1v-2H7s-1 0-1-1 1-1 1-1h2l.016-2S9.004 6 10 6s.996 1 .996 1L11 9h2z" fill-rule="evenodd"/></symbol><symbol id="like" viewBox="0 0 20 20"><g fill-rule="evenodd"><path d="M10.006 5S11.5 3 14 3s4.006 2 4.006 4.5c0 5.5-6.506 9.5-8 9.5-1.506 0-8-4-8-9.5C2.006 6 3.5 3 6 3s4.006 2 4.006 2zM10 7.5c1.464 0 1.5-2.5 3.5-2.5S16 6.21 16 8.041C16 12.07 10.5 15 10 15s-6-2.93-6-6.959C4 6.942 4.669 5 6.5 5S8.536 7.5 10 7.5z"/><path fill="currentColor" d="M10.006 5S11.5 3 14 3s4.006 2 4.006 4.5c0 5.5-6.506 9.5-8 9.5-1.506 0-8-4-8-9.5C2.006 6 3.5 3 6 3s4.006 2 4.006 2z"/></g></symbol><symbol id="notification_id_achievement" viewBox="0 0 20 20"><path d="M5 4.034v-1.04A1 1 0 0 1 5.995 2h8.01c.55 0 .995.451.995.993v1.041l2.99-.025a.989.989 0 0 1 1.01.994v2.006a4 4 0 0 1-4.001 3.994H14.5c0 1.655-2.684 2.955-3.471 2.943L11 15.985l2.053.01A.972.972 0 0 1 14.026 17c-.014.552-.479 1-1.023 1H6.997A.996.996 0 0 1 6 17c0-.552.443-1.002.999-1.005L9 15.985l.09-1.995c-1.983 0-3.59-2.233-3.59-2.987h-.499A3.995 3.995 0 0 1 1 7.01V5.003c0-.554.443-1 1.01-.994L5 4.034zM3 6h2v3S3 9 3 7V6zm14 0h-2v3s2 0 2-2V6zM7 4h6v4.998A3.003 3.003 0 0 1 10 12c-1.657 0-3-1.339-3-3.002V4z" fill-rule="evenodd"/></symbol><symbol id="notification_id_exchange" viewBox="0 0 20 20"><path d="M15.605 16.14C16.776 15.035 18 13.13 18 10c0-6-6-7.802-6-7.802s-1.17-.09-1.17 1.053C10.83 4.393 12 4.5 12 4.5S16 6 16 10c0 2.027-.9 3.412-1.786 4.286l-1.116-1.49c-.33-.44-.706-.364-.839.168l-1.018 4.072c-.133.532.21.964.75.964h4.018c.547 0 .723-.357.393-.797l-.797-1.062zM4.351 3.802C3.193 4.914 2 6.811 2 9.9c0 6 6 7.802 6 7.802s1.17.09 1.17-1.053C9.17 15.507 8 15.4 8 15.4s-4-1.5-4-5.5c0-1.995.87-3.368 1.743-4.243l1.16 1.546c.33.44.705.365.838-.167l1.018-4.072c.133-.532-.21-.964-.75-.964H3.991c-.547 0-.723.357-.393.797L4.35 3.8z" fill-rule="evenodd"/></symbol><symbol id="notification_id_feedback" viewBox="0 0 20 20"><path d="M9.723 3c5.625 0 8.528 6.142 8.528 6.142.26.474.264 1.254-.009 1.73 0 0-2.894 6.128-8.519 6.128s-8.527-6.142-8.527-6.142c-.261-.474-.265-1.254.008-1.73 0 0 2.894-6.128 8.52-6.128zm0 2c4.375 0 7 5 7 5s-2.625 5-7 5-7-5-7-5 2.625-5 7-5zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill-rule="evenodd"/></symbol><symbol id="notification_id_message" viewBox="0 0 20 20"><path d="M2 5.002A1 1 0 0 1 3 4h14c.552 0 1 .456 1 1.002v9.996A1 1 0 0 1 17 16H3c-.552 0-1-.456-1-1.002V5.002zM4 8.5V14h12V8.5l-5.166 3.444c-.46.307-1.21.306-1.668 0L4 8.5zM4 6l6 4 6-4H4z" fill-rule="evenodd"/></symbol><symbol id="notification_id_purchase" viewBox="0 0 20 20"><path d="M7 3s0-1 1-1h5c2.21 0 4 1.8 4 4v1c0 2.21-1.795 4-4 4H9v2h5s1 0 1 1-1 1-1 1H9v2s0 1-1 1-1-1-1-1v-2H4s-1 0-1-1 1-1 1-1h3v-2H4s-1 0-1-1 1-1 1-1h3V3zm5.49 1H9v5h3.49C13.871 9 15 7.88 15 6.5 15 5.11 13.876 4 12.49 4z" fill-rule="evenodd"/></symbol><symbol id="param_id_exchange" viewBox="0 0 20 20"><path d="M15.605 16.14C16.776 15.035 18 13.13 18 10c0-6-6-7.802-6-7.802s-1.17-.09-1.17 1.053C10.83 4.393 12 4.5 12 4.5S16 6 16 10c0 2.027-.9 3.412-1.786 4.286l-1.116-1.49c-.33-.44-.706-.364-.839.168l-1.018 4.072c-.133.532.21.964.75.964h4.018c.547 0 .723-.357.393-.797l-.797-1.062zM4.351 3.802C3.193 4.914 2 6.811 2 9.9c0 6 6 7.802 6 7.802s1.17.09 1.17-1.053C9.17 15.507 8 15.4 8 15.4s-4-1.5-4-5.5c0-1.995.87-3.368 1.743-4.243l1.16 1.546c.33.44.705.365.838-.167l1.018-4.072c.133-.532-.21-.964-.75-.964H3.991c-.547 0-.723.357-.393.797L4.35 3.8z" fill-rule="evenodd"/></symbol><symbol id="param_id_geo" viewBox="0 0 20 20"><path d="M10 18c2 0 7-4 7-9A7 7 0 0 0 3 9c0 5 5 9 7 9zm0-2c1.5 0 5-3.5 5-7A5 5 0 0 0 5 9c0 3.5 3.5 7 5 7zm0-5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill-rule="evenodd"/></symbol><symbol id="param_id_rouble" viewBox="0 0 20 20"><path d="M7 3s0-1 1-1h5c2.21 0 4 1.8 4 4v1c0 2.21-1.795 4-4 4H9v2h5s1 0 1 1-1 1-1 1H9v2s0 1-1 1-1-1-1-1v-2H4s-1 0-1-1 1-1 1-1h3v-2H4s-1 0-1-1 1-1 1-1h3V3zm5.49 1H9v5h3.49C13.871 9 15 7.88 15 6.5 15 5.11 13.876 4 12.49 4z" fill-rule="evenodd"/></symbol><symbol id="rouble" viewBox="0 0 20 20"><path d="M7 3s0-1 1-1h5c2.21 0 4 1.8 4 4v1c0 2.21-1.795 4-4 4H9v2h5s1 0 1 1-1 1-1 1H9v2s0 1-1 1-1-1-1-1v-2H4s-1 0-1-1 1-1 1-1h3v-2H4s-1 0-1-1 1-1 1-1h3V3zm5.49 1H9v5h3.49C13.871 9 15 7.88 15 6.5 15 5.11 13.876 4 12.49 4z" fill-rule="evenodd"/></symbol></svg>
+
+
+
+    <div style="padding: 0 20px;">
+
+            <br>
+            <br>
+            <h1>.bricklayer</h1>
+
+            <p>
+                Этот блок создает разметку в виде водопада. Используется одноименный плагин
+                <a href="https://github.com/ademilter/bricklayer">bricklayer</a>.
+                Это JS`ка независящая от jquery. Она создает флекс, внутри него колонки и в эти
+                колонки раскидывает содержимое.
+            </p>
+            <p>
+                Этот блок используется для позиционирования блоков <b>.item</b>. Для позиционирования
+                <b>.unit</b>`ов использовать блок <b>.tiles</b>.
+            </p>
+
+            <!--<h2>_layout_</h2>-->
+            <!--<p>-->
+                <!--Для обсчета ширины колонок плагин создает-->
+                <!--невидимый дивчик <b>.bricklayer-column-sizer</b>, которому мы проставляем ширины.-->
+                <!--Ширины могут менять от брейкпоинта к брейкпоинту, могут быть в процентах.-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--У блока есть пачка модификаторов <b>_layout_</b>, которые как раз задают эти ширины. Тут есть проблемка.-->
+                <!--В CSS нет возможности задать адаптивную ширину относительно родителя. Нельзя просто так взять-->
+                <!--родительский контейнер, посмотреть на его ширину и сказать, что при такой ширине-->
+                <!--обертки нужно колонкам дать такие-то ширины.-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--Но мы все-таки можем смотреть на ширину вьюпорта. И мы знаем на каких ширинах-->
+                <!--какие секции сайта должны обладать какими ширинами. В итоге получаются вот такие куски кода:-->
+                <!--<a href="http://prntscr.com/b4kvrb">http://prntscr.com/b4kvrb</a>. Так вот эти модификаторы-->
+                <!--будут уникальным для мобильной и ждесктопной версии. Глобальных нет. Ниже для примера сделана-->
+                <!--наброска ширин конкретно для этого файла-->
+            <!--</p>-->
+
+        <!--<style>-->
+
+            <!--.bricklayer_layout_demo {-->
+
+            <!--}-->
+                                                                 <!--.bricklayer_layout_demo .bricklayer-column-sizer { width: 50%; }-->
+            <!--@media (min-width: 480px)  and (max-width: 639px)  { .bricklayer_layout_demo .bricklayer-column-sizer { width: 33.333%; } }-->
+            <!--@media (min-width: 640px)  and (max-width: 959px)  { .bricklayer_layout_demo .bricklayer-column-sizer { width: 25%; } }-->
+            <!--@media (min-width: 960px)  and (max-width: 1279px) { .bricklayer_layout_demo .bricklayer-column-sizer { width: 20%; } }-->
+            <!--@media (min-width: 1280px) and (max-width: 1599px) { .bricklayer_layout_demo .bricklayer-column-sizer { width: 16.666%; } }-->
+            <!--@media (min-width: 1600px)                         { .bricklayer_layout_demo .bricklayer-column-sizer { width: 150px; } }-->
+        <!--</style>-->
+
+
+
+
+
+
+
+        <div class="bricklayer">
+            <div class="bricklayer-tile">
+                <a class="item" href="#">
+                    <div class="item__body">
+                        <img class="item__boxart"
+                             srcset="../temp/item_psp_01@2x.jpg 2x"
+                             src="../temp/item_psp_01.jpg"
+                             alt="Patapon 3"
+                             title="Patapon 3"
+                        >
+                    </div>
+                    <div class="item__foot">
+                        149 предложений
+                    </div>
+                </a>
+            </div>
+            <div class="bricklayer-tile">
+                <a class="item" href="#">
+                    <div class="item__body">
+                        <img class="item__boxart"
+                             srcset="../temp/item_ps2_01@2x.jpg 2x"
+                             src="../temp/item_ps2_01.jpg"
+                             alt="Final Fantasy X"
+                             title="Final Fantasy X"
+                        >
+                    </div>
+                    <div class="item__foot">
+                        Nagibator1999
+                    </div>
+                </a>
+            </div>
+            <div class="bricklayer-tile">
+                <a class="item" href="#">
+                    <div class="item__body">
+                        <img class="item__boxart"
+                             srcset="../temp/item_ps3_01@2x.jpg 2x"
+                             src="../temp/item_ps3_01.jpg"
+                             alt="God of War III"
+                             title="God of War III"
+                        >
+                    </div>
+                    <div class="item__foot">
+                        Обмен
+                    </div>
+                </a>
+            </div>
+            <div class="bricklayer-tile">
+                <a class="item" href="#">
+                    <div class="item__body">
+                        <img class="item__boxart"
+                             srcset="../temp/item_ps4_01@2x.jpg 2x"
+                             src="../temp/item_ps4_01.jpg"
+                             alt="Metal Gear Solid V"
+                             title="Metal Gear Solid V"
+                        >
+                    </div>
+                    <div class="item__foot">
+                        1700 руб.
+                    </div>
+                </a>
+            </div>
+            <div class="bricklayer-tile">
+                <a class="item" href="#">
+                    <div class="item__body">
+                        <img class="item__boxart"
+                             srcset="../temp/item_x360_01@2x.jpg 2x"
+                             src="../temp/item_x360_01.jpg"
+                             alt="Bioshock Infinite"
+                             title="Bioshock Infinite"
+                        >
+                    </div>
+                    <div class="item__foot">
+                        lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </div>
+                </a>
+            </div>
+            <div class="bricklayer-tile">
+                <a class="item" href="#">
+                    <div class="item__body">
+                        <img class="item__boxart"
+                             srcset="../temp/item_xone_01@2x.jpg 2x"
+                             src="../temp/item_xone_01.jpg"
+                             alt="Battlefield 4"
+                             title="Battlefield 4"
+                        >
+                    </div>
+                    <div class="item__foot">
+                        ipsum
+                    </div>
+                </a>
+            </div>
+            <div class="bricklayer-tile">
+                <a class="item" href="#">
+                    <div class="item__body">
+                        <img class="item__boxart"
+                             srcset="../temp/item_wii_01@2x.jpg 2x"
+                             src="../temp/item_wii_01.jpg"
+                             alt="Super Mario Galaxy 2"
+                             title="Super Mario Galaxy 2"
+                        >
+                    </div>
+                    <div class="item__foot">
+                        dolor
+                    </div>
+                </a>
+            </div>
+            <div class="bricklayer-tile">
+                <a class="item" href="#">
+                    <div class="item__body">
+                        <img class="item__boxart"
+                             srcset="../temp/item_wiiu_01@2x.jpg 2x"
+                             src="../temp/item_wiiu_01.jpg"
+                             alt="Super Mario Bros U"
+                             title="Super Mario Bros U"
+                        >
+                    </div>
+                    <div class="item__foot">
+                        sit amet
+                    </div>
+                </a>
+            </div>
+            <div class="bricklayer-tile">
+                <a class="item" href="#">
+                    <div class="item__body">
+                        <img class="item__boxart"
+                             srcset="../temp/item_nds_01@2x.jpg 2x"
+                             src="../temp/item_nds_01.jpg"
+                             alt="Mario Party DS"
+                             title="Mario Party DS"
+                        >
+                    </div>
+                    <div class="item__foot">
+                        consectetur
+                    </div>
+                </a>
+            </div>
+            <div class="bricklayer-tile">
+                <a class="item" href="#">
+                    <div class="item__body">
+                        <img class="item__boxart"
+                             srcset="../temp/item_3ds_01@2x.jpg 2x"
+                             src="../temp/item_3ds_01.jpg"
+                             alt="The Legend of Zelda: Ocarina of time 3D"
+                             title="The Legend of Zelda: Ocarina of time 3D"
+                        >
+                    </div>
+                    <div class="item__foot">
+                        adipiscing
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <h2>.bricklayer_layout_tight</h2>
+        <p>Очень узенький кейс для отображения в сайдбаре, в блоке <a href="_respond.html">.respond</a></p>
+
+        <div class="bricklayer bricklayer_layout_tight">
+            <div class="bricklayer-tile">
+                <a class="thumb" href="#">
+                    <img class="thumb__boxart"
+                         srcset="../temp/thumb_psp_01@2x.jpg 2x"
+                         src="../temp/thumb_psp_01.jpg"
+                         alt="Patapon 3"
+                         title="Patapon 3"
+                    >
+                </a>
+            </div>
+            <div class="bricklayer-tile">
+                <a class="thumb" href="#">
+                    <img class="thumb__boxart"
+                         srcset="../temp/thumb_ps4_01@2x.jpg 2x"
+                         src="../temp/thumb_ps4_01.jpg"
+                         alt="Metal Gear Solid V"
+                         title="Metal Gear Solid V"
+                    >
+                </a>
+            </div>
+            <div class="bricklayer-tile">
+                <a class="thumb" href="#">
+                    <img class="thumb__boxart"
+                         srcset="../temp/thumb_ps3_01@2x.jpg 2x"
+                         src="../temp/thumb_ps3_01.jpg"
+                         alt="God of War III"
+                         title="God of War III"
+                    >
+                </a>
+            </div>
+
+            <div class="bricklayer-tile">
+                <a class="thumb" href="#">
+                    <img class="thumb__boxart"
+                         srcset="../temp/thumb_ps2_01@2x.jpg 2x"
+                         src="../temp/thumb_ps2_01.jpg"
+                         alt="Final Fantasy X"
+                         title="Final Fantasy X"
+                    >
+                </a>
+            </div>
+
+            <div class="bricklayer-tile">
+                <div class="thumb">
+                    <div class="thumb__buying">
+                        <div class="thumb__value">
+                            +200 руб.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>TO DO</h2>
+        <p>
+            Не работает в IE и Edge. Ошибки в жаба-скрипте. Сейчас там срабатывает фоллбек на обычную змейку.
+            Следить за обновлениями плагина или переделать на masonry.
+        </p>
+
+
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+
+
+    </body>
+</html>
+
+

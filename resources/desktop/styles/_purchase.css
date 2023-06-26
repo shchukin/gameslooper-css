@@ -1,0 +1,103 @@
+/* override */
+
+.purchase {
+    padding: 50px 40px;
+}
+
+@media (min-width: 1024px) {
+    .purchase {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .purchase__container {
+            max-width: 320px;
+            margin: 0 auto;
+        }
+
+        .purchase__container_width_double {
+            max-width: 640px;
+        }
+
+
+        .purchase__primary {
+            order: 1;
+            position: relative;
+            box-sizing: border-box;
+            flex: 0 0 50%;
+            min-width: 50%;
+            max-width: 50%;
+            padding: 0 40px 50px;
+            background-color: #202734;
+        }
+            .purchase__head {
+                padding: 40px 0;
+            }
+
+            .purchase__payment {
+                margin: 0;
+            }
+
+            .purchase__price {
+
+            }
+                .purchase__value {
+
+                }
+
+        .purchase__subscription {
+            order: 3;
+            box-sizing: border-box;
+            margin: 0;
+            padding-left: 40px;
+            padding-right: 40px;
+            flex: 0 0 100%;
+            min-width: 100%;
+            max-width: 100%;
+            background: #1D2430;
+        }
+
+        .purchase__about {
+            order: 2;
+            box-sizing: border-box;
+            flex: 0 0 50%;
+            min-width: 50%;
+            max-width: 50%;
+            margin-top: 0;
+            padding: 120px 40px 30px;
+            background-color: #1D2430;
+        }
+}
+
+
+
+@media
+(min-width: 1024px) and (max-width: 1139px),
+(min-width: 1340px) and (max-width: 1399px)
+{
+
+    .purchase__price {
+        padding-bottom: 0;
+    }
+
+}
+
+@media
+(min-width: 1140px) and (max-width: 1339px),
+(min-width: 1400px) {
+
+    .purchase__price {
+        position: absolute;
+        left: 100%;
+        bottom: 40px;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 40px;
+        text-align: left;
+    }
+        .purchase__value {
+            padding: 0 0 0 33px;
+        }
+
+}
+

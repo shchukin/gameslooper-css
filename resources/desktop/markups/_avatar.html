@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.avatar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+
+        <div style="width: 700px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.avatar <span style="font-size: 16px; color: red;">оверрайд</span></h1>
+
+            <p>
+                Тут у нас добавляется кейс с адаптивной аватаркой,
+                который на узких ширинах 30x30, на 1024+ превращается в 40x40.
+                И вот тут уже начинается замес с SRCSET и SIZES.
+            </p>
+            <p>
+                В SRCSET мы перечисляем какие у нас вообще в принципе есть картинки
+                и сразу же через дескриптор "<b>w</b>" сообщаем их размеры.
+                Далее, в SIZES мы говорим на каких ширинах какого размера должна
+                отобразиться сама картинка на странице. Синтаксис таков, что
+                если шире 1024px то это 40х40, все остальное - это 30px.
+                Браузер уже сам примет решение какую картинку ему выбрать посчитав все,
+                что ему предоставили.
+            </p>
+
+            <br>
+            <br>
+
+            <h2>.avatar_size_enlarge-on-landscape-tablet</h2>
+
+            <a class="avatar avatar_size_enlarge-on-landscape-tablet" href="#">
+                <img class="avatar__image"
+                     srcset="../temp/avatar_00_small.jpg    30w,
+                             ../temp/avatar_00_large.jpg    40w,
+                             ../temp/avatar_00_small@2x.jpg 60w,
+                             ../temp/avatar_00_large@2x.jpg 80w
+                            "
+                     sizes="(min-width: 1024px) 40px, 30px"
+                     src="../temp/avatar_00_large.jpg"
+                     title="Nagibator1999"
+                     alt="Nagibator1999"
+                >
+            </a>
+
+            <br>
+            <br>
+            <h2>.avatar_size_enlarge-on-desktop</h2>
+
+            <a class="avatar avatar_size_enlarge-on-desktop" href="#">
+                <img class="avatar__image"
+                     srcset="../temp/avatar_00_small.jpg    30w,
+                             ../temp/avatar_00_large.jpg    40w,
+                             ../temp/avatar_00_small@2x.jpg 60w,
+                             ../temp/avatar_00_large@2x.jpg 80w
+                            "
+                     sizes="(min-width: 1340px) 40px, 30px"
+                     src="../temp/avatar_00_large.jpg"
+                     title="Nagibator1999"
+                     alt="Nagibator1999"
+                >
+            </a>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../vendors/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../scripts/temp.js"></script>
+
+
+    </body>
+</html>

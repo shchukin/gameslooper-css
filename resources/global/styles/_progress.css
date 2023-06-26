@@ -1,0 +1,10 @@
+.progress {
+    background: #283040;
+}
+    .progress__bar {
+        height: 5px;
+        background: #6FBB45;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }

@@ -1,0 +1,15 @@
+.control {
+
+}
+    .control__label {
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px 20px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    .control__widget {
+
+    }

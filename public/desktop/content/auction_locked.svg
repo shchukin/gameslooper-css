@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="270px" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>auction_locked@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="locked" transform="translate(-876.000000, -675.000000)">
+            <g id="SLICE" transform="translate(175.000000, 249.000000)"></g>
+            <g id="name" transform="translate(202.000000, 553.000000)"></g>
+            <g id="auction" transform="translate(901.000000, 708.000000)">
+                <path d="M146.424374,213.826108 C189.274612,198.794063 220,157.985181 220,110 C220,89.8648469 214.590053,70.9932546 205.14442,54.7594829" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M15.4981827,166.336045 C24.8014783,181.974466 38.120825,195.517598 55,205.262794 C62.4424803,209.559712 70.1783728,212.888073 78.0617209,215.286986" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.73020485,90.511732 C-1.42523605,108.131039 -0.26465306,126.371782 5.21195382,143.533955" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M189.275607,33.7411876 C169.263117,12.9420321 141.142946,-1.42108547e-14 110,-1.42108547e-14 C62.6785927,-1.42108547e-14 22.3363195,29.8812254 6.81244956,71.8044072" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="Group-11" transform="translate(110.000000, 149.000000) rotate(-360.000000) translate(-110.000000, -149.000000) translate(64.000000, 68.000000)">
+                    <rect id="Rectangle-14" fill="#BCD5FF" opacity="0.0399999991" x="70" y="15" width="20" height="12"></rect>
+                    <rect id="Rectangle-14" fill="#BCD5FF" opacity="0.0399999991" x="-2.84217094e-14" y="15" width="20" height="12"></rect>
+                    <rect id="Rectangle-14" fill="#BCD5FF" opacity="0.0399999991" x="21" y="21" width="50" height="10"></rect>
+                    <g id="finger" transform="translate(-0.000000, 0.000000)" stroke-linecap="round" stroke="#2D3644" stroke-linejoin="round">
+                        <g id="Group-10">
+                            <rect id="Rectangle-7" stroke-width="6" x="72" y="-1.42108547e-14" width="20" height="54" rx="10"></rect>
+                            <rect id="Rectangle-7" stroke-width="6" x="0" y="0" width="20" height="54" rx="10"></rect>
+                            <path d="M57,42 L57,46.0068977 C57,48.2122272 55.2095518,50 53.0006308,50 L39.9993692,50 C37.7905786,50 36,48.2126701 36,46.0068977 L36,42 L21,42 L21,12 L71,12 L71,42 L57,42 Z" id="Combined-Shape" stroke-width="5"></path>
+                        </g>
+                        <path d="M38.6875,99 L37.0058389,99 C34.2440262,99 32,101.238576 32,104 C32,106.755805 34.2411904,109 37.0058389,109 L38.4196429,109 L37.2360308,153.188183 C37.1054511,158.063161 40.9468075,162 45.8154412,162 L46.1845588,162 C51.0498236,162 54.9295503,158.054815 54.8426461,153.188183 L54.0535714,109 L54.9941611,109 C57.7559738,109 60,106.761424 60,104 C60,101.244195 57.7588096,99 54.9941611,99 L53.875,99 L53,50 L40,50 L38.6875,99 Z" id="Combined-Shape" stroke-width="5"></path>
+                        <path d="M39,99 L54,99" id="Path-15" stroke-width="5"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

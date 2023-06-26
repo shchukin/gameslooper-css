@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+
+        <div class="page">
+
+            <header class="page__header header">
+                <a class="page__navigate header__navigate" href="#">
+                    <div class="header__burger"></div>
+                    <div class="header__burger"></div>
+                    <div class="header__burger"></div>
+                </a>
+                <a class="header__logo logo" href="#">Gameslooper</a>
+            </header>
+
+            <div class="page__dropdown">
+                <nav class="page__nav primary-nav">
+                    <a class="primary-nav__link" href="main.html" title="Каталог">
+                        <img class="primary-nav__icon" src="../symbols/primary-nav__link_id_catalog.svg" alt="">
+                        Каталог
+                    </a>
+                    <a class="primary-nav__link" href="search.html" title="Поиск">
+                        <img class="primary-nav__icon" src="../symbols/primary-nav__link_id_search.svg" alt="">
+                        Поиск игр
+                    </a>
+                    <a class="primary-nav__link" href="location.html" title="Местоположение">
+                        <img class="primary-nav__icon" src="../symbols/primary-nav__link_id_geo.svg" alt="">
+                        Сменить местоположение
+                    </a>
+                    <a class="primary-nav__link" href="#" data-popover=".page__popover_id_add-lot" title="Добавить лот">
+                        <img class="primary-nav__icon" src="../symbols/primary-nav__link_id_create.svg" alt="">
+                        Создать лот
+                    </a>
+                    <a class="primary-nav__link" href="#" title="Уведомления">
+                        <img class="primary-nav__icon" src="../symbols/primary-nav__link_id_notification.svg" alt="">
+                        Уведомления
+                    </a>
+                </nav>
+                <div class="page__user user">
+                    <a class="user__link" href="#">Войти на сайт</a>
+                    <a class="user__link" href="#">Зарегестрироваться</a>
+                    <a class="user__link" href="profile-games.html">Профиль</a>
+                    <a class="user__link user__link_premium" href="#">Премиум аккаунт</a>
+                    <a class="user__link" href="#" data-popover=".page__popover_id_conversations">Сообщения</a>
+                    <a class="user__link" href="#" data-popover=".page__popover_id_settings">Настройки</a>
+                    <a class="user__link" href="#">Выход</a>
+                </div>
+            </div>
+
+            <div class="page__wrap">
+                <div class="page__popover page__popover_id_demo">
+                    <br>Я, поповер!
+                    <br>У меня есть крестик, который меня скрывает. Визуально он ложиться поверх шапки, но он мой!
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+                <div class="page__body">
+
+                    <div class="page__background theme" style="background-image: url(../temp/page__background.jpg);"></div>
+
+
+                    <br>
+                    <a href="#" data-popover=".page__popover_id_demo">Показать поповер!</a>
+                    <br>
+                    <br>
+                    Глобально страница состоит из трех секций: шапка, дропдаун и обертка на все остальное.
+                    Это, соответствено <b>.page__header</b>, <b>.page__dropdown</b> и <b>.page__wrap</b>.
+                    Так вот шапки видна вообще всегда, она фиксированная и залипла сверху.
+                    <b>ПОД</b> шапкой могут быть либо <b>.page__dropdown</b> - это навигация и меню пользователя,
+                    либо <b>.page__wrap</b> - обертка на все остальное. Дропдаун и врап - это взаимоисключающие вещи.
+                    Т.е. когда мы ходим по страницам сайта мы всегда видим врап,
+                    но как только мы захотели отрыть дропдаун, врап тут же исчезает.
+
+                    <p>
+                        Если прямо сейчас нажать на кнопку "Бургер", то сработает клик по примиксованному к ней
+                        <b>.page__navigate</b> и на всю .page проставится класс <b>.page_drop</b>,
+                        который все это разруливает. Он скроет врап сайта и покажет выпадайку.
+                    </p>
+
+                    <p>
+                        Идем во врап, там у нас непосредственна содержимое страницы. Там могут быть три структурных
+                        элемента:
+                        <br><b>.page__popover</b> - аналог поповеров десктопного сайта, то что там выезжает.
+                        Формы авторизаций, настройки и т.д. Работает аналогично десктопной версии.
+                        Берем поповер, например <b>.page__popover_id_demo</b> на этой странице и добавляем
+                        ему класс <b>.page__popover_visible</b>. Поповер становится видимым, а все, что ниже скрывается.
+                        <br><a href="#" data-popover=".page__popover_id_demo">Показать поповер!</a>
+                        <br><b>.page__sidebar</b> и <b>.page__body</b> - это обычные сайдбары тельца страницы.
+                        Тут нет никакой динамики, просто классы для оформления. Могу быть как по отдельности,
+                        так и вместе.
+                    </p>
+
+                    <p>
+                        <b>.page__popover</b> и <b>.page__body</b> могут быть одновременно, идут друг за другом.
+                        Например на страницах профиля. Там сначала идет черный сайдбар (суммарная инфа),
+                        а ниже уже нормальное тело с плитками.
+                    </p>
+
+                    <h2>Позиция</h2>
+                    <p>
+                        В моменты, когда мы открываем/закрываем дропдаун или поповеры, мы делаем display: none на тела.
+                        Контент исчезает и браузер забывает до куда страница была прокручена. Имеет смысл при открытии
+                        дропдауна или поповера запоминать это вручную и при закрытии возвращать.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../scripts/temp.js"></script>
+
+
+    </body>
+</html>

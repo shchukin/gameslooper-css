@@ -1,0 +1,37 @@
+/* override */
+
+@media (min-width: 860px) {
+
+    .contents {
+        margin-top: -10px;
+        column-gap: 30px;
+    }
+
+    .contents__item {
+        margin: 0;
+        padding-top: 10px;
+    }
+
+}
+
+
+@media (min-width: 860px) and (max-width: 1079px) {
+    .contents {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 1080px) {
+    .contents {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1340px) {
+    .contents {
+        max-width: 640px;
+    }
+}
+
+
+

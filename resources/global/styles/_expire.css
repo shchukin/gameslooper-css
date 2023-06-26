@@ -1,0 +1,14 @@
+.expire {
+    display: flex;
+}
+    .expire__month {
+        box-sizing: border-box;
+        width: 50%;
+        padding-right: 9px;
+    }
+
+    .expire__year {
+        box-sizing: border-box;
+        width: 50%;
+        padding-left: 9px;
+    }

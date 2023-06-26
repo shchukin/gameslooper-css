@@ -1,0 +1,29 @@
+.param {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 0 0 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #5A6476;
+}
+    .param__icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        vertical-align: top;
+        fill: #2c3543;
+    }
+
+
+.param_outside {
+    padding-left: 0;
+}
+    .param_outside .param__icon {
+        left: auto;
+        right: 100%;
+        margin-right: 10px;
+    }

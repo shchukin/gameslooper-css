@@ -1,0 +1,31 @@
+/* override */
+
+.notification {
+    padding: 20px 20px 19px 60px;
+}
+
+.notification:first-of-type {
+    padding-top: 19px; /* no separator */
+}
+
+/* separator */
+.notification + .notification:after {
+    left: 20px;
+    right: 20px;
+}
+
+    .notification__note {
+        float: right;
+        font-size: 12px;
+        margin-top: -1px;
+        margin-left: 10px;
+    }
+
+    .notification__icon {
+        top: 24px;
+        left: 20px;
+    }
+
+    .notification:first-of-type .notification__icon {
+        top: 23px
+    }

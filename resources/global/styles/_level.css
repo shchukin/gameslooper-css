@@ -1,0 +1,36 @@
+/*csslint ids: false, known-properties: false*/
+
+.level {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+}
+    .level__progress {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .level__value {
+        position: relative;
+    }
+
+    /* svg */
+    #level__background {
+        fill: #2C3544;
+    }
+
+.level_palette_warning              { color: #FFC60D; }
+.level_palette_warning #level__fill { fill: #FFC60D;  } /* svg */
+
+.level_palette_success              { color: #6FBB45; }
+.level_palette_success #level__fill { fill: #6FBB45;  } /* svg */
+
+.level_palette_danger               { color: #F04349; }
+.level_palette_danger #level__fill  { fill: #F04349;  } /* svg */

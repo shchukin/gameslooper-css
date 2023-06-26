@@ -1,0 +1,12 @@
+/* override */
+
+.write-off {
+    
+}
+
+@media (min-width: 1024px)  {
+    .write-off {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}

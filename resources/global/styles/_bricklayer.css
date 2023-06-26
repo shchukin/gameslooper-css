@@ -1,0 +1,36 @@
+.bricklayer {
+    margin: -20px -10px 0;
+    display: flex;
+    align-items: flex-start;
+    /*justify-content: center; why does he ever need it? */
+    flex-wrap: wrap;
+}
+
+.bricklayer_layout_tight {
+
+}
+
+    .bricklayer-column-sizer {
+        width: 100%;
+        flex-basis: 200px;
+        display: none;
+    }
+
+    .bricklayer_layout_tight .bricklayer-column-sizer {
+        flex-basis: 100px;
+    }
+
+
+    .bricklayer-column {
+        flex: 1;
+        padding: 0 10px;
+    }
+        .bricklayer-tile {
+            margin: 20px 0 0;
+        }
+
+        /* styles for disabled/broken plugin */
+        .bricklayer > .bricklayer-tile {
+            width: 150px;
+            margin: 20px 10px 0;
+        }

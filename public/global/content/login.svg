@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="270px" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>login@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="unlocked" transform="translate(-1228.000000, -675.000000)">
+            <g id="SLICE" transform="translate(175.000000, 249.000000)"></g>
+            <g id="name" transform="translate(202.000000, 553.000000)"></g>
+            <g id="login" transform="translate(1252.000000, 708.000000)">
+                <polygon id="Path-3" fill="#BCD5FF" opacity="0.12" transform="translate(67.500000, 180.500000) rotate(-90.000000) translate(-67.500000, -180.500000) " points="101.5 175.5 33.5 175.5 33.5 185.5 101.5 185.5"></polygon>
+                <polygon id="Path-3" fill="#BCD5FF" opacity="0.12" transform="translate(154.000000, 180.500000) rotate(-90.000000) translate(-154.000000, -180.500000) " points="188 169 120 169 127 192 188 192"></polygon>
+                <path d="M218.422781,133.780264 C220.11038,126.122385 221,118.165083 221,110 C221,87.0686714 213.983161,65.7762135 201.979462,48.1526062" id="circle" stroke="#5BEE95" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M189.189292,32.6279333 C169.251857,12.4812345 141.583503,1.82076576e-14 111,1.0658141e-14 C70.7874807,8.8817842e-16 35.6147093,21.5777255 16.4285049,53.7863573" id="circle" stroke="#5BEE95" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M7.04729286,73.9967059 C1.35995768,90.3698476 -0.514748824,108.226382 2.19396342,126.23126" id="circle" stroke="#5BEE95" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M12.1452576,158.303236 C30.0317699,194.840084 67.5776784,220 111,220 C156.960008,220 196.336673,191.813361 212.786523,151.783558" id="circle" stroke="#5BEE95" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="loop" transform="translate(44.000000, 40.000000)" stroke="#5BED95" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M137,87 L137,155 M1,159 L1,87" id="Rectangle-4" stroke-width="8"></path>
+                    <path d="M34,67 L111,67 C111,67 120.5,66.5 124.5,69.0000001 M122,68 C130.841104,70.3531593 137,78.0244827 137,87 C137,98.1031724 128.050379,107 117,107 L21,107 C9.95170478,107 1,98.1055854 1,87 C1,78.0627148 7.10323879,70.4149481 15,68" id="Rectangle-6" stroke-width="8"></path>
+                    <path d="M78.2340215,150.6762 L78.2340215,150.6762 C81.7287055,153.221708 84,157.345609 84,162 C84,169.731986 77.7319865,176 70,176 C62.2680135,176 56,169.731986 56,162 C56,159.891923 56.4659299,157.89267 57.300427,156.099604 C58.3084035,153.933786 59.8541143,152.068791 61.7659785,150.6762 C60.6522643,149.063688 60,147.108016 60,145 C60,139.477153 64.4771525,135 70,135 C71.6173738,135 73.1450667,135.383969 74.4968959,136.065725" id="Combined-Shape" stroke-width="4"></path>
+                    <g id="Group-3" transform="translate(18.000000, 0.000000)">
+                        <path d="M0,82 L0,51 C0,22.8330198 22.8272847,0 51,0 C78.2566819,0 100.519293,21.3847074 101.929114,48.2880097 M14,82 L14,76 L14,51 C14,30.5602122 30.5609713,14 51,14 C70.5056754,14 86.4860255,29.0910262 87.89851,48.2382279 M0,82 C0,85.8659932 3.13400675,89 7,89 C10.8659932,89 14,85.8659932 14,82 M88,49 C88,52.8659932 91.1340068,56 95,56 C98.8659932,56 102,52.8659932 102,49" id="Combined-Shape" stroke-width="4"></path>
+                        <ellipse id="Oval-6" stroke-width="3" cx="95" cy="86.5" rx="7" ry="4.5"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

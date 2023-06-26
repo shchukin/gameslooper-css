@@ -1,0 +1,41 @@
+.contacts {
+    margin: -7px 0 0;
+    font-size: 12px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+    .contacts__section {
+        margin: 23px 0 0;
+        border-top: 1px solid rgba(153,169,207,.05);
+        padding: 23px 0 0;
+    }
+
+    .contacts__section:first-child {
+        margin-top: 0;
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .contacts__section_action {
+        padding-top: 29px;
+    }
+
+    .contacts__section_empty {
+
+    }
+
+    .contacts__section_empty + .contacts__section {
+        margin-top: 25px;
+    }
+
+        .contacts__title {
+
+        }
+
+        .contacts__value {
+
+        }
+
+        .contacts__title + .contacts__value {
+            margin-top: 1px;
+        }

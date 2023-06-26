@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.input</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body" style="background: #131722;">
+
+
+
+        <div style="padding: 40px">
+            <br>
+            <br>
+            <h1>.input <span style="font-size: 16px; color: red;">оверрайд</span></h1>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.input_widget_suggest</h2>
+            <p>
+                Аналогичный десктопному виджет, но работает без оверлеев и скроллбаров,
+                а на основе обычного <b>&lt;select&gt;</b>`а. При вводе мы так же идем
+                за данными, забираем саггесты, возвращаемся на фронт, но выводим их как
+                <b>&lt;option&gt;</b>`ы в селект.
+            </p>
+            <p>
+                Сам селект прозрачен и ложиться поверх текста "Показать результаты" в выпадайке.
+                Соответвено тап по выпадайке это, на самом деле, тап по селекту.
+                На мобилках в этом случае выбрасывается удобный барабан.
+            </p>
+
+            <div class="input input_widget_suggest">
+                <input class="input__text" type="text" placeholder="Выберите игру">
+                <div class="input__cleartype"></div>
+                <div class="input__dropdown">
+                    <div class="input__handler">Показать результаты</div>
+                    <div class="input__select invisible-select">
+                        <select class="input__data invisible-select__control">
+                            <option value="clear" selected>не выбрано</option>
+                            <option disabled>──────────</option>
+                            <option value="Final Fantasy XV">Final Fantasy XV</option>
+                            <option value='Catherine "Love Is Over" Deluxe Edition'>Catherine "Love Is Over" Deluxe Edition</option>
+                            <option value="Persona 4: Golden">Persona 4: Golden</option>
+                            <option value="OlliOlli">OlliOlli</option>
+                            <option value="OlliOlli2: Welcome to Olliwood">OlliOlli2: Welcome to Olliwood</option>
+                            <option value="Another World">Another World</option>
+                            <option value="Ys: Memories of Celceta">Ys: Memories of Celceta</option>
+                            <option value="Mortal Kombat X">Mortal Kombat X</option>
+                            <option value="Journey">Journey</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.input_widget_select</h2>
+            <p>
+                Снова аналогичный десктопному контрол и так же завязан на &lt;select&gt;.
+                Но тут еще проще - выпадайки нет. Прозрачный селект бросается прямо поверх инпута.
+            </p>
+            <p>Не забываем добавлять <b>readonly</b> в сам инпут, чтобы там курсор не мигал.</p>
+            <p>Добавляем стрелку .input__peak</p>
+
+            <div class="input input_widget_select">
+                <input class="input__text" type="text" placeholder="Выберите игру" readonly>
+                <div class="input__arrow">
+                    <i class="input__peak"></i>
+                </div>
+                <div class="input__select invisible-select">
+                    <select class="input__data invisible-select__control">
+                        <option value="clear" selected>не выбрано</option>
+                        <option disabled>──────────</option>
+                        <option value="Final Fantasy XV">Final Fantasy XV</option>
+                        <option value='Catherine "Love Is Over" Deluxe Edition'>Catherine "Love Is Over" Deluxe Edition</option>
+                        <option value="Persona 4: Golden">Persona 4: Golden</option>
+                        <option value="OlliOlli">OlliOlli</option>
+                        <option value="OlliOlli2: Welcome to Olliwood">OlliOlli2: Welcome to Olliwood</option>
+                        <option value="Another World">Another World</option>
+                        <option value="Ys: Memories of Celceta">Ys: Memories of Celceta</option>
+                        <option value="Mortal Kombat X">Mortal Kombat X</option>
+                        <option value="Journey">Journey</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h2>Паравозик</h2>
+            <p>
+                Паравозик и его <b>.input_split</b> так-то глобалные,
+                но тут для теста с новыми виджетами.
+            </p>
+            <br>
+            <br>
+
+            <div class="input input_split input_widget_suggest input_fill">
+                <input class="input__text" type="text" placeholder="Выберите страну" value="Вьетнам">
+                <div class="input__cleartype"></div>
+                <div class="input__dropdown">
+                    <div class="input__handler">Показать результаты</div>
+                    <div class="input__select invisible-select">
+                        <select class="input__data invisible-select__control">
+                            <option value="clear">не выбрано</option>
+                            <option disabled>──────────</option>
+                            <option value="Вьетнам" selected>Вьетнам</option>
+                            <option value="Таиланд">Таиланд</option>
+                            <option value="Лаос">Лаос</option>
+                            <option value="Камбоджа">Камбоджа</option>
+                            <option value="Филиппинские острова">Филиппинские острова</option>
+                            <option value="Малайзия">Малайзия</option>
+                            <option value="Гонконг">Гонконг</option>
+                            <option value="Россия">Россия</option>
+                            <option value="Украина">Украина</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input input_split input_widget_suggest">
+                <input class="input__text" type="text" placeholder="Выберите регион" value="Камау">
+                <div class="input__cleartype"></div>
+                <div class="input__dropdown">
+                    <div class="input__handler">Показать результаты</div>
+                    <div class="input__select invisible-select">
+                        <select class="input__data invisible-select__control">
+                            <option value="clear">не выбрано</option>
+                            <option disabled>──────────</option>
+                            <option value="Камау" selected>Камау</option>
+                            <option value="Донгнай">Донгнай</option>
+                            <option value="Куангчи">Куангчи</option>
+                            <option value="Ниньбинь">Ниньбинь</option>
+                            <option value="Тхыатхьен-Хюэ">Тхыатхьен-Хюэ</option>
+                            <option value="Хазянг">Хазянг</option>
+                            <option value="Хатинь">Хатинь</option>
+                            <option value="Шонла">Шонла</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input input_split input_widget_suggest">
+                <input class="input__text" type="text" placeholder="Выберите город">
+                <div class="input__cleartype"></div>
+                <div class="input__dropdown">
+                    <div class="input__handler">Показать результаты</div>
+                    <div class="input__select invisible-select">
+                        <select class="input__data invisible-select__control">
+                            <option value="clear" selected>не выбрано</option>
+                            <option disabled>──────────</option>
+                            <option value="Вунгтау">Вунгтау</option>
+                            <option value="Муйнэ">Муйнэ</option>
+                            <option value="Хошимин">Хошимин</option>
+                            <option value="Далат">Далат</option>
+                            <option value="Ханой">Ханой</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="input input_split input_widget_suggest input_fill">
+                <input class="input__text" type="text" placeholder="Выберите страну" value="Вьетнам">
+                <div class="input__cleartype"></div>
+                <div class="input__dropdown">
+                    <div class="input__handler">Показать результаты</div>
+                    <div class="input__select invisible-select">
+                        <select class="input__data invisible-select__control">
+                            <option value="clear">не выбрано</option>
+                            <option disabled>──────────</option>
+                            <option value="Вьетнам" selected>Вьетнам</option>
+                            <option value="Таиланд">Таиланд</option>
+                            <option value="Лаос">Лаос</option>
+                            <option value="Камбоджа">Камбоджа</option>
+                            <option value="Филиппинские острова">Филиппинские острова</option>
+                            <option value="Малайзия">Малайзия</option>
+                            <option value="Гонконг">Гонконг</option>
+                            <option value="Россия">Россия</option>
+                            <option value="Украина">Украина</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input input_split input_widget_suggest">
+                <input class="input__text" type="text" placeholder="Выберите регион" value="Камау">
+                <div class="input__cleartype"></div>
+                <div class="input__dropdown">
+                    <div class="input__handler">Показать результаты</div>
+                    <div class="input__select invisible-select">
+                        <select class="input__data invisible-select__control">
+                            <option value="clear">не выбрано</option>
+                            <option disabled>──────────</option>
+                            <option value="Камау" selected>Камау</option>
+                            <option value="Донгнай">Донгнай</option>
+                            <option value="Куангчи">Куангчи</option>
+                            <option value="Ниньбинь">Ниньбинь</option>
+                            <option value="Тхыатхьен-Хюэ">Тхыатхьен-Хюэ</option>
+                            <option value="Хазянг">Хазянг</option>
+                            <option value="Хатинь">Хатинь</option>
+                            <option value="Шонла">Шонла</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input input_split input_widget_suggest input_error">
+                <input class="input__text" type="text" placeholder="Выберите город">
+                <div class="input__cleartype"></div>
+                <div class="input__dropdown">
+                    <div class="input__handler">Показать результаты</div>
+                    <div class="input__select invisible-select">
+                        <select class="input__data invisible-select__control">
+                            <option value="clear" selected>не выбрано</option>
+                            <option disabled>──────────</option>
+                            <option value="Вунгтау">Вунгтау</option>
+                            <option value="Муйнэ">Муйнэ</option>
+                            <option value="Хошимин">Хошимин</option>
+                            <option value="Далат">Далат</option>
+                            <option value="Ханой">Ханой</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>TO DO</h2>
+            <p>
+                Может быть такая ситуация, что пользователь вызвал select, соответствено
+                мы проставили <b>input_drop</b>, но потом он скрыл его кликнув куда-то
+                во вне или нажал ESC и селект пропал. Так вот эту ситуацию не понятно
+                как отслеживать. Нужно событие скрытия выпадахи селекта, чтобы снять
+                <b>.input_drop</b>. А то сейчас он остается, а выпавшего селекта нет.
+                Стрелка перевернута.
+            </p>
+            <p>
+                "В показать результаты" бегунок загрузки бы, на время пока идут данные.
+                И заблокировать эту штуку надо на время пока идут данные, а то там
+                покажется пустой селект.
+            </p>
+            <p>
+                Похоже что на PS Vita и на NDS не работает событие on input
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../scripts/temp.js"></script>
+
+
+    </body>
+</html>

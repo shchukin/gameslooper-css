@@ -1,0 +1,27 @@
+{
+  "name": "bricklayer",
+  "version": "0.4.2",
+  "authors": [
+    "Adem İlter <ademilter@gmail.com>",
+    "Fatih Kadir Akın <fatihkadirakin@gmail.com>"
+  ],
+  "description": "Lightweight and strong Masonry alternative",
+  "main": "dist/bricklayer.js",
+  "keywords": [
+    "masonry",
+    "bricklayer"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/ademilter/bricklayer",
+  "ignore": [
+    "**/.*",
+    "src",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "examples",
+    "logo.png",
+    "assets"
+  ]
+}

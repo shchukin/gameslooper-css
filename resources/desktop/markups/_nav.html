@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.input</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body" style="min-width: 0; background: #131722;">
+
+
+
+        <div style="padding: 0 0 0 370px;">
+            <div style="padding: 0 20px; background: #1a202b;">
+                <br>
+                <br>
+                <h1>.nav <span style="font-size: 16px; color: red;">оверрайд</span></h1>
+                <br>
+                <br>
+                <p>
+                    На десктопах есть замес с "еще" в самом верхнем меню.
+                    Первым делом помечаем его <b>.nav_fold</b> - говорим о том,
+                    что в этом меню есть какое-то схлопывание.
+                    Это нужно для того, чтобы не затронуть какие-то остальные
+                    менюшки, которые так же делаются блоком <b>.nav</b>.
+                </p>
+                <p>
+                    Дальше мы добавляем <b>.nav__more</b> и в этот элемент
+                    помещаем выпадайку <b>.fold</b>, все динамика выпадей убрана
+                    а этот блок.
+                </p>
+                <p>
+                    Самое сложное здесь это понять в какой момент нужно скрыть
+                    последние айтемы меню и показать "еще". Пока что у нас проблемы
+                    только с Лоты/Участвую/Отзывы/Достижения. Ее рассматриваем индивидуально,
+                    и, получается, то надо в диапазаоне 768 - 960 скрыть два последних айтема.
+                    Это все я делаю в CSS`е медиазапросами.
+                </p>
+                <p>
+                    Еще нам повезло, что скрывать надо именно два айтема (один - тупо,
+                    а больше и не надо). Если айтемов вдруг станет больше, то
+                    придется фигарить модификаторы типа
+                    <br>.nav__more_hide-from_item-3
+                    <br>.nav__more_hide-from_item-4
+                    и т.д.
+                    И, соответтсвено, придется дублировать все эти выпадайки с разным
+                    количеством компонентов.
+                </p>
+
+                <p>
+                    Это все нужно делать только в тех менюшках в которых может быть
+                    переполнение. Смотрим саму узкую версию в 768px. Если там все ок:
+                    <a href="http://prntscr.com/b5sj2m">http://prntscr.com/b5sj2m</a>
+                    то ничего не предпринимаем.
+                    Если не ок: http://prntscr.com/b5sj8f
+                    то проворачиваем все вышесказанное.
+                </p>
+
+
+                <h2>Смотрим:</h2>
+                <br>
+                <br>
+
+                <div class="nav nav_fold">
+                    <a class="nav__link nav__link_current">
+                        <span class="nav__label">Лоты</span>
+                        <span class="nav__counter">10</span>
+                    </a>
+                    <a class="nav__link" href="#">
+                        <span class="nav__label">Участвую</span>
+                        <span class="nav__counter">210</span>
+                    </a>
+                    <a class="nav__link" href="#">
+                        <span class="nav__label">Отзывы</span>
+                        <span class="nav__counter">31</span>
+                    </a>
+                    <a class="nav__link" href="#">
+                        <span class="nav__label">Достижения</span>
+                        <span class="nav__counter">8</span>
+                    </a>
+
+                    <div class="nav__more">
+                        <div class="fold">
+                            <button class="fold__handler" type="button">
+                                Еще
+                                <span class="fold__arrow">
+                                    <i class="fold__peak"></i>
+                                </span>
+                            </button>
+                            <div class="fold__dropdown menu">
+                                <a class="menu__link" href="#">Отзывы</a>
+                                <a class="menu__link" href="#">Достижения</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../vendors/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../scripts/temp.js"></script>
+
+
+    </body>
+</html>

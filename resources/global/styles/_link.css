@@ -1,0 +1,43 @@
+.link {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+    display: inline;
+    vertical-align: baseline;
+    border: none;
+    background: none;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.link_palette_default {
+    color: #5A6476;
+}
+
+
+.link_palette_info {
+    color: #4C85FF;
+}
+
+.link_palette_info:hover {
+    color: #5E91FF;
+}
+
+
+.link_decoration_classic {
+    text-decoration: underline;
+}
+
+.link_decoration_classic:hover {
+    text-decoration: none;
+}
+
+
+.link_decoration_inverted {
+    text-decoration: none;
+}
+
+.link_decoration_inverted:hover {
+    text-decoration: underline;
+}

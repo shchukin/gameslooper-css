@@ -1,0 +1,16 @@
+.aside {
+    padding: 30px 0 40px;
+}
+
+.aside_tablet {
+    padding: 40px 30px;
+    margin-bottom: 40px;
+    background: #1E2531;
+}
+
+
+@media (min-width: 1340px) {
+    .aside_tablet {
+        display: none;
+    }
+}

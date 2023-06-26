@@ -1,0 +1,48 @@
+/* override */
+
+@media (min-width: 1024px) {
+
+.lot {
+
+}
+    .lot__owner {
+
+    }
+
+    .lot__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+        .lot__operations {
+            display: flex;
+        }
+            .lot__action {
+                margin-top: 0;
+                margin-left: 20px;
+                width: auto;
+            }
+
+            .lot__action.button {
+                width: auto;
+            }
+            
+            .lot__action:first-child {
+                margin-left: 0;
+            }
+
+        .lot__filter {
+            margin: 0;
+            border: none;
+            padding: 0;
+            width: 158px;
+            position: relative;
+            z-index: 200; /* to overlap dots in multi offer below */
+        }
+
+    .lot__responds {
+        margin: 30px -40px 0;
+        border-top: 1px solid rgba(153,169,207,.05);
+        padding: 30px 40px 0;
+    }
+
+}

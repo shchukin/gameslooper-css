@@ -1,0 +1,25 @@
+.alerts {
+    position: fixed;
+    z-index: 1000;
+    right: 30px;
+    bottom: 20px; /* plus 10px of the bottom of the last notification */
+    width: 310px;
+}
+
+/* same media query to _page.css */
+@media (max-width: 1159px), (max-height: 509px) {
+    .alerts {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        bottom: auto;
+    }
+}
+
+
+@media (max-width: 1339px) {
+    .alerts {
+        display: none;
+    }
+}
+

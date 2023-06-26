@@ -1,0 +1,10 @@
+.subscription {
+
+}
+    .subscription__option {
+        margin: 20px 0 0;
+    }
+
+    .subscription__option:first-child {
+        margin-top: 0;
+    }

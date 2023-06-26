@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="270px" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>rocket@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.208333333,51.4117647 C0.208333333,25.7058824 28.5,0 28.5,0 C28.5,0 56.7916667,25.7058824 56.7916667,51.4117647 L56.7916667,150.176471 L0.208333333,150.176471 C0.208333333,150.176471 0.208333333,87.880445 0.208333333,51.4117647 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="unlocked" transform="translate(-526.000000, -675.000000)">
+            <g id="SLICE" transform="translate(175.000000, 249.000000)"></g>
+            <g id="name" transform="translate(202.000000, 553.000000)"></g>
+            <g id="rocket" transform="translate(550.000000, 682.000000)">
+                <path d="M63.0501497,36.4941756 C25.7826736,54.1090036 0,92.0435688 0,136" id="Oval" stroke="#42A1FC" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M187.696463,58.1330644 C179.087839,49.5431693 169.063319,42.3716835 158.003275,36.9989781" id="Oval" stroke="#42A1FC" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M2.12183295,157.625687 C10.1081101,197.307482 39.7812557,231.065324 81.529905,242.251841 C119.494609,252.424453 158.143996,241.43967 184.959389,216.525156" id="Oval" stroke="#42A1FC" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M201.751367,196.698661 C213.283428,179.301902 220,158.435321 220,136 C220,115.106127 214.174663,95.5728333 204.05953,78.9356598" id="Oval" stroke="#42A1FC" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="smoke" transform="translate(88.000000, 178.000000)" stroke="#42A1FC" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2.5,0 L2.5,26" id="Path-11" stroke-width="5"></path>
+                    <path d="M44.5,0 L44.5,26" id="Path-11" stroke-width="5"></path>
+                    <path d="M23,17 L23,45" id="Path-11" stroke-width="6"></path>
+                </g>
+                <g id="fly" transform="translate(139.000000, 90.000000)" stroke-linecap="round" stroke-width="6" stroke="#42A1FC" stroke-linejoin="round">
+                    <polyline id="Path-10" points="0 0 20 24 20 85 0 59 0 0"></polyline>
+                </g>
+                <g id="fly" transform="translate(72.000000, 132.500000) scale(-1, 1) translate(-72.000000, -132.500000) translate(62.000000, 90.000000)" stroke-linecap="round" stroke-width="6" stroke="#42A1FC" stroke-linejoin="round">
+                    <polyline id="Path-10" points="0 0 20 23.8 20 85 3.55271368e-15 59.16 0 0"></polyline>
+                </g>
+                <g transform="translate(82.000000, 0.000000)">
+                    <g id="bg">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask"></g>
+                        <path d="M29,70 C29,65.9224442 40.5753772,69.9177438 41,60 C40.5753772,52.8495901 29.0005522,49.1445167 29,48 C29.0251465,23.5162606 29,0 29,0 C29,0 46,25.6756757 46,51 L46,150 L29,150 L29,70 Z" id="Rectangle-3" fill="#BCD5FF" opacity="0.12" mask="url(#mask-2)"></path>
+                    </g>
+                    <path d="M0,51 C0,25.6756757 29,0 29,0 C29,0 57,25.6756757 57,51 C57,51.3513514 57,150 57,150 L0,150 L0,51 Z" id="Rectangle-3" stroke="#42A1FC" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <ellipse id="Oval-3" stroke="#42A1FC" stroke-width="6" cx="29" cy="60" rx="10" ry="10"></ellipse>
+                    <path d="M29,116 L29,164" id="Path-11" stroke="#42A1FC" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

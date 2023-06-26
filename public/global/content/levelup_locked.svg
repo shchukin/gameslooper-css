@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="270px" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>levelup_locked@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="locked" transform="translate(-876.000000, -249.000000)">
+            <g id="SLICE" transform="translate(175.000000, 249.000000)"></g>
+            <g id="levelup" transform="translate(900.000000, 253.000000)">
+                <path d="M53.8364901,233.010316 C95.2917974,258.263159 149.839721,253.604244 186.464096,219.033571" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M2.99212369,118.159525 C-2.21394539,145.123511 2.60818205,174.059868 18.7462375,198.910294 C23.1976668,205.764894 28.2832825,211.959406 33.8759409,217.466804" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M42.8602663,52.637095 C27.6733507,64.5908601 16.3885801,79.9225266 9.38465289,96.8504589" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M201.106725,202.093408 C234.038659,155.061732 225.044765,91.2154706 181.949733,54.9306483" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="Group-2" transform="translate(41.000000, 0.000000)">
+                    <polygon id="Path-3" fill="#BCD5FF" opacity="0.0399999991" points="51 88 51 75 88 75 88 88"></polygon>
+                    <polygon id="Path-3" fill="#BCD5FF" opacity="0.0399999991" points="51 69 51 64 88 64 88 69"></polygon>
+                    <path d="M90,42 L115,42 L70,0 L25,42 L50,42 L50,104 L90,104 L90,42 Z" id="Combined-Shape" stroke="#2D3644" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <g id="Group-8" transform="translate(48.000000, 181.000000)" stroke="#2D3644" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1.5,18 L1.5,38" id="Path-11" stroke-width="5"></path>
+                        <path d="M41.5,18 L41.5,38" id="Path-11" stroke-width="5"></path>
+                        <path d="M22,0 L22,68" id="Path-11" stroke-width="6"></path>
+                    </g>
+                    <text id="LEVEL-UP" font-family="PFDinTextPro-Bold, PF DinText Pro" font-size="28" font-weight="bold" letter-spacing="1.68000007" fill="#2D3644">
+                        <tspan x="0" y="153">LEVEL UP</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

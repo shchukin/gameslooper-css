@@ -1,0 +1,26 @@
+.profile {
+    padding: 20px 0 0;
+}
+    .profile__summary {
+
+    }
+
+    .profile__go-premium {
+        margin: 20px 0 0;
+    }
+
+    .profile__trustworthiness {
+        margin: 20px 0 0;
+        border-top: 1px solid rgba(153,169,207,.05);
+        padding: 19px 0 0;
+    }
+
+    .profile__go-premium + .profile__trustworthiness {
+        margin-top: 30px;
+    }
+
+    .profile__feedback {
+        margin: 20px 0 0;
+        border-top: 1px solid rgba(153,169,207,.05);
+        padding: 19px 0 0;
+    }

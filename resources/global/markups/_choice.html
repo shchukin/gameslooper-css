@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.choice</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body" style="background: #131722;">
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.choice</h1>
+            <p>
+                Общий блок для чекбоксов и радиокнопок.
+            </p>
+            <p>
+                Сделано через стандартные инпуты.<br>
+                Весь функционал с чеканьем/анчеканьем нативен.
+            </p>
+            <p>У чекнутой радиокнопки нет наведения: оно бессмысленно.</p>
+            <br>
+
+
+            <label class="choice choice_widget_check">
+                <input class="choice__input" type="checkbox">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_widget_check</span>
+            </label>
+
+            <br>
+            <br>
+
+            <label class="choice choice_widget_radio">
+                <input class="choice__input" type="radio">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_widget_radio</span>
+            </label>
+
+            <br>
+            <br>
+            <br>
+
+
+            <label class="choice choice_widget_check">
+                <input class="choice__input" type="checkbox" checked>
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_widget_check</span>
+            </label>
+
+            <br>
+            <br>
+
+            <label class="choice choice_widget_radio">
+                <input class="choice__input" type="radio" checked>
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_widget_radio</span>
+            </label>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.choice_disabled</h2>
+            <p>
+                Тут висит <b>pointer-events: none</b> - так проще сбрасывать эффекты наведения.
+                Если вдруг получится так, что в задизейбленный чойз надо кликать - уберем.
+            </p>
+            <p>
+                Еще тут важно проставлять атрибут disabled самому <b>.choice__input</b>,
+                чтобы на нем нельзя было сфокусироваться при табулировании.
+            </p>
+            <br>
+
+
+            <label class="choice choice_widget_check choice_disabled">
+                <input class="choice__input" type="checkbox" disabled>
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_disabled.choice_widget_check</span>
+            </label>
+
+            <br>
+            <br>
+
+            <label class="choice choice_widget_radio choice_disabled">
+                <input class="choice__input" type="radio" disabled>
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_disabled.choice_widget_radio</span>
+            </label>
+
+            <br>
+            <br>
+
+
+            <label class="choice choice_widget_check choice_disabled">
+                <input class="choice__input" type="checkbox" checked disabled>
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_disabled.choice_widget_check</span>
+            </label>
+
+            <br>
+            <br>
+
+            <label class="choice choice_widget_radio choice_disabled">
+                <input class="choice__input" type="radio" checked disabled>
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_disabled.choice_widget_radio</span>
+            </label>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Цветные чекбоксы</h2>
+            <p>
+                Чекбоксы этой группы модификаторов заливаются цветом всегда.
+                И в чекнутом состоянии и в нечекнутом. Только для чекбокс.
+            </p>
+
+
+            <label class="choice choice_widget_check choice_fill_danger">
+                <input class="choice__input" type="checkbox">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_widget_check.choice_fill_danger</span>
+            </label>
+
+            <br>
+            <br>
+
+            <label class="choice choice_widget_check choice_fill_warning">
+                <input class="choice__input" type="checkbox">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_widget_check.choice_fill_warning</span>
+            </label>
+
+            <br>
+            <br>
+
+            <label class="choice choice_widget_check choice_fill_success">
+                <input class="choice__input" type="checkbox">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_widget_check.choice_fill_success</span>
+            </label>
+
+            <br>
+            <br>
+
+            <label class="choice choice_widget_check choice_fill_info">
+                <input class="choice__input" type="checkbox">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_widget_check.choice_fill_info</span>
+            </label>
+
+            <br>
+            <br>
+            <br>
+
+            <label class="choice choice_widget_check choice_palette_obscure">
+                <input class="choice__input" type="checkbox">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_widget_check.choice_palette_obscure</span>
+            </label>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Чекбоксы, которые радиокнопки</h2>
+            <p>
+                В рекламной канители есть такой кейс: <a href="http://prntscr.com/bf12m6">http://prntscr.com/bf12m6</a>
+                там нужно выбрать цвет чекбокса, причем только один. Получается, что внутри это радио-кнопки,
+                которые снаружи выглядят как чекбоксы. Собсна используем <b>.choice_widget_check</b>,
+                как если бы это были чекбоксы, а сам виджет просто делаем <b>type="radio"</b>.
+                Единственное - тут надо сбросить эффекты наведения (по радиокнопке бессмысленно кликать повторно).
+                Для этого нужен модификатор <b>.choice_radio-inside</b>.
+            </p>
+
+            <br>
+            <p>Кейс, когда выбираем позицию:</p>
+
+            <label class="choice choice_widget_check choice_radio-inside">
+                <input class="choice__input" type="radio" name="temp-select-position">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_radio-inside.choice_widget_check</span>
+            </label>
+
+            <br>
+            <br>
+
+            <label class="choice choice_widget_check choice_radio-inside">
+                <input class="choice__input" type="radio" name="temp-select-position">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_radio-inside.choice_widget_check</span>
+            </label>
+
+            <br>
+            <br>
+
+            <label class="choice choice_widget_check choice_radio-inside">
+                <input class="choice__input" type="radio" name="temp-select-position">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_radio-inside.choice_widget_check</span>
+            </label>
+
+            <br>
+            <br>
+
+            <label class="choice choice_widget_check choice_radio-inside">
+                <input class="choice__input" type="radio" name="temp-select-position">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_radio-inside.choice_widget_check</span>
+            </label>
+
+
+            <br>
+            <br>
+
+            <p>Кейс, когда выбираем цвета (за этим нам и понадобились цветовые модификаторы выше):</p>
+
+            <label class="choice choice_widget_check choice_radio-inside choice_fill_danger">
+                <input class="choice__input" type="radio" name="temp-select-color">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_radio-inside.choice_widget_check.choice_fill_danger</span>
+            </label>
+
+            <br>
+            <br>
+
+            <label class="choice choice_widget_check choice_radio-inside choice_fill_warning">
+                <input class="choice__input" type="radio" name="temp-select-color">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_radio-inside.choice_widget_check.choice_fill_warning</span>
+            </label>
+
+            <br>
+            <br>
+
+            <label class="choice choice_widget_check choice_radio-inside choice_fill_success">
+                <input class="choice__input" type="radio" name="temp-select-color">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_radio-inside.choice_widget_check.choice_fill_success</span>
+            </label>
+
+            <br>
+            <br>
+
+            <label class="choice choice_widget_check choice_radio-inside choice_fill_info">
+                <input class="choice__input" type="radio" name="temp-select-color">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">.choice.choice_radio-inside.choice_widget_check.choice_fill_info</span>
+            </label>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Чойзы без текста</h2>
+            <p>
+                Вообще можно просто удалить <b>.choice__label</b> и все будет работать,
+                но для лучшей дотупности надо бы лейбл оставить и скрыть CSS-ом.
+                Это обработает кейс отвалившегося CSS-а, например.
+                Скрываем модификатором<br> <b>.choice_hidden-label</b>.
+            </p>
+
+            <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_danger">
+                <input class="choice__input" type="radio" name="temp-select-color">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">Красный</span>
+            </label>
+
+            <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_warning">
+                <input class="choice__input" type="radio" name="temp-select-color">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">Желтый</span>
+            </label>
+
+            <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_success">
+                <input class="choice__input" type="radio" name="temp-select-color">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">Зеленый</span>
+            </label>
+
+            <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_info">
+                <input class="choice__input" type="radio" name="temp-select-color">
+                <i class="choice__icon">
+                    <i class="choice__mark"></i>
+                </i>
+                <span class="choice__label">Синий</span>
+            </label>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+
+    </body>
+</html>

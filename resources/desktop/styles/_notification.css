@@ -1,0 +1,68 @@
+/* override */
+
+.notification_kind_alert {
+    padding: 25px 30px 23px 73px;
+    background-color: #202734;
+}
+
+.notification_kind_alert:hover {
+    background-color: #272F3E;
+}
+
+
+/*.notification_kind_alert + .notification_kind_alert:after {*/
+    /*display: none;*/
+/*}*/
+
+/*.notification_kind_alert + .notification_kind_alert {*/
+    /*margin-top: 10px;*/
+/*}*/
+
+
+    .notification_kind_alert .notification__icon {
+        left: 30px;
+        top: 25px;
+        fill: #2C3544;
+        transition: fill .1s ease-out;
+    }
+
+    .notification_kind_alert:hover .notification__icon {
+        fill: #3B4454;
+    }
+
+
+
+    .notification__delete {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        width: 24px;
+        height: 24px;
+    }
+
+
+/* show / hide */
+
+/*@keyframes notificationShow {*/
+       /*0%  { opacity: 0; transform: translateY(103px); }*/
+    /*33.33% { opacity: 0;                               }*/
+    /*66.66% {             transform: translateY(0);     }*/
+      /*100% { opacity: 1; transform: translateY(0);     }*/
+/*}*/
+
+/*@keyframes notificationHide {*/
+     /*0%  { opacity: 1; transform: translateY(0); }*/
+    /*100% { opacity: 0; transform: translateY(103px); }*/
+/*}*/
+
+/*.notification_effect_show {*/
+    /*animation: notificationShow 0.45s ease-out;*/
+/*}*/
+
+/*.notification_effect_hide {*/
+    /*animation: notificationHide 0.3s ease-out forwards;*/
+/*}*/
+
+/*.notification_effect_move {*/
+    /*transition: transform 0.3s ease-out;*/
+/*}*/

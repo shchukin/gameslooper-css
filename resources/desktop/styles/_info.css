@@ -1,0 +1,112 @@
+/* override */
+
+.info__operations {
+    display: none;
+}
+
+
+@media (min-width: 1024px) {
+
+    .info {
+        background: #202734;
+        cursor: default;
+    }
+
+    .info + .info {
+        margin-top: 0;
+    }
+
+    .info:first-of-type {
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+
+    .info:last-of-type {
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+
+    .info + .info:before {
+        content: '';
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        top: 0;
+        display: block;
+        height: 1px;
+        background: #262E3C;
+        transition: background-color .1s ease-out;
+    }
+
+        .info__container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 20px 30px;
+            justify-content: space-between;
+        }
+
+            .info__game {
+                padding: 0;
+                background: none;
+                margin-right: 40px;
+            }
+                .info__box {
+                    display: block;
+                    align-self: flex-start;
+                }
+                    .info__art {
+                        height: 50px;
+                    }
+
+                    .info__pause {
+
+                    }
+
+                .info__summary {
+                    padding-bottom: 0;
+                    padding-top: 2px;
+                }
+                    .info__platform {
+
+                    }
+
+                    .info__title {
+
+                    }
+
+            .info__data {
+                padding: 0;
+                background: none;
+                text-align: right;
+                transition: opacity .1s ease-out;
+            }
+
+            .info:hover .info__data,
+            .info_drop .info__data {
+                opacity: 0;
+                pointer-events: none; /* to prevent text cursour */
+            }
+
+
+            .info__operations {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin: -20px 30px 0 0;
+                display: flex;
+                opacity: 0;
+                transition: opacity .1s ease-out;
+            }
+
+            .info:hover .info__operations,
+            .info_drop .info__operations {
+                opacity: 1;
+            }
+
+                .info__action {
+                    margin: 0 0 0 20px;
+                }
+
+
+}

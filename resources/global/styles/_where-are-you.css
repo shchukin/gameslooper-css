@@ -1,0 +1,33 @@
+.where-are-you {
+    background: #202734;
+    margin-bottom: 20px; /* to make a gap from this block to catalog or .emptiness */
+}
+    .where-are-you__container {
+        padding: 40px 20px;
+    }
+        .where-are-you__question {
+            font-size: 13px;
+            line-height: 22px;
+            color: #5A6476;
+            text-align: center;
+        }
+
+        .where-are-you__answer {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+            .where-are-you__action {
+                margin-left: 14px;
+                width: 100px;
+                padding-left: 26px;
+                padding-right: 26px;
+            }
+
+            .where-are-you__action.button {
+                width: 100px;
+            }
+
+            .where-are-you__action:first-child {
+                margin-left: 0;
+            }

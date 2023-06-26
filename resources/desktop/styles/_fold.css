@@ -1,0 +1,107 @@
+.fold {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    white-space: nowrap;
+}
+    .fold__handler {
+        position: relative;
+        padding: 10px 47px 10px 20px;
+        border: none;
+        background: none;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #5A6476;
+        cursor: pointer;
+        transition: color .1s ease-out;
+    }
+
+    .fold__handler:hover {
+        background-color: #202734;
+        color: #FFFFFF;
+    }
+
+    .fold_drop .fold__handler {
+        background-color: #202734;
+        color: #FFFFFF;
+    }
+
+    .fold_drop .fold__handler:hover {
+        background-color: #262D3B;
+    }
+        .fold__arrow {
+            display: block;
+            position: absolute;
+            right: 22px;
+            top: 17px;
+            width: 12px;
+            height: 6px;
+            transition: transform .1s linear;
+        }
+
+        .fold_drop .fold__arrow {
+            transform: scaleY(-1);
+        }
+
+            .fold__peak {
+                position: relative;
+                display: block;
+                width: 8px;
+                height: 8px;
+                margin: -3px 0 0 2px;
+                transform: rotate(-135deg);
+            }
+
+            .fold__peak:before,
+            .fold__peak:after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: #5A6476;
+                border-radius: 1px;
+                transition: background-color .1s ease-out;
+            }
+
+            .fold__peak:before {
+                width: 2px;
+                height: 8px;
+            }
+
+            .fold__peak:after {
+                width: 8px;
+                height: 2px;
+            }
+
+            .fold:hover .fold__peak:before,
+            .fold:hover .fold__peak:after,
+            .fold_drop .fold__peak:before,
+            .fold_drop .fold__peak:after {
+                background-color: #FFFFFF;
+            }
+
+    .fold__dropdown {
+        position: absolute;
+        z-index: 1000;
+        right: 0;
+        top: 100%;
+        visibility: hidden;
+        opacity: 0;
+
+        /* hide animation */
+        transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1),
+                    visibility 1s linear;
+    }
+
+    .fold_drop .fold__dropdown {
+        visibility: visible;
+        opacity: 1;
+
+        /* show animation */
+        transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1),
+                    visibility 1s linear;
+    }

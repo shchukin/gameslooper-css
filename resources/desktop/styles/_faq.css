@@ -1,0 +1,52 @@
+/* override */
+
+.faq__item {
+    padding-bottom: 54px;
+}
+
+.faq__item_current {
+
+}
+
+    .faq__question {
+
+    }
+
+    .faq__answer {
+        margin-top: 23px;
+    }
+        .faq__section {
+            display: flex;
+            margin-top: 40px;
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+
+        .faq__section:first-child {
+            margin-top: 0;
+        }
+            .faq__article {
+                flex-grow: 1;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .faq__featured {
+                flex-shrink: 0;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+                .faq__pic {
+                    vertical-align: top;
+                    background-color: #131722;
+                }
+
+
+
+@media (min-width: 1340px) {
+    .faq__item {
+        max-width: 640px;
+    }
+}
+
+

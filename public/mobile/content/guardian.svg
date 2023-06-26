@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="270px" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>guardian@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="unlocked" transform="translate(-526.000000, -249.000000)">
+            <g id="SLICE" transform="translate(175.000000, 249.000000)"></g>
+            <g id="guardian" transform="translate(551.000000, 282.000000)">
+                <path d="M131.000998,231.236752 C116.486857,187.099986 74.962052,155.236752 26.000998,155.236752" id="circle" stroke="#F97945" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" transform="translate(78.255714, 193.029699) rotate(-195.000000) translate(-78.255714, -193.029699) "></path>
+                <path d="M96.644318,113.355682 C77.4835449,81.0118605 42.4451697,59.355682 2.39574949,59.355682 C-13.9332524,59.355682 -29.4292349,62.9557329 -43.355682,69.4124066" id="circle" stroke="#F97945" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" transform="translate(26.813696, 86.169378) rotate(-90.000000) translate(-26.813696, -86.169378) "></path>
+                <path d="M182,27 C162.696923,10.1816171 137.484604,2.84217094e-14 109.899723,2.84217094e-14 C96.2040163,2.84217094e-14 83.0931591,2.50982496 71,7.09562644" id="circle" stroke="#F97945" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M163,206 C196.997464,187.181837 220,151.066687 220,109.604711 C220,107.048551 219.912572,104.512715 219.740529,102" id="circle" stroke="#F97945" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M216,81 C212.648625,68.6595485 207.177297,57.1885709 200,47" id="circle" stroke="#F97945" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="Group-12" transform="translate(45.000000, 53.000000)">
+                    <path d="M12,51 L119,51 C119,51 92.8743692,35 66.2511296,35 C39.6278901,35 12,51 12,51 Z" id="Path-16" fill="#BCD5FF" opacity="0.12"></path>
+                    <circle id="Oval-11" stroke="#F97945" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" cx="65" cy="51" r="16"></circle>
+                    <ellipse id="Oval-5" fill="#F97945" cx="65" cy="51" rx="5" ry="5"></ellipse>
+                    <path d="M65,82 C95.3756612,82 120,51 120,51 C120,51 95.3756612,20 65,20 C34.6243388,20 10,51 10,51 C10,51 34.6243388,82 65,82 Z" id="Oval-12" stroke="#F97945" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M130,31 C130,31 95.3756612,0 65,0 C34.6243388,0 0,31 0,31" id="Oval-12" stroke="#F97945" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+                <g id="active" transform="translate(108.500000, 155.500000) rotate(-180.000000) translate(-108.500000, -155.500000) translate(51.000000, 131.000000)" stroke="#F97945" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M79,48 L95,16" id="Path-11" stroke-width="4"></path>
+                    <path d="M35,48 L19,16" id="Path-11" stroke-width="4"></path>
+                    <path d="M0.0470377231,36.7612084 L6.04703772,44.7612084" id="Path-11" stroke-width="3" transform="translate(3.523519, 40.380604) scale(-1, -1) translate(-3.523519, -40.380604) "></path>
+                    <path d="M109,36.7612084 L115,44.7612084" id="Path-11" stroke-width="3" transform="translate(111.523519, 40.380604) scale(1, -1) translate(-111.523519, -40.380604) "></path>
+                    <path d="M57,-2.84217094e-14 L57,44" id="Path-11" stroke-width="5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

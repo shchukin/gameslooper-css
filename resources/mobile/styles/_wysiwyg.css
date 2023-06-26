@@ -1,0 +1,18 @@
+/* override */
+
+.wysiwyg {
+
+}
+
+
+.wysiwyg_skin_article {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.wysiwyg_skin_article ol {
+    padding-left: 14px;
+}
+.wysiwyg_skin_article ul {
+    padding-left: 14px;
+}

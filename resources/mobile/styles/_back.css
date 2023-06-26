@@ -1,0 +1,9 @@
+/* override */
+
+.back {
+    padding: 15px 20px 15px 39px;
+}
+    .back__arrow {
+        left: 20px;
+        top: 21px;
+    }

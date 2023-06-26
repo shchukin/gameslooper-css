@@ -1,0 +1,37 @@
+.heading {
+    min-height: 90px;
+    border-bottom: 1px solid rgba(153,169,207,.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    .heading__content {
+        position: relative;
+    }
+
+        .heading__note {
+            margin: 4px 0 -22px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #5A6476;
+        }
+
+    .heading__action {
+
+    }
+
+    .heading__action_id_sort {
+        width: 158px;
+    }
+
+    @media (max-width: 1023px) {
+        .heading__action_id_sort {
+            display: none;
+        }
+    }
+
+
+.heading_outer {
+    padding-left: 40px;
+    padding-right: 40px;
+}

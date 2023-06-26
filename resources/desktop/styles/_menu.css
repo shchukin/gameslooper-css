@@ -1,0 +1,46 @@
+.menu {
+
+}
+    .menu__link {
+        text-decoration: none;
+        display: block;
+        position: relative;
+        padding: 10px 20px;
+        background: #202734;
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+        transition: background-color .1s ease-out;
+    }
+
+    .menu__link:hover {
+        background-color: #262D3B;
+    }
+        .menu__link:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            top: 0;
+            height: 1px;
+            background: #2B3241;
+            transition: background-color .1s ease-out;
+        }
+
+        .menu__link:first-child:before {
+            display: none;
+        }
+
+        .menu__link:hover:before,
+        .menu__link:hover + .menu__link:before {
+            background-color: transparent;
+        }
+
+
+
+
+
+
+
+

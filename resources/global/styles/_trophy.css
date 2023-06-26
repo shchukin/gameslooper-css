@@ -1,0 +1,46 @@
+.trophy {
+    display: block;
+    background: #202734;
+    text-decoration: none;
+}
+    .trophy__body {
+        display: flex;
+        align-items: flex-start;
+        padding: 20px;
+    }
+        .trophy__preview {
+            flex-shrink: 0;
+        }
+            .trophy__badge {
+                vertical-align: top;
+                width: 58px;
+                height: 58px;
+                margin: -4px;
+            }
+
+        .trophy__data {
+            flex-grow: 1;
+            margin: 5px 0 5px 20px;
+        }
+            .trophy__title {
+
+            }
+
+            .trophy__description {
+                font-size: 13px;
+                line-height: 20px;
+                color: #5A6476;
+            }
+
+    .trophy__foot {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        justify-content: center;
+        height: 60px;
+        background: #1D2430;
+        font-size: 13px;
+        line-height: 20px;
+        color: #5A6476;
+        text-align: center;
+    }

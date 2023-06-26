@@ -1,0 +1,44 @@
+.contact {
+
+}
+    .contact__head {
+        margin: 0 -20px;
+        padding: 31px 33px;
+        background: #202734;
+        text-align: center;
+    }
+        .contact__title {
+
+        }
+
+        .contact__note {
+            margin: 20px 0 0;
+            font-size: 13px;
+            line-height: 20px;
+            color: #5A6476;
+        }
+
+    .contact__form {
+        padding: 30px 0 0;
+    }
+        .contact__container {
+
+        }
+            .contact__data {
+
+            }
+                .contact__name {
+
+                }
+
+                .contact__mail {
+                    margin: 20px 0 0;
+                }
+
+            .contact__message {
+                margin: 20px 0 0;
+            }
+
+            .contacts__submit {
+                margin: 30px 0 0;
+            }

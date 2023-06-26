@@ -1,0 +1,18 @@
+.cvv {
+    display: flex;
+    align-items: center;
+}
+    .cvv__field {
+        box-sizing: border-box;
+        width: 50%;
+        padding-right: 9px;
+    }
+
+    .cvv__note {
+        box-sizing: border-box;
+        width: 50%;
+        padding-left: 9px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #444E62;
+    }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="270px" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>write@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="unlocked" transform="translate(-876.000000, -1101.000000)">
+            <g id="SLICE" transform="translate(175.000000, 249.000000)"></g>
+            <g id="name" transform="translate(202.000000, 553.000000)"></g>
+            <g id="write" transform="translate(900.000000, 1134.000000)">
+                <path d="M96.6507684,0.909808593 C85.1789635,2.42029423 73.751901,5.78089829 62.7791739,11.1326549 C8.17624691,37.7642818 -14.498972,103.617899 12.1326549,158.220826" id="circle" stroke="#CC4EEB" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M42.6377681,196.215891 C78.6384266,224.768537 130.24503,228.662094 170.910294,202.253762 C173.653856,200.472073 176.291671,198.588785 178.822006,196.612053" id="circle" stroke="#CC4EEB" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M220.908521,104.994669 C219.073357,65.4322479 195.871364,28.204596 157.488009,10.3061434 C146.606726,5.23211785 135.319702,2.09123836 124.014123,0.742581292" id="circle" stroke="#CC4EEB" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M210.693857,156.488009 C214.839393,147.597878 217.69454,138.436912 219.336151,129.216266" id="circle" stroke="#CC4EEB" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="Group-5" transform="translate(31.000000, 34.000000)">
+                    <polygon id="Path-3" fill="#BCD5FF" opacity="0.12" points="80.5 46.5 69 46.5 47 138 81.5 138"></polygon>
+                    <polyline id="Rectangle-8" stroke="#CC4EEC" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" points="132.336 84.8804004 160 138 0 138 40 47 112 47"></polyline>
+                    <path d="M116,78.499997 L175.001582,19.4984177" id="Path-5" stroke="#CC4EEC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M99,62.499997 L161.001582,0.498417737" id="Path-5" stroke="#CC4EEC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M40,108 L119,108" id="Path-6" stroke="#CC4EEB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="#BCD5FF"></path>
+                    <path d="M50,86.5 L79,86.5" id="Path-6" stroke="#CC4EEB" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="#BCD5FF"></path>
+                    <polygon id="Path-9" stroke="#CC4EEB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="92.5 87 98 63 115.5 79.5"></polygon>
+                    <path d="M97,73.5 L105.87419,82.3741902" id="Path-13" stroke="#CC4EEB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

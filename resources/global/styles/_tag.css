@@ -1,0 +1,40 @@
+.tag {
+    width: 50px;
+    height: 48px;
+    padding: 2px 0 0;
+    border: 3px solid transparent;
+    font-size: 13px;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+}
+
+.tag_shape_disc {
+    border-radius: 50%;
+    background-clip: padding-box;
+}
+
+.tag_shape_square {
+    background-clip: padding-box;
+}
+
+.tag_palette_info    { background-color: #4C85FF; }
+.tag_palette_success { background-color: #6FBB45; }
+.tag_palette_warning { background-color: #FFC60D; }
+.tag_palette_danger  { background-color: #F04349; }
+
+
+
+.tag_shape_star {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: calc(100% + 6px); /* include borders */
+    background-clip: border-box;
+    background-color: transparent;
+}
+
+.tag_shape_star.tag_palette_info    { background-image: url(../vectors/tag_shape_star_palette_info.svg); }
+.tag_shape_star.tag_palette_success { background-image: url(../vectors/tag_shape_star_palette_success.svg); }
+.tag_shape_star.tag_palette_warning { background-image: url(../vectors/tag_shape_star_palette_warning.svg); }
+.tag_shape_star.tag_palette_danger  { background-image: url(../vectors/tag_shape_star_palette_danger.svg); }

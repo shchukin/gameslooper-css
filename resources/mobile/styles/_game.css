@@ -1,0 +1,56 @@
+.game {
+    display: flex;
+}
+    .game__summary {
+        flex: 0 0 35.715%;
+    }
+        .game__box {
+            display: block;
+            background: #202734;
+        }
+            .game__art {
+                vertical-align: top;
+                width: 100%;
+                height: auto;
+            }
+
+        .game__operations {
+            margin: 20px 0 0;
+            display: flex;
+        }
+            .game__action {
+                margin: 0 0 0 20px;
+            }
+
+            .game__action:first-child {
+                margin-left: 0;
+            }
+
+    .game__data {
+        box-sizing: border-box;
+        flex: 0 0 64.285%;
+        padding: 0 0 0 30px;
+        margin: -2px 0 0;
+        font-size: 13px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+        .game__param {
+            margin: 17px 0 0;
+            border-top: 1px solid rgba(153,169,207,.05);
+            padding: 16px 0 0;
+        }
+
+        .game__param:first-child {
+            margin-top: 0;
+            border-top: none;
+            padding-top: 0;
+        }
+
+            .game__stat {
+
+            }
+
+            .game__value {
+                margin: 0;
+            }

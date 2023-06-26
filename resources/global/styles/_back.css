@@ -1,0 +1,52 @@
+.back {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    position: relative;
+    padding: 0 0 0 19px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #5A6476;
+    transition: color .1s ease-out;
+}
+
+.back:hover {
+    color: #FFFFFF;
+}
+    .back__arrow {
+        position: absolute;
+        left: 0;
+        top: 6px;
+        width: 8px;
+        height: 8px;
+        transform: rotate(-45deg);
+    }
+        .back__arrow:before,
+        .back__arrow:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #5A6476;
+            border-radius: 1px;
+            transition: background-color .1s ease-out;
+        }
+
+        .back__arrow:before {
+            width: 2px;
+            height: 8px;
+        }
+
+        .back__arrow:after {
+            width: 8px;
+            height: 2px;
+        }
+
+        .back:hover .back__arrow:before,
+        .back:hover .back__arrow:after {
+            background-color: #FFFFFF;
+        }

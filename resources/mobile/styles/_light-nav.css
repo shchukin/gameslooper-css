@@ -1,0 +1,8 @@
+/* override */
+
+.light-nav {
+
+}
+    .light-nav__section {
+        width: 50%;
+    }

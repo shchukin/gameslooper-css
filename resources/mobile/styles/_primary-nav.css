@@ -1,0 +1,49 @@
+.primary-nav {
+
+}
+    .primary-nav__link {
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+        display: block;
+        padding: 20px 20px 21px 60px;
+        font-size: 13px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+        .primary-nav__icon {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            display: block;
+            width: 20px;
+            height: 20px;
+            vertical-align: top;
+            fill: #2C3544;
+        }
+
+        .primary-nav__update {
+            position: absolute;
+            left: 39px;
+            top: 15px;
+            opacity: 0;
+            transition: opacity 0.2s ease-out;
+        }
+
+        .primary-nav__link_unread .primary-nav__update {
+            opacity: 1;
+        }
+
+    .primary-nav__link:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 0;
+        height: 1px;
+        background: #1A1E2B;
+    }

@@ -1,0 +1,101 @@
+.persona {
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+
+.persona + .persona {
+    margin: 20px 0 0;
+}
+
+
+    .persona__info {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 25px 20px;
+        background: #202734;
+        border-radius: 2px 2px 0 0;
+        overflow: hidden; /* to crop angles */
+    }
+
+
+
+        .persona__background {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center center;
+        }
+            .persona__background:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                background-color: rgba(29,38,50, .95);
+            }
+
+        .persona__avatar {
+            flex-shrink: 0;
+
+        }
+
+        .persona__data {
+            position: relative;
+            margin: 0 0 0 20px;
+        }
+            .persona__title {
+                cursor: pointer;
+            }
+            .persona__title:hover {
+                text-decoration: underline;
+            }
+
+            .persona__avatar {
+                cursor: pointer;
+            }
+
+            .persona__note {
+                font-size: 13px;
+                line-height: 20px;
+                color: #FFF;
+            }
+
+    .persona__stats {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        align-items: center;
+        background: #1D2430;
+        border-radius: 0 0 2px 2px;
+    }
+
+        .persona__location {
+            margin: 0 30px 0 0;
+        }
+
+        .persona__trade {
+            margin: 0 30px 0 0;
+        }
+
+        .persona__rating {
+            margin: 0 0 0 auto;
+        }
+
+
+
+.persona_has-note .persona__info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: flex-start;
+}
+
+.persona_has-note .persona__avatar {
+    margin-top: 5px;
+}

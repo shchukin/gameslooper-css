@@ -1,0 +1,59 @@
+.dialog {
+    position: relative;
+    display: block;
+    padding: 29px 40px 27px 100px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.dialog:hover {
+    background-color: #151924;
+}
+
+.dialog + .dialog {
+    margin-top: -1px;
+}
+
+.dialog:before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    top: 0;
+    height: 1px;
+    background: #1A1E2B;
+}
+
+.dialog:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    bottom: 0;
+    height: 1px;
+    background: #1A1E2B;
+}
+    .dialog__interlocutor {
+        position: absolute;
+        left: 40px;
+        top: 28px
+    }
+
+    .dialog__name {
+
+    }
+
+    .dialog__content {
+        margin: 1px 0 0;
+    }
+
+    .dialog__time {
+        display: block;
+        margin: 1px 0 0;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 22px;
+        color: #2C3544;
+    }

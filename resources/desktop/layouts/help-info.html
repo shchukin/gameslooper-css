@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Помощь по сайту</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+
+        <div class="page">
+            <div class="page__panel page__panel_id_header">
+                <div class="page__column">
+                    <header class="header">
+                        <nav class="header__navigation">
+                            <div class="header__logo">
+                                <a class="logo" href="#">Gameslooper</a>
+                            </div>
+                            <div class="header__browse">
+                                <a class="action action_id_catalog header__action" href="main.html" title="Каталог">
+                                    <img class="action__icon" src="../symbols/action_id_catalog.svg" alt="">
+                                    Каталог
+                                </a>
+                                <a class="action action_id_search header__action" href="search.html" title="Поиск">
+                                    <img class="action__icon" src="../symbols/action_id_search.svg" alt="">
+                                    Поиск
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="header__private">
+                            <div class="header__settings">
+                                <a class="action action_id_auth header__action" data-popover=".page__popover_id_sign-in" href="#" title="Войти">
+                                    <img class="action__icon" src="../symbols/action_id_auth.svg" alt="">
+                                    Войти
+                                </a>
+                                <a class="action action_id_geo header__action" href="location.html" title="Местоположение">
+                                    <img class="action__icon" src="../symbols/action_id_geo.svg" alt="">
+                                    Локация
+                                </a>
+                                <a class="action action_id_create header__action" data-popover=".page__popover_id_add-lot" href="#" title="Добавить лот">
+                                    <img class="action__icon" src="../symbols/action_id_create.svg" alt="">
+                                    Добавить лот
+                                </a>
+                                <a class="action action_id_notification action_unread header__action" href="#" title="Уведомления" data-popover=".page__popover_id_notifications">
+                                    <img class="action__icon" src="../symbols/action_id_notification.svg" alt="">
+                                    Уведомления
+                                    <i class="action__update new"></i>
+                                </a>
+                            </div>
+                            <div class="header__user">
+                                <div class="user user_unread">
+                                    <div class="user__body">
+                                        <a class="user__profile avatar" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/avatar_05_small@2x.jpg 2x"
+                                                 src="../temp/avatar_05_small.jpg"
+                                                 width="30" height="30"
+                                                 title="Nagibator1999"
+                                                 alt="Nagibator1999"
+                                            >
+                                        </a>
+                                        <i class="user__update new" title="Есть обновления"></i>
+                                    </div>
+                                    <div class="user__actions user__actions_items_7">
+                                        <div class="user__menu">
+                                            <a class="user__link" href="profile-games.html">Профиль</a>
+                                            <a class="user__link user__link_premium" href="#">Премиум аккаунт</a>
+                                            <a class="user__link" href="#" data-popover=".page__popover_id_conversations">Сообщения <span class="user__count">+2</span></a>
+                                            <a class="user__link" href="#" data-popover=".page__popover_id_settings">Настройки</a>
+                                            <a class="user__link" href="help-info.html">Помощь</a>
+                                            <a class="user__link" href="#" data-popover=".page__popover_id_guardian">Страж</a>
+                                            <a class="user__link user__link_peak" href="#">Выход</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <div class="page__popover page__popover_id_sign-in">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Вход на сайт</div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <form class="form">
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="email" placeholder="Почта">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="password" placeholder="Пароль">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <button class="button button_palette_success" type="submit">Войти</button>
+                                </div>
+                                <div class="form__field">
+                                    <a class="button button_palette_default" href="#" data-popover=".page__popover_id_reset-password">Восстановить пароль</a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <button class="button button_palette_vkontakte" type="button">VK</button>
+                                </div>
+                                <div class="form__field">
+                                    <button class="button button_palette_facebook" type="button">Facebook</button>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <a class="button button_palette_default" href="#" data-popover=".page__popover_id_sign-up">Зарегестрироваться</a>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_sign-up">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Регистрация</div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <form class="form">
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="text" placeholder="Логин">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                    <div class="output">
+                                        <div class="bubble bubble_palette_danger">Введите логин</div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="email" placeholder="Почта">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="password" placeholder="Пароль">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <button class="button button_palette_success" type="submit">Зарегестрироваться</button>
+                                </div>
+                                <div class="form__field form__field_kind_note">
+                                    Регистрируясь, вы соглашаетесь с&nbsp;<a class="link link_palette_info link_decoration_inverted" href="#">правилами пользования</a> сайта Gameslooper.ru
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_reset-password">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Восстановить пароль</div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <form class="form">
+                            <fieldset class="form__fieldset">
+                                <div class="form__field form__field_kind_heading">
+                                    Укажите Email, который вы указывали при регистрации, и мы вышлем на него пароль.
+                                </div>
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="email" placeholder="Почта">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <button class="button button_palette_success" type="submit">Выслать пароль</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_settings">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Настройки</div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <form class="form">
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <button class="button button_palette_primary" type="button">Загрузить фон</button>
+                                </div>
+                                <div class="form__field">
+                                    <button class="button button_palette_primary" type="button">Загрузить аватар</button>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="text" placeholder="Логин" value="Cypher">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="email" placeholder="Почта" value="a.a.shchukin@gmail.com">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="password" placeholder="Пароль" value="Сорок тысяч обезьян в жопу сунули банан">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <button class="button button_palette_vkontakte" type="button">Подключить VK</button>
+                                </div>
+                                <div class="form__field">
+                                    <button class="button button_palette_primary" type="button">Отключить Facebook</button>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <div class="checklist">
+                                        <div class="checklist__title">
+                                            <div class="title">Уведомления</div>
+                                        </div>
+                                        <ul class="checklist__list">
+                                            <li class="checklist__item">
+                                                <label class="choice choice_widget_check">
+                                                    <input class="choice__input" type="checkbox">
+                                                    <i class="choice__icon">
+                                                        <i class="choice__mark"></i>
+                                                    </i>
+                                                    <span class="choice__label">Истекает срок лота</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice_widget_check">
+                                                    <input class="choice__input" type="checkbox">
+                                                    <i class="choice__icon">
+                                                        <i class="choice__mark"></i>
+                                                    </i>
+                                                    <span class="choice__label">Закрытие лота</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice_widget_check">
+                                                    <input class="choice__input" type="checkbox">
+                                                    <i class="choice__icon">
+                                                        <i class="choice__mark"></i>
+                                                    </i>
+                                                    <span class="choice__label">Рассылка новостей</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice_widget_check">
+                                                    <input class="choice__input" type="checkbox" checked>
+                                                    <i class="choice__icon">
+                                                        <i class="choice__mark"></i>
+                                                    </i>
+                                                    <span class="choice__label">Новое сообщение</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice_widget_check">
+                                                    <input class="choice__input" type="checkbox" checked>
+                                                    <i class="choice__icon">
+                                                        <i class="choice__mark"></i>
+                                                    </i>
+                                                    <span class="choice__label">Получено достижение</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice_widget_check">
+                                                    <input class="choice__input" type="checkbox" checked>
+                                                    <i class="choice__icon">
+                                                        <i class="choice__mark"></i>
+                                                    </i>
+                                                    <span class="choice__label">Новый отзыв</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice_widget_check">
+                                                    <input class="choice__input" type="checkbox" checked>
+                                                    <i class="choice__icon">
+                                                        <i class="choice__mark"></i>
+                                                    </i>
+                                                    <span class="choice__label">Предложен обмен</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice_widget_check">
+                                                    <input class="choice__input" type="checkbox" checked>
+                                                    <i class="choice__icon">
+                                                        <i class="choice__mark"></i>
+                                                    </i>
+                                                    <span class="choice__label">Предложены деньги</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <button class="button button_palette_success" type="submit">Сохранить</button>
+                                </div>
+                                <div class="form__field">
+                                    <button class="button button_palette_primary" type="submit">Удалить аккаунт</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_notifications">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Уведомления</div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="feed">
+                            <article class="notification">
+                                <img class="notification__icon" src="../../global/symbols/notification_id_achievement.svg" alt="">
+                                <div class="notification__title title">Достижение</div>
+                                <div class="notification__body">
+                                    Новобранец
+                                </div>
+                                <time class="notification__note" datetime="2016-12-31T19:59+04:00">Сейчас</time>
+                            </article>
+
+                            <article class="notification">
+                                <img class="notification__icon" src="../../global/symbols/notification_id_message.svg" alt="">
+                                <div class="notification__title title">Hideo Kojima</div>
+                                <div class="notification__body">
+                                    Привет, готов к обмену?
+                                </div>
+                                <time class="notification__note" datetime="2016-12-31T19:59+04:00">1 мин назад</time>
+                            </article>
+
+                            <article class="notification">
+                                <img class="notification__icon" src="../../global/symbols/notification_id_feedback.svg" alt="">
+                                <div class="notification__title title">Gabe Newell</div>
+                                <div class="notification__body">
+                                    Цены хорошие, буду дальше покупать.
+                                </div>
+                                <time class="notification__note" datetime="2016-12-31T19:59+04:00">5 мин назад</time>
+                            </article>
+
+                            <article class="notification">
+                                <img class="notification__icon" src="../../global/symbols/notification_id_purchase.svg" alt="">
+                                <div class="notification__title title">Suda51</div>
+                                <div class="notification__body">
+                                    2000 Рублей <span class="notification__helper">за Ваш</span> <a class="link link_decoration_inverted" href="#">Shadows of the Damned</a>
+                                </div>
+                                <time class="notification__note" datetime="2016-12-31T19:59+04:00">Вчера, 23:59</time>
+                            </article>
+
+                            <article class="notification">
+                                <img class="notification__icon" src="../../global/symbols/notification_id_exchange.svg" alt="">
+                                <div class="notification__title title">Hironobu Sakaguchi</div>
+                                <div class="notification__body">
+                                    <a class="link link_decoration_inverted" href="#">The Last Story</a> <span class="notification__helper">за Ваш</span> <a class="link link_decoration_inverted" href="#">Final Fanyasy XV Limited Edition</a>
+                                </div>
+                                <time class="notification__note" datetime="2016-12-31T19:59+04:00">Вчера, 23:59</time>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_add-lot">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Создать лот</div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <form class="form">
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <div class="input input_widget_select">
+                                        <input class="input__text" type="text" placeholder="Платформа" readonly>
+                                        <div class="input__arrow">
+                                            <i class="input__peak"></i>
+                                        </div>
+                                        <div class="input__dropdown">
+                                            <div class="input__suggest scroll scroll_skin_default scroll_always_visible">
+                                                <button class="input__option input__option_clear" type="button">Не выбрано</button>
+                                                <button class="input__option" type="button">PlayStation 3</button>
+                                                <button class="input__option" type="button">Xbox 360</button>
+                                                <button class="input__option" type="button">PlayStation 4</button>
+                                                <button class="input__option" type="button">Xbox One</button>
+                                                <button class="input__option" type="button">PlayStation 2</button>
+                                                <button class="input__option" type="button">PSP</button>
+                                                <button class="input__option" type="button">Nintendo Wii</button>
+                                                <button class="input__option" type="button">Nintendo DS</button>
+                                                <button class="input__option" type="button">Nintendo 3ds</button>
+                                                <button class="input__option" type="button">PS Vita</button>
+                                                <button class="input__option" type="button">Wii U</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="text" placeholder="Название игры">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field form__field_kind_preview">
+                                    <a class="preview" href="game.html" style="background-image: url(../temp/preview_04.jpg);">
+                                        <div class="preview__category">Xbox One</div>
+                                        <div class="preview__title">Call of Duty: Black Ops III</div>
+                                    </a>
+                                </div>
+                                <div class="form__field input input_widget_area">
+                                    <textarea class="input__text scroll scroll_skin_default scroll_always_visible" placeholder="Комментарий"></textarea>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field form__field_kind_choice">
+                                    <label class="choice choice_widget_check">
+                                        <input class="choice__input" type="checkbox">
+                                        <i class="choice__icon">
+                                            <i class="choice__mark"></i>
+                                        </i>
+                                        <span class="choice__label">Хочу продать</span>
+                                    </label>
+                                </div>
+                                <div class="form__field form__field_kind_choice-output">
+                                    <div class="input">
+                                        <input class="input__text" type="text" placeholder="Стоимость, руб.">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field form__field_kind_choice">
+                                    <label class="choice choice_widget_check">
+                                        <input class="choice__input" type="checkbox">
+                                        <i class="choice__icon">
+                                            <i class="choice__mark"></i>
+                                        </i>
+                                        <span class="choice__label">Хочу обменять</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <button class="button button_palette_success" type="submit">Создать</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_offer-game-swap">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Предложить обмен</div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar">
+                        <form class="form">
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <div class="input input_widget_select">
+                                        <input class="input__text" type="text" placeholder="Платформа" readonly>
+                                        <div class="input__arrow">
+                                            <i class="input__peak"></i>
+                                        </div>
+                                        <div class="input__dropdown">
+                                            <div class="input__suggest scroll scroll_skin_default scroll_always_visible">
+                                                <button class="input__option input__option_clear" type="button">Не выбрано</button>
+                                                <button class="input__option" type="button">PlayStation 3</button>
+                                                <button class="input__option" type="button">Xbox 360</button>
+                                                <button class="input__option" type="button">PlayStation 4</button>
+                                                <button class="input__option" type="button">Xbox One</button>
+                                                <button class="input__option" type="button">PlayStation 2</button>
+                                                <button class="input__option" type="button">PSP</button>
+                                                <button class="input__option" type="button">Nintendo Wii</button>
+                                                <button class="input__option" type="button">Nintendo DS</button>
+                                                <button class="input__option" type="button">Nintendo 3ds</button>
+                                                <button class="input__option" type="button">PS Vita</button>
+                                                <button class="input__option" type="button">Wii U</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input input_warning">
+                                        <input class="input__text" type="text" placeholder="Название игры" value="Ma">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                    <div class="output">
+                                        <div class="bubble">Такая игра отсутствует в нашей базе. Платформа и название указаны верно?</div>
+                                        <div class="output__action button button_palette_default">Да, все верно</div>
+                                    </div>
+                                </div>
+                                <div class="form__field form__field_kind_preview">
+                                    <a class="preview" href="game.html" style="background-image: url(../temp/preview_01.jpg);">
+                                        <div class="preview__delete cancel" tabindex="0">
+                                            <span class="cancel__icon">Удалить</span>
+                                        </div>
+                                        <div class="preview__category">PlayStation 4</div>
+                                        <div class="preview__title">Street Fighter V</div>
+                                    </a>
+                                    <a class="preview" href="game.html" style="background-image: url(../temp/preview_02.jpg);">
+                                        <div class="preview__delete cancel" tabindex="0">
+                                            <span class="cancel__icon">Удалить</span>
+                                        </div>
+                                        <div class="preview__category">PlayStation 3</div>
+                                        <div class="preview__title">No More Heroes: Heroes' Paradise Limited Edition</div>
+                                    </a>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="text" placeholder="Доплата, руб.">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <button class="button button_palette_success" type="submit">Предложить</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_offer-money">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Предложить деньги</div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar">
+                        <form class="form">
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="text" placeholder="Сумма, руб.">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <button class="button button_palette_success" type="submit">Предложить</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_item-respond-to-multiple-games">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Предложение обмена</div>
+                            <div class="heading__note">
+                                от <a class="link link_decoration_inverted" href="#">Akira Yamaoka</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="respond">
+                            <div class="respond__body">
+                                <div class="bricklayer bricklayer_layout_tight">
+                                    <div class="bricklayer-tile">
+                                        <a class="thumb" href="#">
+                                            <img class="thumb__boxart"
+                                                 srcset="../temp/thumb_psp_01@2x.jpg 2x"
+                                                 src="../temp/thumb_psp_01.jpg"
+                                                 alt="Patapon 3"
+                                                 title="Patapon 3"
+                                            >
+                                        </a>
+                                    </div>
+                                    <div class="bricklayer-tile">
+                                        <a class="thumb" href="#">
+                                            <img class="thumb__boxart"
+                                                 srcset="../temp/thumb_ps4_01@2x.jpg 2x"
+                                                 src="../temp/thumb_ps4_01.jpg"
+                                                 alt="Metal Gear Solid V"
+                                                 title="Metal Gear Solid V"
+                                            >
+                                        </a>
+                                    </div>
+                                    <div class="bricklayer-tile">
+                                        <a class="thumb" href="#">
+                                            <img class="thumb__boxart"
+                                                 srcset="../temp/thumb_ps3_01@2x.jpg 2x"
+                                                 src="../temp/thumb_ps3_01.jpg"
+                                                 alt="God of War III"
+                                                 title="God of War III"
+                                            >
+                                        </a>
+                                    </div>
+                                    <div class="bricklayer-tile">
+                                        <a class="thumb" href="#">
+                                            <img class="thumb__boxart"
+                                                 srcset="../temp/thumb_ps2_01@2x.jpg 2x"
+                                                 src="../temp/thumb_ps2_01.jpg"
+                                                 alt="Final Fantasy X"
+                                                 title="Final Fantasy X"
+                                            >
+                                        </a>
+                                    </div>
+                                    <div class="bricklayer-tile">
+                                        <div class="thumb">
+                                            <div class="thumb__buying">
+                                                <div class="thumb__value">
+                                                    +200 руб.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="respond__operations">
+                                <a class="respond__action button button_palette_info" href="#">Ответить</a>
+                                <a class="respond__action button button_palette_default" href="#">Не интересно</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_create-info-step-01">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Редактировать бейдж</div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+
+                        <form class="form">
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <div class="label">
+
+                                        <div class="label__summary">
+
+                                            <div class="label__position">
+                                                <div class="position">
+                                                    <img class="position__art"
+                                                         srcset="../temp/game__art_ps4@2x.jpg 2x"
+                                                         src="../temp/game__art_ps4.jpg"
+                                                         width="132" height="164"
+                                                         title="Metal Gear Solid V"
+                                                         alt="Metal Gear Solid V"
+                                                    >
+                                                    <label class="position__item position__item_horizontal_left position__item_vertical_top choice choice_widget_check choice_radio-inside">
+                                                        <input class="choice__input" type="radio" name="temp-select-position">
+                                                        <i class="choice__icon">
+                                                            <i class="choice__mark"></i>
+                                                        </i>
+                                                    </label>
+                                                    <label class="position__item position__item_horizontal_right position__item_vertical_top choice choice_widget_check choice_radio-inside">
+                                                        <input class="choice__input" type="radio" name="temp-select-position">
+                                                        <i class="choice__icon">
+                                                            <i class="choice__mark"></i>
+                                                        </i>
+                                                    </label>
+                                                    <label class="position__item position__item_horizontal_left position__item_vertical_bottom choice choice_widget_check choice_radio-inside">
+                                                        <input class="choice__input" type="radio" name="temp-select-position">
+                                                        <i class="choice__icon">
+                                                            <i class="choice__mark"></i>
+                                                        </i>
+                                                    </label>
+                                                    <label class="position__item position__item_horizontal_right position__item_vertical_bottom choice choice_widget_check choice_radio-inside">
+                                                        <input class="choice__input" type="radio" name="temp-select-position">
+                                                        <i class="choice__icon">
+                                                            <i class="choice__mark"></i>
+                                                        </i>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="label__figure">
+                                                <div class="label__mode">Выберите форму:</div>
+                                                <label class="label__shape figure figure_shape_star">
+                                                    <input class="figure__widget" type="radio" name="temp-choose-shape">
+                                                    <i class="figure__icon">
+                                                        <i class="figure__mark"></i>
+                                                    </i>
+                                                    <span class="figure__label">Звезда</span>
+                                                </label>
+                                                <label class="label__shape figure figure_shape_disc">
+                                                    <input class="figure__widget" type="radio" name="temp-choose-shape">
+                                                    <i class="figure__icon">
+                                                        <i class="figure__mark"></i>
+                                                    </i>
+                                                    <span class="figure__label">Круг</span>
+                                                </label>
+                                                <label class="label__shape figure figure_shape_square">
+                                                    <input class="figure__widget" type="radio" name="temp-choose-shape">
+                                                    <i class="figure__icon">
+                                                        <i class="figure__mark"></i>
+                                                    </i>
+                                                    <span class="figure__label">Квадрат</span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="label__color">
+                                            <div class="checklist checklist_line">
+                                                <div class="checklist__title">
+                                                    <div class="title">Выберите цвет бейджа</div>
+                                                </div>
+                                                <ul class="checklist__list">
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_danger">
+                                                            <input class="choice__input" type="radio" name="temp-select-color">
+                                                            <i class="choice__icon">
+                                                                <i class="choice__mark"></i>
+                                                            </i>
+                                                            <span class="choice__label">Красный</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_warning">
+                                                            <input class="choice__input" type="radio" name="temp-select-color">
+                                                            <i class="choice__icon">
+                                                                <i class="choice__mark"></i>
+                                                            </i>
+                                                            <span class="choice__label">Желтый</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_success">
+                                                            <input class="choice__input" type="radio" name="temp-select-color">
+                                                            <i class="choice__icon">
+                                                                <i class="choice__mark"></i>
+                                                            </i>
+                                                            <span class="choice__label">Зеленый</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_info">
+                                                            <input class="choice__input" type="radio" name="temp-select-color">
+                                                            <i class="choice__icon">
+                                                                <i class="choice__mark"></i>
+                                                            </i>
+                                                            <span class="choice__label">Синий</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="text" placeholder="Скидка, %">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <button class="button button_palette_success" type="submit" data-popover=".page__popover_id_create-info-step-02">Сохранить</button>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                    </div>
+
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_create-info-step-02">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Редактировать бейдж</div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+
+                        <form class="form">
+
+                            <div class="form__head">
+                                <div class="form__title title">Регион</div>
+                                <div class="form__note">Объявления будут показываться в выбранных регионах страны.</div>
+                            </div>
+
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <div class="input input_widget_suggest input_split input_fill">
+                                        <input class="input__text" type="text" placeholder="Выберите страну" value="Вьетнам">
+                                        <div class="input__cleartype"></div>
+                                        <div class="input__dropdown">
+                                            <div class="input__suggest scroll scroll_skin_default scroll_always_visible">
+                                                <button class="input__option input__option_current" type="button">Вьетнам</button>
+                                                <button class="input__option" type="button">Таиланд</button>
+                                                <button class="input__option" type="button">Лаос</button>
+                                                <button class="input__option" type="button">Камбоджа</button>
+                                                <button class="input__option" type="button">Филиппинские острова</button>
+                                                <button class="input__option" type="button">Малайзия</button>
+                                                <button class="input__option" type="button">Гонконг</button>
+                                                <button class="input__option" type="button">Россия</button>
+                                                <button class="input__option" type="button">Украина</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input input_widget_suggest input_split input_fill">
+                                        <input class="input__text" type="text" placeholder="Выберите регион" value="Камау">
+                                        <div class="input__cleartype"></div>
+                                        <div class="input__dropdown">
+                                            <div class="input__suggest scroll scroll_skin_default scroll_always_visible">
+                                                <button class="input__option input__option_current" type="button">Камау</button>
+                                                <button class="input__option" type="button">Донгнай</button>
+                                                <button class="input__option" type="button">Куангчи</button>
+                                                <button class="input__option" type="button">Ниньбинь</button>
+                                                <button class="input__option" type="button">Тхыатхьен-Хюэ</button>
+                                                <button class="input__option" type="button">Хазянг</button>
+                                                <button class="input__option" type="button">Хатинь</button>
+                                                <button class="input__option" type="button">Шонла</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input input_widget_suggest input_split">
+                                        <input class="input__text" type="text" placeholder="Выберите город">
+                                        <div class="input__cleartype"></div>
+                                        <div class="input__dropdown">
+                                            <div class="input__suggest scroll scroll_skin_default scroll_always_visible">
+                                                <button class="input__option" type="button">Вунгтау</button>
+                                                <button class="input__option" type="button">Муйнэ</button>
+                                                <button class="input__option" type="button">Хошимин</button>
+                                                <button class="input__option" type="button">Далат</button>
+                                                <button class="input__option" type="button">Ханой</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <button class="button button_palette_success" type="submit">Создать</button>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                    </div>
+
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_update-contacts">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Контакты</div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <form class="form">
+                            <fieldset class="form__fieldset">
+                                <div class="form__field input input_widget_area">
+                                    <textarea class="input__text scroll scroll_skin_default scroll_always_visible" placeholder="Ваш адрес"></textarea>
+                                </div>
+                                <div class="form__field input">
+                                    <input class="input__text" type="tel" placeholder="Номер телефона">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                                <div class="form__field input">
+                                    <input class="input__text" type="email" placeholder="Электронная почта">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                                <div class="form__field input">
+                                    <input class="input__text" type="url" placeholder="Сайт">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                                <div class="form__field input">
+                                    <input class="input__text" type="text" placeholder="Skype">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                                <div class="form__field input">
+                                    <input class="input__text" type="tel" placeholder="Whatsapp">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                                <div class="form__field input">
+                                    <input class="input__text" type="tel" placeholder="Viber">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                                <div class="form__field form__field_kind_choice">
+                                    <label class="choice choice_widget_check">
+                                        <input class="choice__input" type="checkbox">
+                                        <i class="choice__icon">
+                                            <i class="choice__mark"></i>
+                                        </i>
+                                        <span class="choice__label">Отправлю почтой</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <button class="button button_palette_success" type="button">Сохранить</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_rightholder">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Правообладателям</div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <form class="form">
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="text" placeholder="Ваше имя">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="email" placeholder="Email">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="url" placeholder="URL страницы с проблемой">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input input_widget_area">
+                                        <textarea class="input__text" type="url" placeholder="Объясните как нарушаются ваши права"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input input_widget_area">
+                                        <textarea class="input__text" type="url" placeholder="Опишите проблемный контент"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input input_widget_area">
+                                        <textarea class="input__text" type="url" placeholder="Опишите причину по которой ваши права нарушены"></textarea>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <button class="button button_palette_success" type="submit">Создать</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_guardian">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Страж</div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <form class="form">
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="text" placeholder="Платформа">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="text" placeholder="Название игры">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field form__field_kind_preview">
+                                    <a class="preview" href="game.html" style="background-image: url(../temp/preview_01.jpg);">
+                                        <div class="preview__delete cancel" tabindex="0">
+                                            <span class="cancel__icon">Удалить</span>
+                                        </div>
+                                        <div class="preview__category">PlayStation 4</div>
+                                        <div class="preview__title">Street Fighter V</div>
+                                    </a>
+                                    <a class="preview" href="game.html" style="background-image: url(../temp/preview_02.jpg);">
+                                        <div class="preview__delete cancel" tabindex="0">
+                                            <span class="cancel__icon">Удалить</span>
+                                        </div>
+                                        <div class="preview__category">PlayStation 3</div>
+                                        <div class="preview__title">No More Heroes: Heroes' Paradise Limited Edition</div>
+                                    </a>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="text" placeholder="Радиус, км.">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input">
+                                        <input class="input__text" type="tel" value="Номер телефона">
+                                        <div class="input__cleartype"></div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field">
+                                    <button class="button button_palette_success" type="submit">Предложить</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_conversations">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Сообщения</div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+
+                        <div class="null">
+                            Нет сообщений.
+                        </div>
+
+                        <br>
+                        или
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <div class="conversations">
+
+                            <a class="conversations__item dialog" href="#" data-popover=".page__popover_id_chat">
+                                <div class="dialog__interlocutor avatar avatar_size_larger">
+                                    <img class="avatar__image"
+                                         srcset="../temp/avatar_02_large@2x.jpg 2x"
+                                         src="../temp/avatar_02_large.jpg"
+                                         width="40" height="40"
+                                         title=""
+                                         alt=""
+                                    >
+                                </div>
+                                <div class="dialog__name title">
+                                    <span class="link link_decoration_inverted">Hironobu Sakaguchi</span>
+                                </div>
+                                <div class="dialog__content wysiwyg">
+                                    <p>DriveClub</p>
+                                </div>
+                                <time class="dialog__time" datetime="2014-12-31T19:59+04:00">31 Дек, 23:59</time>
+                            </a>
+
+                            <a class="conversations__item dialog" href="#" data-popover=".page__popover_id_chat">
+                                <div class="dialog__interlocutor avatar avatar_size_larger">
+                                    <img class="avatar__image"
+                                         srcset="../temp/avatar_03_large@2x.jpg 2x"
+                                         src="../temp/avatar_03_large.jpg"
+                                         width="40" height="40"
+                                         title=""
+                                         alt=""
+                                    >
+                                </div>
+                                <div class="dialog__name title">
+                                    <span class="link link_decoration_inverted">Nobuo Uematsu</span>
+                                </div>
+                                <div class="dialog__content wysiwyg">
+                                    <p>Aliquam ullamcorper dolor gravida, cursus mauris vitae, feugiat nulla. Morbi consectetur quam erat, ut condimentum lectus scelerisque eget. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                                </div>
+                                <time class="dialog__time" datetime="2014-12-31T19:59+04:00">Вчера, 23:59</time>
+                            </a>
+
+                            <a class="conversations__item dialog" href="#" data-popover=".page__popover_id_chat">
+                                <div class="dialog__interlocutor avatar avatar_size_larger">
+                                    <img class="avatar__image"
+                                         srcset="../temp/avatar_04_large@2x.jpg 2x"
+                                         src="../temp/avatar_04_large.jpg"
+                                         width="40" height="40"
+                                         title=""
+                                         alt=""
+                                    >
+                                </div>
+                                <div class="dialog__name title">
+                                    <span class="link link_decoration_inverted">Akira Yamaoka</span>
+                                </div>
+                                <div class="dialog__content wysiwyg">
+                                    <p>Morbi sed velit eu lectus venenatis hendrerit. Duis mollis volutpat ipsum non maximus. Phasellus fermentum odio ante, dapibus tincidunt turpis euismod non. Morbi fermentum lorem vel euismod laoreet. Curabitur elit metus, volutpat vel urna in, pellentesque suscipit nulla.</p>
+                                    <p>Aliquam ullamcorper dolor gravida, cursus mauris vitae, feugiat nulla. Morbi consectetur quam erat, ut condimentum lectus scelerisque eget. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                                </div>
+                                <time class="dialog__time" datetime="2014-12-31T19:59+04:00">23:59</time>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__popover page__popover_id_chat">
+                <div class="page__column">
+
+                    <div class="chat">
+                        <div class="chat__body scroll scroll_skin_default">
+                            <div class="chat__ribbon">
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Кстати, у тебя диск в каком состоянии?
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Связи с данным событием, команда Firaxis выпустила новый трейлер, рассказывающий о дополнении и его плюшках.
+                                        </p>
+                                        <p class="message_paragraph">
+                                            Раздобыть технологии, которые помогут защитникам Земли справиться с захватившей её инопланетной угрозой.
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message message_self">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            В хорошем состоянии, диску неделя
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Кстати, у тебя диск в каком состоянии?
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Связи с данным событием, команда Firaxis выпустила новый трейлер, рассказывающий о дополнении и его плюшках.
+                                        </p>
+                                        <p class="message_paragraph">
+                                            Раздобыть технологии, которые помогут защитникам Земли справиться с захватившей её инопланетной угрозой.
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message message_self">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            В хорошем состоянии, диску неделя
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Кстати, у тебя диск в каком состоянии?
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Связи с данным событием, команда Firaxis выпустила новый трейлер, рассказывающий о дополнении и его плюшках.
+                                        </p>
+                                        <p class="message_paragraph">
+                                            Раздобыть технологии, которые помогут защитникам Земли справиться с захватившей её инопланетной угрозой.
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message message_self">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            В хорошем состоянии, диску неделя
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Кстати, у тебя диск в каком состоянии?
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Связи с данным событием, команда Firaxis выпустила новый трейлер, рассказывающий о дополнении и его плюшках.
+                                        </p>
+                                        <p class="message_paragraph">
+                                            Раздобыть технологии, которые помогут защитникам Земли справиться с захватившей её инопланетной угрозой.
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message message_self">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            В хорошем состоянии, диску неделя
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat__head">
+                            <div class="chat__interlocutor userbar">
+                                <a class="userbar__avatar avatar avatar_size_larger" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/avatar_04_large@2x.jpg 2x"
+                                         src="../temp/avatar_04_large.jpg"
+                                         width="40" height="40"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="userbar__name title">
+                                    <a class="link link_decoration_inverted">Tifa Lockhart</a>
+                                </div>
+                                <div class="userbar__note">
+                                    Drive Club
+                                </div>
+                            </div>
+                        </div>
+                        <form class="chat__foot">
+                            <div class="chat__input input input_widget_area input_resize_auto">
+                                <textarea class="input__text scroll scroll_skin_default" placeholder="Ваше сообщение"></textarea>
+                            </div>
+                            <button class="chat__send button button_palette_success" type="submit">Отправить</button>
+                        </form>
+                    </div>
+
+                </div>
+                <button class="page__hide-popover close" type="button"></button>
+            </div>
+
+            <div class="page__panel page__panel_id_sidebar">
+                <div class="page__column page__column_scroll scroll scroll_skin_default">
+
+                    <div class="pillar">
+                        <div class="pillar__content">
+
+                            <div class="heading">
+                                <div class="heading__content">
+                                    <div class="heading__title title title_font_larger">Уведомления</div>
+                                </div>
+                            </div>
+                            <div class="sidebar">
+                                <div class="help">
+                                    <nav class="simple-nav">
+                                        <a class="simple-nav__link simple-nav__link_current" href="help-info.html">Помощь по сайту</a>
+                                        <a class="simple-nav__link" href="help-tariffs.html">Тарифы</a>
+                                        <a class="simple-nav__link" href="help-agreement.html">Пользовательское соглашение</a>
+                                        <a class="simple-nav__link" href="help-contact.html">Обратная связь</a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pillar__footer footer">
+                            <div class="footer__navigation light-nav">
+                                <div class="light-nav__section">
+                                    <div class="light-nav__item">
+                                        <a class="light-nav__link" href="help-tariffs.html">Тарифы</a>
+                                    </div>
+                                    <div class="light-nav__item">
+                                        <a class="light-nav__link" href="help-agreement.html">Правообладателям</a>
+                                    </div>
+                                    <div class="light-nav__item">
+                                        <a class="light-nav__link" href="help-contact.html">Обратная связь</a>
+                                    </div>
+                                </div>
+                                <div class="light-nav__section">
+                                    <div class="light-nav__item">
+                                        <a class="light-nav__link" href="help-info.html">Помощь</a>
+                                    </div>
+                                    <div class="light-nav__item">
+                                        <a class="light-nav__link" href="help-agreement.html">Соглашение</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__copyright copyright">
+                                © 2016 Gameslooper
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__body">
+
+                <div class="questions">
+                    <div class="faq">
+                        <div class="faq__index">
+                            <ul class="contents">
+                                <li class="contents__item">
+                                    <a class="contents__link contents__link_current link" href="#">С&nbsp;чего начать</a>
+                                </li>
+                                <li class="contents__item">
+                                    <a class="contents__link link" href="#">Создание лота</a>
+                                </li>
+                                <li class="contents__item">
+                                    <a class="contents__link link" href="#">Лоты (объявления)</a>
+                                </li>
+                                <li class="contents__item">
+                                    <a class="contents__link link" href="profile-games.html">Профиль</a>
+                                </li>
+                                <li class="contents__item">
+                                    <a class="contents__link link" href="#" data-popover=".page__popover_id_settings">Настройки</a>
+                                </li>
+                                <li class="contents__item">
+                                    <a class="contents__link link" href="#">Уровень и&nbsp;отзывы</a>
+                                </li>
+                                <li class="contents__item">
+                                    <a class="contents__link link" href="#">Реклама</a>
+                                </li>
+                                <li class="contents__item">
+                                    <a class="contents__link link" href="#">Местоположение</a>
+                                </li>
+                                <li class="contents__item">
+                                    <a class="contents__link link" href="#">Премиум пользователь</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="faq__content">
+                            <article class="faq__item faq__item_current">
+                                <h2 class="faq__question title title_font_larger">
+                                    С&nbsp;чего начать
+                                </h2>
+                                <div class="faq__answer">
+                                    <section class="faq__section">
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <h3>Фильтры</h3>
+                                            <p>После регистрации&nbsp;Вы можете приступить к&nbsp;поиску нужной игры. Для этого используйте блок &laquo;Фильтры&raquo; и&nbsp;после внесения изменений подтвердите действия кнопкой &laquo;Применить&raquo;.</p>
+                                            <p>Используйте опцию &laquo;хочу обменять&raquo;, чтобы увидеть доступные варианты обмена в&nbsp;вашем регионе.</p>
+                                        </div>
+                                        <div class="faq__featured">
+                                            <img class="faq__pic" srcset="../content/faq-01@2x.jpg 2x" src="../content/faq-01.jpg" width="140" height="161" alt="">
+                                        </div>
+                                    </section>
+                                    <section class="faq__section">
+                                        <div class="faq__featured">
+                                            <img class="faq__pic" srcset="../content/faq-02@2x.jpg 2x" src="../content/faq-02.jpg" width="140" height="130" alt="">
+                                        </div>
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <h3>Тренды</h3>
+                                            <p>Блок трендов отображает последние созданные лоты, находящиеся недалеко от&nbsp;вас в&nbsp;реальном времени.</p>
+                                            <p>Золотой лот&nbsp;&mdash; объявление премиум пользователя.</p>
+                                        </div>
+                                    </section>
+                                </div>
+                            </article>
+                            <article class="faq__item">
+                                <h2 class="faq__question title title_font_larger">
+                                    Создание лота
+                                </h2>
+                                <div class="faq__answer">
+                                    <section class="faq__section">
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <p>Для того, чтобы приступить к&nbsp;созданию вашего лота используйте используйте иконку &laquo;+&raquo; в&nbsp;левом меню. В&nbsp;окне &laquo;Создать лот&raquo; укажите платформу, введите название игры и&nbsp;выберите нужную игру из&nbsp;списка. Дополнительно, в&nbsp;окне создания лота можно указать комментарий.</p>
+                                            <p>Для завершения создания используйте опцию &laquo;Хочу продать&raquo;, чтобы указать стоимость своего диска, или опцию &laquo;Хочу обменять&raquo;, чтобы сделать свое предложение доступным для обмена. Обе опции можно использовать одновременно.</p>
+                                            <p>Подтвердите создание кнопкой &laquo;Создать&raquo;.</p>
+                                        </div>
+                                        <div class="faq__featured">
+                                            <img class="faq__pic" srcset="../content/faq-03@2x.jpg 2x" src="../content/faq-03.jpg" width="140" height="311" alt="">
+                                        </div>
+                                    </section>
+                                </div>
+                            </article>
+                            <article class="faq__item">
+                                <h2 class="faq__question title title_font_larger">
+                                    Лоты (объявления)
+                                </h2>
+                                <div class="faq__answer">
+                                    <section class="faq__section">
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <h3>Информация о&nbsp;лоте</h3>
+                                            <p>Лот включает в&nbsp;себя следующую информацию:</p>
+                                            <ol class="no-margin-top">
+                                                <li>Расстояние до&nbsp;продавца.</li>
+                                                <li>Стоимость диска (опционально).</li>
+                                                <li>Имеет&nbsp;ли лот возможность обмена (опционально).</li>
+                                                <li>Уровень надежности продавца.</li>
+                                            </ol>
+                                            <figure>
+                                                <img srcset="../content/faq-04@2x.jpg 2x" src="../content/faq-04.jpg" width="610" height="87" alt="">
+                                            </figure>
+                                        </div>
+                                    </section>
+                                    <section class="faq__section">
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <h3>Создание предложения</h3>
+                                            <p>Для того, чтобы участвовать в&nbsp;торгах используйте кнопку &laquo;Предложить обмен&raquo; или &laquo;Купить&raquo;. Предлагать можно сразу несколько игр, а&nbsp;также указывать доплату.</p>
+                                            <figure>
+                                                <img srcset="../content/faq-05@2x.jpg 2x" src="../content/faq-05.jpg" width="610" height="78" alt="">
+                                            </figure>
+                                        </div>
+                                    </section>
+                                    <section class="faq__section">
+                                        <div class="faq__featured">
+                                            <img class="faq__pic" srcset="../content/faq-06@2x.jpg 2x" src="../content/faq-06.jpg" width="140" height="187" alt="">
+                                        </div>
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <h3>Предложение</h3>
+                                            <p>Предложения бывают трех разных типов:</p>
+                                            <ol>
+                                                <li>Простое предложение обмена (нескольких игр).</li>
+                                                <li>Обмен с&nbsp;доплатой.</li>
+                                                <li>Деньги.</li>
+                                            </ol>
+                                        </div>
+                                    </section>
+                                    <section class="faq__section">
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <h3>Ответить на&nbsp;предложение</h3>
+                                            <p>Для ответа на&nbsp;предложение пользователей используйте кнопку &laquo;Ответить&raquo;, чтобы перейти к&nbsp;диалогу с&nbsp;пользователем.</p>
+                                            <p>При нажатии на&nbsp;кнопку &laquo;Не&nbsp;интересно&raquo;, автор предложения получит уведомление, а&nbsp;само предложение исчезнет из&nbsp;лота.</p>
+                                        </div>
+                                        <div class="faq__featured">
+                                            <img class="faq__pic" srcset="../content/faq-07@2x.jpg 2x" src="../content/faq-07.jpg" width="140" height="187" alt="">
+                                        </div>
+                                    </section>
+                                </div>
+                            </article>
+                            <article class="faq__item">
+                                <h2 class="faq__question title title_font_larger">
+                                    Профиль
+                                </h2>
+                                <div class="faq__answer">
+                                    <section class="faq__section">
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <p>На&nbsp;странице профиля отображается:</p>
+                                            <ul>
+                                                <li>Никнейм пользователя и&nbsp;дата регистрации;</li>
+                                                <li>Уровень надежности;</li>
+                                                <li>Статистика отзывов (хорошие/плохие);</li>
+                                                <li>Достижения;</li>
+                                                <li>Лоты пользователя.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="faq__featured">
+                                            <img class="faq__pic" srcset="../content/faq-08@2x.jpg 2x" src="../content/faq-08.jpg" width="140" height="147" alt="">
+                                        </div>
+                                    </section>
+                                </div>
+                            </article>
+                            <article class="faq__item">
+                                <h2 class="faq__question title title_font_larger">
+                                    Настройки
+                                </h2>
+                                <div class="faq__answer">
+                                    <section class="faq__section">
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <p>В&nbsp;настройках пользователя можно:</p>
+                                            <ul class="no-margin-top">
+                                                <li>Загрузить фоновую картинку профиля (тему);</li>
+                                                <li>Загрузить аватар;</li>
+                                                <li>Изменить никнейм;</li>
+                                                <li>Изменить почту профиля;</li>
+                                                <li>Изменить пароль;</li>
+                                                <li>Подключить авторизацию через социальные сети (ВКонтакте и&nbsp;Фейсбук);</li>
+                                                <li>А&nbsp;так&nbsp;же настроить уведомления, которые вы&nbsp;хотите получать.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="faq__featured">
+                                            <img class="faq__pic" srcset="../content/faq-09@2x.jpg 2x" src="../content/faq-09.jpg" width="140" height="208" alt="">
+                                        </div>
+                                    </section>
+                                </div>
+                            </article>
+                            <article class="faq__item">
+                                <h2 class="faq__question title title_font_larger">
+                                    Уровень и&nbsp;отзывы
+                                </h2>
+                                <div class="faq__answer">
+                                    <section class="faq__section">
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <p>Уровень надежности пользователя отображает активность пользователя и&nbsp;является главным гарантом успешной сделки. Формируется он&nbsp;из&nbsp;активности пользователя и&nbsp;отзывов. Уровни бывают трех разных типов (чем выше, тем пользователь надежней):</p>
+                                            <ol>
+                                                <li>Зеленый (7-10&nbsp;уровень).</li>
+                                                <li>Желтый (4-7&nbsp;уровень).</li>
+                                                <li>Красный (4&nbsp;и&nbsp;меньше).</li>
+                                            </ol>
+                                            <p>Отзывы бывают двух типов: хорошие и&nbsp;плохие. С&nbsp;каждым плохим отзывом в&nbsp;профиле, уровень пользователя снижается. На&nbsp;основе отзывов формируется репутация пользователей и&nbsp;продавцов на&nbsp;сайте.</p>
+                                            <figure>
+                                                <img srcset="../content/faq-10@2x.jpg" src="../content/faq-10.jpg" width="610" height="274" alt="">
+                                            </figure>
+                                        </div>
+                                    </section>
+                                </div>
+                            </article>
+                            <article class="faq__item">
+                                <h2 class="faq__question title title_font_larger">
+                                    Реклама
+                                </h2>
+                                <div class="faq__answer">
+                                    <section class="faq__section">
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <p>Каждый премиум пользователь имеет возможность &laquo;рекламировать&raquo; свои лоты на&nbsp;страницах сайта. Для этого, на&nbsp;странице профиля, выбрав нужный лот, потребуется нажать кнопку &laquo;Рекламировать&raquo; и&nbsp;выбрать регион в&nbsp;котором объявление будет показываться. После чего, объявления пользователя будут отображаться в&nbsp;блоке трендов и&nbsp;на&nbsp;странице игр &laquo;Золотым цветом&raquo;.</p>
+                                            <p>В&nbsp;разделе &laquo;Реклама&raquo;, на&nbsp;странице профиля, отображается вся статистика по&nbsp;рекламным кампаниям:</p>
+                                            <ul>
+                                                <li>CTR&nbsp;&mdash; отношение числа кликов на&nbsp;рекламное объявление к&nbsp;числу показов;</li>
+                                                <li>Показы;</li>
+                                                <li>Переходы.</li>
+                                            </ul>
+                                            <p>Каждую рекламную компанию можно приостановить, удалить или изменить регион в&nbsp;которых будет доступно объявление.</p>
+                                            <figure>
+                                                <img srcset="../content/faq-11@2x.jpg" src="../content/faq-11.jpg" width="610" height="235" alt="">
+                                            </figure>
+                                        </div>
+                                    </section>
+                                </div>
+                            </article>
+                            <article class="faq__item">
+                                <h2 class="faq__question title title_font_larger">
+                                    Местоположение
+                                </h2>
+                                <div class="faq__answer">
+                                    <section class="faq__section">
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <h3>Мое местоположение</h3>
+                                            <p>Каждый пользователь на&nbsp;сайте имеет геопозицию, к&nbsp;которой привязываются все свои лоты. Для того, чтобы изменить свое местоположение, вам потребуется навести мышку на&nbsp;аватар в&nbsp;левом меню и&nbsp;выбрать пункт &laquo;Мое местоположение&raquo;. Затем, поставить метку геопозиции в&nbsp;ваш регион на&nbsp;карте, и&nbsp;подтвердить изменения кнопкой &laquo;Сохранить&raquo;.</p>
+                                            <p>Обращаем ваше внимание, что по&nbsp;умолчанию (после регистрации) каждый пользователь находится в&nbsp;Москве.</p>
+                                            <figure>
+                                                <img srcset="../content/faq-12@2x.jpg" src="../content/faq-12.jpg" width="610" height="185" alt="">
+                                            </figure>
+                                        </div>
+                                    </section>
+                                    <section class="faq__section">
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <h3>Точка обзора</h3>
+                                            <p>Для поиска лотов в&nbsp;нужном вам регионе нужно установить &laquo;Точку обзора&raquo;. Для этого, выберите иконку геометки в&nbsp;левом меню и&nbsp;поставьте метку геопозиции в&nbsp;нужном вам регионе на&nbsp;карте. Выберите радиус видимых объявлений, и&nbsp;подтвердите изменения кнопкой &laquo;Сохранить&raquo;. </p>
+                                            <figure>
+                                                <img srcset="../content/faq-13@2x.jpg" src="../content/faq-13.jpg" width="610" height="185" alt="">
+                                            </figure>
+                                        </div>
+                                    </section>
+                                </div>
+                            </article>
+                            <article class="faq__item">
+                                <h2 class="faq__question title title_font_larger">
+                                    Премиум пользователь
+                                </h2>
+                                <div class="faq__answer">
+                                    <section class="faq__section">
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <h3>Контакты</h3>
+                                            <p>Каждый премиум пользователь может кастомизировать свою страницу профиля указав контактную информацию для связи в&nbsp;правом блоке &laquo;Контакты&raquo;:</p>
+                                            <ul>
+                                                <li>Сайт;</li>
+                                                <li>Адрес;</li>
+                                                <li>Телефон;</li>
+                                                <li>Доставка;</li>
+                                                <li>Skype, Whatsapp, Viber;</li>
+                                                <li>Электронная почта.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="faq__featured">
+                                            <img class="faq__pic" srcset="../content/faq-14@2x.jpg 2x" src="../content/faq-14.jpg" width="140" height="236" alt="">
+                                        </div>
+                                    </section>
+                                    <section class="faq__section">
+                                        <div class="faq__featured">
+                                            <img class="faq__pic" srcset="../content/faq-15@2x.jpg 2x" src="../content/faq-15.jpg" width="140" height="235" alt="">
+                                        </div>
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <h3>Бейджи</h3>
+                                            <p>Дополнительно, премиум пользователи могут настраивать внешний вид своих лотов на&nbsp;странице своего профиля добавляя &laquo;Бейджи&raquo;.</p>
+                                            <p>Бейджи устанавливают процент скидки.</p>
+                                        </div>
+                                    </section>
+                                    <section class="faq__section">
+                                        <div class="faq__article wysiwyg wysiwyg_skin_article">
+                                            <h3>Страж</h3>
+                                            <p>При помощи стража, вы&nbsp;можете отслеживать появление новых игр на&nbsp;сайте&nbsp;&mdash; получая простое СМС оповещение. Для того, чтобы подключить услугу, наведите курсор мыши на&nbsp;ваш автар и&nbsp;выберите &laquo;Страж&raquo; в&nbsp;меню выпадающем меню.</p>
+                                            <p>В&nbsp;открывшейся форме выберите &laquo;Платформу&raquo; и&nbsp;&laquo;Название игры&raquo;, а&nbsp;так&nbsp;же укажите допустимый радиус видимости объявлений и&nbsp;номер телефона (в&nbsp;международном формате) на&nbsp;который будут поступать оповещения.</p>
+                                            <p>Страж доступен только для пользователей Премиум.</p>
+                                        </div>
+                                        <div class="faq__featured">
+                                            <img class="faq__pic" srcset="../content/faq-16@2x.jpg 2x" src="../content/faq-16.jpg" width="140" height="267" alt="">
+                                        </div>
+                                    </section>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="faq__footer">
+                            Если проблема, с&nbsp;которой вы&nbsp;столкнулись, не&nbsp;указана выше, <a class="link link_palette_info link_decoration_inverted" href="#">напишите нам</a>.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="page__panel page__panel_id_aside">
+                <div class="page__column scroll scroll_skin_default">
+                    <div class="heading">
+                        <div class="heading__content">
+                            <div class="heading__title title title_font_larger">Тренды сейчас</div>
+                        </div>
+                    </div>
+                    <div class="aside">
+
+                        <!-- unique content -->
+                        <div class="popular">
+
+                            <a class="preview preview_highlight" href="game.html" style="background-image: url(../temp/preview_01.jpg);">
+                                <div class="preview__category">PlayStation 4</div>
+                                <div class="preview__title">Street Fighter V</div>
+                            </a>
+
+                            <a class="preview" href="game.html" style="background-image: url(../temp/preview_02.jpg);">
+                                <div class="preview__category">PlayStation 3</div>
+                                <div class="preview__title">No More Heroes: Heroes' Paradise Limited Edition</div>
+                            </a>
+
+                            <a class="preview" href="game.html" style="background-image: url(../temp/preview_03.jpg);">
+                                <div class="preview__category">PlayStation 3</div>
+                                <div class="preview__title">Strong Bad's Cool Game for Attractive People Episode 4 - Dangeresque 3: The Criminal Projective</div>
+                            </a>
+
+                            <a class="preview" href="game.html" style="background-image: url(../temp/preview_04.jpg);">
+                                <div class="preview__category">Xbox One</div>
+                                <div class="preview__title">Call of Duty: Black Ops III</div>
+                            </a>
+
+                            <a class="preview" href="game.html" style="background-image: url(../temp/preview_05.jpg);">
+                                <div class="preview__category">PlayStation 4</div>
+                                <div class="preview__title">Star Wars: Battlefront</div>
+                            </a>
+
+                            <a class="preview" href="game.html" style="background-image: url(../temp/preview_06.jpg);">
+                                <div class="preview__category">PlayStation 4</div>
+                                <div class="preview__title">Killzone: Shadow Fall</div>
+                            </a>
+
+                            <a class="preview" href="game.html" style="background-image: url(../temp/preview_07.jpg);">
+                                <div class="preview__category">Nintendo Wii</div>
+                                <div class="preview__title">Assassin’s Creed III</div>
+                            </a>
+
+                            <a class="preview" href="game.html">
+                                <div class="preview__category">PlayStation 4</div>
+                                <div class="preview__title">Grand Theft Auto V</div>
+                            </a>
+
+                            <a class="preview" href="game.html" style="background-image: url(../temp/preview_01.jpg);">
+                                <div class="preview__category">PlayStation 4</div>
+                                <div class="preview__title">Street Fighter V</div>
+                            </a>
+
+                            <a class="preview" href="game.html" style="background-image: url(../temp/preview_02.jpg);">
+                                <div class="preview__category">PlayStation 3</div>
+                                <div class="preview__title">No More Heroes: Heroes' Paradise Limited Edition</div>
+                            </a>
+
+                            <a class="preview" href="game.html" style="background-image: url(../temp/preview_03.jpg);">
+                                <div class="preview__category">PlayStation 3</div>
+                                <div class="preview__title">Strong Bad's Cool Game for Attractive People Episode 4 - Dangeresque 3: The Criminal Projective</div>
+                            </a>
+
+                            <a class="preview" href="game.html" style="background-image: url(../temp/preview_04.jpg);">
+                                <div class="preview__category">Xbox One</div>
+                                <div class="preview__title">Call of Duty: Black Ops III</div>
+                            </a>
+
+                            <a class="preview" href="game.html" style="background-image: url(../temp/preview_05.jpg);">
+                                <div class="preview__category">PlayStation 4</div>
+                                <div class="preview__title">Star Wars: Battlefront</div>
+                            </a>
+
+                        </div>
+                        <!--/unique content -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../vendors/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../scripts/temp.js"></script>
+
+
+    </body>
+</html>

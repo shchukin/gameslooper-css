@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.info</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+        <svg style="display: none;" xmlns="http://www.w3.org/2000/svg"><symbol id="create" viewBox="0 0 20 20"><path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-2a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm3-7s1 0 1 1-1 1-1 1h-2.004L11 13s-.004 1-1 1-.984-1-.984-1v-2H7s-1 0-1-1 1-1 1-1h2l.016-2S9.004 6 10 6s.996 1 .996 1L11 9h2z" fill-rule="evenodd"/></symbol><symbol id="like" viewBox="0 0 20 20"><g fill-rule="evenodd"><path d="M10.006 5S11.5 3 14 3s4.006 2 4.006 4.5c0 5.5-6.506 9.5-8 9.5-1.506 0-8-4-8-9.5C2.006 6 3.5 3 6 3s4.006 2 4.006 2zM10 7.5c1.464 0 1.5-2.5 3.5-2.5S16 6.21 16 8.041C16 12.07 10.5 15 10 15s-6-2.93-6-6.959C4 6.942 4.669 5 6.5 5S8.536 7.5 10 7.5z"/><path fill="currentColor" d="M10.006 5S11.5 3 14 3s4.006 2 4.006 4.5c0 5.5-6.506 9.5-8 9.5-1.506 0-8-4-8-9.5C2.006 6 3.5 3 6 3s4.006 2 4.006 2z"/></g></symbol><symbol id="notification_id_achievement" viewBox="0 0 20 20"><path d="M5 4.034v-1.04A1 1 0 0 1 5.995 2h8.01c.55 0 .995.451.995.993v1.041l2.99-.025a.989.989 0 0 1 1.01.994v2.006a4 4 0 0 1-4.001 3.994H14.5c0 1.655-2.684 2.955-3.471 2.943L11 15.985l2.053.01A.972.972 0 0 1 14.026 17c-.014.552-.479 1-1.023 1H6.997A.996.996 0 0 1 6 17c0-.552.443-1.002.999-1.005L9 15.985l.09-1.995c-1.983 0-3.59-2.233-3.59-2.987h-.499A3.995 3.995 0 0 1 1 7.01V5.003c0-.554.443-1 1.01-.994L5 4.034zM3 6h2v3S3 9 3 7V6zm14 0h-2v3s2 0 2-2V6zM7 4h6v4.998A3.003 3.003 0 0 1 10 12c-1.657 0-3-1.339-3-3.002V4z" fill-rule="evenodd"/></symbol><symbol id="notification_id_exchange" viewBox="0 0 20 20"><path d="M15.605 16.14C16.776 15.035 18 13.13 18 10c0-6-6-7.802-6-7.802s-1.17-.09-1.17 1.053C10.83 4.393 12 4.5 12 4.5S16 6 16 10c0 2.027-.9 3.412-1.786 4.286l-1.116-1.49c-.33-.44-.706-.364-.839.168l-1.018 4.072c-.133.532.21.964.75.964h4.018c.547 0 .723-.357.393-.797l-.797-1.062zM4.351 3.802C3.193 4.914 2 6.811 2 9.9c0 6 6 7.802 6 7.802s1.17.09 1.17-1.053C9.17 15.507 8 15.4 8 15.4s-4-1.5-4-5.5c0-1.995.87-3.368 1.743-4.243l1.16 1.546c.33.44.705.365.838-.167l1.018-4.072c.133-.532-.21-.964-.75-.964H3.991c-.547 0-.723.357-.393.797L4.35 3.8z" fill-rule="evenodd"/></symbol><symbol id="notification_id_feedback" viewBox="0 0 20 20"><path d="M9.723 3c5.625 0 8.528 6.142 8.528 6.142.26.474.264 1.254-.009 1.73 0 0-2.894 6.128-8.519 6.128s-8.527-6.142-8.527-6.142c-.261-.474-.265-1.254.008-1.73 0 0 2.894-6.128 8.52-6.128zm0 2c4.375 0 7 5 7 5s-2.625 5-7 5-7-5-7-5 2.625-5 7-5zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill-rule="evenodd"/></symbol><symbol id="notification_id_message" viewBox="0 0 20 20"><path d="M2 5.002A1 1 0 0 1 3 4h14c.552 0 1 .456 1 1.002v9.996A1 1 0 0 1 17 16H3c-.552 0-1-.456-1-1.002V5.002zM4 8.5V14h12V8.5l-5.166 3.444c-.46.307-1.21.306-1.668 0L4 8.5zM4 6l6 4 6-4H4z" fill-rule="evenodd"/></symbol><symbol id="notification_id_purchase" viewBox="0 0 20 20"><path d="M7 3s0-1 1-1h5c2.21 0 4 1.8 4 4v1c0 2.21-1.795 4-4 4H9v2h5s1 0 1 1-1 1-1 1H9v2s0 1-1 1-1-1-1-1v-2H4s-1 0-1-1 1-1 1-1h3v-2H4s-1 0-1-1 1-1 1-1h3V3zm5.49 1H9v5h3.49C13.871 9 15 7.88 15 6.5 15 5.11 13.876 4 12.49 4z" fill-rule="evenodd"/></symbol><symbol id="param_id_exchange" viewBox="0 0 20 20"><path d="M15.605 16.14C16.776 15.035 18 13.13 18 10c0-6-6-7.802-6-7.802s-1.17-.09-1.17 1.053C10.83 4.393 12 4.5 12 4.5S16 6 16 10c0 2.027-.9 3.412-1.786 4.286l-1.116-1.49c-.33-.44-.706-.364-.839.168l-1.018 4.072c-.133.532.21.964.75.964h4.018c.547 0 .723-.357.393-.797l-.797-1.062zM4.351 3.802C3.193 4.914 2 6.811 2 9.9c0 6 6 7.802 6 7.802s1.17.09 1.17-1.053C9.17 15.507 8 15.4 8 15.4s-4-1.5-4-5.5c0-1.995.87-3.368 1.743-4.243l1.16 1.546c.33.44.705.365.838-.167l1.018-4.072c.133-.532-.21-.964-.75-.964H3.991c-.547 0-.723.357-.393.797L4.35 3.8z" fill-rule="evenodd"/></symbol><symbol id="param_id_geo" viewBox="0 0 20 20"><path d="M10 18c2 0 7-4 7-9A7 7 0 0 0 3 9c0 5 5 9 7 9zm0-2c1.5 0 5-3.5 5-7A5 5 0 0 0 5 9c0 3.5 3.5 7 5 7zm0-5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill-rule="evenodd"/></symbol><symbol id="param_id_rouble" viewBox="0 0 20 20"><path d="M7 3s0-1 1-1h5c2.21 0 4 1.8 4 4v1c0 2.21-1.795 4-4 4H9v2h5s1 0 1 1-1 1-1 1H9v2s0 1-1 1-1-1-1-1v-2H4s-1 0-1-1 1-1 1-1h3v-2H4s-1 0-1-1 1-1 1-1h3V3zm5.49 1H9v5h3.49C13.871 9 15 7.88 15 6.5 15 5.11 13.876 4 12.49 4z" fill-rule="evenodd"/></symbol><symbol id="rouble" viewBox="0 0 20 20"><path d="M7 3s0-1 1-1h5c2.21 0 4 1.8 4 4v1c0 2.21-1.795 4-4 4H9v2h5s1 0 1 1-1 1-1 1H9v2s0 1-1 1-1-1-1-1v-2H4s-1 0-1-1 1-1 1-1h3v-2H4s-1 0-1-1 1-1 1-1h3V3zm5.49 1H9v5h3.49C13.871 9 15 7.88 15 6.5 15 5.11 13.876 4 12.49 4z" fill-rule="evenodd"/></symbol></svg>
+
+
+
+        <div style="width: 320px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.info</h1>
+            <p><span style="color: red;">Есть овверрайд</span> <a href="../../desktop/markups/_info.html">на десктопы</a></p>
+            <br>
+            <br>
+            <p>
+                Рекламка. Мы не можем использовать названия типа ad или promo или banner,
+                потому что попадем под гнев adblock`еров. По этому используем загадочное <b>.info</b>.
+                Это надо запомнить.
+            </p>
+            <p>
+                Глобальная версия проста - это то, что встречается на мобилках. Версия для декстопов
+                в оверрайде. Там ховеры, усложненный лейаут и прочее.
+            </p>
+            <p>
+                В карточке инфо должны быть опции возобновить и редактировать.
+                Эти опции убраны в поповер, который открывается кликом/тапом на всю карточку.
+                По этой причине вся карточка сделана ссылкой.
+                В этой демке поповеры не представлены, но посмотреть можно на страницах ads.html
+                <br>
+                <a href="../../desktop/layouts/ads.html">на десктопах</a>
+                <br>
+                <a href="../../mobile/layouts/ads.html">на мобилках</a>
+            </p>
+            <p>
+                Если внутри карточки решим добавить ссылок, то надо будит разбираться с тем,
+                как запихать ссылку в ссылку. Тег &lt;a&gt; внутрь другого тега &lt;a&gt;
+                помещать нельзя. По-этому что-то придется делать div`ами либо span`ами.
+                Либо сам info, либо то, что внутри. Не забываем при этом tabindex="0".
+            </p>
+            <p>
+                Кликабельным можно сделать <b>.info__box</b> (верстка выдержит изменение тега на &lt;a&gt;.
+                Можно сделать ссылкой название игры. Для этого текст внутри <b>.info__title</b> обернуть
+                либо в &lt;a&gt; либо в &lt;span&gt; с классами <b>.link.link_decoration_inverted</b>.
+            </p>
+            <p>
+                Ретинизация картинок простая, как и везде, через SRCSET. Высота <b>60px</b>, ширина любая.
+                Тут просто одна статичная версия картинок. Вот на планшет-десктоп версии будут заморочки.
+                Но в принципе можно с этим совсем не заморочиваться и просто взять пачку картинок и разметку тега IMG
+                от блока <a href="../../global/markups/_thumb.html">.thumb</a>.
+                Там они чуть побольше и это лишний трафик, но подойдут. Кейс все-равно не особо популярный.
+            </p>
+
+            <br>
+            <br>
+
+            <a class="info" href="#">
+                <div class="info__container">
+                    <div class="info__game">
+                        <div class="info__box">
+                            <img class="info__art"
+                                 srcset="../temp/info__art_ps4_mobile@2x.jpg 2x"
+                                 src="../temp/info__art_ps4_mobile.jpg"
+                                 width="48" height="60"
+                                 title="Metal Gear Solid V"
+                                 alt="Metal Gear Solid V"
+                            >
+                            <div class="info__pause"></div>
+                        </div>
+                        <div class="info__summary">
+                            <div class="info__platform">PlayStation 4</div>
+                            <div class="info__title">Metal Gear Solid V</div>
+                        </div>
+                    </div>
+                    <div class="info__data">
+                        <div class="info__param">
+                            <div class="info__stat title">CTR</div>
+                            <div class="info__value">0,27%</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Показы</div>
+                            <div class="info__value">500</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Переходы</div>
+                            <div class="info__value">140</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.info_stopped</h2>
+            <p>
+                В приостановленном виде добалвяем этот модификатор.
+                Он просто покажет скрытый оверлейчик на боксарт.
+            </p>
+
+            <a class="info info_stopped" href="#">
+                <div class="info__container">
+                    <div class="info__game">
+                        <div class="info__box">
+                            <img class="info__art"
+                                 srcset="../temp/info__art_ps4_mobile@2x.jpg 2x"
+                                 src="../temp/info__art_ps4_mobile.jpg"
+                                 width="48" height="60"
+                                 title="Metal Gear Solid V"
+                                 alt="Metal Gear Solid V"
+                            >
+                            <div class="info__pause"></div>
+                        </div>
+                        <div class="info__summary">
+                            <div class="info__platform">PlayStation 4</div>
+                            <div class="info__title">Metal Gear Solid V</div>
+                        </div>
+                    </div>
+                    <div class="info__data">
+                        <div class="info__param">
+                            <div class="info__stat title">CTR</div>
+                            <div class="info__value">0,27%</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Показы</div>
+                            <div class="info__value">500</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Переходы</div>
+                            <div class="info__value">140</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Паравозик</h2>
+            <br>
+            <br>
+
+            <a class="info" href="#">
+                <div class="info__container">
+                    <div class="info__game">
+                        <div class="info__box">
+                            <img class="info__art"
+                                 srcset="../temp/info__art_ps4_mobile@2x.jpg 2x"
+                                 src="../temp/info__art_ps4_mobile.jpg"
+                                 width="48" height="60"
+                                 title="Metal Gear Solid V"
+                                 alt="Metal Gear Solid V"
+                            >
+                            <div class="info__pause"></div>
+                        </div>
+                        <div class="info__summary">
+                            <div class="info__platform">PlayStation 4</div>
+                            <div class="info__title">Metal Gear Solid V</div>
+                        </div>
+                    </div>
+                    <div class="info__data">
+                        <div class="info__param">
+                            <div class="info__stat title">CTR</div>
+                            <div class="info__value">0,27%</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Показы</div>
+                            <div class="info__value">500</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Переходы</div>
+                            <div class="info__value">140</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="info" href="#">
+                <div class="info__container">
+                    <div class="info__game">
+                        <div class="info__box">
+                            <img class="info__art"
+                                 srcset="../temp/info__art_ps3_mobile@2x.jpg 2x"
+                                 src="../temp/info__art_ps3_mobile.jpg"
+                                 width="52" height="60"
+                                 title="God of War III"
+                                 alt="God of War III"
+                            >
+                            <div class="info__pause"></div>
+                        </div>
+                        <div class="info__summary">
+                            <div class="info__platform">PlayStation 3</div>
+                            <div class="info__title">God of War 3: Limited edition</div>
+                        </div>
+                    </div>
+                    <div class="info__data">
+                        <div class="info__param">
+                            <div class="info__stat title">CTR</div>
+                            <div class="info__value">0,27%</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Показы</div>
+                            <div class="info__value">500</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Переходы</div>
+                            <div class="info__value">140</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="info" href="#">
+                <div class="info__container">
+                    <div class="info__game">
+                        <div class="info__box">
+                            <img class="info__art"
+                                 srcset="../temp/info__art_ps2_mobile@2x.jpg 2x"
+                                 src="../temp/info__art_ps2_mobile.jpg"
+                                 width="42" height="60"
+                                 title="Final Fantasy X Internetional: Limited Edition"
+                                 alt="Final Fantasy X Internetional: Limited Edition"
+                            >
+                            <div class="info__pause"></div>
+                        </div>
+                        <div class="info__summary">
+                            <div class="info__platform">PlayStation 2</div>
+                            <div class="info__title">Final Fantasy X Internetional: Limited Edition</div>
+                        </div>
+                    </div>
+                    <div class="info__data">
+                        <div class="info__param">
+                            <div class="info__stat title">CTR</div>
+                            <div class="info__value">0,27%</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Показы</div>
+                            <div class="info__value">500</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Переходы</div>
+                            <div class="info__value">140</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="info" href="#">
+                <div class="info__container">
+                    <div class="info__game">
+                        <div class="info__box">
+                            <img class="info__art"
+                                 srcset="../temp/info__art_psp_mobile@2x.jpg 2x"
+                                 src="../temp/info__art_psp_mobile.jpg"
+                                 width="35" height="60"
+                                 title="Patapon 3"
+                                 alt="Patapon 3"
+                            >
+                            <div class="info__pause"></div>
+                        </div>
+                        <div class="info__summary">
+                            <div class="info__platform">PlayStation Portable</div>
+                            <div class="info__title">Patapon 3</div>
+                        </div>
+                    </div>
+                    <div class="info__data">
+                        <div class="info__param">
+                            <div class="info__stat title">CTR</div>
+                            <div class="info__value">0,27%</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Показы</div>
+                            <div class="info__value">500</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Переходы</div>
+                            <div class="info__value">140</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+
+    </body>
+</html>
+
+

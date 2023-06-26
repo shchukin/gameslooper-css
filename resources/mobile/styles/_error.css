@@ -1,0 +1,24 @@
+.error {
+    margin-top: 30px;
+    padding-top: calc( (100vh - 219px - 60px - 30px - 30px) / 3 ); /* 219px is a height of error, 60px is header */
+    text-align: center;
+}
+    .error__code {
+        margin: 0;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 50px;
+        color: #FFFFFF;
+        letter-spacing: 2px;
+    }
+
+    .error__description {
+        margin: 19px 0 0;
+        font-size: 13px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    .error__action {
+        margin: 70px 0 0;
+    }

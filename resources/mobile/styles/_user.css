@@ -1,0 +1,48 @@
+.user {
+
+}
+
+    .user__link {
+        text-decoration: none;
+        position: relative;
+        display: block;
+        padding: 15px 20px;
+        background: #1A202B;
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    .user__link:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        top: 0;
+        height: 1px;
+        background: #202733;
+        transition: background-color .1s ease-out;
+    }
+
+    .user__link:first-child:before {
+        display: none;
+    }
+
+
+    .user__link_premium {
+        background-color: #4C85FF;
+    }
+
+    .user__link_premium:before,
+    .user__link_premium + .user__link:before {
+        background-color: transparent;
+    }
+        .user__count {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-weight: bold;
+            color: #424B5A;
+        }
+

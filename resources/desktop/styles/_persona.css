@@ -1,0 +1,134 @@
+@media (min-width: 1024px) {
+
+    .persona {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        padding: 30px;
+        background: #202734;
+        transition: background-color .1s ease-out;
+        overflow: hidden; /* to crop angles here */
+    }
+
+    .persona_has-background {
+
+    }
+
+    .persona:hover {
+        background-color: #262E3C;
+    }
+
+    .persona_no-hover-effect:hover {
+        background-color: #202734;
+    }
+
+    .persona + .persona {
+        margin: 0;
+    }
+
+    .persona:first-of-type {
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+
+    .persona:last-of-type {
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+
+        .persona + .persona:before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            right: 30px;
+            top: 0;
+            display: block;
+            height: 1px;
+            background: #262E3C;
+            transition: background-color .1s ease-out;
+        }
+
+        /* hide separator if background */
+        .persona_has-background:before,
+        .persona_has-background + .persona:before {
+            display: none;
+        }
+
+        .persona:hover:before,
+        .persona:hover + .persona:before {
+            background-color: transparent;
+        }
+
+        .persona__info {
+            flex-grow: 1;
+            position: static; /* let background image fly out */
+            padding: 0;
+            background: none;
+            border-radius: 0;
+            overflow: visible; /* don't need to crop angles anymore */
+        }
+            .persona__background {
+
+            }
+                .persona__background:after {
+                    transition: background-color .1s ease-out;
+                }
+
+                .persona:hover .persona__background:after {
+                    background-color: rgba(29,38,50, .9);
+                }
+
+            .persona__avatar {
+
+            }
+
+            .persona__data {
+                padding-right: 30px;
+            }
+                .persona__title {
+
+                }
+
+                .persona__note {
+
+                }
+
+        .persona__stats {
+            flex-shrink: 0;
+            padding: 0;
+            background: none;
+            border-radius: 0;
+        }
+            .persona__location {
+                min-width: 70px;
+                margin: 0 15px 0 0;
+            }
+                .persona__location.param {
+                    min-width: 40px;
+                }
+
+            .persona__trade {
+                min-width: 70px;
+                margin: 0 15px 0 0;
+            }
+                .persona__trade.param {
+                    min-width: 40px;
+                }
+
+            .persona__rating {
+                margin: 0 0 0 15px;
+            }
+
+
+
+    .persona_has-note .persona__info {
+        padding-top: 0;
+        padding-bottom: 0;
+        align-items: flex-start;
+    }
+
+    .persona_has-note .persona__avatar {
+        margin-top: 0;
+    }
+
+}

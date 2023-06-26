@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.persona</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+
+
+
+        <div style="width: 700px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.persona</h1>
+            <p><span style="color: red;">Есть овверрайд</span> <a href="../../desktop/markups/_persona.html">на десктопы</a></p>
+            <p>
+                Глобальная версия простая, она в таком виде используется на мобилках.
+                На десктопе же она усложняется медиазапросом на однослойную панельку.
+            </p>
+            <p>
+                Вся персона кликабельна, соответствено внутри нет ссылок. Если нужен клик
+                по аватарке, то используем JS. Если наоборот, то эффекты наведения с аватарки
+                можно снять таким модификатором <b>.avatar_not-clickable</b>.
+            </p>
+
+            <a class="persona" href="#">
+                <div class="persona__info">
+
+                    <div class="persona__avatar avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/avatar_01_small@2x.jpg 2x"
+                             src="../temp/avatar_01_small.jpg"
+                             width="30" height="30"
+                             alt=""
+                        >
+                    </div>
+                    <div class="persona__data">
+                        <div class="persona__title title">Lightning</div>
+                    </div>
+                </div>
+                <div class="persona__stats">
+                    <div class="persona__location param">
+                        <img class="param__icon" src="../symbols/param_id_geo.svg" alt="">
+                        7 км
+                    </div>
+                    <div class="persona__trade param">
+                        <img class="param__icon" src="../symbols/param_id_rouble.svg" alt="">
+                        1700
+                    </div>
+                    <div class="persona__trade param">
+                        <svg class="param__icon">
+                            <img class="param__icon" src="../../global/symbols/param_id_exchange.svg" alt="">
+                        </svg>
+                        обмен
+                    </div>
+                    <div class="persona__rating level level_palette_success">
+                        <svg class="level__progress" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path id="level__background" d="M20,40 C31.045695,40 40,31.045695 40,20 C40,8.954305 31.045695,1.27897692e-13 20,1.27897692e-13 C8.954305,1.27897692e-13 0,8.954305 0,20 C0,31.045695 8.954305,40 20,40 Z M20,35 C28.2842712,35 35,28.2842712 35,20 C35,11.7157288 28.2842712,5 20,5 C11.7157288,5 5,11.7157288 5,20 C5,28.2842712 11.7157288,35 20,35 Z"></path>
+                                <path id="level__fill" d="M29.5858589,37.5573926 C35.7915171,34.1620773 40,27.5725106 40,20 C40,8.954305 31.045695,0 20,0 L20,5 C28.2842712,5 35,11.7157288 35,20 C35,25.7240868 31.7937532,30.6993145 27.0792124,33.2277305 L29.5858589,37.5573926 Z"></path>
+                            </g>
+                        </svg>
+                        <div class="level__value">
+                            99
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>С комментарием</h2>
+            <p>
+                Сам комментарий - это элемент <b>.persona__note</b>.
+                К сожалению этого недостаточно. Нужен еще модификатор <b>.persona_has-note</b>
+                чтобы там разметку перестроить.
+            </p>
+            <p>
+                Ну и надо бы какое-то разумное ограничение на количество символов поставить, я думаю.
+            </p>
+
+            <a class="persona persona_has-note" href="#">
+                <div class="persona__info">
+
+                    <div class="persona__avatar avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/avatar_01_small@2x.jpg 2x"
+                             src="../temp/avatar_01_small.jpg"
+                             width="30" height="30"
+                             alt=""
+                        >
+                    </div>
+                    <div class="persona__data">
+                        <div class="persona__title title">Lightning</div>
+                        <div class="persona__note">Диск в отличном состоянии</div>
+                    </div>
+                </div>
+                <div class="persona__stats">
+                    <div class="persona__location param">
+                        <img class="param__icon" src="../symbols/param_id_geo.svg" alt="">
+                        7 км
+                    </div>
+                    <div class="persona__trade param">
+                        <img class="param__icon" src="../symbols/param_id_rouble.svg" alt="">
+                        1700
+                    </div>
+                    <div class="persona__trade param">
+                        <svg class="param__icon">
+                            <img class="param__icon" src="../../global/symbols/param_id_exchange.svg" alt="">
+                        </svg>
+                        обмен
+                    </div>
+                    <div class="persona__rating level level_palette_success">
+                        <svg class="level__progress" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path id="level__background" d="M20,40 C31.045695,40 40,31.045695 40,20 C40,8.954305 31.045695,1.27897692e-13 20,1.27897692e-13 C8.954305,1.27897692e-13 0,8.954305 0,20 C0,31.045695 8.954305,40 20,40 Z M20,35 C28.2842712,35 35,28.2842712 35,20 C35,11.7157288 28.2842712,5 20,5 C11.7157288,5 5,11.7157288 5,20 C5,28.2842712 11.7157288,35 20,35 Z"></path>
+                                <path id="level__fill" d="M29.5858589,37.5573926 C35.7915171,34.1620773 40,27.5725106 40,20 C40,8.954305 31.045695,0 20,0 L20,5 C28.2842712,5 35,11.7157288 35,20 C35,25.7240868 31.7937532,30.6993145 27.0792124,33.2277305 L29.5858589,37.5573926 Z"></path>
+                            </g>
+                        </svg>
+                        <div class="level__value">
+                            99
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <br>
+            <br>
+
+            <a class="persona persona_has-note" href="#">
+                <div class="persona__info">
+
+                    <div class="persona__avatar avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/avatar_01_small@2x.jpg 2x"
+                             src="../temp/avatar_01_small.jpg"
+                             width="30" height="30"
+                             alt=""
+                        >
+                    </div>
+                    <div class="persona__data">
+                        <div class="persona__title title">Lightning</div>
+                        <div class="persona__note">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ipsum mollis, placerat magna vitae, pulvinar augue. Donec non ullamcorper quam. Nunc feugiat elit quis nisi feugiat lacinia. Nam nibh orci, consectetur eu sollicitudin et, blandit vitae sapien. Praesent hendrerit lectus nec est euismod, non consectetur mi eleifend. Integer bibendum lacus ut placerat pharetra. Phasellus ut dolor turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam sed mollis.
+                        </div>
+                    </div>
+                </div>
+                <div class="persona__stats">
+                    <div class="persona__location param">
+                        <img class="param__icon" src="../symbols/param_id_geo.svg" alt="">
+                        7 км
+                    </div>
+                    <div class="persona__trade param">
+                        <img class="param__icon" src="../symbols/param_id_rouble.svg" alt="">
+                        1700
+                    </div>
+                    <div class="persona__trade param">
+                        <svg class="param__icon">
+                            <img class="param__icon" src="../../global/symbols/param_id_exchange.svg" alt="">
+                        </svg>
+                        обмен
+                    </div>
+                    <div class="persona__rating level level_palette_success">
+                        <svg class="level__progress" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path id="level__background" d="M20,40 C31.045695,40 40,31.045695 40,20 C40,8.954305 31.045695,1.27897692e-13 20,1.27897692e-13 C8.954305,1.27897692e-13 0,8.954305 0,20 C0,31.045695 8.954305,40 20,40 Z M20,35 C28.2842712,35 35,28.2842712 35,20 C35,11.7157288 28.2842712,5 20,5 C11.7157288,5 5,11.7157288 5,20 C5,28.2842712 11.7157288,35 20,35 Z"></path>
+                                <path id="level__fill" d="M29.5858589,37.5573926 C35.7915171,34.1620773 40,27.5725106 40,20 C40,8.954305 31.045695,0 20,0 L20,5 C28.2842712,5 35,11.7157288 35,20 C35,25.7240868 31.7937532,30.6993145 27.0792124,33.2277305 L29.5858589,37.5573926 Z"></path>
+                            </g>
+                        </svg>
+                        <div class="level__value">
+                            99
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>С фоном</h2>
+            <p>
+                Добавляется элемент <b>.persona__background</b> с фоновой картинкой.
+                Так же добавляется модификатор <b>.persona_has-background</b>.
+                В принципе этот модификатор нужен только в оверрайде на десктопы
+                и толька в паравозике (чтобы сбросить палку-разделитель),
+                но для сохранения общности можно везде его проставлять.
+            </p>
+
+            <a class="persona persona_has-background" href="#">
+                <div class="persona__info">
+
+                    <div class="persona__background" style="background-image: url(../temp/page__background.jpg);"></div>
+
+                    <div class="persona__avatar avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/avatar_01_small@2x.jpg 2x"
+                             src="../temp/avatar_01_small.jpg"
+                             width="30" height="30"
+                             alt=""
+                        >
+                    </div>
+                    <div class="persona__data">
+                        <div class="persona__title title">Lightning</div>
+                    </div>
+                </div>
+                <div class="persona__stats">
+                    <div class="persona__location param">
+                        <img class="param__icon" src="../symbols/param_id_geo.svg" alt="">
+                        7 км
+                    </div>
+                    <div class="persona__trade param">
+                        <img class="param__icon" src="../symbols/param_id_rouble.svg" alt="">
+                        1700
+                    </div>
+                    <div class="persona__trade param">
+                        <svg class="param__icon">
+                            <img class="param__icon" src="../../global/symbols/param_id_exchange.svg" alt="">
+                        </svg>
+                        обмен
+                    </div>
+                    <div class="persona__rating level level_palette_success">
+                        <svg class="level__progress" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path id="level__background" d="M20,40 C31.045695,40 40,31.045695 40,20 C40,8.954305 31.045695,1.27897692e-13 20,1.27897692e-13 C8.954305,1.27897692e-13 0,8.954305 0,20 C0,31.045695 8.954305,40 20,40 Z M20,35 C28.2842712,35 35,28.2842712 35,20 C35,11.7157288 28.2842712,5 20,5 C11.7157288,5 5,11.7157288 5,20 C5,28.2842712 11.7157288,35 20,35 Z"></path>
+                                <path id="level__fill" d="M29.5858589,37.5573926 C35.7915171,34.1620773 40,27.5725106 40,20 C40,8.954305 31.045695,0 20,0 L20,5 C28.2842712,5 35,11.7157288 35,20 C35,25.7240868 31.7937532,30.6993145 27.0792124,33.2277305 L29.5858589,37.5573926 Z"></path>
+                            </g>
+                        </svg>
+                        <div class="level__value">
+                            99
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Паравозик</h2>
+
+
+            <a class="persona" href="#">
+                <div class="persona__info">
+                    <div class="persona__avatar avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/avatar_02_small@2x.jpg 2x"
+                             src="../temp/avatar_02_small.jpg"
+                             width="30" height="30"
+                             alt=""
+                        >
+                    </div>
+                    <div class="persona__data">
+                        <div class="persona__title title">Noctis Lucis Caelum</div>
+                    </div>
+                </div>
+                <div class="persona__stats">
+                    <div class="persona__location param">
+                        <img class="param__icon" src="../symbols/param_id_geo.svg" alt="">
+                        7 км
+                    </div>
+                    <div class="persona__trade param">
+                        <img class="param__icon" src="../symbols/param_id_rouble.svg" alt="">
+                        1700
+                    </div>
+                    <div class="persona__trade param">
+                        <svg class="param__icon">
+                            <img class="param__icon" src="../../global/symbols/param_id_exchange.svg" alt="">
+                        </svg>
+                        обмен
+                    </div>
+                    <div class="persona__rating level level_palette_success">
+                        <svg class="level__progress" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path id="level__background" d="M20,40 C31.045695,40 40,31.045695 40,20 C40,8.954305 31.045695,1.27897692e-13 20,1.27897692e-13 C8.954305,1.27897692e-13 0,8.954305 0,20 C0,31.045695 8.954305,40 20,40 Z M20,35 C28.2842712,35 35,28.2842712 35,20 C35,11.7157288 28.2842712,5 20,5 C11.7157288,5 5,11.7157288 5,20 C5,28.2842712 11.7157288,35 20,35 Z"></path>
+                                <path id="level__fill" d="M29.5858589,37.5573926 C35.7915171,34.1620773 40,27.5725106 40,20 C40,8.954305 31.045695,0 20,0 L20,5 C28.2842712,5 35,11.7157288 35,20 C35,25.7240868 31.7937532,30.6993145 27.0792124,33.2277305 L29.5858589,37.5573926 Z"></path>
+                            </g>
+                        </svg>
+                        <div class="level__value">
+                            99
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="persona persona_has-background" href="#">
+                <div class="persona__info">
+
+                    <div class="persona__background" style="background-image: url(../temp/page__background.jpg);"></div>
+
+                    <div class="persona__avatar avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/avatar_03_small@2x.jpg 2x"
+                             src="../temp/avatar_03_small.jpg"
+                             width="30" height="30"
+                             alt=""
+                        >
+                    </div>
+                    <div class="persona__data">
+                        <div class="persona__title title">Sephiroth</div>
+                    </div>
+                </div>
+                <div class="persona__stats">
+                    <div class="persona__location param">
+                        <img class="param__icon" src="../symbols/param_id_geo.svg" alt="">
+                        7 км
+                    </div>
+                    <div class="persona__trade param">
+                        <img class="param__icon" src="../symbols/param_id_rouble.svg" alt="">
+                        1700
+                    </div>
+                    <div class="persona__trade param">
+                        <svg class="param__icon">
+                            <img class="param__icon" src="../../global/symbols/param_id_exchange.svg" alt="">
+                        </svg>
+                        обмен
+                    </div>
+                    <div class="persona__rating level level_palette_warning">
+                        <svg class="level__progress" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path id="level__background" d="M20,40 C31.045695,40 40,31.045695 40,20 C40,8.954305 31.045695,1.27897692e-13 20,1.27897692e-13 C8.954305,1.27897692e-13 0,8.954305 0,20 C0,31.045695 8.954305,40 20,40 Z M20,35 C28.2842712,35 35,28.2842712 35,20 C35,11.7157288 28.2842712,5 20,5 C11.7157288,5 5,11.7157288 5,20 C5,28.2842712 11.7157288,35 20,35 Z"></path>
+                                <path id="level__fill" d="M29.5858589,37.5573926 C35.7915171,34.1620773 40,27.5725106 40,20 C40,8.954305 31.045695,0 20,0 L20,5 C28.2842712,5 35,11.7157288 35,20 C35,25.7240868 31.7937532,30.6993145 27.0792124,33.2277305 L29.5858589,37.5573926 Z"></path>
+                            </g>
+                        </svg>
+                        <div class="level__value">
+                            99
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="persona" href="#">
+                <div class="persona__info">
+                    <div class="persona__avatar avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/avatar_04_small@2x.jpg 2x"
+                             src="../temp/avatar_04_small.jpg"
+                             width="30" height="30"
+                             alt=""
+                        >
+                    </div>
+                    <div class="persona__data">
+                        <div class="persona__title title">Tifa Lockhart</div>
+                    </div>
+                </div>
+                <div class="persona__stats">
+                    <div class="persona__location param">
+                        <img class="param__icon" src="../symbols/param_id_geo.svg" alt="">
+                        7 км
+                    </div>
+                    <div class="persona__trade param">
+                        <img class="param__icon" src="../symbols/param_id_rouble.svg" alt="">
+                        1700
+                    </div>
+                    <div class="persona__trade param">
+                        <svg class="param__icon">
+                            <img class="param__icon" src="../../global/symbols/param_id_exchange.svg" alt="">
+                        </svg>
+                        обмен
+                    </div>
+                    <div class="persona__rating level level_palette_danger">
+                        <svg class="level__progress" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path id="level__background" d="M20,40 C31.045695,40 40,31.045695 40,20 C40,8.954305 31.045695,1.27897692e-13 20,1.27897692e-13 C8.954305,1.27897692e-13 0,8.954305 0,20 C0,31.045695 8.954305,40 20,40 Z M20,35 C28.2842712,35 35,28.2842712 35,20 C35,11.7157288 28.2842712,5 20,5 C11.7157288,5 5,11.7157288 5,20 C5,28.2842712 11.7157288,35 20,35 Z"></path>
+                                <path id="level__fill" d="M29.5858589,37.5573926 C35.7915171,34.1620773 40,27.5725106 40,20 C40,8.954305 31.045695,0 20,0 L20,5 C28.2842712,5 35,11.7157288 35,20 C35,25.7240868 31.7937532,30.6993145 27.0792124,33.2277305 L29.5858589,37.5573926 Z"></path>
+                            </g>
+                        </svg>
+                        <div class="level__value">
+                            99
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+
+    </body>
+</html>

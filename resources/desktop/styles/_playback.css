@@ -1,0 +1,49 @@
+.playback {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #4C85FF;
+
+    transition: background-color .1s ease-out;
+}
+
+.playback:hover {
+    background-color: #5E91FF;
+}
+
+    .playback__icon {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        vertical-align: top;
+        fill: #FFFFFF;
+        color: transparent;
+        transition: color .1s ease-out,
+                    fill  .1s ease-out;
+    }
+
+
+
+.playback_active {
+    background-color: #F04349;
+}
+
+.playback_active:hover {
+    background-color: #F1565B;
+}
+    .playback_active .playback__icon {
+        fill: transparent;
+        color: #FFFFFF;
+    }

@@ -1,0 +1,17 @@
+.fade {
+
+}
+
+.fade_animation_in {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.3s ease-out,
+                opacity 0.3s ease-out 0.15s;
+}
+
+.fade_animation_out {
+    overflow: hidden;
+    transition: height 0.3s ease-out 0.15s,
+                opacity 0.25s ease-out;
+}

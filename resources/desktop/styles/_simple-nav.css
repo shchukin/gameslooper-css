@@ -1,0 +1,49 @@
+.simple-nav {
+
+}
+    .simple-nav__link {
+        position: relative;
+        display: block;
+        margin: -1px 0 0;
+        padding: 26px 40px;
+        font-weight: bold;
+        font-size: 13px;
+        color: #FFFFFF;
+        line-height: 22px;
+        text-decoration: none;
+        transition: background-color .1s ease-out;
+    }
+
+    .simple-nav__link:first-child {
+        margin-top: 0;
+    }
+
+    .simple-nav__link:hover {
+        background-color: #1A1E2B;
+    }
+
+    .simple-nav__link_current {
+        background-color: #1A202B;
+        cursor: default;
+    }
+
+        /* separator */
+        .simple-nav__link:before,
+        .simple-nav__link:after {
+            content: '';
+            position: absolute;
+            left: 40px;
+            right: 40px;
+            display: block;
+            height: 1px;
+            background: #1A1E2B;
+            transition: background-color .1s ease-out;
+        }
+
+        .simple-nav__link:before {
+            top: 0;
+        }
+
+        .simple-nav__link:after {
+            bottom: 0;
+        }

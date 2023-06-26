@@ -1,0 +1,21 @@
+.review {
+
+}
+    .review__title {
+
+    }
+
+    .review__progress {
+        margin: 12px 0 0;
+    }
+
+    .review__feedback {
+        padding: 30px 0 0;
+    }
+        .review__action {
+            margin: 20px 0 0;
+        }
+
+        .review__action:first-child {
+            margin-top: 0;
+        }

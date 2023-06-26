@@ -1,0 +1,195 @@
+.page {
+    position: relative;
+    padding: 0 290px 0 370px;
+}
+
+.page_no-sidebar {
+    padding-left: 80px;
+}
+
+.page_no-aside {
+    padding-right: 0;
+}
+
+    .page__panel {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background: #131722;
+    }
+
+    .page__panel_id_header {
+        z-index: 5;
+        left: 0;
+        width: 90px;
+        box-shadow: inset -1px 0 0 0 #1A202B;
+    }
+
+    .page__popover {
+        position: fixed;
+        z-index: 4;
+        left: 90px;
+        top: 0;
+        bottom: 0;
+        width: 280px;
+        background: #131722;
+
+        visibility: hidden;
+        opacity: 0;
+        transform: translate3d(-120px, 0, 0);
+
+        /* hide animation */
+        transition: opacity    0.25s  ease-out 0.06s, /* opacity only */
+                    transform  0s    ease-out 0.45s, /* do not animate slide */
+                    visibility 0.45s ease-out;
+    }
+
+    .page__popover_visible {
+        visibility: visible;
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+
+        /* show animation */
+        transition: opacity    0.3s  ease-out 0.15s,
+                    transform  0.3s  ease-out,
+                    visibility 0.45s ease-out;
+    }
+
+        .page__hide-popover {
+            position: absolute;
+            left: 100%;
+            top: 40px;
+            visibility: hidden;
+            opacity: 0;
+
+            /* hide animation */
+            transition: opacity    0s  ease-out 0.45s, /* no animation here (parent will hide it) */
+                        visibility 0.45s  ease-out;    /* but keep it visible */
+        }
+
+        .page__hide-popover.close {
+            position: absolute;
+        }
+
+        .page__popover_visible .page__hide-popover {
+            visibility: visible;
+            opacity: 1;
+
+            /* show animation */
+            transition: opacity    0.15s  ease-out 0.3s,
+                        visibility 0.45s  ease-out;
+        }
+
+
+    .page__panel_id_sidebar {
+        z-index: 3;
+        left: 90px;
+        width: 280px;
+    }
+
+    .page__body {
+        position: relative;
+        z-index: 2;
+    }
+        .page__background {
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 100%;
+        }
+            .page__background.theme {
+                position: absolute;
+            }
+
+
+    .page__panel_id_aside {
+        z-index: 1;
+        right: 0;
+        width: 290px;
+    }
+        .page__column {
+            height: 100%;
+        }
+
+            .page__panel_id_sidebar .page__column {
+                padding: 0 40px;
+            }
+            .page__panel_id_aside .page__column {
+                padding: 0 40px;
+            }
+            .page__popover .page__column {
+                padding: 0 40px;
+            }
+
+        .page__column_scroll {
+            overflow-y: auto;
+        }
+
+
+/*
+    Hide aside panel for tablets
+    Also look for .aside_tablet for important asides duplicated to body
+*/
+
+@media (max-width: 1339px) {
+    .page {
+        padding-right: 0;
+    }
+
+    .page__panel_id_aside {
+        display: none;
+    }
+}
+
+/*
+    1160 min .body width
+    510px height is minimal requirement for a header
+    duplicating in _alerts.css
+*/
+@media (max-width: 1159px), (max-height: 509px) {
+
+.page {
+    display: flex;
+    padding: 0;
+    min-height: 100vh;
+}
+    .page__panel {
+        flex-shrink: 0;
+        position: relative;
+        left: auto;
+        top: auto;
+        bottom: auto;
+    }
+
+    .page__panel_id_header {
+        order: 1;
+    }
+
+    .page__popover {
+        position: absolute;
+        bottom: auto;
+        min-height: 100%;
+    }
+
+    .page__panel_id_sidebar {
+        order: 2;
+    }
+
+    .page__body {
+        order: 3;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .page__panel_id_aside {
+        order: 4;
+    }
+
+        .page__column_scroll {
+            overflow: visible;
+        }
+
+
+}

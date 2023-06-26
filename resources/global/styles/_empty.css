@@ -1,0 +1,14 @@
+.empty {
+    padding: 40px 20px 40px;
+    background: #202734;
+    text-align: center;
+}
+    .empty__title {
+        font-size: 13px;
+        line-height: 22px;
+        color: #5A6476;
+    }
+
+    .empty__action {
+        margin: 24px 0 0;
+    }

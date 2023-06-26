@@ -1,0 +1,21 @@
+/* override */
+
+.review__progress {
+    margin: 14px 0 0;
+}
+
+.review__feedback {
+    display: flex;
+    padding-top: 20px;
+}
+    .review__action {
+        margin: 0 10px;
+    }
+
+    .review__action:first-child {
+        margin-left: 0;
+    }
+
+    .review__action:last-child {
+        margin-right: 0;
+    }

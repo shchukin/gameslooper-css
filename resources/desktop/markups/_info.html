@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.info</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+
+        <div style="width: 700px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.info <span style="font-size: 16px; color: red;">оверрайд</span></h1>
+            <p>
+                Глобальная версия - это то, что на мобилках. Тут она же повторяется и для планшетов.
+                А усложняется начиная с 1024px, перестраивается в вытянутую такую панель.
+            </p>
+
+            <p>
+                В код добавилась секция <b>.info__operations</b> - это панелька с двумя кнопками: настройки, возобновить.
+                В HTML эту штуку можно выводить всегда, но до 1024px она тупо скрыта через <b>display: none</b>;
+            </p>
+
+            <p>
+                С этими наведениями замес, как обычно. Ловим клик по всей карточке и смотрим,
+                показывается ли у нас в этот момент <b>.info__operations</b>. Если показывается, то значит сработало
+                наведение и пользователь сидит с курсором. Он видит кнопки старт/стоп, настроки, но пытается
+                кликнуть куда-то еще, может быть в заголовок игры. Все окей, не делаем ничего, пусть кликает.
+            </p>
+            <p>
+                Если в момент клика <b>.info__operations</b> не показывается, то что-то у пользователя не так.
+                У него нету курсора, нету наведения и нужных кнопок он не видит, жалобно кликает по рекламе
+                в надежеде добраться до опций.
+                Он либо с планшета сидит, либо пришел в карточку табом, что-то типа того.
+                И этот кейс рассыпается еще на два:
+            </p>
+            <p>
+                1) если ширина меньше 1024px - то это планшет. В этом случае у нас внешний вид карточки мобильный,
+                кнопки показывать просто негде. По-этому делаем как и на мобилках - убираем действия в поповер.
+                <br>
+                2) если ширина больге чем 1024px - то это комп с табуляциями, либо какой-нибудь телевизор.
+                Тут места достаточно, чтобы показать панель, которую мы показываем по ховеру. В этом случае
+                добавляем класс <b>.info_drop</b> - он делает тоже самое, что и наведение.<br>
+                Сбрасываем этот класс по повторному нажатию (при клике уже проставлен <b>.info_drop</b>) и по Esc.
+            </p>
+            <p>
+                Остается вопрос о том, как детектить показан ли или скрыт оверлей с кнопками <b>.info__operations</b>
+                и на какой ширине мы находимся.
+            </p>
+            <p>
+                Если у <b>.info__operations</b> свойство display равно none, значит мы находимся на < 1024px и работаем
+                с поповером. Иначе у нас есть пространство для показа панели, и теперь мы уже смотрим на opacity.
+                Если opacity равно нулю, то наведение не сработало и значит пользователь пользуется табуляциями и энтером.
+                Показываем панель классом <b>.info_drop</b>
+            </p>
+
+            <br>
+            <br>
+            <h2>Картинки</h2>
+            <p>
+                С картинками тут страшный замес. У них разные размеры на планшетах и десктопах.
+                И там и там может быть ретина, соответствено. Этот замес разруливается через SRCSET,
+                но более сложны образом, через дискриптор ширины и атрибут SIZES.
+                Подробно и хорошо оно разобрано в <a href="../../desktop/markups/_avatar.html">десктопном блоке аватарок</a>.
+            </p>
+            <p>
+                Тут есть еще одна сложность: картинки у нас считаются от высоты: <b>60px</b> на планшетах (как и на мобилках было),
+                а на десктопах <b>50px</b>. Однако когда мы все это запихиваем в srcset и sizes нам нужен дескриптор ширины.
+                Это пересчитывать надо ручками. Точнее так. На бекенде мы знаем размеры картинок.
+                Знаем, что надо отдать картинки с высотами 50px и 60px, 100 и 120px. Забираем эти четыре картинки,
+                отдаем их на фронт, но в качетсве инфы о размерах отправляем их ширины.
+            </p>
+            <p>
+                А еще можно с этим совсем не заморочиваться и просто взять пачку картинок и разметку тега IMG
+                от блока <a href="../../global/markups/_thumb.html">.thumb</a>.
+                Там они чуть побольше и это лишний трафик, но подойдут. Кейс все-равно не особо популярный.
+            </p>
+
+            <a class="info" tabindex="0" data-popover="" href="#">
+                <div class="info__container">
+                    <div class="info__game">
+                        <div class="info__box">
+                            <img class="info__art"
+                                 srcset="../temp/info__art_ps4_mobile.jpg 48w,
+                                         ../temp/info__art_ps4_desktop.jpg 40w,
+                                         ../temp/info__art_ps4_mobile@2x.jpg 96w,
+                                         ../temp/info__art_ps4_desktop@2x.jpg 80w
+                                        "
+                                 sizes="(min-width: 1024px) 40px, 48px"
+                                 src="../temp/info__art_ps4_desktop.jpg"
+                                 title="Metal Gear Solid V"
+                                 alt="Metal Gear Solid V"
+                            >
+                            <div class="info__pause"></div>
+                        </div>
+                        <div class="info__summary">
+                            <div class="info__platform">PlayStation 4</div>
+                            <div class="info__title">Metal Gear Solid V</div>
+                        </div>
+                    </div>
+                    <div class="info__data">
+                        <div class="info__param">
+                            <div class="info__stat title">CTR</div>
+                            <div class="info__value">0,27%</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Показы</div>
+                            <div class="info__value">500</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Переходы</div>
+                            <div class="info__value">140</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__operations">
+                    <button class="info__action playback playback_active" type="button" title="Продолжить">
+                        <img class="playback__icon" src="../symbols/playback.svg" alt="">
+                        Продолжить
+                    </button>
+                    <button class="info__action settings" type="button" title="Редактировать">
+                        <img class="settings__icon" src="../symbols/settings.svg" alt="">
+                        Редактировать
+                    </button>
+                </div>
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.info_stopped</h2>
+            <p>
+                В приостановленном виде добалвяем этот модификатор.
+                Он просто покажет скрытый оверлейчик на боксарт.
+            </p>
+
+            <a class="info info_stopped" data-popover="" href="#">
+                <div class="info__container">
+                    <div class="info__game">
+                        <div class="info__box">
+                            <img class="info__art"
+                                 srcset="../temp/info__art_ps4_mobile.jpg 48w,
+                                         ../temp/info__art_ps4_desktop.jpg 40w,
+                                         ../temp/info__art_ps4_mobile@2x.jpg 96w,
+                                         ../temp/info__art_ps4_desktop@2x.jpg 80w
+                                        "
+                                 sizes="(min-width: 1024px) 40px, 48px"
+                                 src="../temp/info__art_ps4_desktop.jpg"
+                                 title="Metal Gear Solid V"
+                                 alt="Metal Gear Solid V"
+                            >
+                            <div class="info__pause"></div>
+                        </div>
+                        <div class="info__summary">
+                            <div class="info__platform">PlayStation 4</div>
+                            <div class="info__title">Metal Gear Solid V</div>
+                        </div>
+                    </div>
+                    <div class="info__data">
+                        <div class="info__param">
+                            <div class="info__stat title">CTR</div>
+                            <div class="info__value">0,27%</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Показы</div>
+                            <div class="info__value">500</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Переходы</div>
+                            <div class="info__value">140</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__operations">
+                    <button class="info__action playback" type="button" title="Продолжить">
+                        <img class="playback__icon" src="../symbols/playback.svg" alt="">
+                        Продолжить
+                    </button>
+                    <button class="info__action settings" type="button" title="Редактировать">
+                        <img class="settings__icon" src="../symbols/settings.svg" alt="">
+                        Редактировать
+                    </button>
+                </div>
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Паравозик</h2>
+            <br>
+            <br>
+
+            <a class="info" data-popover="" href="#">
+                <div class="info__container">
+                    <div class="info__game">
+                        <div class="info__box">
+                            <img class="info__art"
+                                 srcset="../temp/info__art_ps4_mobile.jpg 48w,
+                                         ../temp/info__art_ps4_desktop.jpg 40w,
+                                         ../temp/info__art_ps4_mobile@2x.jpg 96w,
+                                         ../temp/info__art_ps4_desktop@2x.jpg 80w
+                                        "
+                                 sizes="(min-width: 1024px) 40px, 48px"
+                                 src="../temp/info__art_ps4_desktop.jpg"
+                                 title="Metal Gear Solid V"
+                                 alt="Metal Gear Solid V"
+                            >
+                            <div class="info__pause"></div>
+                        </div>
+                        <div class="info__summary">
+                            <div class="info__platform">PlayStation 4</div>
+                            <div class="info__title">Metal Gear Solid V</div>
+                        </div>
+                    </div>
+                    <div class="info__data">
+                        <div class="info__param">
+                            <div class="info__stat title">CTR</div>
+                            <div class="info__value">0,27%</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Показы</div>
+                            <div class="info__value">500</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Переходы</div>
+                            <div class="info__value">140</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__operations">
+                    <button class="info__action playback playback_active" type="button" title="Продолжить">
+                        <img class="playback__icon" src="../symbols/playback.svg" alt="">
+                        Продолжить
+                    </button>
+                    <button class="info__action settings" type="button" title="Редактировать">
+                        <img class="settings__icon" src="../symbols/settings.svg" alt="">
+                        Редактировать
+                    </button>
+                </div>
+            </a>
+
+            <a class="info" data-popover="" href="#">
+                <div class="info__container">
+                    <div class="info__game">
+                        <div class="info__box">
+                            <img class="info__art"
+                                 srcset="../temp/info__art_ps3_mobile.jpg 52w,
+                                         ../temp/info__art_ps3_desktop.jpg 43w,
+                                         ../temp/info__art_ps3_mobile@2x.jpg 104w,
+                                         ../temp/info__art_ps3_desktop@2x.jpg 86w
+                                        "
+                                 sizes="(min-width: 1024px) 43px, 52px"
+                                 src="../temp/info__art_ps3_desktop.jpg"
+                                 title="God of War 3: Limited edition"
+                                 alt="God of War 3: Limited edition"
+                            >
+                            <div class="info__pause"></div>
+                        </div>
+                        <div class="info__summary">
+                            <div class="info__platform">PlayStation 3</div>
+                            <div class="info__title">God of War 3: Limited edition</div>
+                        </div>
+                    </div>
+                    <div class="info__data">
+                        <div class="info__param">
+                            <div class="info__stat title">CTR</div>
+                            <div class="info__value">0,27%</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Показы</div>
+                            <div class="info__value">500</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Переходы</div>
+                            <div class="info__value">140</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__operations">
+                    <button class="info__action playback playback_active" type="button" title="Продолжить">
+                        <img class="playback__icon" src="../symbols/playback.svg" alt="">
+                        Продолжить
+                    </button>
+                    <button class="info__action settings" type="button" title="Редактировать">
+                        <img class="settings__icon" src="../symbols/settings.svg" alt="">
+                        Редактировать
+                    </button>
+                </div>
+            </a>
+
+            <a class="info" data-popover="" href="#">
+                <div class="info__container">
+                    <div class="info__game">
+                        <div class="info__box">
+                            <img class="info__art"
+                                 srcset="../temp/info__art_ps2_mobile.jpg 42w,
+                                         ../temp/info__art_ps2_desktop.jpg 35w,
+                                         ../temp/info__art_ps2_mobile@2x.jpg 84w,
+                                         ../temp/info__art_ps2_desktop@2x.jpg 70w
+                                        "
+                                 sizes="(min-width: 1024px) 35px, 42px"
+                                 src="../temp/info__art_ps2_desktop.jpg"
+                                 title="Final Fantasy X Internetional: Limited Edition"
+                                 alt="Final Fantasy X Internetional: Limited Edition"
+                            >
+                            <div class="info__pause"></div>
+                        </div>
+                        <div class="info__summary">
+                            <div class="info__platform">PlayStation 2</div>
+                            <div class="info__title">Final Fantasy X Internetional: Limited Edition</div>
+                        </div>
+                    </div>
+                    <div class="info__data">
+                        <div class="info__param">
+                            <div class="info__stat title">CTR</div>
+                            <div class="info__value">0,27%</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Показы</div>
+                            <div class="info__value">500</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Переходы</div>
+                            <div class="info__value">140</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__operations">
+                    <button class="info__action playback playback_active" type="button" title="Продолжить">
+                        <img class="playback__icon" src="../symbols/playback.svg" alt="">
+                        Продолжить
+                    </button>
+                    <button class="info__action settings" type="button" title="Редактировать">
+                        <img class="settings__icon" src="../symbols/settings.svg" alt="">
+                        Редактировать
+                    </button>
+                </div>
+            </a>
+
+            <a class="info" data-popover="" href="#">
+                <div class="info__container">
+                    <div class="info__game">
+                        <div class="info__box">
+                            <img class="info__art"
+                                 srcset="../temp/info__art_psp_mobile.jpg 35w,
+                                         ../temp/info__art_psp_desktop.jpg 29w,
+                                         ../temp/info__art_psp_mobile@2x.jpg 70w,
+                                         ../temp/info__art_psp_desktop@2x.jpg 58w
+                                        "
+                                 sizes="(min-width: 1024px) 29px, 35px"
+                                 src="../temp/info__art_psp_desktop.jpg"
+                                 title="Patapon 3"
+                                 alt="Patapon 3"
+                            >
+                            <div class="info__pause"></div>
+                        </div>
+                        <div class="info__summary">
+                            <div class="info__platform">PlayStation Portable</div>
+                            <div class="info__title">Patapon 3</div>
+                        </div>
+                    </div>
+                    <div class="info__data">
+                        <div class="info__param">
+                            <div class="info__stat title">CTR</div>
+                            <div class="info__value">0,27%</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Показы</div>
+                            <div class="info__value">500</div>
+                        </div>
+                        <div class="info__param">
+                            <div class="info__stat title">Переходы</div>
+                            <div class="info__value">140</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__operations">
+                    <button class="info__action playback playback_active" type="button" title="Продолжить">
+                        <img class="playback__icon" src="../symbols/playback.svg" alt="">
+                        Продолжить
+                    </button>
+                    <button class="info__action settings" type="button" title="Редактировать">
+                        <img class="settings__icon" src="../symbols/settings.svg" alt="">
+                        Редактировать
+                    </button>
+                </div>
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../vendors/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../scripts/temp.js"></script>
+
+
+    </body>
+</html>

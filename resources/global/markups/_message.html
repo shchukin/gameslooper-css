@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.message</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body" style="background: #131722;">
+
+
+
+        <div style="width: 280px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.message</h1>
+            <p>
+                Надо решить как задавать переносы строк. Предлагаю следующим образом.
+                Однакратное нажатие Enter в чате пусть задает перевод каретки, ну обычный line break.
+                Это выводим как &lt;br&gt; прямо внутри текста. Тут пока никаких заморочек.
+                Это, по сути, просто символ.
+            </p>
+            <p>
+                Два энтера подряд, или SHIFT+Enter закрывают параграф и начинает новый.
+                Тут важно использовать именно тег &lt;p&gt;, чтобы иметь контроль над размером отступа.
+                Просто вывести два &lt;br&gt; подряд не получится, там получается гигантский отступ
+                над которым мы не имеем контроля. Так что фигарим именно параграфы.
+            </p>
+            <p>
+                Еще параграфы нужны для того, чтобы разрулить там замес с позиционированием даты.
+            </p>
+            <p>
+                Алгоритм получается примерно следующий. К нам с фронта прило сообжение,
+                гладкий текст из textarea. Мы его сразу же оборачиваем в один большой &lt;p&gt;
+                Дальше начинаем его анализировать, бежим слева на право и каждой однократное вхождение
+                символа конца строки заменяем на <b>&lt;br&gt;</b>. Двухкратные заменяем на <b>&lt;/p&gt&lt;p&gt</b>.
+            </p>
+
+
+            <div class="message">
+                <div class="message__body">
+                    <p class="message_paragraph">
+                        Кстати, у тебя диск в каком состоянии?
+                    </p>
+                    <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="message">
+                <div class="message__body">
+                    <p class="message_paragraph">
+                        Связи с данным событием, команда Firaxis выпустила новый трейлер, рассказывающий о дополнении и его плюшках.
+                    </p>
+                    <p class="message_paragraph">
+                        Раздобыть технологии, которые помогут защитникам Земли справиться с захватившей её инопланетной угрозой.
+                    </p>
+                    <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Тестим</h2>
+            <br>
+
+            <div class="message">
+                <div class="message__body">
+                    <p class="message_paragraph">
+                        Да.
+                    </p>
+                    <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="message">
+                <div>
+                <div class="message__body">
+                    <p class="message_paragraph">
+                        <a class="link link_decoration_classic" href="https://www.google.com.vn/search?q=final+fantasy&biw=1440&bih=799&source=lnms&tbm=isch&sa=X&ved=0ahUKEwix0OOc1KLSAhVHEbwKHSSsApcQ_AUIBigB">https://www.google.com.vn/search?q=final+fantasy&biw=1440&bih=799&source=lnms&tbm=isch&sa=X&ved=0ahUKEwix0OOc1KLSAhVHEbwKHSSsApcQ_AUIBigB</a>
+                    </p>
+                    <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.message_self</h2>
+
+            <div class="message message_self">
+                <div class="message__body">
+                    <p class="message_paragraph">
+                        В хорошем состоянии, диску неделя
+                    </p>
+                    <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+
+    </body>
+</html>

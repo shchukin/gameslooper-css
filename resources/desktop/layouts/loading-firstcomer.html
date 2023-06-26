@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Загрузка</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+
+            .body {
+                margin: 0;
+                background: #1a202b;
+            }
+
+            .loading {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+
+
+            @keyframes logo-spin {
+                100% { transform: rotate(360deg); }
+            }
+
+            .indicator {
+                position: relative;
+                width: 70px;
+                height: 46px;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MCIgaGVpZ2h0PSI0NiIgdmlld0JveD0iMCAwIDcwIDQ2Ij4gICAgPGcgZmlsbD0iIzJDMzU0NCIgZmlsbC1ydWxlPSJldmVub2RkIj4gICAgICAgIDxwYXRoIGQ9Ik0zNy4yMzQwNDE3LDIzLjAyMjAzNzQgQzM3LjIzNDA0MTcsMzEuOTU4MzEzIDI5Ljc4NzIzMzMsNDEuNjM5Mjc5MiAxOC42MTcwMjA4LDQxLjYzOTI3OTIgQzcuNDQ2ODA4MzIsNDEuNjM5Mjc5MiAwLDMyLjMxNTQwMjkgMCwyMy4wMjIwMzc0IEMwLDEzLjc1MTc4MTkgNy40NDY4MDgzMiw0LjQwNDc5MzY0IDE4LjYxNzAyMDgsNC40MDQ3OTM2NCBMMjYuODA4NTEsNC40MDQ3OTM2NCBDMjYuODA4NTEsNC40MDQ3OTM2NCAyMy44Mjk3ODY2LDIuMDgzNjQ4NjggMjUuMzE5MTQ4MywwLjY4MTM0NTA4NSBDMjYuODA4NTEsLTAuOTA3NTQ5NzAzIDI4LjI5Nzg3MTYsMC42ODEzNDUxIDI5LjA0MjU1MjUsMS40MjYwMzQ4IEwzMi4wMjEyNzU4LDQuNDA0NzkzNjQgQzMzLjUxMDYzNzQsNS44OTQxNzMwNiAzMy41MTA2Mzc0LDcuMzgzNTUyNDkgMzIuMDIxMjc1OCw4Ljg3MjkzMTkxIEwyOS4wNDI1NTI1LDExLjg1MTY5MDggQzI4LjI5Nzg3MTYsMTIuNTk2MzgwMyAyNi44MDg1MSwxNC4wNDg0NDA1IDI1LjMxOTE0ODMsMTIuNTk2MzgwNSBDMjMuODI5Nzg2NiwxMS4wNTcyNDM2IDI2LjgwODUxLDguODcyOTMxOTEgMjYuODA4NTEsOC44NzI5MzE5MSBMMTguNjE3MDIwOCw4Ljg3MjkzMTkxIEMxMS45MTQ4OTMzLDguODcyOTMxOTEgNC40NjgwODQ5OSwxNC4wODU3NjE4IDQuNDY4MDg0OTksMjMuMDIyMDM3NCBDNC40NjgwODQ5OSwzMS45NTgzMTMgMTEuOTE0MjkzOSwzNy4xNzExNDA5IDE4LjYxNzAyMDgsMzcuMTcxMTQwOSBDMjYuODA4NTEsMzcuMTcxMTQwOSAzMi43NjU5NDUzLDMwLjQ2ODkzMzQgMzIuNzY1OTU1NiwyMy4wMjIwMzc0IEMzMi43NjU5NywxMi41MjE5MTI2IDQxLjcwMjEyNTUsNC4zMjcwNDc3IDUxLjM4Mjk3NjQsNC40MDQ3OTM2NCBDNjEuMDYzODI3Miw0LjMyNzA0Njk5IDcwLDEyLjU1NDQxODYgNzAsMjMuMDIyMDM3NCBDNzAsMzMuNDg5NjU2MiA2MS4wNjM4MjgyLDQxLjYzOTI3OTIgNTEuMzgyOTc2NCw0MS42MzkyNzkyIEw0My4xOTE0ODcyLDQxLjYzOTI3OTIgQzQzLjE5MTQ4NzIsNDEuNjM5Mjc5MiA0Ni4xNzAyMTA1LDQzLjg3MzM0ODMgNDQuNjgwODQ4OSw0NS4zNjI3Mjc4IEM0My4xOTE0ODcyLDQ2Ljg1MjEwNzIgNDEuNzAyMTI2Niw0NS4zNjI3MjkgNDAuOTU3NDQ0Nyw0NC42MTgwMzggTDM3Ljk3ODcyMTQsNDEuNjM5Mjc5MiBDMzYuNDg5MzU5Nyw0MC4xNDk4OTk4IDM2LjQ4OTM1OTcsMzguNjYwNTIwNCAzNy45Nzg3MjE0LDM3LjE3MTE0MDkgTDQwLjk1NzQ0NDcsMzQuMTkyMzgyMSBDNDEuNzAyMTI2NiwzMy40NDc2OTM2IDQzLjE5MTQ4NzIsMzEuOTU4MzEzIDQ0LjY4MDg0ODksMzMuNDQ3NjkyNCBDNDYuMTcwMjEwNSwzNC45MzcwNzE4IDQzLjE5MTQ4NzIsMzcuMTcxMTQwOSA0My4xOTE0ODcyLDM3LjE3MTE0MDkgTDUxLjM4Mjk3NjQsMzcuMTcxMTQwOSBDNTguODI5Nzg1NywzNy4xNzExNDA5IDY1LjUzMTkxMTEsMzEuMjEzNjI1MiA2NS41MzE5MTUsMjMuMDIyMDM3NCBDNjUuNTMxOTE4OSwxNC44MzA0NDk2IDU4LjgyOTMzODMsOC44NzI5MzE5MSA1MS4zODI5NzY0LDguODcyOTMxOTEgQzQzLjE5MTQ4ODMsOC44NzI5MzE5MSAzNy4yMzQwNDE3LDE1LjU3NTEzOTMgMzcuMjM0MDQxNywyMy4wMjIwMzc0IFoiLz4gICAgICAgIDxwYXRoIGQ9Ik0xNi41LDIxIEwxMi40OTc5MTMxLDIxIEMxMS4zOTQ0OTYyLDIxIDEwLjUsMjEuODg3NzI5NiAxMC41LDIzIEwxMC41LDIzIEMxMC41LDI0LjEwNDU2OTUgMTEuMzk4MjYwNiwyNSAxMi40OTc5MTMxLDI1IEwxNi41LDI1IEwxNi41LDI5LjAwMjA4NjkgQzE2LjUsMzAuMTA1NTAzOCAxNy4zODc3Mjk2LDMxIDE4LjUsMzEgTDE4LjUsMzEgQzE5LjYwNDU2OTUsMzEgMjAuNSwzMC4xMDE3Mzk0IDIwLjUsMjkuMDAyMDg2OSBMMjAuNSwyNSBMMjQuNTAyMDg2OSwyNSBDMjUuNjA1NTAzOCwyNSAyNi41LDI0LjExMjI3MDQgMjYuNSwyMyBMMjYuNSwyMyBDMjYuNSwyMS44OTU0MzA1IDI1LjYwMTczOTQsMjEgMjQuNTAyMDg2OSwyMSBMMjAuNSwyMSBMMjAuNSwxNi45OTc5MTMxIEMyMC41LDE1Ljg5NDQ5NjIgMTkuNjEyMjcwNCwxNSAxOC41LDE1IEwxOC41LDE1IEMxNy4zOTU0MzA1LDE1IDE2LjUsMTUuODk4MjYwNiAxNi41LDE2Ljk5NzkxMzEgTDE2LjUsMjEgWiIvPiAgICA8L2c+PC9zdmc+);
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+                .indicator__spin {
+                    position: absolute;
+                    left: 43px;
+                    top: 14px;
+                    width: 17px;
+                    height: 17px;
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNyIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE3IDE3Ij4gICAgPGcgZmlsbD0iIzJDMzU0NCI+ICAgICAgICA8cGF0aCBkPSJNMi41IDExQzMuODgwNzExODcgMTEgNSA5Ljg4MDcxMTg3IDUgOC41IDUgNy4xMTkyODgxMyAzLjg4MDcxMTg3IDYgMi41IDYgMS4xMTkyODgxMyA2IDAgNy4xMTkyODgxMyAwIDguNSAwIDkuODgwNzExODcgMS4xMTkyODgxMyAxMSAyLjUgMTF6TTE0LjUgMTFDMTUuODgwNzExOSAxMSAxNyA5Ljg4MDcxMTg3IDE3IDguNSAxNyA3LjExOTI4ODEzIDE1Ljg4MDcxMTkgNiAxNC41IDYgMTMuMTE5Mjg4MSA2IDEyIDcuMTE5Mjg4MTMgMTIgOC41IDEyIDkuODgwNzExODcgMTMuMTE5Mjg4MSAxMSAxNC41IDExek04LjUgMTdDOS44ODA3MTE4NyAxNyAxMSAxNS44ODA3MTE5IDExIDE0LjUgMTEgMTMuMTE5Mjg4MSA5Ljg4MDcxMTg3IDEyIDguNSAxMiA3LjExOTI4ODEzIDEyIDYgMTMuMTE5Mjg4MSA2IDE0LjUgNiAxNS44ODA3MTE5IDcuMTE5Mjg4MTMgMTcgOC41IDE3eiIvPiAgICA8L2c+PC9zdmc+);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    animation: logo-spin 0.4s steps(4, end) infinite;
+                }
+
+        </style>
+    </head>
+
+    <body class="body">
+
+        <div class="loading">
+            <div class="loading__icon indicator">
+                <div class="indicator__spin"></div>
+            </div>
+        </div>
+
+    </body>
+</html>

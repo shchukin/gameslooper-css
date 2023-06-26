@@ -1,0 +1,23 @@
+/* override */
+
+@media (min-width: 1024px) {
+    .plan {
+
+    }
+        .plan__heading {
+            font-size: 15px;
+            line-height: 24px;
+        }
+
+        .plan__info {
+            margin-top: 21px;
+        }
+            .plan__details {
+
+            }
+
+            .plan__details {
+                margin-top: 16px;
+                padding-left: 33px;
+            }
+}

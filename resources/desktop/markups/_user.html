@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.user</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body" style="background: #131722;">
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.user</h1>
+            <p>
+                Области, по которым можно водить курсором и при этом не терять фокус:
+                <a href="../temp/user.png">http://prntscr.com/auyvea</a>.
+                Сделаны через всевдо-элементы и полностью прозрачны они.
+                К сожалению, неустойчивы к изменению высоты менюшки.
+                Если будут появляться новые компоненты - придется подгонять.
+            </p>
+            <p>
+                Я так понимаю, что некоторые компоненты, например "страж",
+                могут присутствовать или отсутствовать. И это надо учитывать.
+                На этот и потенциальные другие кейсы проработал модификаторы.
+                Важно проставлять их всегда.
+                <br><b>.user__actions_items_2</b>
+                <br><b>.user__actions_items_3</b>
+                <br><b>.user__actions_items_4</b>
+                <br><b>.user__actions_items_5</b>
+                <br><b>.user__actions_items_6</b>
+                <br><b>.user__actions_items_7</b>
+                <br><b>.user__actions_items_8</b>
+                <br><b>.user__actions_items_9</b>
+                <br><b>.user__actions_items_10</b>
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <div class="user user_unread">
+                <div class="user__body">
+                    <a class="user__profile avatar" href="#">
+                        <img class="avatar__image"
+                             srcset="../temp/avatar_05_small@2x.jpg 2x"
+                             src="../temp/avatar_05_small.jpg"
+                             width="30" height="30"
+                             title="Nagibator1999"
+                             alt="Nagibator1999"
+                        >
+                    </a>
+                    <i class="user__update new" title="Есть обновления"></i>
+                </div>
+                <div class="user__actions user__actions_items_7">
+                    <div class="user__menu">
+                        <a class="user__link" href="profile-games.html">Профиль</a>
+                        <a class="user__link user__link_premium" href="#">Премиум аккаунт</a>
+                        <a class="user__link" href="#" data-popover=".page__popover_id_conversations">Сообщения <span class="user__count">+2</span></a>
+                        <a class="user__link" href="#" data-popover=".page__popover_id_settings">Настройки</a>
+                        <a class="user__link" href="help-info.html">Помощь</a>
+                        <a class="user__link" href="#" data-popover=".page__popover_id_guardian">Страж</a>
+                        <a class="user__link user__link_peak" href="#">Выход</a>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <p>
+                У айтема с пипкой модификатор <b>.user__link_peak</b>
+            </p>
+            <p>
+                Премиальный айтем <b>.user__link_premium</b>
+            </p>
+            <p>
+                Показ шарика о том, что новые сообщения появились:
+                <b>.user_unread</b>
+            </p>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.user_disabled</h2>
+            <p>
+                Может быть кейс, когда надо скрыть выпадайку. Например кликнули в
+                "профиль" в выпадайке, когда мы и так находимся в профиле.
+                Если ничего не предпринимать, то кажется, что ничего вовсе и не произошло.
+                Но для наглядности можно скрыть выпадайку. Для этого вешаем класс
+                <b>.user_disabled</b> на 300ms. Этот класс заблокирует наведение,
+                меню исчезнет и все.
+            </p>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Тач устройства</h2>
+            <p>
+                Наведения нет в принципе на "тач" устройствах.
+                И, к сожалению, мы никак не может отследить тач устройства.
+                Если ничего не предпринять, то менюшка на тачах не будет доступна,
+                а больше нигде ссылок на эти страницы нет
+            </p>
+            <h3>Решение раз</h3>
+            <p>
+                Будем пологать, что все что уже чем 1340px (на основной брейкпоинт
+                перехода от планшетного дизайна к десктопному) есть тач устройство.
+                Да, там могут быть и обычные ноуты, но лучше перестраховаться.
+                Детектим ширину, если она строго меньше чем 1340px, то отменяем клик по аватарке,
+                который должен был вести в профиль и по этому клику начинаем тугглить класс
+                <b>user_drop</b>, который фиксирует выпадайку.
+            </p>
+            <p>
+                Чтобы перейти в профиль пользователям таких устройств придет нажить "профиль" в выпадайке.
+            </p>
+            <h3>Решение два</h3>
+            <p>
+                Ловим клик по аватарке и проверяем, показана ли выпадайка или нет. Если показана,
+                то все ок, не надо ниче предпринимать, пользователь ее видел. Если нет, то отменяем
+                клик и показываем выпадайку через тот же туггл <b>user_drop</b>.
+            </p>
+            <p>
+                Тут может быть еще кейс того, что пользователь пришел в аватарка табуляциями,
+                и менбшки он не видит. В этом случае его поведение аналогично тач устройства.
+            </p>
+            <p>
+                Бонусом получаем то, что повторный клик по аватарка нас все-таки отведет в профиль.
+            </p>
+            <p>
+                Потестить этот кейс на десктопах можно табуляциями.
+            </p>
+            <p>
+                Возможно тут надо действовать немного иначе. Возможно пользователь один раз тапнув
+                по аватарке захочет закрыть выпадайку. А не идти в профиль. В этом случае надо смотреть
+                на наличие <b>.user_drop</b> уже в блоке. Сейчас в демке сделано именно так.
+            </p>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../vendors/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../scripts/temp.js"></script>
+
+
+    </body>
+</html>

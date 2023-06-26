@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.action</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body" style="background: #131722;">
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.action</h1>
+            <br>
+            <br>
+            <h2>Бесцветные дефолтные</h2>
+
+            <a class="action" href="main.html" title="Каталог">
+                <img class="action__icon" src="../symbols/action_id_catalog.svg" alt="">
+                Каталог
+            </a>
+            <a class="action" href="search.html" title="Поиск">
+                <img class="action__icon" src="../symbols/action_id_search.svg" alt="">
+                Поиск игр
+            </a>
+            <a class="action" href="#" title="Войти">
+                <img class="action__icon" src="../symbols/action_id_auth.svg" alt="">
+                Войти
+            </a>
+            <a class="action" href="location.html" title="Местоположение">
+                <img class="action__icon" src="../symbols/action_id_geo.svg" alt="">
+                Сменить местоположение
+            </a>
+            <a class="action" href="#" data-popover=".page__popover_id_add-lot" title="Добавить лот">
+                <img class="action__icon" src="../symbols/action_id_create.svg" alt="">
+                Создать лот
+            </a>
+            <a class="action" href="#" title="Уведомления">
+                <img class="action__icon" src="../symbols/action_id_notification.svg" alt="">
+                Уведомления
+                <i class="action__update new" title="Есть обновления"></i>
+            </a>
+
+            <br>
+            <br>
+            <h3>_current</h3>
+
+            <a class="action action_current" title="Каталог">
+                <img class="action__icon" src="../symbols/action_id_catalog.svg" alt="">
+                Каталог
+            </a>
+            <a class="action action_current" title="Поиск игр">
+                <img class="action__icon" src="../symbols/action_id_search.svg" alt="">
+                Поиск игр
+            </a>
+            <a class="action action_current" title="Войти">
+                <img class="action__icon" src="../symbols/action_id_auth.svg" alt="">
+                Войти
+            </a>
+            <a class="action action_current" title="Сменить местоположение">
+                <img class="action__icon" src="../symbols/action_id_geo.svg" alt="">
+                Сменить местоположение
+            </a>
+            <a class="action action_current" title="Создать лот">
+                <img class="action__icon" src="../symbols/action_id_create.svg" alt="">
+                Создать лот
+            </a>
+            <a class="action action_current" title="Уведомления">
+                <img class="action__icon" src="../symbols/action_id_notification.svg" alt="">
+                Уведомления
+                <i class="action__update new" title="Есть обновления"></i>
+            </a>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>
+                _unread
+            </h2>
+            <p>
+                Когда есть непрочитанные. У экшнов, которые могут быть непрочитаными - у них
+                внутри всегда есть .action__update.new но он скрыт.
+                Когда есть новые уведомления добавляем модификатор <b>.action_unread</b>.
+                Скрытая клякса проявится с понтовым эффектом.
+            </p>
+            <p>
+                Смотри аналогичную штуку в блоке <a href="_user.html"><span class="user"></span></a>
+            </p>
+
+            <a class="action action_unread" href="#" title="Уведомления">
+                <img class="action__icon" src="../symbols/action_id_notification.svg" alt="">
+                Уведомления
+                <i class="action__update new" title="Есть обновления"></i>
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../vendors/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../scripts/temp.js"></script>
+
+    </body>
+</html>

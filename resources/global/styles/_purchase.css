@@ -1,0 +1,41 @@
+.purchase {
+
+}
+
+    .purchase__container {
+
+    }
+
+
+
+    .purchase__primary {
+
+    }
+        .purchase__head {
+            padding: 0 20px;
+        }
+            .purchase__title {
+
+            }
+
+        .purchase__payment {
+            margin: 20px 0 0;
+        }
+
+        .purchase__price {
+            padding: 28px 0 34px;
+            text-align: center;
+        }
+
+
+    .purchase__subscription {
+        margin: 0 -20px;
+        padding: 34px 20px 33px;
+        background-color: #202734;
+    }
+
+    .purchase__about {
+        margin-top: 30px;
+        padding: 40px 30px 29px;
+        background-color: #202734;
+    }

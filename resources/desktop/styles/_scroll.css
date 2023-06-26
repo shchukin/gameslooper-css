@@ -1,0 +1,115 @@
+.scroll {
+    overflow-y: auto;
+}
+
+.scroll_skin_default {
+
+}
+
+.scroll_always_visible {
+
+}
+
+/*************** Based on original plugin styles ***************/
+
+.scroll_skin_default > .scroll-element,
+.scroll_skin_default > .scroll-element div
+{
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.scroll_skin_default > .scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.scroll_skin_default > .scroll-element .scroll-element_track {
+    display: none;
+}
+
+
+    /*
+     * Visibility of whole scroll section
+     */
+    .scroll_skin_default > .scroll-element {
+        opacity: 0;
+        transition: opacity .5s ease-out;
+    }
+
+    .scroll_skin_default:hover > .scroll-element {
+        opacity: 1;
+    }
+
+    .scroll_skin_default > .scroll-element.scroll-draggable {
+        opacity: 1;
+    }
+
+    .scroll_always_visible > .scroll-element {
+        opacity: 1;
+    }
+
+
+    /*
+        This is a runner-bar by itself. It is huge, but transparent.
+        Visible oval is inside by :after element.
+    */
+    .scroll_skin_default > .scroll-element .scroll-bar {
+        display: block;
+        opacity: .3;
+        transition: opacity .1s ease-out;
+    }
+
+    .scroll_skin_default > .scroll-element .scroll-bar:hover {
+        opacity: .5;
+    }
+
+    .scroll_skin_default > .scroll-element.scroll-draggable .scroll-bar {
+        opacity: .5;
+    }
+
+
+    .scroll_skin_default > .scroll-element .scroll-bar:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        right: 4px;
+        bottom: 4px;
+        border-radius: 2px;
+        background: #99A9CF;
+    }
+
+
+.scroll_skin_default > .scroll-element.scroll-x {
+    bottom: 0;
+    height: 0;
+    left: 0;
+    min-width: 100%;
+    overflow: visible;
+    width: 100%;
+}
+
+.scroll_skin_default > .scroll-element.scroll-y {
+    height: 100%;
+    min-height: 100%;
+    right: 0;
+    top: 0;
+    width: 0;
+}
+
+/* scrollbar height/width & offset from container borders */
+.scroll_skin_default > .scroll-element.scroll-x .scroll-bar { height: 12px; min-width: 12px; top: -12px; }
+.scroll_skin_default > .scroll-element.scroll-y .scroll-bar { left: -12px; min-height: 12px; width: 12px; }
+
+/* update scrollbar offset if both scrolls are visible */
+.scroll_skin_default > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -6px; }
+.scroll_skin_default > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -6px; }

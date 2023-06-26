@@ -1,0 +1,109 @@
+.page {
+    padding: 60px 0 0;
+}
+    .page__header {
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+        .page__navigate {
+
+        }
+
+    .page__dropdown {
+        min-height: calc(100vh - 60px);
+        background: #131722;
+        display: none;
+    }
+
+    .page_drop .page__dropdown {
+        display: block;
+    }
+        .page__nav {
+
+        }
+
+        .page__user {
+            padding: 30px 20px 20px;
+        }
+
+    .page__wrap {
+
+    }
+
+    .page_drop .page__wrap {
+        display: none;
+    }
+
+        .page__popover {
+            min-height: calc(100vh - 60px - 30px);
+            padding: 0 20px 30px; /* if you gonna change bottom padding then change .chat__ribbon padding */
+            background: #131722;
+            display: none;
+        }
+
+        .page__popover_visible {
+            display: block;
+        }
+            .page__hide-popover {
+                position: fixed;
+                z-index: 200;
+                right: 0;
+                top: 0;
+            }
+
+            .page__hide-popover.close {
+                position: fixed;
+            }
+
+        .page__sidebar {
+            padding: 0 20px 30px;
+            background: #131722;
+        }
+
+        .page__popover_visible ~ .page__sidebar {
+            display: none;
+        }
+
+
+        .page__body {
+            position: relative;
+            padding: 0 20px 30px;
+        }
+
+        .page__popover_visible ~ .page__body {
+            display: none;
+        }
+            /*.page__body:first-child {*/
+                /*min-height: calc(100vh - 60px - 30px);*/
+            /*}*/
+
+            .page__background {
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                top: 0;
+                display: block;
+                width: 100%;
+            }
+
+        .page__footer {
+            padding: 33px 20px 31px;
+            background: #131722;
+        }
+
+        .page__popover_visible ~ .page__footer {
+            display: none;
+        }
+
+
+
+.page_popover-active .page__sidebar {
+    display: none;
+}
+
+.page_popover-active .page__body {
+    display: none;
+}

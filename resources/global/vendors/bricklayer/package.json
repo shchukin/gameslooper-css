@@ -1,0 +1,37 @@
+{
+  "name": "bricklayer",
+  "version": "0.4.2",
+  "description": "Lightweight and strong Masonry alternative",
+  "main": "dist/bricklayer-node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ademilter/bricklayer.git"
+  },
+  "keywords": [
+    "masonry",
+    "bricklayer"
+  ],
+  "author": "Adem İlter <ademilter@gmail.com>, Fatih Kadir Akın <fatihkadirakin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ademilter/bricklayer/issues"
+  },
+  "homepage": "https://github.com/ademilter/bricklayer#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-csslint": "^0.3.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-typescript": "^2.13.0",
+    "gulp-uglify": "^1.5.3",
+    "tsify": "^0.14.7",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

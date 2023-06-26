@@ -1,0 +1,166 @@
+/* override */
+
+.input_widget_suggest {
+
+}
+
+.input_widget_select {
+
+}
+
+.input_drop {
+
+}
+    /* jquery.scrollbar overrides it, so we override it again */
+    .input__text {
+        border-color: rgba(153,169,207,.05);
+    }
+
+    .input_drop .input__text {
+        border-color: #FFFFFF;
+    }
+
+    .input_widget_select .input__text {
+        cursor: pointer;
+    }
+
+    /* jquery.scrollbar overrides it, so we override it again */
+    .input_widget_area .scroll-content .input__text {
+        padding: 9px 19px 9px 19px;
+    }
+
+    .input__arrow {
+        position: absolute;
+        right: 14px;
+        top: 17px;
+        width: 12px;
+        height: 6px;
+        cursor: pointer;
+        pointer-events: none;
+        transition: transform .2s ease-out;
+    }
+
+    .input_drop .input__arrow {
+        transform: rotate(180deg);
+    }
+        .input__peak {
+            display: block;
+            width: 8px;
+            height: 8px;
+            cursor: pointer;
+            margin: -3px 0 0 2px;
+            transform: rotate(-135deg);
+        }
+
+        .input__peak:before,
+        .input__peak:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #2C3544;
+            border-radius: 1px;
+            transition: background-color .1s ease-out;
+        }
+
+        .input__peak:before {
+            width: 2px;
+            height: 8px;
+        }
+
+        .input__peak:after {
+            width: 8px;
+            height: 2px;
+        }
+
+        .input:hover .input__peak:before,
+        .input:hover .input__peak:after,
+        .input_drop .input__peak:before,
+        .input_drop .input__peak:after,
+        .input__text:focus ~ .input__arrow .input__peak:before,
+        .input__text:focus ~ .input__arrow .input__peak:after
+        {
+            background-color: #FFFFFF;
+        }
+
+
+
+
+    .input__dropdown {
+        position: absolute;
+        z-index: 1000;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #1A202B;
+        visibility: hidden;
+        opacity: 0;
+
+        /* hide animation */
+        transition: opacity .1s cubic-bezier(0.075, 0.82, 0.165, 1),
+                    visibility .1s linear;
+    }
+
+    .input_drop .input__dropdown {
+        visibility: visible;
+        opacity: 1;
+
+        /* show animation */
+        transition: opacity .1s cubic-bezier(0.075, 0.82, 0.165, 1),
+                    visibility .1s linear;
+    }
+        .input__suggest {
+            max-height: 200px;
+        }
+            .input__option {
+                position: relative;
+                background: none;
+                border: none;
+                text-align: left;
+                box-sizing: border-box;
+                display: block;
+                width: 100%;
+                padding: 10px 20px;
+                font-size: 12px;
+                line-height: 20px;
+                color: #FFFFFF;
+                cursor: pointer;
+                transition: background-color .1s ease-out;
+            }
+
+            .input__option:hover,
+            .input__option_highlight {
+                background-color: #202734;
+            }
+
+            .input__option_current {
+
+            }
+
+            .input__option_clear {
+                color: #5A6476;
+            }
+                .input__option:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    right: 20px;
+                    top: 0;
+                    height: 1px;
+                    background: #202733;
+                    transition: background-color .1s ease-out;
+                }
+
+                .input__option:first-child:before {
+                    display: none;
+                }
+
+
+                .input__option:hover:before,
+                .input__option_highlight:before,
+                .input__option:hover + .input__option:before,
+                .input__option_highlight + .input__option:before {
+                    background-color: transparent;
+                }

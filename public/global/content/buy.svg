@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="270px" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>buy@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="unlocked" transform="translate(-1579.000000, -249.000000)">
+            <g id="SLICE" transform="translate(175.000000, 249.000000)"></g>
+            <g id="buy" transform="translate(1604.000000, 282.000000)">
+                <path d="M18.8903257,48 C13.9319422,55.3500782 9.78652263,63.4271481 6.6262255,72.1505559 C-14.0349506,129.181859 15.2338852,192.242303 72,213" id="circle" stroke="#BBE74F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M96,219.118067 C117.237868,221.811215 139.48519,218.400684 160,208" id="circle" stroke="#BBE74F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M176,198 C206.464231,175.127869 224.15677,137.273217 219.161352,97" id="circle" stroke="#BBE74F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M213,72 C197.638552,29.9900082 157.26866,-1.42108547e-14 109.884724,-1.42108547e-14 C81.9110804,-1.42108547e-14 56.3820171,10.4523124 37,27.6594868" id="circle" stroke="#BCE84F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="loop" transform="translate(61.000000, 64.000000)">
+                    <polyline id="Path-3" stroke="#BBE74F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" points="79 20 100 20 100 43"></polyline>
+                    <path d="M100,67 L100,90 L10.0000638,90 C4.47473288,90 0,85.5271165 0,80.0095352 L0,10" id="Path-3" stroke="#BBE74F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M15,21 L15,53" id="Path-11" stroke="#BBE74F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M15,66 L15,75" id="Path-11" stroke="#BBE74F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M89,0 L9.9933609,0 C4.47418008,0 0,4.47593818 0,10 L0,10 C0,15.5228475 4.47451676,20 9.9933609,20 L89,20 L89,0 Z" id="Path-3" fill="#BCD5FF" opacity="0.12"></path>
+                    <polygon id="Path-3" fill="#BCD5FF" opacity="0.12" transform="translate(31.000000, 56.000000) rotate(-90.000000) translate(-31.000000, -56.000000) " points="65 51 -3 51 -3 61 65 61"></polygon>
+                    <path d="M91,0 L9.99890189,0 C4.47666086,0 -1.42108547e-14,4.47593818 -1.42108547e-14,10 L-1.42108547e-14,10 C-1.42108547e-14,15.5228475 4.48166495,20 9.99890189,20 L91,20 L91,0 Z" id="Path-3" stroke="#BBE74F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <rect id="Rectangle-5" stroke="#A6EC64" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x="67" y="44" width="40" height="22" rx="11"></rect>
+                    <rect id="Rectangle-5" stroke="#BBE74F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" x="67" y="44" width="40" height="22" rx="11"></rect>
+                    <circle id="Oval-5" fill="#BBE74F" cx="80" cy="55" r="3"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

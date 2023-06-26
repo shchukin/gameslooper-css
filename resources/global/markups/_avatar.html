@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.avatar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.avatar</h1>
+            <p><span style="color: red;">Есть овверрайд</span> <a href="../../desktop/markups/_avatar.html">на десктопы</a>.</p>
+            <br>
+            <br>
+            <p>
+                Размеры аватарок жестко профексированы стилями.<br>
+                Дефолтная аватарка <b>30х30</b>.
+            </p>
+
+
+            <a class="avatar" href="#">
+                <img class="avatar__image"
+                     srcset="../temp/avatar_01_small@2x.jpg 2x"
+                     src="../temp/avatar_01_small.jpg"
+                     width="30" height="30"
+                     title="Nagibator1999"
+                     alt="Nagibator1999"
+                >
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <b>.avatar_size_larger</b>
+            <p>
+                Второй наш размер - это 40х40.
+            </p>
+
+            <a class="avatar avatar_size_larger" href="#">
+                <img class="avatar__image"
+                     srcset="../temp/avatar_01_large@2x.jpg 2x"
+                     src="../temp/avatar_01_large.jpg"
+                     width="40" height="40"
+                     title="Nagibator1999"
+                     alt="Nagibator1999"
+                >
+            </a>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.avatar_not-clickable</h2>
+            <p>
+                Некликабельная аватарка. Они редки, модификатором сбрасываем эффекты наведения.
+            </p>
+
+            <div class="avatar avatar_not-clickable">
+                <img class="avatar__image"
+                     srcset="../temp/avatar_01_small@2x.jpg 2x"
+                     src="../temp/avatar_01_small.jpg"
+                     width="30" height="30"
+                     title="Nagibator1999"
+                     alt="Nagibator1999"
+                >
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>
+                В атрибут srcset заряжаем альтернативные картинки для разных плотностей пикселя,
+                а дескриптором "<b>2x</b>" сообщаем для какой они плотности пикселя. Для декстопной версии
+                достаточно только 2x (ноутбуки с ретиной).
+                Для мобильной хорошо бы сбацать еще и 1.5x и 3x - таких телефонов уже полно.
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+
+    </body>
+</html>

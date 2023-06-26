@@ -1,0 +1,83 @@
+/* override */
+
+.contact {
+
+}
+
+    .contact__head {
+        margin: 0;
+        padding: 51px 40px 42px;
+    }
+        .contact__title {
+
+        }
+
+        .contact__note {
+            margin: 15px 0 0;
+            font-size: 14px;
+            line-height: 28px;
+        }
+
+    .contact__form {
+        padding: 50px 40px;
+        background-color: #1D2430;
+    }
+
+@media (min-width: 1024px) {
+
+    .contact {
+
+    }
+        .contact__head {
+            padding: 61px 0 50px;
+            background: #202734;
+            text-align: center;
+
+        }
+            .contact__title {
+
+            }
+
+            .contact__note {
+                max-width: 370px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        .contact__form {
+            padding: 50px 0 60px;
+        }
+
+            .contact__container {
+                max-width: 420px;
+                margin: 0 auto;
+            }
+                .contact__data {
+                    display: flex;
+                }
+                    .contact__name {
+                        box-sizing: border-box;
+                        flex-basis: 50%;
+                        min-width: 50%;
+                        max-width: 50%;
+                        padding: 0 10px 0 0;
+                    }
+
+                    .contact__mail {
+                        box-sizing: border-box;
+                        flex-basis: 50%;
+                        min-width: 50%;
+                        max-width: 50%;
+                        margin: 0;
+                        padding: 0 0 0 10px;
+                    }
+
+                    .contact__message {
+                        margin: 20px 0 0;
+                    }
+
+                .contacts__submit {
+                    width: 200px;
+                    margin: 30px auto 0;
+                }
+}

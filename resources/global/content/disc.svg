@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="270px" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>disc@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="108" cy="50" r="9"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="18" height="18" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="unlocked" transform="translate(-175.000000, -1101.000000)">
+            <g id="SLICE" transform="translate(175.000000, 249.000000)"></g>
+            <g id="name" transform="translate(202.000000, 553.000000)"></g>
+            <g id="disc" transform="translate(199.000000, 1131.000000)">
+                <path d="M120.898045,96.8860061 C120.898045,96.8860061 144.337375,71.7410063 142.781672,70.4918418 C136.166196,65.1798892 128.170755,61.5160987 119.418381,60.1235022 C116.839331,59.7131477 114.194557,59.5 111.5,59.5 L111.5,93.5 L120.898045,96.8860061 Z" id="Oval-10" fill="#BCD5FF" opacity="0.12"></path>
+                <path d="M214.77703,149.563973 C218.807489,138.124445 221,125.818266 221,113 C221,107.074373 220.531455,101.258181 219.629391,95.5864505" id="circle" stroke="#7553F6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M88.725389,5.25650799 C68.5737603,9.40085458 50.4336537,19.0565558 35.9498711,32.5788097" id="circle" stroke="#7553F6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M213.475713,72.9348148 C199.998195,38.4890687 169.654535,12.4985527 132.601807,5.12033874" id="circle" stroke="#7553F6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M16.7115969,56.3458118 C12.6338121,63.1323854 9.37364896,70.1823115 6.90252187,77.380939 C-4.45548604,110.467893 0.855561927,146.696289 20.059979,174.933456" id="circle" stroke="#7553F6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="finger" transform="translate(37.000000, 0.000000)" stroke="#7553F6" stroke-linecap="round" stroke-linejoin="round">
+                    <g id="Group-9" transform="translate(75.500000, 109.000000) rotate(-90.000000) translate(-75.500000, -109.000000) translate(-33.000000, 59.000000)">
+                        <g id="dress" transform="translate(0.000000, 0.000000)">
+                            <path d="M59.128334,39.38841 C58.3892233,42.8084748 58,46.3587834 58,50 C58,77.6142375 80.3857625,100 108,100 L108,100 C135.614237,100 158,77.6142375 158,50 C158,22.3857625 135.614237,3.55271368e-15 108,3.55271368e-15 C97.3087151,3.55271368e-15 87.4011643,3.35556447 79.2730719,9.07096896" id="Oval-9" stroke-width="5"></path>
+                            <circle id="Oval-9" stroke-width="3" cx="108" cy="50" r="15"></circle>
+                            <use id="Oval-9" mask="url(#mask-2)" stroke-width="6" xlink:href="#path-1"></use>
+                            <polyline id="Path-3" stroke-width="6" points="0 85 21 85 21 23 0 23"></polyline>
+                        </g>
+                        <path d="M59.3385148,27.6301674 L59.3385156,38.4936199 C59.338516,42.9117082 62.9104598,46.4932763 67.3319631,46.4932762 L70.4546223,46.4932761 C74.8692811,46.4932761 78.4699636,42.9091356 78.4949972,38.4882922 C78.4949972,38.4882922 78.6431236,16.2323198 78.5263164,15.3265557 C77.7566149,9.35802315 71.2390347,6.23084434 68,6.23084437 C59.5850989,6.23084438 48.5401787,6.23084437 48.5401787,6.23084437 C45.2273866,6.23084437 40.5312558,8.0002034 38.0171129,10.1594763 C38.0171129,10.1594763 29.5278351,17.9140977 21,23 L21,85 L70,85" id="Path-2" stroke-width="6"></path>
+                        <path d="M58,28 C58,28 56,42 42.5,45" id="Path-14" stroke-width="5"></path>
+                        <g id="active" transform="translate(196.500000, 48.500000) rotate(-270.000000) translate(-196.500000, -48.500000) translate(165.500000, 28.500000)">
+                            <path d="M0.5,26.5 L6,39.5" id="Path-11" stroke-width="5"></path>
+                            <path d="M56.5,26.5 L62,39.5" id="Path-11" stroke-width="5" transform="translate(59.250000, 33.000000) scale(-1, 1) translate(-59.250000, -33.000000) "></path>
+                            <path d="M31,0 L31,36" id="Path-11" stroke-width="6"></path>
+                        </g>
+                    </g>
+                    <path d="M0.0578780735,194.480526 C34.5151617,225.764754 86.5339386,232.780586 129,208.262794 C145.97602,198.461685 159.351245,184.818933 168.661554,169.066661" id="circle" stroke-width="9"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

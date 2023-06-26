@@ -1,0 +1,27 @@
+.plan {
+
+}
+    .plan__heading {
+        font-size: 14px;
+        line-height: 22px;
+        color: #838B9B;
+    }
+
+    .plan__info {
+        margin: 25px 0 0;
+    }
+
+    .plan__info:first-child {
+        margin-top: 0;
+    }
+
+        .plan__features {
+            color: #5A6476;
+        }
+
+        .plan__details {
+            margin: 12px 0 0;
+            padding: 0 0 0 29px;
+            font-size: 12px;
+            line-height: 22px;
+        }

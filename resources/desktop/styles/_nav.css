@@ -1,0 +1,32 @@
+/* override */
+
+.nav__link {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+
+.nav_fold {
+
+}
+
+
+.nav_fold .nav__more {
+    display: none;
+    margin: 0 0 0 -20px;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 0;
+    white-space: normal;
+}
+
+
+@media (max-width: 959px) {
+    .nav_fold .nav__link:nth-of-type(n+3) {
+        display: none;
+    }
+
+    .nav_fold .nav__more {
+        display: block;
+    }
+}

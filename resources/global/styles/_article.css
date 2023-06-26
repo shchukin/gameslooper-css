@@ -1,0 +1,16 @@
+.article {
+    padding: 30px;
+    background: #202734;
+}
+    .article__head {
+
+    }
+
+    .article__body {
+        margin: 25px 0 0;
+        font-size: 13px;
+        line-height: 20px;
+        color: #A9B6CD;
+        text-align: justify;
+        overflow-wrap: break-word;
+    }

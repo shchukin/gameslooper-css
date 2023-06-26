@@ -1,0 +1,22 @@
+.respond {
+
+}
+    .respond__body {
+
+    }
+
+    .respond__operations {
+        margin: 20px 0 0;
+    }
+
+    .respond__operations:first-child {
+        margin-top: 0;
+    }
+
+        .respond__action {
+            margin: 15px 0 0;
+        }
+
+        .respond__action:first-child {
+            margin-top: 0;
+        }

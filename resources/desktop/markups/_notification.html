@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.notification</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.notification <span style="font-size: 16px; color: red;">оверрайд</span></h1>
+            <br>
+            <br>
+            <p>
+                Сам по себе блок на десктопах не меняется. Глобальные нотификашки используются как есть.
+            </p>
+            <p>
+                Но на мобилках появляется второй тип нотификаций:
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.notification_kind_alert</h2>
+            <p>
+                Это нотификашки, которые появляются в углу, немедленно. У них другие цвета, отсутствует дата/время и
+                есть крестик для удаления. Соответствено это модификатор <b>.notification_kind_alert</b> на всю
+                фиговину и элемент <b>.notification__delete</b>
+            </p>
+
+            <a class="notification notification_kind_alert" href="#">
+                <img class="notification__icon" src="../../global/symbols/notification_id_exchange.svg" alt="">
+                <span class="notification__title title link link_decoration_inverted">Hironobu Sakaguchi</span>
+                <div class="notification__body">
+                    <span class="link link_decoration_inverted">The Last Story</span> <span class="notification__helper">за Ваш</span> <span class="link link_decoration_inverted">Final Fanyasy XV Limited Edition</span>
+                </div>
+                <span class="notification__delete clear">
+                    <span class="clear__icon">Удалить</span>
+                </span>
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Паравозик</h2>
+            <br>
+            <br>
+
+            <a class="notification notification_kind_alert" href="#">
+                <img class="notification__icon" src="../../global/symbols/notification_id_achievement.svg" alt="">
+                <span class="notification__title title link link_decoration_inverted">Достижение</span>
+                <div class="notification__body">
+                    Новобранец
+                </div>
+                <span class="notification__delete clear">
+                    <span class="clear__icon">Удалить</span>
+                </span>
+            </a>
+
+            <a class="notification notification_kind_alert" href="#">
+                <img class="notification__icon" src="../../global/symbols/notification_id_message.svg" alt="">
+                <span class="notification__title title link link_decoration_inverted">Hideo Kojima</span>
+                <div class="notification__body">
+                    Привет, готов к обмену?
+                </div>
+                <span class="notification__delete clear">
+                    <span class="clear__icon">Удалить</span>
+                </span>
+            </a>
+
+            <a class="notification notification_kind_alert" href="#">
+                <img class="notification__icon" src="../../global/symbols/notification_id_feedback.svg" alt="">
+                <span class="notification__title title link link_decoration_inverted">Gabe Newell</span>
+                <div class="notification__body">
+                    Цены хорошие, буду дальше покупать.
+                </div>
+                <span class="notification__delete clear">
+                    <span class="clear__icon">Удалить</span>
+                </span>
+            </a>
+
+            <a class="notification notification_kind_alert" href="#">
+                <img class="notification__icon" src="../../global/symbols/notification_id_purchase.svg" alt="">
+                <span class="notification__title title link link_decoration_inverted">Suda51</span>
+                <div class="notification__body">
+                    2000 Рублей <span class="notification__helper">за Ваш</span> <span class="link link_decoration_inverted">Shadows of the Damned</span>
+                </div>
+                <span class="notification__delete clear">
+                    <span class="clear__icon">Удалить</span>
+                </span>
+            </a>
+
+            <a class="notification notification_kind_alert" href="#">
+                <img class="notification__icon" src="../../global/symbols/notification_id_exchange.svg" alt="">
+                <span class="notification__title title link link_decoration_inverted">Hironobu Sakaguchi</span>
+                <div class="notification__body">
+                    <span class="link link_decoration_inverted">The Last Story</span> <span class="notification__helper">за Ваш</span> <span class="link link_decoration_inverted">Final Fanyasy XV Limited Edition</span>
+                </div>
+                <span class="notification__delete clear">
+                    <span class="clear__icon">Удалить</span>
+                </span>
+            </a>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../vendors/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../scripts/temp.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,17 @@
+.meter {
+    height: 5px;
+    display: flex;
+}
+    .meter__value {
+
+    }
+
+    .meter__value_kind_good {
+        background-color: #6FBB45;
+        /* width value is inline */
+    }
+
+    .meter__value_kind_bad {
+        background-color: #F04349;
+        flex-grow: 1;
+    }

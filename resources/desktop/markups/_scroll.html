@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.scroll</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+
+        <style>
+            .temp {
+                height: 200px;
+                overflow: auto;
+            }
+        </style>
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.scroll</h1>
+            <br>
+            <br>
+            <p>
+                Для кастомизации используем плагиин <a href="http://gromo.github.io/jquery.scrollbar/">jquery.scrollbar</a>,
+                <a href="https://habrahabr.ru/post/177399/">статья на хабре</a>.
+                Он весьма щедяще относится к нативному браузерному скроллбару - он его не трогает.
+                Весь функционал: скорость и ускорения, работа колесиком, жесты и прочее остается такими,
+                какими должны быть для текущей конфигурации пользователя. Плагин скрывает сам скроллбар
+                (именно и только панельку бегунка) и подделывает его дивами. Раскрашиваем.
+            </p>
+            <p>
+                Не работает в Firefox`е на Mac OS X по причине какого-то бага Firefox`а.
+                В любом случае, если по какой-то причине не срабатывает этот скроллбар, мы фоллбечимся на оригинальный.
+            </p>
+            <p>
+                <b>Демо:</b><br>
+                (скроллбары работают по обоим направлениям)
+            </p>
+            <br>
+            <br>
+            <br>
+
+            <hr style="margin: 0;">
+
+
+
+            <div class="scroll scroll_skin_default temp">
+                <p class="permanent">
+                    Simple inner scrollbar over content
+                </p>
+                <p class="permanent">
+                    <a href="#anchor">Click to test #anchors</a><br><br>
+                    <input type="text" value="Use TAB to focus next input" style="max-width:220px; width: 100%;">
+                </p>
+                <p style="width: 1000px">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+                    scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+                    Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+                    hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+                    pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+                    sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+                    ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+                    nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+                    viverra nisi, in interdum massa nibh nec erat.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+                    scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+                    Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+                    hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+                    pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+                    sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+                    ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+                    nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+                    viverra nisi, in interdum massa nibh nec erat.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+                    scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+                    Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+                    hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+                    pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+                    sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+                    ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+                    nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+                    viverra nisi, in interdum massa nibh nec erat.
+                </p>
+                <input type="text"><br>
+                <h3 id="anchor">Anchor</h3>
+            </div>
+
+
+            <hr style="margin: 0;">
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <b>textarea</b>
+            <br>
+            <br>
+
+            <style>
+                .temp2 {
+                    height: 100px;
+                    width: 100%;
+                    resize: none;
+                }
+            </style>
+
+            <textarea class="temp2 scroll scroll_skin_default"></textarea>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <p>
+                Предлагаю завести класс <b>.scroll</b>, за который матчимся из JS`а, чтобы инициализировать плагин.
+                Проставляем этот класс там, где хотим видеть скроллбар.
+            </p>
+            <p>
+                Обязательно проставлять второй класс со скином для скроллбара. Наш скин это <b>.scroll_skin_default</b>.
+                В самом плагине было штук 10 своих скинов, просто куча бесполезного CSS.
+                К сожалению эти скины были перемешаны с базовыми, нужными стилями скроллбара.
+                Эти скины я грохнул прямо в коде библиотеки. Не хорошо, конечно. Если плагин обновится,
+                то эти изменения вернуться. Но пока пусть будет так. Экономим тыщу строк. В любом случае ничего не ломается.
+                Просто лишний багаж.
+            </p>
+            <p>
+                Очевидно, что проставлять <b>.scroll.scroll_skin_default</b> надо туда, где есть условия для работы скроллбара:
+                какая-то высота или max-height, и overflow: scroll или auto. Прчием эти стили должны быть убраны во
+                внешний файл или в &lt;style&gt;&lt;/style&gt;. С инлайновыми стилями плагин дерется.
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.scroll_always_visible</h2>
+            <p>
+                Показываем скроллбар не только по наведению, а всегда.
+                Так хорошо делать в выпадайках и в textarea.
+                Там, где надо пояснить, что типа "чувак, вот тут скроллбар!"
+            </p>
+
+
+            <hr style="margin: 0;">
+
+
+            <div class="scroll scroll_skin_default scroll_always_visible temp">
+                <p class="permanent">
+                    Simple inner scrollbar over content
+                </p>
+                <p class="permanent">
+                    <a href="#anchor">Click to test #anchors</a><br><br>
+                    <input type="text" value="Use TAB to focus next input" style="max-width:220px; width: 100%;">
+                </p>
+                <p style="width: 1000px">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+                    scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+                    Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+                    hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+                    pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+                    sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+                    ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+                    nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+                    viverra nisi, in interdum massa nibh nec erat.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+                    scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+                    Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+                    hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+                    pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+                    sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+                    ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+                    nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+                    viverra nisi, in interdum massa nibh nec erat.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+                    scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+                    Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+                    hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+                    pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+                    sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+                    ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+                    nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+                    viverra nisi, in interdum massa nibh nec erat.
+                </p>
+                <input type="text"><br>
+                <h3 id="anchor">Anchor</h3>
+            </div>
+
+
+
+            <hr style="margin: 0;">
+
+            <br>
+            <br>
+            <br>
+
+            <textarea class="temp2 scroll scroll_skin_default scroll_always_visible"></textarea>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../vendors/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../scripts/temp.js"></script>
+
+
+    </body>
+</html>

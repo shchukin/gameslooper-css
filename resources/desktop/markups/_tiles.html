@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.tiles</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+
+        <div style="width: 700px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.tiles</h1>
+            <p>
+                Это позиционирующий блок для <b>.unit</b>`ов (подобно блоку <b>.bricklayer</b> для <b>.item</b>).
+                Используется только на десктопах, только на 1340+.
+                Детектим ширину, если она строго меньше чем 1340px,
+                то используем <b>.item</b>`ы с <b>.bricklayout</b>`ами.
+                Если включительно больше, то фигачим вот эти вот <b>.unit</b>`ы с <b>.tiles</b>.
+            </p>
+            <h2>_layout_</h2>
+            <p>
+                Тут есть проблема с тем, какие ширины давать плиткам. Ширина одного айтема должна считаться от
+                ширины родителя, например 25% для 4 столбцов, 20% для 5 столбцов и т.д. И эти ширины надо
+                перестраивать в зависимости от ширины родителя. Например если родитель 700px, то можно вместить
+                три плитки. Если ширина 1000px, то можно вместить четыре. И, к сожалению, у нас нет возможности
+                писать медиа-запросы от ширины родителя.
+            </p>
+            <p>
+                Зато есть возможность писать запросы от ширины экрана. Получается, что надо два источника информации:
+                <br>1) Ширина экрана, которую мы узнаю медиа-запросами
+                <br>2) Ширина родителя, которую мы знаем из макетов, мы знаем какие блоки какой ширины могут быть
+                в каком контексте. Эту инфу добавляем в верстку модификаторами <b>_layout_</b>
+            </p>
+            <p>
+                Пока что у нас есть два вида плиток:
+                <br><b>.tiles_layout_narrow</b> - это сплющенная плитка, работает тогда, когда у нас включены
+                шапка и оба сайдбара.
+                <br><b>.tiles_layout_wide</b> - широкая плитка, когда включена только шапка. Например, страница поиска.
+            </p>
+            <p>
+                Без этих модификаторов у айтемов плитки будет просто статичная ширина в 220px.
+                Такой замес есть только у плиток. У bricklayer все без проблем.
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Сэмплы</h2>
+        </div>
+
+
+
+
+<div style="padding: 0 20px 0 100px;">
+
+    <h3>.tiles_layout_wide</h3>
+    <p>Слева нас отталкивает только шапка.</p>
+
+    <div class="tiles tiles_layout_wide">
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_psp_01@2x.jpg 2x"
+                                 src="../temp/unit_psp_01.jpg"
+                                 alt="Patapon 3"
+                                 title="Patapon 3"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_exchange.svg" alt="">
+                            Обмен
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps2_01@2x.jpg 2x"
+                                 src="../temp/unit_ps2_01.jpg"
+                                 alt="Final Fantasy X"
+                                 title="Final Fantasy X"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps3_01@2x.jpg 2x"
+                                 src="../temp/unit_ps3_01.jpg"
+                                 alt="God of War III"
+                                 title="God of War III"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps4_01@2x.jpg 2x"
+                                 src="../temp/unit_ps4_01.jpg"
+                                 alt="Metal Gear Solid V"
+                                 title="Metal Gear Solid V"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_x360_01@2x.jpg 2x"
+                                 src="../temp/unit_x360_01.jpg"
+                                 alt="Bioshock Infinite"
+                                 title="Bioshock Infinite"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_xone_01@2x.jpg 2x"
+                                 src="../temp/unit_xone_01.jpg"
+                                 alt="Battlefield 4"
+                                 title="Battlefield 4"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_wii_01@2x.jpg 2x"
+                                 src="../temp/unit_wii_01.jpg"
+                                 alt="Super Mario Galaxy 2"
+                                 title="Super Mario Galaxy 2"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_wiiu_01@2x.jpg 2x"
+                                 src="../temp/unit_wiiu_01.jpg"
+                                 alt="Super Mario Bros U"
+                                 title="Super Mario Bros U"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_nds_01@2x.jpg 2x"
+                                 src="../temp/unit_nds_01.jpg"
+                                 alt="Mario Party DS"
+                                 title="Mario Party DS"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_3ds_01@2x.jpg 2x"
+                                 src="../temp/unit_3ds_01.jpg"
+                                 alt="The Legend of Zelda: Ocarina of time 3D"
+                                 title="The Legend of Zelda: Ocarina of time 3D"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+        <br>
+        <br>
+        <br>
+
+<div style="padding: 0 310px 0 390px;">
+
+    <h3>.tiles_layout_narrow</h3>
+    <p>Слева шапка и сайдбар, справа эсайд - полный комплект.</p>
+
+    <div class="tiles tiles_layout_narrow">
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_psp_01@2x.jpg 2x"
+                                 src="../temp/unit_psp_01.jpg"
+                                 alt="Patapon 3"
+                                 title="Patapon 3"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_exchange.svg" alt="">
+                            Обмен
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps2_01@2x.jpg 2x"
+                                 src="../temp/unit_ps2_01.jpg"
+                                 alt="Final Fantasy X"
+                                 title="Final Fantasy X"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps3_01@2x.jpg 2x"
+                                 src="../temp/unit_ps3_01.jpg"
+                                 alt="God of War III"
+                                 title="God of War III"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps4_01@2x.jpg 2x"
+                                 src="../temp/unit_ps4_01.jpg"
+                                 alt="Metal Gear Solid V"
+                                 title="Metal Gear Solid V"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_x360_01@2x.jpg 2x"
+                                 src="../temp/unit_x360_01.jpg"
+                                 alt="Bioshock Infinite"
+                                 title="Bioshock Infinite"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_xone_01@2x.jpg 2x"
+                                 src="../temp/unit_xone_01.jpg"
+                                 alt="Battlefield 4"
+                                 title="Battlefield 4"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_wii_01@2x.jpg 2x"
+                                 src="../temp/unit_wii_01.jpg"
+                                 alt="Super Mario Galaxy 2"
+                                 title="Super Mario Galaxy 2"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_wiiu_01@2x.jpg 2x"
+                                 src="../temp/unit_wiiu_01.jpg"
+                                 alt="Super Mario Bros U"
+                                 title="Super Mario Bros U"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_nds_01@2x.jpg 2x"
+                                 src="../temp/unit_nds_01.jpg"
+                                 alt="Mario Party DS"
+                                 title="Mario Party DS"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tiles__item">
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_3ds_01@2x.jpg 2x"
+                                 src="../temp/unit_3ds_01.jpg"
+                                 alt="The Legend of Zelda: Ocarina of time 3D"
+                                 title="The Legend of Zelda: Ocarina of time 3D"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../vendors/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../scripts/temp.js"></script>
+
+
+    </body>
+</html>

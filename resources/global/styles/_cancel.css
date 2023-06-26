@@ -1,0 +1,59 @@
+.cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+    .cancel__icon {
+        position: relative;
+        display: block;
+        width: 12px;
+        height: 12px;
+        border: 2px solid #2C3544;
+        border-radius: 50%;
+        text-decoration: none;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: border-color .1s ease-out;
+    }
+
+    .cancel:hover .cancel__icon {
+        border-color: #FFFFFF;
+    }
+
+        .cancel__icon:before,
+        .cancel__icon:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            margin: auto;
+            transform: rotate(45deg);
+            background: #2C3544;
+            border-radius: 1px;
+            transition: background-color .1s ease-out;
+        }
+
+        .cancel__icon:before {
+            width: 8px;
+            height: 2px;
+        }
+
+        .cancel__icon:after {
+            width: 2px;
+            height: 8px;
+        }
+
+        .cancel:hover .cancel__icon:before,
+        .cancel:hover .cancel__icon:after {
+            background-color: #FFFFFF;
+        }

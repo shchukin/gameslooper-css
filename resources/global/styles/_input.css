@@ -1,0 +1,222 @@
+.input {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    position: relative;
+}
+
+.input_widget_area {
+
+}
+
+.input_fill {
+
+}
+
+.input_focus {
+
+}
+
+.input_error {
+
+}
+
+.input_warning {
+
+}
+
+.input_split {
+
+}
+
+.input_split + .input_split {
+    margin-top: -1px;
+}
+
+.input:hover {
+    z-index: 100;
+}
+
+
+.input_split.input_error {
+    z-index: 200;
+}
+
+.input_split.input_focus {
+    z-index: 300; /* more than hover cause case _focus + :hover and hover won */
+}
+
+    .input__text {
+        box-shadow: none;
+        background: none;
+        border-radius: 0;
+        font-family: inherit;
+        box-sizing: border-box;
+        vertical-align: top;
+        width: 100%;
+        height: 40px;
+        padding: 9px 39px 9px 19px;
+        border: 1px solid rgba(153,169,207,.05);
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+        transition: border-color .2s ease-out;
+    }
+
+    .input__text::-ms-clear {
+        display: none;
+    }
+
+    .input__text::-webkit-input-placeholder { font-style: normal; opacity: 1; color: rgba(153,169,207,.3); }
+    .input__text::-moz-placeholder          { font-style: normal; opacity: 1; color: rgba(153,169,207,.3); }
+    .input__text:-ms-input-placeholder      { font-style: normal; opacity: 1; color: rgba(153,169,207,.3); }
+
+    .input__text:hover {
+        border-color: rgba(153,169,207,.2);
+    }
+
+    .input__text:focus,
+    .input_focus .input__text {
+        border-color: #FFFFFF;
+    }
+
+
+    .input__text:-webkit-autofill {
+        -webkit-box-shadow: inset 0 0 0 20px #1D2228;
+        -webkit-text-fill-color: #FAFFB5;
+        border-color: #757A60;
+    }
+
+    .input_error .input__text {
+        border-color: #F04349;
+        color: #F04349;
+    }
+
+    .input_warning .input__text {
+        border-color: #FFC60D;
+        color: #FFC60D;
+    }
+
+    .input_widget_select .input__text {
+        cursor: pointer;
+    }
+
+    .input_widget_area .input__text {
+        padding-right: 19px; /* no cleartype */
+        height: 80px;        /* 3 rows plus borders and paddings */
+        max-height: 140px;   /* 6 rows plus borders and paddings for expanding textareas plugin */
+        resize: none;
+    }
+
+    .input_rows_01 .input__text { height:  40px; }
+    .input_rows_02 .input__text { height:  60px; }
+    .input_rows_03 .input__text { height:  80px; }
+    .input_rows_04 .input__text { height: 100px; }
+    .input_rows_05 .input__text { height: 120px; }
+    .input_rows_06 .input__text { height: 140px; }
+
+    .input_max-rows_01 .input__text { max-height: 40px; }
+    .input_max-rows_02 .input__text { max-height: 60px; }
+    .input_max-rows_03 .input__text { max-height: 80px; }
+    .input_max-rows_04 .input__text { max-height: 100px; }
+    .input_max-rows_05 .input__text { max-height: 120px; }
+    .input_max-rows_06 .input__text { max-height: 140px; }
+    .input_max-rows_07 .input__text { max-height: 160px; }
+    .input_max-rows_08 .input__text { max-height: 180px; }
+    .input_max-rows_09 .input__text { max-height: 200px; }
+
+
+
+    .input__cleartype {
+        background: none;
+        border: none;
+        padding: 0;
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        width: 38px;
+        height: 38px;
+        cursor: pointer;
+        opacity: 0;
+        transform: scale(0.5);
+        /*
+            it is transparent but clickable, so we can use pointer-events: none
+            no, it doesn't work on mobile, but it is fine cause no cursor:pointer there
+            user wil be focused on input field even if he click cleartype (JS)
+            and here is nothing to clean if cleartype is hidden
+            totally fine
+        */
+        pointer-events: none;
+    }
+
+    .input_fill .input__cleartype {
+        transform: scale(1);
+        opacity: 1;
+        pointer-events: auto;
+        transition: opacity 0.15s ease-out, transform 0.25s ease-out;
+    }
+        .input__cleartype:before,
+        .input__cleartype:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            transform: rotate(45deg);
+            background: #2C3544;
+            border-radius: 1px;
+            transition: background-color .1s ease-out;
+        }
+
+        .input__cleartype:before {
+            width: 2px;
+            height: 10px;
+        }
+
+        .input__cleartype:after {
+            width: 10px;
+            height: 2px;
+        }
+
+        .input__cleartype:hover:before,
+        .input__cleartype:hover:after {
+            background-color: #FFFFFF;
+        }
+
+
+
+
+@keyframes button-loading-spin {
+    100% { transform: rotate(360deg); }
+}
+
+.input_loading {
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    pointer-events: none;
+}
+
+    .input_loading:after {
+        content: '';
+        position: absolute;
+        right: 14px;
+        top: 50%;
+        width: 11px;
+        height: 11px;
+        margin: -6px 0 0 0;
+        margin-top: calc(-11px / 2);
+        background-image: url(../vectors/button_loading.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+        animation: button-loading-spin 1s linear infinite;
+    }
+
+    .input_loading .input__cleartype {
+        display: none;
+    }

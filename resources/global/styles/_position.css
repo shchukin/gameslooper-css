@@ -1,0 +1,39 @@
+.position {
+    position: relative;
+}
+
+/* overlay */
+.position:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(32,39,52,.98);
+}
+
+    .position__art {
+        vertical-align: top;
+    }
+
+    .position__item {
+        position: absolute;
+        margin: 12px;
+    }
+
+    .position__item_horizontal_left {
+        left: 0;
+    }
+
+    .position__item_horizontal_right {
+        right: 0;
+    }
+
+    .position__item_vertical_top {
+        top: 0;
+    }
+
+    .position__item_vertical_bottom {
+        bottom: 0;
+    }

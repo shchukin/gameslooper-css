@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.trophy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body" style="background: #131722;">
+
+
+
+        <div style="width: 280px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.trophy</h1>
+            <p><span style="color: red;">Есть овверрайд</span> <a href="../../desktop/markups/_trophy.html">на десктопы</a></p>
+            <p>
+                Тут, по сравнению с .unit и .item разметка попроще,
+                никаких пропорциональных тянучек, обычная резина по ширине.
+            </p>
+            <p>
+                Картинки ачивок вставляем обычным тегом img без заморчек
+                (если они, конечно, будут векторными). Спрайт, думаю, не нужен,
+                ачивки же постепенно, начиная с одной штучки будут открываться.
+            </p>
+            <p>
+                Позиционируем блоком <b>.achievements</b> который на мобилках вертикальная лента,
+                а на десктопах усложняется подражая плиткам. Это отдельный блок для разных версий,
+                не глобальный.
+            </p>
+
+            <div class="trophy">
+                <div class="trophy__body">
+                    <div class="trophy__preview">
+                        <img class="trophy__badge" src="../content/levelup.svg" alt="">
+                    </div>
+                    <div class="trophy__data">
+                        <div class="trophy__title title">Нуб</div>
+                        <div class="trophy__description">Регистрация на сайте</div>
+                    </div>
+                </div>
+                <div class="trophy__foot">
+                    2 мая 2016
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="trophy">
+                <div class="trophy__body">
+                    <div class="trophy__preview">
+                        <img class="trophy__badge" src="../content/levelup_locked.svg" alt="">
+                    </div>
+                    <div class="trophy__data">
+                        <div class="trophy__title title">Активист</div>
+                        <div class="trophy__description">Посещение сайта 16 дней подряд</div>
+                    </div>
+                </div>
+                <div class="trophy__foot">
+                    <div class="progress" title="Прогресс: 80%">
+                        <div class="progress__bar" style="width: 80%">Прогресс: 80%</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+
+    </body>
+</html>

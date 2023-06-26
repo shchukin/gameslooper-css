@@ -1,0 +1,20 @@
+/* override */
+
+
+@media (min-width: 1024px) {
+
+    .article {
+        padding: 58px 40px 60px;
+    }
+        .article__head {
+
+        }
+
+        .article__body {
+            margin: 28px 0 0;
+            font-size: 14px;
+            line-height: 28px;
+            text-align: left;
+        }
+
+}

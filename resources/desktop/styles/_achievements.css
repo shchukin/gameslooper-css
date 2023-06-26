@@ -1,0 +1,18 @@
+.achievements {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px 0 0 -20px;
+}
+    .achievements__item {
+        box-sizing: border-box;
+        padding: 20px 0 0 20px;
+        width: 100%;
+    }
+
+@media (min-width:  860px) and (max-width: 1079px) { .achievements__item { width: 50%;     width: calc( 100% / 2 ); } }
+@media (min-width: 1080px) and (max-width: 1339px) { .achievements__item { width: 33.333%; width: calc( 100% / 3 ); } }
+@media (min-width: 1340px) and (max-width: 1579px) { .achievements__item { width: 33.333%; width: calc( 100% / 3 ); } }
+@media (min-width: 1580px) and (max-width: 1819px) { .achievements__item { width: 25%;     width: calc( 100% / 4 ); } }
+@media (min-width: 1820px) and (max-width: 2059px) { .achievements__item { width: 20%;     width: calc( 100% / 5 ); } }
+@media (min-width: 2060px) and (max-width: 2299px) { .achievements__item { width: 16.666%; width: calc( 100% / 6 ); } }
+@media (min-width: 2300px) and (max-width: 2539px) { .achievements__item { width: 14.285%; width: calc( 100% / 7 ); } }

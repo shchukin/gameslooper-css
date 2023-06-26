@@ -1,0 +1,38 @@
+.label {
+
+}
+    .label__summary {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .label__position {
+        flex: 0 0 132px;
+    }
+        .label__box {
+
+        }
+            .label__art {
+                vertical-align: top;
+            }
+
+    .label__figure {
+        flex: 0 0 40px;
+        margin: 0 0 0 28px;
+    }
+        .label__mode {
+            display: none;
+        }
+        .label__shape {
+            margin: 20px 0 0;
+        }
+
+        .label__shape:first-of-type {
+            margin-top: 0;
+        }
+
+    .label__color {
+        margin: 30px 0 0;
+        border-top: 1px solid rgba(153,169,207,.05);
+        padding: 30px 0 0;
+    }

@@ -1,0 +1,19 @@
+.userbar {
+    position: relative;
+    padding: 0 0 0 60px;
+}
+    .userbar__avatar {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .userbar__name {
+
+    }
+
+    .userbar__note {
+        font-size: 13px;
+        line-height: 20px;
+        color: #5A6476;
+    }

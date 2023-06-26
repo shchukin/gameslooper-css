@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body" style="background: #131722;">
+
+        <div style="padding: 20px;">
+        <br>
+        <br>
+        <h1>.form</h1>
+        <p>
+            Относительно глобальной тут два изменения:
+            <br>Палки-разделители у филдсета вылезают на 20px влево и вправо, упираются в экран.
+            <br>Превьюшка игры выползает так же на 20px, а не на 40px как в глобале.
+        </p>
+        <br>
+        <br>
+
+        <form class="form">
+            <fieldset class="form__fieldset">
+                <div class="form__field">
+                    <div class="input">
+                        <input class="input__text" type="text" placeholder="Платформа">
+                        <div class="input__cleartype"></div>
+                    </div>
+                </div>
+                <div class="form__field">
+                    <div class="input">
+                        <input class="input__text" type="text" placeholder="Название игры">
+                        <div class="input__cleartype"></div>
+                    </div>
+                </div>
+                <div class="form__field form__field_kind_preview">
+                    <a class="preview" href="game.html" style="background-image: url(../temp/preview_04.jpg);">
+                        <div class="preview__category">Xbox One</div>
+                        <div class="preview__title">Call of Duty: Black Ops III</div>
+                    </a>
+                </div>
+                <div class="form__field input input_widget_area">
+                    <textarea class="input__text scroll scroll_skin_default scroll_always_visible" placeholder="Комментарий"></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <div class="form__field form__field_kind_choice">
+                    <label class="choice choice_widget_check">
+                        <input class="choice__input" type="checkbox">
+                        <i class="choice__icon">
+                            <i class="choice__mark"></i>
+                        </i>
+                        <span class="choice__label">Хочу продать</span>
+                    </label>
+                </div>
+                <div class="form__field form__field_kind_choice-output">
+                    <div class="input">
+                        <input class="input__text" type="text" placeholder="Стоимость, руб.">
+                        <div class="input__cleartype"></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <div class="form__field form__field_kind_choice">
+                    <label class="choice choice_widget_check">
+                        <input class="choice__input" type="checkbox">
+                        <i class="choice__icon">
+                            <i class="choice__mark"></i>
+                        </i>
+                        <span class="choice__label">Хочу обменять</span>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <div class="form__field">
+                    <button class="button button_palette_success" type="submit">Создать</button>
+                </div>
+            </fieldset>
+        </form>
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../scripts/temp.js"></script>
+
+    </body>
+</html>

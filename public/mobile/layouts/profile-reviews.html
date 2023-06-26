@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Отзывы</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+        <svg style="display: none;" xmlns="http://www.w3.org/2000/svg"><symbol id="create" viewBox="0 0 20 20"><path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-2a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm3-7s1 0 1 1-1 1-1 1h-2.004L11 13s-.004 1-1 1-.984-1-.984-1v-2H7s-1 0-1-1 1-1 1-1h2l.016-2S9.004 6 10 6s.996 1 .996 1L11 9h2z" fill-rule="evenodd"/></symbol><symbol id="like" viewBox="0 0 20 20"><g fill-rule="evenodd"><path d="M10.006 5S11.5 3 14 3s4.006 2 4.006 4.5c0 5.5-6.506 9.5-8 9.5-1.506 0-8-4-8-9.5C2.006 6 3.5 3 6 3s4.006 2 4.006 2zM10 7.5c1.464 0 1.5-2.5 3.5-2.5S16 6.21 16 8.041C16 12.07 10.5 15 10 15s-6-2.93-6-6.959C4 6.942 4.669 5 6.5 5S8.536 7.5 10 7.5z"/><path fill="currentColor" d="M10.006 5S11.5 3 14 3s4.006 2 4.006 4.5c0 5.5-6.506 9.5-8 9.5-1.506 0-8-4-8-9.5C2.006 6 3.5 3 6 3s4.006 2 4.006 2z"/></g></symbol><symbol id="notification_id_achievement" viewBox="0 0 20 20"><path d="M5 4.034v-1.04A1 1 0 0 1 5.995 2h8.01c.55 0 .995.451.995.993v1.041l2.99-.025a.989.989 0 0 1 1.01.994v2.006a4 4 0 0 1-4.001 3.994H14.5c0 1.655-2.684 2.955-3.471 2.943L11 15.985l2.053.01A.972.972 0 0 1 14.026 17c-.014.552-.479 1-1.023 1H6.997A.996.996 0 0 1 6 17c0-.552.443-1.002.999-1.005L9 15.985l.09-1.995c-1.983 0-3.59-2.233-3.59-2.987h-.499A3.995 3.995 0 0 1 1 7.01V5.003c0-.554.443-1 1.01-.994L5 4.034zM3 6h2v3S3 9 3 7V6zm14 0h-2v3s2 0 2-2V6zM7 4h6v4.998A3.003 3.003 0 0 1 10 12c-1.657 0-3-1.339-3-3.002V4z" fill-rule="evenodd"/></symbol><symbol id="notification_id_exchange" viewBox="0 0 20 20"><path d="M15.605 16.14C16.776 15.035 18 13.13 18 10c0-6-6-7.802-6-7.802s-1.17-.09-1.17 1.053C10.83 4.393 12 4.5 12 4.5S16 6 16 10c0 2.027-.9 3.412-1.786 4.286l-1.116-1.49c-.33-.44-.706-.364-.839.168l-1.018 4.072c-.133.532.21.964.75.964h4.018c.547 0 .723-.357.393-.797l-.797-1.062zM4.351 3.802C3.193 4.914 2 6.811 2 9.9c0 6 6 7.802 6 7.802s1.17.09 1.17-1.053C9.17 15.507 8 15.4 8 15.4s-4-1.5-4-5.5c0-1.995.87-3.368 1.743-4.243l1.16 1.546c.33.44.705.365.838-.167l1.018-4.072c.133-.532-.21-.964-.75-.964H3.991c-.547 0-.723.357-.393.797L4.35 3.8z" fill-rule="evenodd"/></symbol><symbol id="notification_id_feedback" viewBox="0 0 20 20"><path d="M9.723 3c5.625 0 8.528 6.142 8.528 6.142.26.474.264 1.254-.009 1.73 0 0-2.894 6.128-8.519 6.128s-8.527-6.142-8.527-6.142c-.261-.474-.265-1.254.008-1.73 0 0 2.894-6.128 8.52-6.128zm0 2c4.375 0 7 5 7 5s-2.625 5-7 5-7-5-7-5 2.625-5 7-5zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill-rule="evenodd"/></symbol><symbol id="notification_id_message" viewBox="0 0 20 20"><path d="M2 5.002A1 1 0 0 1 3 4h14c.552 0 1 .456 1 1.002v9.996A1 1 0 0 1 17 16H3c-.552 0-1-.456-1-1.002V5.002zM4 8.5V14h12V8.5l-5.166 3.444c-.46.307-1.21.306-1.668 0L4 8.5zM4 6l6 4 6-4H4z" fill-rule="evenodd"/></symbol><symbol id="notification_id_purchase" viewBox="0 0 20 20"><path d="M7 3s0-1 1-1h5c2.21 0 4 1.8 4 4v1c0 2.21-1.795 4-4 4H9v2h5s1 0 1 1-1 1-1 1H9v2s0 1-1 1-1-1-1-1v-2H4s-1 0-1-1 1-1 1-1h3v-2H4s-1 0-1-1 1-1 1-1h3V3zm5.49 1H9v5h3.49C13.871 9 15 7.88 15 6.5 15 5.11 13.876 4 12.49 4z" fill-rule="evenodd"/></symbol><symbol id="param_id_exchange" viewBox="0 0 20 20"><path d="M15.605 16.14C16.776 15.035 18 13.13 18 10c0-6-6-7.802-6-7.802s-1.17-.09-1.17 1.053C10.83 4.393 12 4.5 12 4.5S16 6 16 10c0 2.027-.9 3.412-1.786 4.286l-1.116-1.49c-.33-.44-.706-.364-.839.168l-1.018 4.072c-.133.532.21.964.75.964h4.018c.547 0 .723-.357.393-.797l-.797-1.062zM4.351 3.802C3.193 4.914 2 6.811 2 9.9c0 6 6 7.802 6 7.802s1.17.09 1.17-1.053C9.17 15.507 8 15.4 8 15.4s-4-1.5-4-5.5c0-1.995.87-3.368 1.743-4.243l1.16 1.546c.33.44.705.365.838-.167l1.018-4.072c.133-.532-.21-.964-.75-.964H3.991c-.547 0-.723.357-.393.797L4.35 3.8z" fill-rule="evenodd"/></symbol><symbol id="param_id_geo" viewBox="0 0 20 20"><path d="M10 18c2 0 7-4 7-9A7 7 0 0 0 3 9c0 5 5 9 7 9zm0-2c1.5 0 5-3.5 5-7A5 5 0 0 0 5 9c0 3.5 3.5 7 5 7zm0-5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill-rule="evenodd"/></symbol><symbol id="param_id_rouble" viewBox="0 0 20 20"><path d="M7 3s0-1 1-1h5c2.21 0 4 1.8 4 4v1c0 2.21-1.795 4-4 4H9v2h5s1 0 1 1-1 1-1 1H9v2s0 1-1 1-1-1-1-1v-2H4s-1 0-1-1 1-1 1-1h3v-2H4s-1 0-1-1 1-1 1-1h3V3zm5.49 1H9v5h3.49C13.871 9 15 7.88 15 6.5 15 5.11 13.876 4 12.49 4z" fill-rule="evenodd"/></symbol><symbol id="rouble" viewBox="0 0 20 20"><path d="M7 3s0-1 1-1h5c2.21 0 4 1.8 4 4v1c0 2.21-1.795 4-4 4H9v2h5s1 0 1 1-1 1-1 1H9v2s0 1-1 1-1-1-1-1v-2H4s-1 0-1-1 1-1 1-1h3v-2H4s-1 0-1-1 1-1 1-1h3V3zm5.49 1H9v5h3.49C13.871 9 15 7.88 15 6.5 15 5.11 13.876 4 12.49 4z" fill-rule="evenodd"/></symbol><symbol id="primary-nav__link_id_catalog" viewBox="0 0 20 20"><path d="M7 6H2.002C1.456 6 1 6.449 1 7.002v9.996C1 17.544 1.449 18 2.002 18h9.996c.546 0 1.002-.449 1.002-1.002V14h4.998c.546 0 1.002-.449 1.002-1.002V3.002C19 2.456 18.551 2 17.998 2H8.002C7.456 2 7 2.449 7 3.002V6zM3 8h8v8H3V8zm6-4h8v8h-4V6.99A.995.995 0 0 0 11.99 6H9V4z" fill-rule="evenodd"/></symbol><symbol id="primary-nav__link_id_create" viewBox="0 0 20 20"><path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-2a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm3-7s1 0 1 1-1 1-1 1h-2.004L11 13s-.004 1-1 1-.984-1-.984-1v-2H7s-1 0-1-1 1-1 1-1h2l.016-2S9.004 6 10 6s.996 1 .996 1L11 9h2z" fill-rule="evenodd"/></symbol><symbol id="primary-nav__link_id_geo" viewBox="0 0 20 20"><path d="M10 18c2 0 7-4 7-9A7 7 0 0 0 3 9c0 5 5 9 7 9zm0-2c1.5 0 5-3.5 5-7A5 5 0 0 0 5 9c0 3.5 3.5 7 5 7zm0-5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill-rule="evenodd"/></symbol><symbol id="primary-nav__link_id_notification" viewBox="0 0 20 20"><path d="M4 12V7.99C4 4.682 6.693 2 10 2c3.314 0 6 2.68 6 5.99V12h1s1 0 1 1-1 1-1 1H3s-1 0-1-1 1-1 1-1h1zm2 0V8c0-2.21 1.795-4 4-4 2.21 0 4 1.795 4 4v4H6zm2.299 3.945c-.165-.522.144-.945.71-.945h1.982c.557 0 .894.435.704.96 0 0-.195 1.54-1.695 1.54s-1.701-1.555-1.701-1.555z" fill-rule="evenodd"/></symbol><symbol id="primary-nav__link_id_search" viewBox="0 0 20 20"><path d="M13.241 14.57a7 7 0 1 1 1.402-1.427L18 16.5s.707.707 0 1.414-1.414 0-1.414 0L13.24 14.57zM9 14A5 5 0 1 0 9 4a5 5 0 0 0 0 10z" fill-rule="evenodd"/></symbol></svg>
+
+        <div class="page">
+
+            <header class="page__header header">
+                <a class="page__navigate header__navigate" href="#">
+                    <div class="header__burger"></div>
+                    <div class="header__burger"></div>
+                    <div class="header__burger"></div>
+                </a>
+                <a class="header__logo logo" href="#">Gameslooper</a>
+            </header>
+
+            <div class="page__dropdown">
+                <nav class="page__nav primary-nav">
+                    <a class="primary-nav__link" href="main.html" title="Каталог">
+                        <svg class="primary-nav__icon">
+                            <use xlink:href="#primary-nav__link_id_catalog"></use>
+                        </svg>
+                        Каталог
+                    </a>
+                    <a class="primary-nav__link" href="search.html" title="Поиск">
+                        <svg class="primary-nav__icon">
+                            <use xlink:href="#primary-nav__link_id_search"></use>
+                        </svg>
+                        Поиск игр
+                    </a>
+                    <a class="primary-nav__link" href="location.html" title="Местоположение">
+                        <svg class="primary-nav__icon">
+                            <use xlink:href="#primary-nav__link_id_geo"></use>
+                        </svg>
+                        Сменить местоположение
+                    </a>
+                    <a class="primary-nav__link" href="#" data-popover=".page__popover_id_add-lot" title="Добавить лот">
+                        <svg class="primary-nav__icon">
+                            <use xlink:href="#primary-nav__link_id_create"></use>
+                        </svg>
+                        Создать лот
+                    </a>
+                    <a class="primary-nav__link" href="#" title="Уведомления">
+                        <svg class="primary-nav__icon">
+                            <use xlink:href="#primary-nav__link_id_notification"></use>
+                        </svg>
+                        Уведомления
+                    </a>
+                </nav>
+                <div class="page__user user">
+                    <a class="user__link" href="#" data-popover=".page__popover_id_sign-in">Войти на сайт</a>
+                    <a class="user__link" href="#" data-popover=".page__popover_id_sign-up">Зарегестрироваться</a>
+                    <a class="user__link" href="profile-games.html">Профиль</a>
+                    <a class="user__link user__link_premium" href="#">Премиум аккаунт</a>
+                    <a class="user__link" href="#" data-popover=".page__popover_id_conversations">Сообщения</a>
+                    <a class="user__link" href="#" data-popover=".page__popover_id_settings-general">Настройки</a>
+                    <a class="user__link" href="#">Выход</a>
+                </div>
+            </div>
+
+            <div class="page__wrap">
+
+                <div class="page__popover page__popover_id_sign-in">
+
+                    <!-- unique content -->
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Вход на сайт</h1>
+                    </div>
+
+                    <form class="form">
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="email" placeholder="Почта">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="password" placeholder="Пароль">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <button class="button button_palette_success" type="submit">Войти</button>
+                            </div>
+                            <div class="form__field">
+                                <a class="button button_palette_default" href="#" data-popover=".page__popover_id_reset-password">Восстановить пароль</a>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <button class="button button_palette_vkontakte" type="button">VK</button>
+                            </div>
+                            <div class="form__field">
+                                <button class="button button_palette_facebook" type="button">Facebook</button>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <a class="button button_palette_default" href="#" data-popover=".page__popover_id_sign-up">Зарегестрироваться</a>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+
+                <div class="page__popover page__popover_id_sign-up">
+
+                    <!-- unique content -->
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Регистрация</h1>
+                    </div>
+                    <form class="form">
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="text" placeholder="Логин">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                                <div class="output">
+                                    <div class="bubble bubble_palette_danger">Укажите логин</div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="email" placeholder="Почта">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="password" placeholder="Пароль">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <button class="button button_palette_success" type="submit">Зарегестрироваться</button>
+                            </div>
+                            <div class="form__field form__field_kind_note">
+                                Регистрируясь, вы соглашаетесь с&nbsp;<a class="link link_palette_info link_decoration_inverted" href="#">правилами пользования</a> сайта Gameslooper.ru
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+
+                <div class="page__popover page__popover_id_reset-password">
+
+                    <!-- unique content -->
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Восстановить пароль</h1>
+                    </div>
+                    <form class="form">
+                        <fieldset class="form__fieldset">
+                            <div class="form__field form__field_kind_heading">
+                                Укажите Email, который вы указывали при регистрации, и мы вышлем на него пароль.
+                            </div>
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="email" placeholder="Почта">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <button class="button button_palette_success" type="submit">Выслать пароль</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+
+                <div class="page__popover page__popover_id_settings-general">
+
+                    <!-- unique content -->
+                    <div class="sliding">
+                        <div class="sliding__ribbon">
+                            <div class="nav">
+                                <a class="nav__link nav__link_current">
+                                    <span class="nav__label">Настройки</span>
+                                </a>
+                                <a class="nav__link" href="#" data-popover=".page__popover_id_settings-notify">
+                                    <span class="nav__label">Уведомления</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="form">
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <button class="button button_palette_primary" type="button">Загрузить фон</button>
+                            </div>
+                            <div class="form__field">
+                                <button class="button button_palette_primary" type="button">Загрузить аватар</button>
+                            </div>
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="text" placeholder="Логин" value="Cypher">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="email" placeholder="Почта" value="a.a.shchukin@gmail.com">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="password" placeholder="Пароль" value="Сорок тысяч обезьян в жопу сунули банан">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <button class="button button_palette_vkontakte" type="button">Подключить VK</button>
+                            </div>
+                            <div class="form__field">
+                                <button class="button button_palette_primary" type="button">Отключить Facebook</button>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <button class="button button_palette_success" type="submit">Сохранить</button>
+                            </div>
+                            <div class="form__field">
+                                <button class="button button_palette_primary" type="submit">Удалить аккаунт</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+                <div class="page__popover page__popover_id_settings-notify">
+
+                    <!-- unique content -->
+                    <div class="sliding">
+                        <div class="sliding__ribbon">
+                            <div class="nav">
+                                <a class="nav__link" href="#" data-popover=".page__popover_id_settings-general">
+                                    <span class="nav__label">Настройки</span>
+                                </a>
+                                <a class="nav__link nav__link_current">
+                                    <span class="nav__label">Уведомления</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="form">
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <div class="checklist">
+                                    <ul class="checklist__list">
+                                        <li class="checklist__item">
+                                            <label class="choice choice_widget_check">
+                                                <input class="choice__input" type="checkbox">
+                                                <i class="choice__icon">
+                                                    <i class="choice__mark"></i>
+                                                </i>
+                                                <span class="choice__label">Истекает срок лота</span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <label class="choice choice_widget_check">
+                                                <input class="choice__input" type="checkbox">
+                                                <i class="choice__icon">
+                                                    <i class="choice__mark"></i>
+                                                </i>
+                                                <span class="choice__label">Закрытие лота</span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <label class="choice choice_widget_check">
+                                                <input class="choice__input" type="checkbox">
+                                                <i class="choice__icon">
+                                                    <i class="choice__mark"></i>
+                                                </i>
+                                                <span class="choice__label">Рассылка новостей</span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <label class="choice choice_widget_check">
+                                                <input class="choice__input" type="checkbox" checked>
+                                                <i class="choice__icon">
+                                                    <i class="choice__mark"></i>
+                                                </i>
+                                                <span class="choice__label">Новое сообщение</span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <label class="choice choice_widget_check">
+                                                <input class="choice__input" type="checkbox" checked>
+                                                <i class="choice__icon">
+                                                    <i class="choice__mark"></i>
+                                                </i>
+                                                <span class="choice__label">Получено достижение</span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <label class="choice choice_widget_check">
+                                                <input class="choice__input" type="checkbox" checked>
+                                                <i class="choice__icon">
+                                                    <i class="choice__mark"></i>
+                                                </i>
+                                                <span class="choice__label">Новый отзыв</span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <label class="choice choice_widget_check">
+                                                <input class="choice__input" type="checkbox" checked>
+                                                <i class="choice__icon">
+                                                    <i class="choice__mark"></i>
+                                                </i>
+                                                <span class="choice__label">Предложен обмен</span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <label class="choice choice_widget_check">
+                                                <input class="choice__input" type="checkbox" checked>
+                                                <i class="choice__icon">
+                                                    <i class="choice__mark"></i>
+                                                </i>
+                                                <span class="choice__label">Предложены деньги</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <button class="button button_palette_success" type="submit">Сохранить</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+                <div class="page__popover page__popover_id_notifications">
+
+                    <!-- unique content -->
+
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Уведомления</h1>
+                    </div>
+                    <div class="feed">
+                        <article class="notification">
+                            <svg class="notification__icon">
+                                <use xlink:href="#notification_id_achievement"></use>
+                            </svg>
+                            <time class="notification__note" datetime="2016-12-31T19:59+04:00">Сейчас</time>
+                            <div class="notification__title title">Достижение</div>
+                            <div class="notification__body">
+                                Новобранец
+                            </div>
+                        </article>
+
+                        <article class="notification">
+                            <svg class="notification__icon">
+                                <use xlink:href="#notification_id_message"></use>
+                            </svg>
+                            <time class="notification__note" datetime="2016-12-31T19:59+04:00">1 мин назад</time>
+                            <div class="notification__title title">Hideo Kojima</div>
+                            <div class="notification__body">
+                                Привет, готов к обмену?
+                            </div>
+                        </article>
+
+                        <article class="notification">
+                            <svg class="notification__icon">
+                                <use xlink:href="#notification_id_feedback"></use>
+                            </svg>
+                            <time class="notification__note" datetime="2016-12-31T19:59+04:00">5 мин назад</time>
+                            <div class="notification__title title">Gabe Newell</div>
+                            <div class="notification__body">
+                                Цены хорошие, буду дальше покупать.
+                            </div>
+                        </article>
+
+                        <article class="notification">
+                            <svg class="notification__icon">
+                                <use xlink:href="#notification_id_purchase"></use>
+                            </svg>
+                            <time class="notification__note" datetime="2016-12-31T19:59+04:00">Вчера, 23:59</time>
+                            <div class="notification__title title">Suda51</div>
+                            <div class="notification__body">
+                                2000 Рублей <span class="notification__helper">за Ваш</span> <a class="link link_decoration_inverted" href="#">Shadows of the Damned</a>
+                            </div>
+                        </article>
+
+                        <article class="notification">
+                            <svg class="notification__icon">
+                                <use xlink:href="#notification_id_exchange"></use>
+                            </svg>
+                            <time class="notification__note" datetime="2016-12-31T19:59+04:00">Вчера, 23:59</time>
+                            <div class="notification__title title">Hironobu Sakaguchi</div>
+                            <div class="notification__body">
+                                <a class="link link_decoration_inverted" href="#">The Last Story</a> <span class="notification__helper">за Ваш</span> <a class="link link_decoration_inverted" href="#">Final Fanyasy XV Limited Edition</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+                <div class="page__popover page__popover_id_add-lot">
+
+                    <!-- unique content -->
+
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Создать лот</h1>
+                    </div>
+
+                    <form class="form">
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <div class="input input_widget_select">
+                                    <input class="input__text" type="text" placeholder="Платформа" readonly>
+                                    <div class="input__arrow">
+                                        <i class="input__peak"></i>
+                                    </div>
+                                    <div class="input__select invisible-select">
+                                        <select class="input__data invisible-select__control">
+                                            <option value="clear" selected>не выбрано</option>
+                                            <option disabled>──────────</option>
+                                            <option value="PlayStation 3">PlayStation 3</option>
+                                            <option value="Xbox 360">Xbox 360</option>
+                                            <option value="PlayStation 4">PlayStation 4</option>
+                                            <option value="Xbox One">Xbox One</option>
+                                            <option value="PlayStation 2">PlayStation 2</option>
+                                            <option value="PSP">PSP</option>
+                                            <option value="Nintendo Wii">Nintendo Wii</option>
+                                            <option value="Nintendo DS">Nintendo DS</option>
+                                            <option value="Nintendo 3ds">Nintendo 3ds</option>
+                                            <option value="PS Vita">PS Vita 3ds</option>
+                                            <option value="PS Vita">Wii U</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="text" placeholder="Название игры">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field form__field_kind_preview">
+                                <a class="preview" href="game.html" style="background-image: url(../temp/preview_04.jpg);">
+                                    <div class="preview__category">Xbox One</div>
+                                    <div class="preview__title">Call of Duty: Black Ops III</div>
+                                </a>
+                            </div>
+                            <div class="form__field input input_widget_area">
+                                <textarea class="input__text scroll scroll_skin_default scroll_always_visible" placeholder="Комментарий"></textarea>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field form__field_kind_choice">
+                                <label class="choice choice_widget_check">
+                                    <input class="choice__input" type="checkbox">
+                                    <i class="choice__icon">
+                                        <i class="choice__mark"></i>
+                                    </i>
+                                    <span class="choice__label">Хочу продать</span>
+                                </label>
+                            </div>
+                            <div class="form__field form__field_kind_choice-output">
+                                <div class="input">
+                                    <input class="input__text" type="text" placeholder="Стоимость, руб.">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field form__field_kind_choice">
+                                <label class="choice choice_widget_check">
+                                    <input class="choice__input" type="checkbox">
+                                    <i class="choice__icon">
+                                        <i class="choice__mark"></i>
+                                    </i>
+                                    <span class="choice__label">Хочу обменять</span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <button class="button button_palette_success" type="submit">Создать</button>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+                <div class="page__popover page__popover_id_offer-game-swap">
+
+                    <!-- unique content -->
+
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Предложить обмен</h1>
+                    </div>
+
+                    <form class="form">
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="text" placeholder="Платформа">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <div class="input input_warning">
+                                    <input class="input__text" type="text" value="Ма">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                                <div class="output">
+                                    <div class="bubble">Такая игра отсутствует в нашей базе. Платформа и название указаны верно?</div>
+                                    <div class="output__action button button_palette_default">Да, все верно</div>
+                                </div>
+                            </div>
+                            <div class="form__field form__field_kind_preview">
+                                <a class="preview" href="game.html" style="background-image: url(../temp/preview_01.jpg);">
+                                    <div class="preview__delete cancel" tabindex="0">
+                                        <span class="cancel__icon">Удалить</span>
+                                    </div>
+                                    <div class="preview__category">PlayStation 4</div>
+                                    <div class="preview__title">Street Fighter V</div>
+                                </a>
+                                <a class="preview" href="game.html" style="background-image: url(../temp/preview_02.jpg);">
+                                    <div class="preview__delete cancel" tabindex="0">
+                                        <span class="cancel__icon">Удалить</span>
+                                    </div>
+                                    <div class="preview__category">PlayStation 3</div>
+                                    <div class="preview__title">No More Heroes: Heroes' Paradise Limited Edition</div>
+                                </a>
+                            </div>
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="text" placeholder="Доплата, руб.">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <button class="button button_palette_success" type="submit">Предложить</button>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+                <div class="page__popover page__popover_id_offer-money">
+
+                    <!-- unique content -->
+
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Предложить деньги</h1>
+                    </div>
+
+                    <form class="form">
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="text" placeholder="Сумма, руб.">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <button class="button button_palette_success" type="submit">Предложить</button>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+                <div class="page__popover page__popover_id_item-respond-to-multiple-games">
+
+                    <!-- unique content -->
+
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Предложение обмена</h1>
+                        <div class="heading__note">
+                            от <a class="link link_decoration_inverted" href="#">Akira Yamaoka</a>
+                        </div>
+                    </div>
+
+                    <div class="respond">
+                        <div class="respond__body">
+
+                            <div class="bricklayer bricklayer_layout_tight">
+                                <div class="bricklayer-tile">
+                                    <a class="thumb" href="#">
+                                        <img class="thumb__boxart"
+                                             srcset="../temp/thumb_psp_01@2x.jpg 2x"
+                                             src="../temp/thumb_psp_01.jpg"
+                                             alt="Patapon 3"
+                                             title="Patapon 3"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="bricklayer-tile">
+                                    <a class="thumb" href="#">
+                                        <img class="thumb__boxart"
+                                             srcset="../temp/thumb_ps4_01@2x.jpg 2x"
+                                             src="../temp/thumb_ps4_01.jpg"
+                                             alt="Metal Gear Solid V"
+                                             title="Metal Gear Solid V"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="bricklayer-tile">
+                                    <a class="thumb" href="#">
+                                        <img class="thumb__boxart"
+                                             srcset="../temp/thumb_ps3_01@2x.jpg 2x"
+                                             src="../temp/thumb_ps3_01.jpg"
+                                             alt="God of War III"
+                                             title="God of War III"
+                                        >
+                                    </a>
+                                </div>
+
+                                <div class="bricklayer-tile">
+                                    <a class="thumb" href="#">
+                                        <img class="thumb__boxart"
+                                             srcset="../temp/thumb_ps2_01@2x.jpg 2x"
+                                             src="../temp/thumb_ps2_01.jpg"
+                                             alt="Final Fantasy X"
+                                             title="Final Fantasy X"
+                                        >
+                                    </a>
+                                </div>
+
+                                <div class="bricklayer-tile">
+                                    <div class="thumb">
+                                        <div class="thumb__buying">
+                                            <div class="thumb__value">
+                                                +200 руб.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="respond__operations">
+                            <a class="respond__action button button_palette_info" href="#">Ответить</a>
+                            <a class="respond__action button button_palette_default" href="#">Не интересно</a>
+                        </div>
+                    </div>
+
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+                <div class="page__popover page__popover_id_create-info-step-01">
+
+                    <!-- unique content -->
+
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Редактировать бейдж</h1>
+                    </div>
+
+                    <div class="respond">
+                        <div class="respond__body">
+
+                            <form class="form">
+                                <fieldset class="form__fieldset">
+                                    <div class="form__field">
+                                        <div class="label">
+
+                                            <div class="label__summary">
+
+                                                <div class="label__position">
+                                                    <div class="position">
+                                                        <img class="position__art"
+                                                             srcset="../temp/game__art_ps4@2x.jpg 2x"
+                                                             src="../temp/game__art_ps4.jpg"
+                                                             width="132" height="164"
+                                                             title="Metal Gear Solid V"
+                                                             alt="Metal Gear Solid V"
+                                                        >
+                                                        <label class="position__item position__item_horizontal_left position__item_vertical_top choice choice_widget_check choice_radio-inside">
+                                                            <input class="choice__input" type="radio" name="temp-select-position">
+                                                            <i class="choice__icon">
+                                                                <i class="choice__mark"></i>
+                                                            </i>
+                                                        </label>
+                                                        <label class="position__item position__item_horizontal_right position__item_vertical_top choice choice_widget_check choice_radio-inside">
+                                                            <input class="choice__input" type="radio" name="temp-select-position">
+                                                            <i class="choice__icon">
+                                                                <i class="choice__mark"></i>
+                                                            </i>
+                                                        </label>
+                                                        <label class="position__item position__item_horizontal_left position__item_vertical_bottom choice choice_widget_check choice_radio-inside">
+                                                            <input class="choice__input" type="radio" name="temp-select-position">
+                                                            <i class="choice__icon">
+                                                                <i class="choice__mark"></i>
+                                                            </i>
+                                                        </label>
+                                                        <label class="position__item position__item_horizontal_right position__item_vertical_bottom choice choice_widget_check choice_radio-inside">
+                                                            <input class="choice__input" type="radio" name="temp-select-position">
+                                                            <i class="choice__icon">
+                                                                <i class="choice__mark"></i>
+                                                            </i>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="label__figure">
+                                                    <div class="label__mode">Выберите форму:</div>
+                                                    <label class="label__shape figure figure_shape_star">
+                                                        <input class="figure__widget" type="radio" name="temp-choose-shape">
+                                                        <i class="figure__icon">
+                                                            <i class="figure__mark"></i>
+                                                        </i>
+                                                        <span class="figure__label">Звезда</span>
+                                                    </label>
+                                                    <label class="label__shape figure figure_shape_disc">
+                                                        <input class="figure__widget" type="radio" name="temp-choose-shape">
+                                                        <i class="figure__icon">
+                                                            <i class="figure__mark"></i>
+                                                        </i>
+                                                        <span class="figure__label">Круг</span>
+                                                    </label>
+                                                    <label class="label__shape figure figure_shape_square">
+                                                        <input class="figure__widget" type="radio" name="temp-choose-shape">
+                                                        <i class="figure__icon">
+                                                            <i class="figure__mark"></i>
+                                                        </i>
+                                                        <span class="figure__label">Квадрат</span>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="label__color">
+                                                <div class="checklist checklist_line">
+                                                    <div class="checklist__title">
+                                                        <div class="title">Выберите цвет бейджа</div>
+                                                    </div>
+                                                    <ul class="checklist__list">
+                                                        <li class="checklist__item">
+                                                            <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_danger">
+                                                                <input class="choice__input" type="radio" name="temp-select-color">
+                                                                <i class="choice__icon">
+                                                                    <i class="choice__mark"></i>
+                                                                </i>
+                                                                <span class="choice__label">Красный</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checklist__item">
+                                                            <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_warning">
+                                                                <input class="choice__input" type="radio" name="temp-select-color">
+                                                                <i class="choice__icon">
+                                                                    <i class="choice__mark"></i>
+                                                                </i>
+                                                                <span class="choice__label">Желтый</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checklist__item">
+                                                            <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_success">
+                                                                <input class="choice__input" type="radio" name="temp-select-color">
+                                                                <i class="choice__icon">
+                                                                    <i class="choice__mark"></i>
+                                                                </i>
+                                                                <span class="choice__label">Зеленый</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checklist__item">
+                                                            <label class="choice choice_widget_check choice_radio-inside choice_hidden-label choice_fill_info">
+                                                                <input class="choice__input" type="radio" name="temp-select-color">
+                                                                <i class="choice__icon">
+                                                                    <i class="choice__mark"></i>
+                                                                </i>
+                                                                <span class="choice__label">Синий</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="form__fieldset">
+                                    <div class="form__field">
+                                        <div class="input">
+                                            <input class="input__text" type="text" placeholder="Скидка, %">
+                                            <div class="input__cleartype"></div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="form__fieldset">
+                                    <div class="form__field">
+                                        <button class="button button_palette_success" type="submit" data-popover=".page__popover_id_create-info-step-02">Сохранить</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+
+                        </div>
+                        <div class="respond__operations">
+                            <a class="respond__action button button_palette_info" href="#">Ответить</a>
+                            <a class="respond__action button button_palette_default" href="#">Не интересно</a>
+                        </div>
+                    </div>
+
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+                <div class="page__popover page__popover_id_create-info-step-02">
+
+                    <!-- unique content -->
+
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Редактировать бейдж</h1>
+                    </div>
+
+                    <div class="respond">
+                        <div class="respond__body">
+
+                            <form class="form">
+
+                                <div class="form__head">
+                                    <div class="form__title title">Регион</div>
+                                    <div class="form__note">Объявления будут показываться в выбранных регионах страны.</div>
+                                </div>
+
+                                <fieldset class="form__fieldset">
+                                    <div class="form__field">
+                                        <div class="input input_split input_widget_suggest input_fill">
+                                            <input class="input__text" type="text" placeholder="Выберите страну" value="Вьетнам">
+                                            <div class="input__cleartype"></div>
+                                            <div class="input__dropdown">
+                                                <div class="input__handler">Показать результаты</div>
+                                                <div class="input__select invisible-select">
+                                                    <select class="input__data invisible-select__control">
+                                                        <option value="clear">не выбрано</option>
+                                                        <option disabled>──────────</option>
+                                                        <option value="Вьетнам" selected>Вьетнам</option>
+                                                        <option value="Таиланд">Таиланд</option>
+                                                        <option value="Лаос">Лаос</option>
+                                                        <option value="Камбоджа">Камбоджа</option>
+                                                        <option value="Филиппинские острова">Филиппинские острова</option>
+                                                        <option value="Малайзия">Малайзия</option>
+                                                        <option value="Гонконг">Гонконг</option>
+                                                        <option value="Россия">Россия</option>
+                                                        <option value="Украина">Украина</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input input_split input_widget_suggest">
+                                            <input class="input__text" type="text" placeholder="Выберите регион" value="Камау">
+                                            <div class="input__cleartype"></div>
+                                            <div class="input__dropdown">
+                                                <div class="input__handler">Показать результаты</div>
+                                                <div class="input__select invisible-select">
+                                                    <select class="input__data invisible-select__control">
+                                                        <option value="clear">не выбрано</option>
+                                                        <option disabled>──────────</option>
+                                                        <option value="Камау" selected>Камау</option>
+                                                        <option value="Донгнай">Донгнай</option>
+                                                        <option value="Куангчи">Куангчи</option>
+                                                        <option value="Ниньбинь">Ниньбинь</option>
+                                                        <option value="Тхыатхьен-Хюэ">Тхыатхьен-Хюэ</option>
+                                                        <option value="Хазянг">Хазянг</option>
+                                                        <option value="Хатинь">Хатинь</option>
+                                                        <option value="Шонла">Шонла</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input input_split input_widget_suggest">
+                                            <input class="input__text" type="text" placeholder="Выберите город">
+                                            <div class="input__cleartype"></div>
+                                            <div class="input__dropdown">
+                                                <div class="input__handler">Показать результаты</div>
+                                                <div class="input__select invisible-select">
+                                                    <select class="input__data invisible-select__control">
+                                                        <option value="clear" selected>не выбрано</option>
+                                                        <option disabled>──────────</option>
+                                                        <option value="Вунгтау">Вунгтау</option>
+                                                        <option value="Муйнэ">Муйнэ</option>
+                                                        <option value="Хошимин">Хошимин</option>
+                                                        <option value="Далат">Далат</option>
+                                                        <option value="Ханой">Ханой</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="form__fieldset">
+                                    <div class="form__field">
+                                        <button class="button button_palette_success" type="submit">Создать</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+
+                        </div>
+                        <div class="respond__operations">
+                            <a class="respond__action button button_palette_info" href="#">Ответить</a>
+                            <a class="respond__action button button_palette_default" href="#">Не интересно</a>
+                        </div>
+                    </div>
+
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+                <div class="page__popover page__popover_id_update-contacts">
+
+                    <!-- unique content -->
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Контакты</h1>
+                    </div>
+
+                    <form class="form">
+                        <fieldset class="form__fieldset">
+                            <div class="form__field input input_widget_area">
+                                <textarea class="input__text scroll scroll_skin_default scroll_always_visible" placeholder="Ваш адрес"></textarea>
+                            </div>
+                            <div class="form__field input">
+                                <input class="input__text" type="tel" placeholder="Номер телефона">
+                                <div class="input__cleartype"></div>
+                            </div>
+                            <div class="form__field input">
+                                <input class="input__text" type="email" placeholder="Электронная почта">
+                                <div class="input__cleartype"></div>
+                            </div>
+                            <div class="form__field input">
+                                <input class="input__text" type="url" placeholder="Сайт">
+                                <div class="input__cleartype"></div>
+                            </div>
+                            <div class="form__field input">
+                                <input class="input__text" type="text" placeholder="Skype">
+                                <div class="input__cleartype"></div>
+                            </div>
+                            <div class="form__field input">
+                                <input class="input__text" type="tel" placeholder="Whatsapp">
+                                <div class="input__cleartype"></div>
+                            </div>
+                            <div class="form__field input">
+                                <input class="input__text" type="tel" placeholder="Viber">
+                                <div class="input__cleartype"></div>
+                            </div>
+                            <div class="form__field form__field_kind_choice">
+                                <label class="choice choice_widget_check">
+                                    <input class="choice__input" type="checkbox">
+                                    <i class="choice__icon">
+                                        <i class="choice__mark"></i>
+                                    </i>
+                                    <span class="choice__label">Отправлю почтой</span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <button class="button button_palette_success" type="button">Сохранить</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+
+                <div class="page__popover page__popover_id_rightholder">
+
+                    <!-- unique content -->
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Правообладателям</h1>
+                    </div>
+
+                    <form class="form">
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="text" placeholder="Ваше имя">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="email" placeholder="Email">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="url" placeholder="URL страницы с проблемой">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <div class="input input_widget_area">
+                                    <textarea class="input__text" type="url" placeholder="Объясните как нарушаются ваши права"></textarea>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <div class="input input_widget_area">
+                                    <textarea class="input__text" type="url" placeholder="Опишите проблемный контент"></textarea>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <div class="input input_widget_area">
+                                    <textarea class="input__text" type="url" placeholder="Опишите причину по которой ваши права нарушены"></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <button class="button button_palette_success" type="submit">Создать</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+
+                <div class="page__popover page__popover_id_guardian">
+
+                    <!-- unique content -->
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Правообладателям</h1>
+                    </div>
+
+                    <form class="form">
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="text" placeholder="Платформа">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="text" placeholder="Название игры">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field form__field_kind_preview">
+                                <a class="preview" href="game.html" style="background-image: url(../temp/preview_01.jpg);">
+                                    <div class="preview__delete cancel" tabindex="0">
+                                        <span class="cancel__icon">Удалить</span>
+                                    </div>
+                                    <div class="preview__category">PlayStation 4</div>
+                                    <div class="preview__title">Street Fighter V</div>
+                                </a>
+                                <a class="preview" href="game.html" style="background-image: url(../temp/preview_02.jpg);">
+                                    <div class="preview__delete cancel" tabindex="0">
+                                        <span class="cancel__icon">Удалить</span>
+                                    </div>
+                                    <div class="preview__category">PlayStation 3</div>
+                                    <div class="preview__title">No More Heroes: Heroes' Paradise Limited Edition</div>
+                                </a>
+                            </div>
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="text" placeholder="Радиус, км.">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <div class="input">
+                                    <input class="input__text" type="tel" value="Номер телефона">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <button class="button button_palette_success" type="submit">Предложить</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+                <div class="page__popover page__popover_id_update-contacts">
+
+                    <!-- unique content -->
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Контакты</h1>
+                    </div>
+
+                    <form class="form">
+                        <fieldset class="form__fieldset">
+                            <div class="form__field input input_widget_area">
+                                <textarea class="input__text scroll scroll_skin_default scroll_always_visible" placeholder="Ваш адрес"></textarea>
+                            </div>
+                            <div class="form__field input">
+                                <input class="input__text" type="tel" placeholder="Номер телефона">
+                                <div class="input__cleartype"></div>
+                            </div>
+                            <div class="form__field input">
+                                <input class="input__text" type="email" placeholder="Электронная почта">
+                                <div class="input__cleartype"></div>
+                            </div>
+                            <div class="form__field input">
+                                <input class="input__text" type="url" placeholder="Сайт">
+                                <div class="input__cleartype"></div>
+                            </div>
+                            <div class="form__field input">
+                                <input class="input__text" type="text" placeholder="Skype">
+                                <div class="input__cleartype"></div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field">
+                                <button class="button button_palette_success" type="button">Сохранить</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+
+                <div class="page__popover page__popover_id_item-actions">
+
+
+                    <!-- unique content -->
+
+                    <div class="respond">
+                        <div class="respond__operations">
+                            <a class="respond__action button button_palette_info" href="#">Рекламировать</a>
+                            <a class="respond__action button button_palette_default" href="#">Редактировать</a>
+                            <a class="respond__action button button_palette_default" href="#">Удалить</a>
+                            <a class="respond__action button button_palette_default" href="#">Перейти к игре</a>
+                        </div>
+                    </div>
+
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+                <div class="page__popover page__popover_id_conversations">
+
+                    <!-- unique content -->
+
+                    <div class="heading">
+                        <h1 class="heading__content title title_font_larger">Сообщения</h1>
+                    </div>
+
+                    <div class="null">
+                        Нет сообщений.
+                    </div>
+
+                    <div class="conversations">
+
+                        <a class="dialog" href="#" data-popover=".page__popover_id_chat">
+                            <div class="dialog__interlocutor avatar avatar_not-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/avatar_02_small@2x.jpg 2x"
+                                     src="../temp/avatar_02_small.jpg"
+                                     width="30" height="30"
+                                     title=""
+                                     alt=""
+                                >
+                            </div>
+                            <div class="dialog__data">
+                                <div class="dialog__name title">Hironobu Sakaguchi</div>
+                                <time class="dialog__time" datetime="2014-12-31T19:59+04:00">31 Дек, 23:59</time>
+                            </div>
+                            <div class="dialog__content wysiwyg">
+                                <p>DriveClub</p>
+                            </div>
+                        </a>
+
+
+                        <a class="dialog" href="#" data-popover=".page__popover_id_chat">
+                            <div class="dialog__interlocutor avatar avatar_not-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/avatar_03_small@2x.jpg 2x"
+                                     src="../temp/avatar_03_small.jpg"
+                                     width="30" height="30"
+                                     title=""
+                                     alt=""
+                                >
+                            </div>
+                            <div class="dialog__data">
+                                <div class="dialog__name title">Nobuo Uematsu</div>
+                                <time class="dialog__time" datetime="2014-12-31T19:59+04:00">Вчера, 23:59</time>
+                            </div>
+                            <div class="dialog__content wysiwyg">
+                                <p>Aliquam ullamcorper dolor gravida, cursus mauris vitae, feugiat nulla. Morbi consectetur quam erat, ut condimentum lectus scelerisque eget. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                            </div>
+                        </a>
+
+
+                        <a class="dialog" href="#" data-popover=".page__popover_id_chat">
+                            <div class="dialog__interlocutor avatar avatar_not-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/avatar_04_small@2x.jpg 2x"
+                                     src="../temp/avatar_04_small.jpg"
+                                     width="30" height="30"
+                                     title=""
+                                     alt=""
+                                >
+                            </div>
+                            <div class="dialog__data">
+                                <div class="dialog__name title">Akira Yamaoka</div>
+                                <time class="dialog__time" datetime="2014-12-31T19:59+04:00">23:59</time>
+                            </div>
+                            <div class="dialog__content wysiwyg">
+                                <p>Morbi sed velit eu lectus venenatis hendrerit. Duis mollis volutpat ipsum non maximus. Phasellus fermentum odio ante, dapibus tincidunt turpis euismod non. Morbi fermentum lorem vel euismod laoreet. Curabitur elit metus, volutpat vel urna in, pellentesque suscipit nulla.</p>
+                                <p>Aliquam ullamcorper dolor gravida, cursus mauris vitae, feugiat nulla. Morbi consectetur quam erat, ut condimentum lectus scelerisque eget. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+                <div class="page__popover page__popover_id_chat">
+
+                    <div class="chat">
+                        <div class="chat__body">
+                            <div class="chat__ribbon">
+
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Кстати, у тебя диск в каком состоянии?
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Связи с данным событием, команда Firaxis выпустила новый трейлер, рассказывающий о дополнении и его плюшках.
+                                        </p>
+                                        <p class="message_paragraph">
+                                            Раздобыть технологии, которые помогут защитникам Земли справиться с захватившей её инопланетной угрозой.
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message message_self">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            В хорошем состоянии, диску неделя
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Связи с данным событием, команда Firaxis выпустила новый трейлер, рассказывающий о дополнении и его плюшках.
+                                        </p>
+                                        <p class="message_paragraph">
+                                            Раздобыть технологии, которые помогут защитникам Земли справиться с захватившей её инопланетной угрозой.
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message message_self">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            В хорошем состоянии, диску неделя
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Связи с данным событием, команда Firaxis выпустила новый трейлер, рассказывающий о дополнении и его плюшках.
+                                        </p>
+                                        <p class="message_paragraph">
+                                            Раздобыть технологии, которые помогут защитникам Земли справиться с захватившей её инопланетной угрозой.
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message message_self">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            В хорошем состоянии, диску неделя
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Связи с данным событием, команда Firaxis выпустила новый трейлер, рассказывающий о дополнении и его плюшках.
+                                        </p>
+                                        <p class="message_paragraph">
+                                            Раздобыть технологии, которые помогут защитникам Земли справиться с захватившей её инопланетной угрозой.
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message message_self">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            В хорошем состоянии, диску неделя
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Связи с данным событием, команда Firaxis выпустила новый трейлер, рассказывающий о дополнении и его плюшках.
+                                        </p>
+                                        <p class="message_paragraph">
+                                            Раздобыть технологии, которые помогут защитникам Земли справиться с захватившей её инопланетной угрозой.
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message message_self">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            В хорошем состоянии, диску неделя
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            Связи с данным событием, команда Firaxis выпустила новый трейлер, рассказывающий о дополнении и его плюшках.
+                                        </p>
+                                        <p class="message_paragraph">
+                                            Раздобыть технологии, которые помогут защитникам Земли справиться с захватившей её инопланетной угрозой.
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                                <div class="chat__item message message_self">
+                                    <div class="message__body">
+                                        <p class="message_paragraph">
+                                            В хорошем состоянии, диску неделя
+                                        </p>
+                                        <time class="message__time" datetime="2016-12-31T19:59+04:00">23:59</time>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="chat__head">
+                            <h1 class="breadcrumbs">
+                                <span class="breadcrumbs__item title">
+                                    <a class="link link_decoration_inverted" href="#">Kanye West</a>
+                                </span>
+                                <span class="breadcrumbs__item">
+                                    <a class="link link_decoration_inverted link_palette_default" href="#">DriveClub</a>
+                                </span>
+                            </h1>
+                        </div>
+                        <form class="chat__foot">
+                            <div class="chat__input input input_widget_area input_resize_auto input_rows_01 input_max-rows_03">
+                                <textarea class="input__text" placeholder="Placeholder"></textarea>
+                            </div>
+                            <button class="chat__send button button_palette_success" type="submit">Отправить</button>
+                        </form>
+                    </div>
+
+
+                    <!--/unique content -->
+
+                    <button class="page__hide-popover close" type="button">Закрыть</button>
+                </div>
+
+                <!-- sidebar-->
+                <div class="page__sidebar">
+
+                    <!--unique content -->
+                    <div class="profile">
+
+                        <div class="profile__summary userbar">
+                            <a class="userbar__avatar avatar avatar_size_larger" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/avatar_01_large@2x.jpg 2x"
+                                     src="../temp/avatar_01_large.jpg"
+                                     width="40" height="40"
+                                     alt=""
+                                >
+                            </a>
+                            <div class="title userbar__name">Cypher</div>
+                            <div class="userbar__note">Был на сайте вчера</div>
+                        </div>
+
+                        <a class="profile__go-premium button button_palette_default" href="#">Премиум</a>
+
+                        <div class="profile__trustworthiness trust">
+                            <div class="trust__param">
+                                <div class="trust__title title">На сайте</div>
+                                <div class="trust__value">30 дней</div>
+                            </div>
+                            <div class="trust__param">
+                                <div class="level level_palette_warning">
+                                    <svg class="level__progress" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <path id="level__background" d="M20,40 C31.045695,40 40,31.045695 40,20 C40,8.954305 31.045695,1.27897692e-13 20,1.27897692e-13 C8.954305,1.27897692e-13 0,8.954305 0,20 C0,31.045695 8.954305,40 20,40 Z M20,35 C28.2842712,35 35,28.2842712 35,20 C35,11.7157288 28.2842712,5 20,5 C11.7157288,5 5,11.7157288 5,20 C5,28.2842712 11.7157288,35 20,35 Z"></path>
+                                            <path id="level__fill" d="M29.5858589,37.5573926 C35.7915171,34.1620773 40,27.5725106 40,20 C40,8.954305 31.045695,0 20,0 L20,5 C28.2842712,5 35,11.7157288 35,20 C35,25.7240868 31.7937532,30.6993145 27.0792124,33.2277305 L29.5858589,37.5573926 Z"></path>
+                                        </g>
+                                    </svg>
+                                    <div class="level__value">
+                                        99
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile__feedback review">
+                            <div class="review__title title">Отзывы</div>
+                            <div class="review__progress meter">
+                                <div class="meter__value meter__value_kind_good" style="width: 75%;" title="Соотношение хороших отзывов к плохим"></div>
+                                <div class="meter__value meter__value_kind_bad" title="Соотношение плохих отзывов к хорошим"></div>
+                            </div>
+                            <div class="review__feedback">
+                                <div class="review__action button button_palette_default">Хороший</div>
+                                <div class="review__action button button_palette_default">Плохой</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/unique content -->
+
+                </div>
+                <!--sidebar-->
+
+                <!-- body -->
+                <main class="page__body">
+
+                    <div class="page__background theme" style="background-image: url(../temp/page__background.jpg);"></div>
+
+                    <!--unique content -->
+                    <div class="sliding">
+                        <div class="sliding__ribbon">
+                            <div class="nav">
+                                <a class="nav__link" href="profile-games.html">
+                                    <span class="nav__label">Лоты</span>
+                                    <span class="nav__counter">2</span>
+                                </a>
+                                <a class="nav__link" href="profile-current-games.html">
+                                    <span class="nav__label">Участвую</span>
+                                    <span class="nav__counter">43</span>
+                                </a>
+                                <a class="nav__link nav__link_current" href="profile-reviews.html">
+                                    <span class="nav__label">Отзывы</span>
+                                    <span class="nav__counter">17</span>
+                                </a>
+                                <a class="nav__link" href="profile-achievements.html">
+                                    <span class="nav__label">Достижения</span>
+                                    <span class="nav__counter">8</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comments">
+                        <article class="comments__item feedback feedback_kind_positive">
+                            <a class="feedback__avatar avatar" href="#">
+                                <img class="avatar__image"
+                                     src="../temp/avatar_02_small.jpg"
+                                     srcset="../temp/avatar_02_small.jpg 1x, ../temp/avatar_02_small@2x.jpg 2x"
+                                     width="30" height="30"
+                                     alt=""
+                                >
+                            </a>
+                            <div class="feedback__data">
+                                <div class="feedback__name title">
+                                    <a class="link link_decoration_inverted" href="#">Hironobu Sakaguchi</a>
+                                </div>
+                                <time class="feedback__time" datetime="2014-12-31T19:59+04:00">31 Дек, 23:59</time>
+                            </div>
+                            <div class="feedback__content wysiwyg">
+                                <p>Aliquam ullamcorper dolor gravida, cursus mauris vitae, feugiat nulla. Morbi consectetur quam erat, ut condimentum lectus scelerisque eget. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                                <p>Morbi sed velit eu lectus venenatis hendrerit. Duis mollis volutpat ipsum non maximus. Phasellus fermentum odio ante, dapibus tincidunt turpis euismod non. Morbi fermentum lorem vel euismod laoreet. Curabitur elit metus, volutpat vel urna in, pellentesque suscipit nulla.</p>
+                            </div>
+                        </article>
+
+                        <article class="comments__item feedback feedback_kind_negative">
+                            <a class="feedback__avatar avatar" href="#">
+                                <img class="avatar__image"
+                                     src="../temp/avatar_03_small.jpg"
+                                     srcset="../temp/avatar_03_small.jpg 1x, ../temp/avatar_03_small@2x.jpg 2x"
+                                     width="30" height="30"
+                                     alt=""
+                                >
+                            </a>
+                            <div class="feedback__data">
+                                <div class="feedback__name title">
+                                    <a class="link link_decoration_inverted" href="#">Nobuo Uematsu</a>
+                                </div>
+                                <time class="feedback__time" datetime="2014-12-31T19:59+04:00">31 Дек, 23:59</time>
+                            </div>
+                            <div class="feedback__content wysiwyg">
+                                <p>Ждал чувака час на морозе, замерз. Потом отзвонился, сказал не может приехать. Обмен не состоялся. Обидно</p>
+                            </div>
+                        </article>
+
+                        <article class="comments__item feedback feedback_kind_positive">
+                            <a class="feedback__avatar avatar" href="#">
+                                <img class="avatar__image"
+                                     src="../temp/avatar_04_small.jpg"
+                                     srcset="../temp/avatar_04_small.jpg 1x, ../temp/avatar_04_small@2x.jpg 2x"
+                                     width="30" height="30"
+                                     alt=""
+                                >
+                            </a>
+                            <div class="feedback__data">
+                                <div class="feedback__name title">
+                                    <a class="link link_decoration_inverted" href="#">Akira Yamaoka</a>
+                                </div>
+                                <time class="feedback__time" datetime="2014-12-31T19:59+04:00">31 Дек, 23:59</time>
+                            </div>
+                            <div class="feedback__content wysiwyg">
+                                <p>Купил Watch Dogs, все супер!</p>
+                            </div>
+                        </article>
+
+                        <a class="comments__more button button_palette_primary" href="#">Загрузить еще</a>
+
+                    </div>
+
+                    <!-- temp -->
+                    <br>
+                    или
+                    <br>
+                    <br>
+                    <!-- temp -->
+
+                    <div class="empty">
+                        <div class="empty__title">Отзывы отсутствуют</div>
+                    </div>
+
+                    <!--/unique content -->
+
+
+                </main>
+                <!--/body -->
+
+                <!-- footer -->
+                <div class="page__footer footer">
+                    <div class="footer__navigation light-nav">
+                        <div class="light-nav__section">
+                            <div class="light-nav__item">
+                                <a class="light-nav__link" href="help-tariffs.html">Тарифы</a>
+                            </div>
+                            <div class="light-nav__item">
+                                <a class="light-nav__link" href="help-agreement.html">Правообладателям</a>
+                            </div>
+                            <div class="light-nav__item">
+                                <a class="light-nav__link" href="help-contact.html">Обратная связь</a>
+                            </div>
+                        </div>
+                        <div class="light-nav__section">
+                            <div class="light-nav__item">
+                                <a class="light-nav__link" href="help-info.html">Помощь</a>
+                            </div>
+                            <div class="light-nav__item">
+                                <a class="light-nav__link" href="help-agreement.html">Соглашение</a>
+                            </div>
+                            <div class="light-nav__item">
+                                <div class="light-nav__text">
+                                    © 2016 Gameslooper
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/footer -->
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../scripts/temp.js"></script>
+
+
+    </body>
+</html>
+
+

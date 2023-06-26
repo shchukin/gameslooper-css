@@ -1,0 +1,38 @@
+/* override */
+
+.tariff {
+
+}
+
+    .tariff__container {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+
+    .tariff__summary {
+
+    }
+        .tariff__title {
+            font-size: 17px;
+            line-height: 20px;
+        }
+
+        .tariff__note {
+            margin-top: 21px;
+            font-size: 13px;
+            line-height: 22px;
+        }
+
+        .tariff__rate {
+            margin-top: 53px;
+        }
+
+        .tariff__submit {
+            margin-top: 43px;
+            width: 200px;
+        }
+
+    .tariff__service {
+        padding-bottom: 40px;
+    }

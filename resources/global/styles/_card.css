@@ -1,0 +1,17 @@
+.card {
+
+}
+    .card__data {
+
+    }
+        .card__field {
+            margin-top: 8px;
+        }
+
+        .card__field:first-child {
+            margin-top: 0;
+        }
+
+    .card__submit {
+        margin-top: 40px;
+    }

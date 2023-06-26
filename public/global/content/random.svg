@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="270px" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>random@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="unlocked" transform="translate(-1584.000000, -675.000000)">
+            <g id="SLICE" transform="translate(175.000000, 249.000000)"></g>
+            <g id="name" transform="translate(202.000000, 553.000000)"></g>
+            <g id="random" transform="translate(1591.000000, 695.000000)">
+                <path d="M62.0473272,161.518694 C46.6859908,176.544382 35.7092506,196.034257 31.2153845,217.890042" id="circle" stroke="#23F255" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" transform="translate(46.631356, 189.704368) rotate(-68.000000) translate(-46.631356, -189.704368) "></path>
+                <path d="M30.832626,128.041 C22.6643024,131.741503 15.0285462,136.410993 8.07203009,141.902796" id="circle" stroke="#23F255" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" transform="translate(19.452328, 134.971898) rotate(-65.000000) translate(-19.452328, -134.971898) "></path>
+                <path d="M156.4331,39.7568607 C140.18017,30.2805485 121.277763,24.8516482 101.107369,24.8516482 C60.1312328,24.8516482 24.3880664,47.2566569 5.46023198,80.4843124" id="circle" stroke="#23F255" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" transform="translate(80.946666, 52.667980) rotate(-20.000000) translate(-80.946666, -52.667980) "></path>
+                <path d="M221.749698,62.1123272 C207.424734,42.1812045 186.598199,27.2369305 162.374138,20.3835515" id="circle" stroke="#23F255" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" transform="translate(192.061918, 41.247939) rotate(3.000000) translate(-192.061918, -41.247939) "></path>
+                <path d="M116.407962,254.81652 C128.663243,254.81652 140.450431,252.812372 151.459659,249.113944 C195.024874,234.478689 226.407962,193.312561 226.407962,144.81652 C226.407962,113.542316 213.356606,85.3164204 192.40337,65.2883057" id="circle" stroke="#23F255" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" transform="translate(171.407962, 160.052413) rotate(25.000000) translate(-171.407962, -160.052413) "></path>
+                <g id="Group-13" transform="translate(86.000000, 71.000000)">
+                    <polygon id="Path-18" fill="#BCD5FF" opacity="0.12" points="0.136475803 61.1577024 0 86.5 40 39.5 40.5 17"></polygon>
+                    <path d="M2,114 L2,0 L75,0 L75,32 M75,86 L75,114 L131,114" id="Rectangle-15" stroke="#23F255" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polygon id="Rectangle-15" stroke="#23F255" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" points="2 0 42 20 42 94 2 114"></polygon>
+                    <path d="M30.5,57 L30.5,62" id="Path-11" stroke="#23F255" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M93.5,32 L104.083434,32 C111.261837,32 117.081083,37.8205185 117.081083,45.004019 L117.081083,45.004019 C117.081083,52.1859403 111.257275,58.0080379 104.078207,58.0080378 L68.5,58.0080376" id="Path-17" stroke="#23F255" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Path-19" stroke="#23F255" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" points="76 47 65 58 76 69"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

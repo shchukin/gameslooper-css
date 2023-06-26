@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="270px" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>search_locked@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="locked" transform="translate(-175.000000, -249.000000)">
+            <g id="SLICE" transform="translate(175.000000, 249.000000)"></g>
+            <g id="search" transform="translate(200.000000, 280.000000)">
+                <path d="M1.39672654,94.4758605 C-4.00656494,128.139271 6.26727757,163.830769 32.2182541,189.781746 C57.8991809,215.462673 93.1189622,225.791045 126.472575,220.766863" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M145.314935,216.202894 C152.784713,213.677664 160.03706,210.327439 166.929905,206.152218" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M85.762356,4.68896508 C66.1397606,9.10147225 47.4919396,18.9445686 32.2182541,34.2182541 C21.3167847,45.1197235 13.1818068,57.7400703 7.81332038,71.2068875" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M208.836128,160.341241 C215.985934,145.750581 220,129.344058 220,112 C220,51.2486775 170.751322,2 110,2" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="loop" transform="translate(10.000000, 10.000000)">
+                    <path d="M72.4058097,127.460457 C79.34835,134.579526 89.0452272,139 99.7745616,139 C120.885888,139 138,121.885888 138,100.774562 C138,88.6406326 132.346385,77.8271761 123.529669,70.8247054 L72.4058097,127.460457 Z" id="Oval-2" fill="#BCD5FF" opacity="0.0399999991"></path>
+                    <ellipse id="Oval-2" stroke="#2D3644" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" cx="100" cy="100" rx="50" ry="50"></ellipse>
+                    <rect id="Rectangle-2" stroke="#2D3644" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" transform="translate(160.698485, 159.698485) rotate(-45.000000) translate(-160.698485, -159.698485) " x="153.698485" y="124.698485" width="14" height="70"></rect>
+                    <path d="M98.5,116 C98.5,116 111.013165,106 111,95.5 C110.991345,88.596461 105.403559,83 98.5,83 C91.5964406,83 86,88.5964406 86,95.5 C86,106 98.5,116 98.5,116 Z" id="Oval-4" stroke="#2D3644" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <ellipse id="Oval-5" fill="#2D3644" cx="98.5" cy="95.5" rx="3.5" ry="3.5"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

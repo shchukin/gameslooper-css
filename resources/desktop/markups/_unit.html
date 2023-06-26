@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.unit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+
+        <div style="width: 700px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.unit</h1>
+            <p>
+                Это вторая версия коробки с игрой. Первая - это есть глобальный
+                <a href="../../global/markups/_item.html">.item</a>.
+                <b>.item</b> - это упрощенная, минималистичная версия,
+                которая используется на мобилках и на узких ширинах десктов (здесь же планшеты).
+                Главное отличие в том, что <b>.unit</b> сохраняет высоту независимо от
+                пропорций картинки. Это делает его сложным и тяжелым по коду.
+            </p>
+            <p>
+                Для позицонирования <b>.unit</b>`ов используется блок <a href="_tiles.html">.tiles</a>
+                (для <b>.item</b>`ов блок <b>.bricklayer</b>. Эти две структуры взаимоисключающие.
+            </p>
+            <p>
+                На мобилках все достаточно просто, там всегда используется <b>.item</b> с <b>.bricklayer</b>.
+                На десктопах нужно определять ширину. Если она строго меньше 1340, то используем
+                <b>.item</b> с <b>.bricklayer</b> (см. соответствующие доки). Если ширина больше
+                чем 1340 (включительно), то используем рассматриваемые <b>.unit</b>`ы с <b>.tiles</b>.
+            </p>
+            <p>
+                Ретинизация проста. Просто добавляем srcset с путем до удвоенной картики и дескриптором <b>2x</b>:
+                <br>
+                <b>srcset="path/to/2x/image.jpg 2x"</b>
+                <br>
+                Сюда же в srcset путь к обычной 1х картинке добавлять не надо,
+                он берется из обычного атрибута <b>src</b>.
+                <br>
+                По желанию можно сделать аналогию и для 3x, но это какой-то слишком уж гипотетический кейс, ибо таких
+                десктопов (.unit только на десктопах) не бывает. А место на хостинге пожрет.
+            </p>
+            <p>
+                Размеры картинки режутся от <b>высоты</b>. Дефолт - это высота <b>160px</b>,
+                для ретины, соответствено <b>320px</b>. Ширина автоматически.
+            </p>
+
+        </div>
+        <div style="width: 15.278%; margin: 0 auto;">
+
+            <br>
+            <br>
+            <br>
+            <p>Самая простая плитка:</p>
+
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps4_01@2x.jpg 2x"
+                                 src="../temp/unit_ps4_01.jpg"
+                                 alt="Metal Gear Solid V"
+                                 title="Metal Gear Solid V"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="unit__note">
+                            149 предложений
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <p>
+                В какой-то момент к ней добавили название игры:
+            </p>
+
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps4_01@2x.jpg 2x"
+                                 src="../temp/unit_ps4_01.jpg"
+                                 alt="Metal Gear Solid V"
+                                 title="Metal Gear Solid V"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="unit__title">
+                            Metal Gear Solid V: Ground Zeroes
+                        </div>
+                        <div class="unit__note">
+                            149 предложений
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Больше инфы в подвале плитки:</h2>
+            <p>Используем там блок <b>.param</b> обязательно с модификатором <b>.param_outside</b></p>
+
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps4_01@2x.jpg 2x"
+                                 src="../temp/unit_ps4_01.jpg"
+                                 alt="Metal Gear Solid V"
+                                 title="Metal Gear Solid V"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="unit__title">
+                            Metal Gear Solid V: Ground Zeroes
+                        </div>
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_exchange.svg" alt="">
+                            Обмен
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Плитка с оверлеем и действиями</h2>
+            <div style="margin: 0 -200px;">
+                <p>
+                    Тут страшные замес с тем, куда запихать этот оверлей. Он должен быть поверх тела,
+                    но под подвалом. При этом подвал должен остаться прозрачным и поддерживать
+                    ссылки внутри. По-этому сначала выводим <b>.unit__body</b>, потом <b>.unit__overlay</b>
+                    и после <b>.unit__foot</b>. При этом весь оверлей должен быть кликабелен,
+                    вести на сам лот. По этому он часть общей ссылки.
+                </p>
+                <p>
+                    Кнопки внутри оверлея и ссылки внутри подвала (появятся позже) отлавливать JS`ом.
+                    Ссылку в ссылку не запихать.
+                </p>
+                <p>
+                    Сюда же надо добавлять модификатор <b>.unit_has-overlay</b>, чтобы сбросить
+                    дефолтный эффект наведения. Он тут не нужен ибо есть оверлей.
+                </p>
+                <p>
+                    Еще здесь надо сделать проверку на наличие наведения в принципе.
+                    Опять же, смотри на <b>.unit_has-overlay</b>, ловим клик по нему.
+                    Надо проверить, показан ли в момент клика <b>.unit__operations</b>
+                    (например свойство display != none). Если показан, то все ок,
+                    сработало наведение и пользователь увидел возможные действия,
+                    но предпочел кликнуть в пустую область, чтобы перейти к игре/лоту.
+                    Если нет, то это тач устройтсво или он пришел сюда табуляциями.
+                    Надо отменить клик и показать ему оверлей по клику. Для того, чтобы
+                    показать оверлей добавляем класс <b>.unit_drop</b>.
+                </p>
+            </div>
+
+            <a class="unit unit_has-overlay" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps4_01@2x.jpg 2x"
+                                 src="../temp/unit_ps4_01.jpg"
+                                 alt="Metal Gear Solid V"
+                                 title="Metal Gear Solid V"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__overlay" style="background-image: url(../temp/item_ps4_01.jpg);">
+                    <div class="unit__operations">
+                        <div class="unit__menu">
+                            <span class="unit__action button button_palette_info" tabindex="0">Рекламировать</span>
+                            <span class="unit__action button button_palette_default" tabindex="0">Редактировать</span>
+                            <span class="unit__action button button_palette_default" tabindex="0">Удалить</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="unit__title">
+                            Metal Gear Solid V: Ground Zeroes
+                        </div>
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_exchange.svg" alt="">
+                            Обмен
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <b>Восстановить</b>
+            <br>
+            <br>
+
+            <a class="unit unit_deleted unit_has-overlay" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps4_01@2x.jpg 2x"
+                                 src="../temp/unit_ps4_01.jpg"
+                                 alt="Metal Gear Solid V"
+                                 title="Metal Gear Solid V"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__overlay" style="background-image: url(../temp/item_ps4_01.jpg);">
+                    <div class="unit__operations">
+                        <div class="unit__status">
+                            Ваше объявление удалено.
+                        </div>
+                        <div class="unit__menu">
+                            <span class="unit__action button button_palette_default" tabindex="0">Восстановить</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="unit__title">
+                            Metal Gear Solid V: Ground Zeroes
+                        </div>
+                        <div class="unit__note">
+                            Осталось 0 дней
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Четыре кнопки в оверлее</h2>
+            <p>
+                Немного экстремальный кейс. На четыре кнопки тут места не хватает.
+                В случае, если кнопок 4 (или больше), то добавляем модификатор
+                <b>.unit_has-four-actions</b>.
+                Он немного уменьшит расстояние между кнопками и они влезут.
+            </p>
+
+            <a class="unit unit_has-overlay unit_has-four-actions" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps4_01@2x.jpg 2x"
+                                 src="../temp/unit_ps4_01.jpg"
+                                 alt="Metal Gear Solid V"
+                                 title="Metal Gear Solid V"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__overlay" style="background-image: url(../temp/item_ps4_01.jpg);">
+                    <div class="unit__operations">
+                        <div class="unit__menu">
+                            <span class="unit__action button button_palette_info" tabindex="0">Рекламировать</span>
+                            <span class="unit__action button button_palette_default" tabindex="0">Редактировать</span>
+                            <span class="unit__action button button_palette_default" tabindex="0">Удалить</span>
+                            <span class="unit__action button button_palette_default" tabindex="0">Добавить бейдж</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="unit__title">
+                            Metal Gear Solid V: Ground Zeroes
+                        </div>
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_exchange.svg" alt="">
+                            Обмен
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Лоты</h2>
+            <p>
+                Приходит предложение с одной игрой.
+                Тут такие же операции как выше, кнопок меньше.
+                В подвале обещанная ссылка <b>.unit__extra-link</b>,
+                которую так же нельзя делать тегом &lt;a&gt;. Делаем &lt;span&gt;,
+                а клик ловим JS`ом.
+            </p>
+
+            <a class="unit unit_has-overlay" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps4_01@2x.jpg 2x"
+                                 src="../temp/unit_ps4_01.jpg"
+                                 alt="Metal Gear Solid V"
+                                 title="Metal Gear Solid V"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__overlay" style="background-image: url(../temp/item_ps4_01.jpg);">
+                    <div class="unit__operations">
+                        <div class="unit__menu">
+                            <span class="unit__action button button_palette_info" tabindex="0">Ответить</span>
+                            <span class="unit__action button button_palette_default" tabindex="0">Не интересно</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="unit__title">
+                            Metal Gear Solid V: Ground Zeroes
+                        </div>
+                        <div class="unit__note">
+                            <span class="unit__extra-link" tabindex="0">
+                                Hideo Kojima
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <br>
+            <br>
+            <p>
+                Приходит предложение с деньгами. Тут вместо
+                <b>.unit__stage</b> и всех его потомков с обложкой
+                выводится <b>.unit__buying</b>
+            </p>
+
+
+            <a class="unit unit_has-overlay" href="#">
+                <div class="unit__body">
+                    <div class="unit__buying">
+                        <div class="unit__value">1700 руб.</div>
+                    </div>
+                </div>
+                <div class="unit__overlay">
+                    <div class="unit__operations">
+                        <div class="unit__menu">
+                            <span class="unit__action button button_palette_info" tabindex="0">Ответить</span>
+                            <span class="unit__action button button_palette_default" tabindex="0">Не интересно</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="unit__title">
+                            Metal Gear Solid V: Ground Zeroes
+                        </div>
+                        <div class="unit__note">
+                            <span class="unit__extra-link" tabindex="0">
+                                Hironobu Sakaguchi
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <br>
+            <br>
+            <p>
+                Игра с доплатой. Тут новый элемент <b>.unit__money</b>.
+                Кстати, из-за того, как он позиционируется и понадобилась обертка
+                <b>.unit__preview</b>.
+            </p>
+
+            <a class="unit unit_has-overlay" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps4_01@2x.jpg 2x"
+                                 src="../temp/unit_ps4_01.jpg"
+                                 alt="Metal Gear Solid V"
+                                 title="Metal Gear Solid V"
+                            >
+                            <div class="unit__money">
+                                +200 руб.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__overlay" style="background-image: url(../temp/item_ps4_01.jpg);">
+                    <div class="unit__operations">
+                        <div class="unit__menu">
+                            <span class="unit__action button button_palette_info" tabindex="0">Ответить</span>
+                            <span class="unit__action button button_palette_default" tabindex="0">Не интересно</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="unit__title">
+                            Metal Gear Solid V: Ground Zeroes
+                        </div>
+                        <div class="unit__note">
+                            <span class="unit__extra-link" tabindex="0">
+                                Akira Yamaoka
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <p>Несколько игр.</p>
+            <p style="margin-left: -200px; margin-right: -200px;">
+                Сюду нажен мини-слайдер. Во-первых точки навигации <b>.unit__navigation</b>.
+                Во-вторых пачку кантинок <b>.unit__boxart</b> (раньше была только одна, сейчас много).
+                В случае со слайдером этим картинкам нужно проставляет модификатор <b>.unit__boxart_set</b>
+                (ну типа это не просто картинка, а часть множества картинок). Дальше по клику на точки дергаем
+                классы <b>.unit__switch_current</b> и <b>.unit__boxart_current</b>.
+            </p>
+
+            <a class="unit unit_has-overlay" href="#">
+                <div class="unit__navigation">
+                    <div class="unit__controls">
+                        <div class="unit__switch unit__switch_current">Игра 1</div>
+                        <div class="unit__switch">Игра 2</div>
+                        <div class="unit__switch">Игра 3</div>
+                        <div class="unit__switch">Игра 4</div>
+                    </div>
+                </div>
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart unit__boxart_set unit__boxart_current" srcset="../temp/unit_ps4_01@2x.jpg 2x" src="../temp/unit_ps4_01.jpg" alt="Metal Gear Solid V" title="Metal Gear Solid V">
+                            <img class="unit__boxart unit__boxart_set"                      srcset="../temp/unit_ps3_01@2x.jpg 2x" src="../temp/unit_ps3_01.jpg" alt="God of War III" title="God of War III">
+                            <img class="unit__boxart unit__boxart_set"                      srcset="../temp/unit_ps2_01@2x.jpg 2x" src="../temp/unit_ps2_01.jpg" alt="Final Fantasy X" title="Final Fantasy X">
+                            <img class="unit__boxart unit__boxart_set"                      srcset="../temp/unit_psp_01@2x.jpg 2x" src="../temp/unit_psp_01.jpg" alt="Patapon 3" title="Patapon 3">
+                            <div class="unit__money">+200 руб.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__overlay" style="background-image: url(../temp/item_ps4_01.jpg);">
+                    <div class="unit__operations">
+                        <div class="unit__menu">
+                            <span class="unit__action button button_palette_info" tabindex="0">Ответить</span>
+                            <span class="unit__action button button_palette_default" tabindex="0">Не интересно</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="unit__title">
+                            Metal Gear Solid V: Ground Zeroes
+                        </div>
+                        <div class="unit__note">
+                            <span class="unit__extra-link" tabindex="0">
+                                Akira Yamaoka
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            Бейдж
+            <br>
+            <br>
+
+
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps4_01@2x.jpg 2x"
+                                 src="../temp/unit_ps4_01.jpg"
+                                 alt="Metal Gear Solid V"
+                                 title="Metal Gear Solid V"
+                            >
+                            <div class="unit__badge unit__badge_position_top-left     tag tag_shape_star tag_palette_info">-30%</div>
+                            <div class="unit__badge unit__badge_position_top-right    tag tag_shape_star tag_palette_info">-30%</div>
+                            <div class="unit__badge unit__badge_position_bottom-left  tag tag_shape_star tag_palette_info">-30%</div>
+                            <div class="unit__badge unit__badge_position_bottom-right tag tag_shape_star tag_palette_info">-30%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            100500
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div style="padding: 0 20px">
+
+            <h2>Смотрим разные форматы обложек</h2>
+
+<div style="display: inline-block; vertical-align: top; width: 15.715%;">
+
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_psp_01@2x.jpg 2x"
+                                 src="../temp/unit_psp_01.jpg"
+                                 alt="Patapon 3"
+                                 title="Patapon 3"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_exchange.svg" alt="">
+                            Обмен
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+</div>
+<div style="display: inline-block; vertical-align: top; width: 15.715%;">
+
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps2_01@2x.jpg 2x"
+                                 src="../temp/unit_ps2_01.jpg"
+                                 alt="Final Fantasy X"
+                                 title="Final Fantasy X"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+</div>
+<div style="display: inline-block; vertical-align: top; width: 15.715%;">
+
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps3_01@2x.jpg 2x"
+                                 src="../temp/unit_ps3_01.jpg"
+                                 alt="God of War III"
+                                 title="God of War III"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+</div>
+<div style="display: inline-block; vertical-align: top; width: 15.715%;">
+
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_ps4_01@2x.jpg 2x"
+                                 src="../temp/unit_ps4_01.jpg"
+                                 alt="Metal Gear Solid V"
+                                 title="Metal Gear Solid V"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+</div>
+<div style="display: inline-block; vertical-align: top; width: 15.715%;">
+
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_x360_01@2x.jpg 2x"
+                                 src="../temp/unit_x360_01.jpg"
+                                 alt="Bioshock Infinite"
+                                 title="Bioshock Infinite"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+</div>
+<div style="display: inline-block; vertical-align: top; width: 15.715%;">
+
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_xone_01@2x.jpg 2x"
+                                 src="../temp/unit_xone_01.jpg"
+                                 alt="Battlefield 4"
+                                 title="Battlefield 4"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+</div>
+<div style="display: inline-block; vertical-align: top; width: 15.715%;">
+
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_wii_01@2x.jpg 2x"
+                                 src="../temp/unit_wii_01.jpg"
+                                 alt="Super Mario Galaxy 2"
+                                 title="Super Mario Galaxy 2"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+</div>
+<div style="display: inline-block; vertical-align: top; width: 15.715%;">
+
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_wiiu_01@2x.jpg 2x"
+                                 src="../temp/unit_wiiu_01.jpg"
+                                 alt="Super Mario Bros U"
+                                 title="Super Mario Bros U"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+</div>
+<div style="display: inline-block; vertical-align: top; width: 15.715%;">
+
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_nds_01@2x.jpg 2x"
+                                 src="../temp/unit_nds_01.jpg"
+                                 alt="Mario Party DS"
+                                 title="Mario Party DS"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+</div>
+<div style="display: inline-block; vertical-align: top; width: 15.715%;">
+
+            <a class="unit" href="#">
+                <div class="unit__body">
+                    <div class="unit__stage">
+                        <div class="unit__preview">
+                            <img class="unit__boxart"
+                                 srcset="../temp/unit_3ds_01@2x.jpg 2x"
+                                 src="../temp/unit_3ds_01.jpg"
+                                 alt="The Legend of Zelda: Ocarina of time 3D"
+                                 title="The Legend of Zelda: Ocarina of time 3D"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="unit__foot">
+                    <div class="unit__data">
+                        <div class="param param_outside">
+                            <img class="param__icon" src="../../global/symbols/param_id_rouble.svg" alt="">
+                            1700
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+</div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../vendors/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../scripts/temp.js"></script>
+
+
+    </body>
+</html>

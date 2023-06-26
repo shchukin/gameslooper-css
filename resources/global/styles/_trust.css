@@ -1,0 +1,16 @@
+.trust {
+    display: flex;
+    justify-content: space-between;
+}
+    .trust__param {
+
+    }
+        .trust__title {
+
+        }
+
+        .trust__value {
+            font-size: 13px;
+            line-height: 20px;
+            color: #fff;
+        }

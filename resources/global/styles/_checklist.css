@@ -1,0 +1,41 @@
+.checklist {
+    line-height: 0;
+}
+
+.checklist_line {
+
+}
+
+    .checklist__title {
+        margin-top: -4px;
+    }
+
+    .checklist__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .checklist__title + .checklist__list {
+        margin-top: 24px;
+    }
+
+    .checklist_line .checklist__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 4px;
+        margin-left: -20px;
+    }
+
+        .checklist__item {
+            margin: 15px 0 0;
+        }
+
+        .checklist__item:first-child {
+            margin-top: 0;
+        }
+
+
+        .checklist_line .checklist__item {
+            margin: 20px 0 0 20px;
+        }

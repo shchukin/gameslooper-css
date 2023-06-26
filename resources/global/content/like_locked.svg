@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="270px" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>like_locked@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="locked" transform="translate(-175.000000, -675.000000)">
+            <g id="SLICE" transform="translate(175.000000, 249.000000)"></g>
+            <g id="name" transform="translate(202.000000, 553.000000)"></g>
+            <g id="like" transform="translate(200.000000, 691.000000)">
+                <path d="M66,26 C27.1405655,42.9719162 5.25031778e-14,81.5932282 4.97379915e-14,126.521131 C4.73470337e-14,165.368685 20.2914907,199.501151 50.9049408,219" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M75,231 C93.6954732,237.48782 113.346746,238.604241 132,234.881311" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M153,228 C208.881887,204.299971 234.95388,139.82509 211.233426,83.9913211 C203.131631,64.9211228 190.269002,49.3255088 174.616219,38" id="circle" stroke="#2D3644" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="active" transform="translate(90.000000, 0.000000)" stroke="#2D3644" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4.4408921e-16,17 L5,30" id="Path-11" stroke-width="5"></path>
+                    <path d="M55,20 L61,30" id="Path-11" stroke-width="5" transform="translate(58.000000, 25.000000) scale(-1, 1) translate(-58.000000, -25.000000) "></path>
+                    <path d="M30,0 L30,25" id="Path-11" stroke-width="6"></path>
+                </g>
+                <g id="finger" transform="translate(6.000000, 53.000000)">
+                    <path d="M112.019131,0 L110.017764,0 C98.5489229,0 116.107968,29.8642534 84,49 L84,111 L148.043727,111 C154.23887,111 161.262488,103.031674 155.04851,95 C161.262488,95.0678733 168.286106,84.6153846 159.051243,78 C166.279358,77.6470588 169.28948,65.7013575 161.052609,62 C165.777671,59.2307692 167.282732,46.7873303 156.049193,46 C139.68995,45.7918552 121.02528,46 121.02528,46 C124.027329,37 134.534503,13.5 112.019131,0 Z" id="Path-2" stroke="#2D3644" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <g id="dress" transform="translate(0.000000, 47.000000)">
+                        <polygon id="Path-3" fill="#BCD5FF" opacity="0.0399999991" points="71 11 0 11 0 22 69.8085106 22"></polygon>
+                        <polyline id="Path-3" stroke="#2D3644" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" points="7 70 84 70 84 0 0 0"></polyline>
+                        <path d="M43,4 L43,36" id="Path-11" stroke="#2D3644" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M43,49 L43,58" id="Path-11" stroke="#2D3644" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M70,1 L70,69" id="Path-11" stroke="#2D3644" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

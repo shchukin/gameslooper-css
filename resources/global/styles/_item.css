@@ -1,0 +1,98 @@
+.item {
+    position: relative;
+    display: block;
+    background: #202734;
+    text-decoration: none;
+    transition: transform .1s ease-out,
+                box-shadow .1s ease-out;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(12,15,20,.25);
+}
+
+    .item__body {
+        position: relative;
+    }
+        .item__boxart {
+            vertical-align: top;
+            width: 100%;
+            height: auto;
+            background: #131722;
+        }
+
+        .item__set {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(26,32,43,.8);
+        }
+            .item_quantity {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin: -20px 0 0 -20px;
+                width: 40px;
+                height: 38px;
+                padding: 2px 0 0;
+                background: #4C85FF;
+                border-radius: 50%;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 38px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+        .item__buying {
+            position: relative;
+            padding: 0 0 124.51%; /* size of PS4 box */
+            font-size: 13px;
+            line-height: 20px;
+            color: #5A6476;
+            text-align: center;
+            text-transform: uppercase;
+        }
+            .item__value {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 12px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+    .item__foot {
+        position: relative;     /* just to overlay last pixel of image */
+        margin-top: -1px;       /* it can be an empty line because of image height rounding */
+        padding: 11px 10px 9px;
+        background: #1D2430;
+        font-size: 13px;
+        line-height: 20px;
+        color: #5A6476;
+        text-align: center;
+    }
+
+    .item__money {
+        position: relative;      /* just to overlay last pixel of image */
+        margin-top: -1px;        /* it can be an empty line because of image height rounding */
+        padding: 11px 10px 9px;
+        background: #1D2430;
+        font-size: 13px;
+        line-height: 20px;
+        color: #5A6476;
+        text-align: center;
+    }
+
+    .item__badge {
+        position: absolute;
+        right: -18px;
+        top: -13px;
+    }
+
+    .item__badge.label {
+        position: absolute;
+    }

@@ -1,0 +1,29 @@
+/* override */
+
+.where-are-you {
+    margin-bottom: 30px; /* to make a gap from this block to catalog or .emptiness */
+}
+    .where-are-you__container {
+
+    }
+
+@media (min-width: 1024px) {
+    .where-are-you__container {
+        display: flex;
+        align-items: flex-start;
+        padding: 25px 30px 25px 40px;
+        max-width: 630px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .where-are-you__question {
+            margin-top: 10px;
+            flex-shrink: 0;
+        }
+
+        .where-are-you__answer {
+            margin-left: auto;
+            margin-top: 0;
+        }
+}

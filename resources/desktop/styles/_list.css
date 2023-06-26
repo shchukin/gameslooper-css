@@ -1,0 +1,17 @@
+/* override */
+
+
+@media (min-width: 1024px) {
+    .list {
+        padding-left: 33px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+        .list__item {
+
+        }
+            .list__item:before {
+                margin-top: 11px;
+                margin-right: 23px;
+            }
+}

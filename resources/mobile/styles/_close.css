@@ -1,0 +1,44 @@
+.close {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+    .close:before,
+    .close:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotate(45deg);
+        background: #2C3544;
+        border-radius: 1px;
+        transition: background-color .1s ease-out;
+    }
+
+    .close:before {
+        width: 2px;
+        height: 18px;
+    }
+
+    .close:after {
+        width: 18px;
+        height: 2px;
+    }
+
+    .close:hover:before,
+    .close:hover:after {
+        background-color: #FFFFFF;
+    }

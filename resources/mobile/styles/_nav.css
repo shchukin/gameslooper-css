@@ -1,0 +1,6 @@
+/* override */
+
+.nav__link {
+    padding: 15px 20px;
+    margin: 0;
+}

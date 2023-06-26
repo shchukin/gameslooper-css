@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.card</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body" style="background: #131722;">
+
+
+
+        <div style="width: 280px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.card</h1>
+
+
+            <div class="card">
+                <div class="card__data">
+
+                    <div class="card__field control">
+                        <label class="control__label" for="temp-a">
+                            Номер карты
+                        </label>
+                        <div class="control__widget input">
+                            <input class="input__text" type="text" placeholder="0000 0000 0000 0000" id="temp-a">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+
+                    <div class="card__field control">
+                        <label class="control__label" for="temp-b">
+                            Имя владельца карты
+                        </label>
+                        <div class="control__widget input">
+                            <input class="input__text" type="text" placeholder="ИМЯ НА КАРТЕ" id="temp-b">
+                            <div class="input__cleartype"></div>
+                        </div>
+                    </div>
+
+                    <div class="card__field control">
+                        <label class="control__label" for="temp-c">
+                            Действует до
+                        </label>
+                        <div class="control__widget expire">
+                            <div class="expire__month">
+                                <div class="input">
+                                    <input class="input__text" type="text" placeholder="Месяц" id="temp-c">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="expire__year">
+                                <div class="input">
+                                    <input class="input__text" type="text" placeholder="Год">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__field control">
+                        <label class="control__label" for="temp-d">
+                            CVC2 / CVV2
+                        </label>
+                        <div class="control__widget cvv">
+                            <div class="cvv__field">
+                                <div class="input">
+                                    <input class="input__text" type="password" placeholder="***" id="temp-d">
+                                    <div class="input__cleartype"></div>
+                                </div>
+                            </div>
+                            <div class="cvv__note">
+                                Код на обратной стороне карты
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card__submit">
+                    <button class="button button_palette_info" type="submit">Оплатить картой</button>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+
+    </body>
+</html>

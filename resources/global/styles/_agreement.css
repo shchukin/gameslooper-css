@@ -1,0 +1,21 @@
+.agreement {
+
+}
+    .agreement__section {
+        margin: 20px 0 0;
+    }
+
+    .agreement__section:first-child {
+        margin-top: 0;
+    }
+        .agreement__title {
+            margin: 0;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 28px;
+            letter-spacing: .5px;
+        }
+
+        .agreement__content {
+            margin: 10px 0 0;
+        }

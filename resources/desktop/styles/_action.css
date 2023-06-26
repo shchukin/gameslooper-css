@@ -1,0 +1,56 @@
+.action {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: background-color .1s ease-out; /* later in modifiers */
+}
+
+.action_current {
+    cursor: default;
+}
+
+    .action__icon {
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        vertical-align: top;
+        width: 20px;
+        height: 20px;
+        fill: #2C3544;
+    }
+
+    .action:hover .action__icon {
+        fill: #FFFFFF;
+    }
+
+    .action_current .action__icon {
+        fill: #FFFFFF;
+    }
+
+    .action__update {
+        position: absolute;
+        right: 5px;
+        top: 6px;
+        opacity: 0;
+        transition: opacity 0.2s ease-out;
+    }
+
+
+.action_unread {
+
+}
+    .action_unread .action__update {
+        opacity: 1;
+    }

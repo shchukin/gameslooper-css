@@ -1,0 +1,187 @@
+.user {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+    .user__body {
+        position: relative;
+    }
+        .user__profile {
+
+        }
+
+        .user__update {
+            position: absolute;
+            right: 0;
+            top: -7px;
+            opacity: 0;
+            transition: opacity 0.2s ease-out;
+        }
+
+
+    .user__actions {
+        position: absolute;
+        left: 59px;
+        bottom: -5px;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(10px);
+
+        /* hide animation */
+        transition: opacity 0.1s ease-out 0.05s,
+                    transform 0.1s ease-out,
+                    visibility 0.15s linear;
+
+    }
+
+    .user:hover .user__actions,
+    .user_drop .user__actions {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+
+        /* show animation */
+        transition: opacity 0.1s ease-out 0.05s,
+                    transform 0.1s ease-out,
+                    visibility 0.15s linear;
+    }
+
+        /*
+            those item create red area:
+            http://prntscr.com/auyvea
+            so user can move cursor over there
+            without loosing hover
+        */
+
+        .user__actions:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 100%;
+            bottom: 0;
+            width: 29px;
+            height: 35px;
+            /*background: red;*/
+        }
+
+        .user__actions:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 35px;
+            width: 59px;
+            /*background: red;*/
+        }
+
+        .user__actions_items_2:before  { transform: skewX(-52deg) translateX(-30px); }
+        .user__actions_items_3:before  { transform: skewX(-34deg) translateX(-30px); }
+        .user__actions_items_4:before  { transform: skewX(-25deg) translateX(-30px); }
+        .user__actions_items_5:before  { transform: skewX(-19deg) translateX(-28px); }
+        .user__actions_items_6:before  { transform: skewX(-16deg) translateX(-29px); }
+        .user__actions_items_7:before  { transform: skewX(-14deg) translateX(-29px); }
+        .user__actions_items_8:before  { transform: skewX(-12deg) translateX(-30px); }
+        .user__actions_items_9:before  { transform: skewX(-10deg) translateX(-30px); }
+        .user__actions_items_10:before { transform: skewX( -9deg) translateX(-30px); }
+
+
+        .user__menu {
+            position: relative;
+            z-index: 1;
+        }
+            .user__link {
+                text-decoration: none;
+                display: block;
+                position: relative;
+                min-width: 160px;
+                padding: 10px 20px;
+                background: #1A202B;
+                font-size: 12px;
+                line-height: 20px;
+                color: #FFFFFF;
+                transition: background-color .1s ease-out;
+            }
+
+            .user__link:hover {
+                background-color: #202733;
+            }
+
+                .user__link:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    right: 20px;
+                    top: 0;
+                    height: 1px;
+                    background: #202733;
+                    transition: background-color .1s ease-out;
+                }
+
+                .user__link:first-child:before {
+                    display: none;
+                }
+
+                .user__link:hover:before,
+                .user__link:hover + .user__link:before {
+                    background-color: transparent;
+                }
+
+
+                .user__link_premium {
+                    background-color: #4C85FF;
+                }
+
+                .user__link_premium:before,
+                .user__link_premium + .user__link:before {
+                    background-color: transparent;
+                }
+
+                .user__link_premium:hover {
+                    background-color: #5E91FF;
+                }
+
+
+                .user__link_peak:after {
+                    content: '';
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    right: 100%;
+                    top: 50%;
+                    margin: -5px -5px 0 0;
+                    transform: rotateY(45deg) rotate(45deg);
+                    background: #1A202B;
+                    transition: background-color .1s ease-out;
+                }
+
+                .user__link_peak:hover:after {
+                    background-color: #202733;
+                }
+                    .user__count {
+                        position: absolute;
+                        top: 10px;
+                        right: 20px;
+                        font-weight: bold;
+                        color: #424B5A;
+                    }
+
+
+
+
+
+.user_unread {
+
+}
+    .user_unread .user__update {
+        opacity: 1;
+    }
+
+
+.user_disabled {
+    pointer-events: none;
+}
+
+

@@ -1,0 +1,14 @@
+.heading {
+    padding: 31px 0 30px;
+}
+    .heading__content {
+
+    }
+
+    .heading__note {
+        align-self: flex-start;
+        margin: 19px 0 -10px;
+        font-size: 13px;
+        line-height: 20px;
+        color: #5A6476;
+    }

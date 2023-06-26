@@ -1,0 +1,22 @@
+.title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: .5px;
+    color: #FFFFFF;
+}
+
+.title_font_larger {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.title_font_largest {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.title_color_marked {
+    color: #4C85FF;
+}

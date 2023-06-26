@@ -1,0 +1,73 @@
+.form {
+
+}
+    .form__head {
+
+    }
+        .form__title {
+
+        }
+
+        .form__note {
+            font-size: 12px;
+            line-height: 22px;
+            color: #5A6476;
+        }
+
+    .form__fieldset {
+        border: none;
+        margin: 30px 0 0;
+        border-top: 1px solid rgba(153,169,207,.05);
+        padding: 30px 0 0;
+    }
+
+    .form__fieldset:first-child {
+        margin-top: 0;
+        border-top: none;
+        padding-top: 0;
+    }
+
+        .form__field {
+            margin: 20px 0 0;
+        }
+
+
+        .form__field_kind_note {
+            margin-top: 27px;
+            font-size: 12px;
+            line-height: 22px;
+            color: #5A6476;
+        }
+
+        .form__field_kind_heading {
+            margin-top: -4px;
+            padding-bottom: 4px;
+            font-size: 12px;
+            line-height: 22px;
+            color: #5A6476;
+        }
+
+        .form__field_kind_choice {
+            margin-top: 30px;
+            margin-bottom: -3px;
+        }
+
+        .form__field_kind_choice-output {
+            margin-top: 30px;
+        }
+
+        .form__field_kind_preview {
+            margin-left: -40px;
+            margin-right: -40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            min-height: 21px;
+        }
+
+        .form__field:first-child {
+            margin-top: 0;
+        }
+
+        .form__field_kind_heading:first-child {
+            margin-top: -4px;
+        }

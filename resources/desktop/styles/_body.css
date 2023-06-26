@@ -1,0 +1,6 @@
+/* override */
+
+.body {
+    min-width: 1160px;
+    overflow-y: scroll;
+}

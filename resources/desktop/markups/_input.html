@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.input</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body" style="background: #131722;">
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.input <span style="font-size: 16px; color: red;">оверрайд</span></h1>
+            <br>
+            <br>
+            <h2>input_widget_area</h2>
+            <p>
+                Текстареа так-то глобальный элемент, но там она была представлена
+                без скроллбаров. Тут со скроллбарами.
+            </p>
+
+            <p>
+                Мы используем кастомный плагин (<a href="_scroll.html">дока</a>),
+                который не умеет вгрызаться внутрь textarea. Он сбрасывает с нее все стили, а класс, который
+                был у нее ранее вешает на оберточный div. Все бы ничего, но состояние :focus на диве не работает.
+                Надо делать его ручками. По фокусу в <b>.input__text</b> идем на уровень <b>.input</b>`а
+                и там проставляем класс <b>.input_focus</b>. Делаем это для всех инпутов во всех вариация.
+                Ниже этот модификатор снова будет использоваться для других задах.
+            </p>
+
+            <div class="input input_widget_area">
+                <textarea class="input__text scroll scroll_skin_default scroll_always_visible" placeholder="Placeholder"></textarea>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.input_resize_auto</h2>
+            <br>
+            <p>
+                Тут надо подружить два плагина. Просто так они не работают друг с другом.
+                Плагин для разуплотнения textarea работает, а вот скроллбар тупит.
+                Видимо его надо как-то перезапускать.
+            </p>
+
+            <div class="input input_widget_area input_resize_auto">
+                <textarea class="input__text scroll scroll_skin_default scroll_always_visible" placeholder="Placeholder"></textarea>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.input_widget_suggest</h2>
+
+            <div class="input input_widget_suggest">
+                <input class="input__text" type="text" placeholder="Выберите игру">
+                <div class="input__cleartype"></div>
+                <div class="input__dropdown">
+                    <div class="input__suggest scroll scroll_skin_default scroll_always_visible">
+                        <button class="input__option input__option_highlight" type="button">Final Fantasy XV</button>
+                        <button class="input__option" type="button">Catherine "Love Is Over" Deluxe Edition</button>
+                        <button class="input__option" type="button">Persona 4: Golden</button>
+                        <button class="input__option" type="button">OlliOlli</button>
+                        <button class="input__option" type="button">OlliOlli2: Welcome to Olliwood</button>
+                        <button class="input__option" type="button">Another World</button>
+                        <button class="input__option" type="button">Ys: Memories of Celceta</button>
+                        <button class="input__option" type="button">Mortal Kombat X</button>
+                        <button class="input__option" type="button">Journey</button>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                Функционал самой выпадайки - это <b>.input__dropdown</b>.
+                Именно этот слой скрывается/показывается. Внутри пара оберток со скроллбаром и,
+                непосредственно, сам лист опций.
+            </p>
+            <p>
+                Скрытие/показ завязаны на модификатор <b>.input_drop</b> - проставляем его в нужный момент.
+                В этой демке он проставляется если введено больше одного символа.
+            </p>
+            <p>
+                <b>.input__option_highlight</b> можно проставлять опциям внутри выпадайки
+                для управления с клавиатуры, он повторяет эффекты наведения.
+            </p>
+            <p>
+                Выпадайку надо ограничивать по высоте. Точнее контейнер для опций внутри выпадайки
+                <b>.input__suggest</b>. По дефолту в CSS проставлен <b>max-height: 200px;</b>
+                с расчетом на пять айтемов. Этот <b>max-height</b> организует скроллбар.
+            </p>
+            <p>
+                В этой демке кастомные скроллбары не работают. Там всю инициализацию и обсчеты надо делать
+                только в момент показа выпадахи, а в temp.js это делается по document.ready.
+            </p>
+            <p>
+                При выборе опции нужно не просто проставлять ее в <b>.input__text</b>,
+                нужно еше и проскроллировать этот инпут влево до упора. Иначе будет видно только хвост введенного.
+                Это на случай длинных текстов, которые не помещаются целиком в <b>.input__text</b>.
+            </p>
+            <p>
+                Как-то магически тут скроллбар инициализируется сам собой, даже если выпадайка скрыта.
+                Но из-за него выпадайка открыватся с небольшой задержкой при первом ее открытии.
+            </p>
+            <p>
+                При открытии одной выпадашки, другая обязана закрываться.
+                Одновременно не может быть открыто несколько выпадашек.
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <h2>.input_widget_select</h2>
+            <p>
+                Это все тот же самый инпут с выпадайкой. Функционал один и тот же.
+                Нет смысла создавать новый виджет. Из нового тут:
+            </p>
+            <ul>
+                <li>Выпадайка вываливается по клику, а не по введенным сиволам.</li>
+                <li>У <b>.input__text</b> стоит атрибут <b>readonly</b></li>
+                <li>
+                    Вместо клеартайпа теперь иконка стрелочки <b>.input__arrow</b>.
+                    Эта стрелка, кстати, "прозрачна" для кликов, там стоит <b>pointer-events: none</b>.
+                    Но на всякий случай вызывать выпадайку лучше и по клику на эту стрелку тоже.
+                </li>
+                <li>
+                    Функционал клеартайпа теперь в дополнительной опции <b>.input__option_clear</b> (выводить первой).
+                </li>
+                <li>
+                    Тут <s>есть</s> было выделение текущей опции в списке классом <b>.input__option_current</b>.
+                    <small><s>У нее будет белый цвет текста. В виджете suggest`а оно, в принципе, тоже есть,
+                    соответствующий класс там добавляется. Но по идее при вводе/стирания одного символа,
+                    этот класс должен пропадать, а в демке выпадашка завязана на ввод символа.</s></small>
+                </li>
+            </ul>
+
+            <div class="input input_widget_select">
+                <input class="input__text" type="text" placeholder="Выберите игру" readonly>
+                <div class="input__arrow">
+                    <i class="input__peak"></i>
+                </div>
+                <div class="input__dropdown">
+                    <div class="input__suggest scroll scroll_skin_default scroll_always_visible">
+                        <button class="input__option input__option_clear" type="button">Не выбрано</button>
+                        <button class="input__option" type="button">Final Fantasy XV</button>
+                        <button class="input__option" type="button">Catherine "Love Is Over" Deluxe Edition</button>
+                        <button class="input__option" type="button">Persona 4: Golden</button>
+                        <button class="input__option" type="button">OlliOlli</button>
+                        <button class="input__option" type="button">OlliOlli2: Welcome to Olliwood</button>
+                        <button class="input__option" type="button">Another World</button>
+                        <button class="input__option" type="button">Ys: Memories of Celceta</button>
+                        <button class="input__option" type="button">Mortal Kombat X</button>
+                        <button class="input__option" type="button">Journey</button>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.platform</h2>
+            <p>
+                Когда ищем игру не выбрав платформу. В этом случае платформы добавляются
+                как часть текста. Технически это новый блок .platform, а не часть инпута,
+                но я поленился и не стал новый файл с документацией создавать :)
+            </p>
+            <div style="width: 240px">
+
+                <div class="input input_widget_suggest">
+                    <input class="input__text" type="text" placeholder="Выберите игру">
+                    <div class="input__cleartype"></div>
+                    <div class="input__dropdown">
+                        <div class="input__suggest scroll scroll_skin_default scroll_always_visible">
+                            <button class="input__option input__option_highlight" type="button">Final Fantasy XV <span class="platform">PlayStation 4</span></button>
+                            <button class="input__option" type="button">Catherine "Love Is Over" Deluxe Edition <span class="platform">PlayStation 3</span></button>
+                            <button class="input__option" type="button">Persona 4: Golden <span class="platform">PlayStation Vita</span></button>
+                            <button class="input__option" type="button">OlliOlli <span class="platform">PlayStation Via</span></button>
+                            <button class="input__option" type="button">OlliOlli2: Welcome to Olliwood <span class="platform">PlayStation Vita</span></button>
+                            <button class="input__option" type="button">Another World <span class="platform">PlayStation Vita</span></button>
+                            <button class="input__option" type="button">Ys: Memories of Celceta <span class="platform">PlayStation Vita</span></button>
+                            <button class="input__option" type="button">Mortal Kombat X <span class="platform">PlayStation 4</span></button>
+                            <button class="input__option" type="button">Journey <span class="platform">PlayStation 3</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h2>Паравозик</h2>
+            <p>
+                Тут модификатор <b>.input_split</b> у всех вагончиков.
+                Больше ничего нового. Просто пачка виджетов идет друг за другом.
+            </p>
+            <p>
+                Снова используется модификатор <b>.input_focus</b>. На него матчимся из CSS
+                и вытягиваем его z-index наверх, чтобы белые бордюры текущего были поверх соседей.
+            </p>
+
+            <div class="input input_widget_suggest input_split input_fill">
+                <input class="input__text" type="text" placeholder="Выберите страну" value="Вьетнам">
+                <div class="input__cleartype"></div>
+                <div class="input__dropdown">
+                    <div class="input__suggest scroll scroll_skin_default scroll_always_visible">
+                        <button class="input__option input__option_current" type="button">Вьетнам</button>
+                        <button class="input__option" type="button">Таиланд</button>
+                        <button class="input__option" type="button">Лаос</button>
+                        <button class="input__option" type="button">Камбоджа</button>
+                        <button class="input__option" type="button">Филиппинские острова</button>
+                        <button class="input__option" type="button">Малайзия</button>
+                        <button class="input__option" type="button">Гонконг</button>
+                        <button class="input__option" type="button">Россия</button>
+                        <button class="input__option" type="button">Украина</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input input_widget_suggest input_split input_fill">
+                <input class="input__text" type="text" placeholder="Выберите регион" value="Камау">
+                <div class="input__cleartype"></div>
+                <div class="input__dropdown">
+                    <div class="input__suggest scroll scroll_skin_default scroll_always_visible">
+                        <button class="input__option input__option_current" type="button">Камау</button>
+                        <button class="input__option" type="button">Донгнай</button>
+                        <button class="input__option" type="button">Куангчи</button>
+                        <button class="input__option" type="button">Ниньбинь</button>
+                        <button class="input__option" type="button">Тхыатхьен-Хюэ</button>
+                        <button class="input__option" type="button">Хазянг</button>
+                        <button class="input__option" type="button">Хатинь</button>
+                        <button class="input__option" type="button">Шонла</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input input_widget_suggest input_split">
+                <input class="input__text" type="text" placeholder="Выберите город">
+                <div class="input__cleartype"></div>
+                <div class="input__dropdown">
+                    <div class="input__suggest scroll scroll_skin_default scroll_always_visible">
+                        <button class="input__option" type="button">Вунгтау</button>
+                        <button class="input__option" type="button">Муйнэ</button>
+                        <button class="input__option" type="button">Хошимин</button>
+                        <button class="input__option" type="button">Далат</button>
+                        <button class="input__option" type="button">Ханой</button>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+
+            <div class="input input_widget_suggest input_split input_fill">
+                <input class="input__text" type="text" placeholder="Выберите страну" value="Вьетнам">
+                <div class="input__cleartype"></div>
+                <div class="input__dropdown">
+                    <div class="input__suggest scroll scroll_skin_default scroll_always_visible">
+                        <button class="input__option input__option_current" type="button">Вьетнам</button>
+                        <button class="input__option" type="button">Таиланд</button>
+                        <button class="input__option" type="button">Лаос</button>
+                        <button class="input__option" type="button">Камбоджа</button>
+                        <button class="input__option" type="button">Филиппинские острова</button>
+                        <button class="input__option" type="button">Малайзия</button>
+                        <button class="input__option" type="button">Гонконг</button>
+                        <button class="input__option" type="button">Россия</button>
+                        <button class="input__option" type="button">Украина</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input input_widget_suggest input_split input_fill">
+                <input class="input__text" type="text" placeholder="Выберите регион" value="Камау">
+                <div class="input__cleartype"></div>
+                <div class="input__dropdown">
+                    <div class="input__suggest scroll scroll_skin_default scroll_always_visible">
+                        <button class="input__option input__option_current" type="button">Камау</button>
+                        <button class="input__option" type="button">Донгнай</button>
+                        <button class="input__option" type="button">Куангчи</button>
+                        <button class="input__option" type="button">Ниньбинь</button>
+                        <button class="input__option" type="button">Тхыатхьен-Хюэ</button>
+                        <button class="input__option" type="button">Хазянг</button>
+                        <button class="input__option" type="button">Хатинь</button>
+                        <button class="input__option" type="button">Шонла</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input input_widget_suggest input_split input_error">
+                <input class="input__text" type="text" placeholder="Выберите город">
+                <div class="input__cleartype"></div>
+                <div class="input__dropdown">
+                    <div class="input__suggest scroll scroll_skin_default scroll_always_visible">
+                        <button class="input__option" type="button">Вунгтау</button>
+                        <button class="input__option" type="button">Муйнэ</button>
+                        <button class="input__option" type="button">Хошимин</button>
+                        <button class="input__option" type="button">Далат</button>
+                        <button class="input__option" type="button">Ханой</button>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>TO DO</h2>
+            <p>Задержка выпадайки при использовании кастомного скроллбара.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-2.2.3.min.js"></script>
+        <script src="../../global/vendors/bricklayer/dist/bricklayer.min.js"></script>
+        <script src="../../global/vendors/expanding/expanding.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+        <script src="../../global/scripts/temp.js"></script>
+
+        <script src="../vendors/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../scripts/temp.js"></script>
+
+
+    </body>
+</html>

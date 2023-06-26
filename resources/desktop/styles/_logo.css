@@ -1,0 +1,59 @@
+@keyframes logo-spin {
+    100% { transform: rotate(360deg); }
+}
+
+.logo {
+    display: block;
+    width: 55px;
+    height: 39px;
+    background-image: url(../vectors/logo.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100%;
+    position: relative;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.logo:hover {
+    background-image: url(../vectors/logo_hover.svg);
+}
+
+
+.logo:before {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    left: 11px;
+    top: 14px;
+    background-image: url(../vectors/logo__dpad.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+
+.logo:after {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    right: 11px;
+    top: 14px;
+    background-image: url(../vectors/logo__buttons.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+
+
+.logo_rotate:before,
+.logo_rotate:after {
+    animation: logo-spin 1.5s ease infinite;
+}
